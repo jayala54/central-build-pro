@@ -68,8 +68,8 @@ export default function ContactSection() {
               <span className="block text-orange-600">Your Project?</span>
             </h2>
             <p className="text-slate-600 text-lg mb-10 leading-relaxed">
-              Contact us today for a free consultation. We'll discuss your vision, answer your questions, 
-              and provide a detailed estimate for your project.
+              Give us a call or fill out the form and we'll get back to you fast. We'll talk through
+              what you're looking for and give you an honest estimate with no pressure.
             </p>
 
             <div className="space-y-6">

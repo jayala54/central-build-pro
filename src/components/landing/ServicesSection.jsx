@@ -7,37 +7,37 @@ const services = [
   {
     icon: Home,
     title: 'Custom Home Building',
-    description: 'Your dream home built from the ground up with premium materials and personalized design.',
+    description: 'We build new homes from the ground up. You pick the design and finishes, and we make sure it gets built right.',
     href: '/CustomHomes',
   },
   {
     icon: Hammer,
     title: 'Whole-Home Renovations',
-    description: 'Complete transformations that modernize and elevate your entire living space.',
+    description: 'When your whole house needs an update, we can take it down to the studs and rebuild it the way you actually want it.',
     href: '/WholeHomeRenovations',
   },
   {
     icon: Ruler,
     title: 'Kitchen & Bath Remodels',
-    description: 'Stunning kitchen and bathroom upgrades that blend beauty with functionality.',
+    description: 'Kitchens and bathrooms are where most people start. We handle the demo, plumbing, tile, cabinets, and everything in between.',
     href: '/KitchenBathRemodeling',
   },
   {
     icon: PlusSquare,
     title: 'Room Additions',
-    description: 'Expand your living space with seamless additions that match your home\'s character.',
+    description: 'Need more space? We build additions that look and feel like they were always part of your house.',
     href: '/RoomAdditions',
   },
   {
     icon: Building2,
     title: 'Commercial Tenant Buildouts',
-    description: 'Transform empty spaces into functional offices, retail stores, and restaurants.',
+    description: 'We turn empty commercial shells into ready-to-go offices, shops, and restaurants. Permits, build-out, the whole thing.',
     href: '/CommercialBuildouts',
   },
   {
     icon: HardHat,
     title: 'Commercial Renovations',
-    description: 'Refresh and modernize your business space to better serve your customers and team.',
+    description: 'If your business space is looking tired, we can update the layout, finishes, and fixtures to make it work better for your team and your customers.',
     href: '/CommercialRenovations',
   }
 ];
@@ -55,10 +55,10 @@ export default function ServicesSection() {
         >
           <span className="text-orange-600 font-medium text-sm tracking-wider uppercase">What We Do</span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
-            Comprehensive Construction Services
+            What We Build
           </h2>
           <p className="text-slate-600 text-lg">
-            From residential projects to commercial developments, we bring expertise and dedication to every build.
+            Homes, renovations, and commercial projects. Here's the kind of work we do every day.
           </p>
         </motion.div>
 

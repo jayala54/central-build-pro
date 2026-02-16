@@ -6,19 +6,19 @@ const testimonials = [
   {
     name: 'Michael & Sarah Thompson',
     location: 'Orlando, FL',
-    text: 'They built our dream home exactly as we envisioned. The attention to detail and communication throughout the project was exceptional. We couldn\'t be happier!',
+    text: 'We gave them our floor plan and a bunch of Pinterest ideas, and they actually made it happen. The tile work in our master bath is perfect, and the whole house feels solid. They kept us in the loop the whole time too.',
     rating: 5
   },
   {
     name: 'David Chen',
     location: 'Winter Park, FL',
-    text: 'Our whole-home renovation transformed our 1980s house into a modern masterpiece. They worked with us every step of the way and delivered beyond expectations.',
+    text: 'Our house was stuck in 1985 and they completely gutted it. New layout, new everything. The kitchen alone was worth it. They also caught some electrical stuff the old owners had rigged up, which saved us a headache down the road.',
     rating: 5
   },
   {
     name: 'Jennifer Rodriguez',
     location: 'Kissimmee, FL',
-    text: 'The kitchen and master bath remodel completely changed how we live in our home. Beautiful craftsmanship and they finished on schedule!',
+    text: 'We finally got the kitchen we always wanted. They helped us pick the countertops and cabinets, and it turned out even better than we pictured. They were done when they said they\'d be done, which honestly surprised us after dealing with other contractors before.',
     rating: 5
   }
 ];
@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
             What Our Clients Say
           </h2>
           <p className="text-slate-600 text-lg">
-            Don't just take our word for it. Here's what homeowners and businesses across Central Florida have to say.
+            We let our work speak for itself. These are real reviews from real clients we've built for across Central Florida.
           </p>
         </motion.div>
 

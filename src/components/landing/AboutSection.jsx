@@ -52,18 +52,18 @@ export default function AboutSection() {
           >
             <span className="text-orange-600 font-medium text-sm tracking-wider uppercase">About Us</span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-6">
-              Crafting Dream Homes
-              <span className="block text-orange-600">& Spaces That Inspire</span>
+              Building It Right
+              <span className="block text-orange-600">the First Time</span>
             </h2>
             <p className="text-slate-600 text-lg mb-6 leading-relaxed">
-              As a Florida Certified Building Contractor, we specialize in creating beautiful custom 
-              homes and transforming existing spaces through thoughtful renovations. Our attention to 
-              detail and personal approach has made us a trusted name in Central Florida.
+              We're a state certified building contractor based right here in Central Florida.
+              We do custom homes, full renovations, and commercial work. We've been at this for years,
+              and the people we've built for keep sending their friends our way.
             </p>
             <p className="text-slate-600 mb-8 leading-relaxed">
-              Whether you're building your forever home, updating your kitchen, or need a commercial 
-              tenant buildout, we treat every project like it's our own. Quality craftsmanship and 
-              clear communication are at the heart of everything we do.
+              Whether it's a ground-up build, a kitchen remodel, or a commercial tenant buildout,
+              we stay on top of the job from start to finish. You'll always know what's going on
+              with your project, and we don't cut corners.
             </p>
 
             <div className="grid grid-cols-2 gap-6">

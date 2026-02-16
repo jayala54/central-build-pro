@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 
 const SITE_NAME = 'J&N StructureWorks';
 const DEFAULT_DESCRIPTION = 'Florida Certified Building Contractor serving Central Florida. Custom homes, renovations, kitchen & bath remodels, and commercial tenant buildouts in Orange, Seminole, Osceola, and Lake counties.';
-const SITE_URL = 'https://www.jnstructureworks.com';
+const SITE_URL = 'https://jnstructure.net';
 
 export default function SEOHead({
   title,

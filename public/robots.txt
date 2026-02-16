@@ -40,4 +40,4 @@ User-agent: Meta-ExternalAgent
 Allow: /
 
 # Sitemap
-Sitemap: https://www.jnstructureworks.com/sitemap.xml
+Sitemap: https://jnstructure.net/sitemap.xml

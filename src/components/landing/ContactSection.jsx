@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Send, CheckCircle, Loader2 } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
+import emailjs from '@emailjs/browser';
 
 const projectTypes = [
   { value: 'custom_home', label: 'Custom Home Build' },
@@ -44,12 +44,21 @@ export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    await base44.entities.Lead.create(formData);
-    
+
+    try {
+      await emailjs.send(
+        'service_xmtwtve',
+        'template_b9mf40y',
+        formData,
+        '5ihhxCIFZvr_J5Fbi'
+      );
+      setIsSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', project_type: '', county: '', message: '' });
+    } catch (error) {
+      alert('Something went wrong. Please call us at (321) 695-4964 or try again.');
+    }
+
     setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({ name: '', email: '', phone: '', project_type: '', county: '', message: '' });
   };
 
   return (

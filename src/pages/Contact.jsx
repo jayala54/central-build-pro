@@ -8,9 +8,9 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-slate-50">
       <SEOHead
-        title="Contact Us"
+        title="Get a Free Quote — General Contractor Orlando FL"
         path="/Contact"
-        description="Get a free quote from J&N StructureWorks. Contact us for custom home building, renovations, and commercial buildouts in Central Florida. Call (321) 695-4964."
+        description="Request a free estimate from J&N StructureWorks, Orlando's trusted general contractor. Custom homes, renovations, kitchen & bath remodels. Call (321) 695-4964 or fill out our form."
       />
       <Navbar onContactClick={() => {}} alwaysSolid={true} />
       <div className="pt-32">

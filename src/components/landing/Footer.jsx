@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-slate-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-500 text-sm">
-              © {new Date().getFullYear()} Your Company Name. All rights reserved.
+              © {new Date().getFullYear()} J&N StructureWorks, LLC. All rights reserved.
             </p>
             <div className="flex gap-6 text-slate-500 text-sm">
               <Link to="/Blog" className="hover:text-amber-400 transition-colors">Blog</Link>

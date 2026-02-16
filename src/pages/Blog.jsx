@@ -58,9 +58,9 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="Blog"
+        title="New Home Construction Blog — Orlando & Central Florida Building Guide"
         path="/Blog"
-        description="Expert insights on new home construction, budgeting, lot selection, county regulations, building timelines, and renovations in Central Florida."
+        description="Expert tips on building a new home in Central Florida — costs, lot selection, permits, county regulations, timelines, and renovation guides for Orlando, Orange, Seminole & Osceola counties."
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'Blog',

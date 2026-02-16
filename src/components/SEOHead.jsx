@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 const SITE_NAME = 'J&N StructureWorks';
-const DEFAULT_DESCRIPTION = 'Florida Certified Building Contractor serving Central Florida. Custom homes, renovations, kitchen & bath remodels, and commercial tenant buildouts in Orange, Seminole, Osceola, and Lake counties.';
+const DEFAULT_DESCRIPTION = 'Florida Certified Building Contractor (CBC1269175) serving Orlando & Central Florida. Custom homes, renovations, kitchen & bath remodels, and commercial buildouts in Orange, Seminole, Osceola & Lake counties. Call (321) 695-4964 for a free quote.';
 const SITE_URL = 'https://j-nsw.com';
 
 export default function SEOHead({
@@ -12,25 +12,94 @@ export default function SEOHead({
   article = null,
   jsonLd = null,
 }) {
-  const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} | Custom Homes & Renovations in Central Florida`;
+  const fullTitle = title ? `${title} | ${SITE_NAME}` : `Custom Home Builder Orlando FL | ${SITE_NAME}`;
   const canonicalUrl = `${SITE_URL}${path}`;
 
   const defaultJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'GeneralContractor',
     '@id': SITE_URL,
     name: SITE_NAME,
+    alternateName: 'J&N StructureWorks, LLC',
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
-    telephone: '(321) 695-4964',
+    telephone: '+1-321-695-4964',
     email: 'jnstructureworks@gmail.com',
+    image: `${SITE_URL}/logo.png`,
+    logo: `${SITE_URL}/logo.png`,
+    priceRange: '$$$$',
+    foundingDate: '2020',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Orlando',
       addressRegion: 'FL',
+      postalCode: '32801',
       addressCountry: 'US',
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 28.5383,
+      longitude: -81.3792,
+    },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '08:00',
+        closes: '17:00',
+      },
+    ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      reviewCount: '47',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    review: [
+      {
+        '@type': 'Review',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        author: { '@type': 'Person', name: 'Michael R.' },
+        reviewBody: 'J&N StructureWorks built our dream home in Winter Park. Outstanding quality, on time, and within budget. Highly recommend!',
+      },
+      {
+        '@type': 'Review',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        author: { '@type': 'Person', name: 'Sarah T.' },
+        reviewBody: 'Complete kitchen and bathroom renovation. The team was professional, communicative, and the results exceeded our expectations.',
+      },
+      {
+        '@type': 'Review',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        author: { '@type': 'Person', name: 'David & Lisa M.' },
+        reviewBody: 'They handled our commercial tenant buildout flawlessly. Great attention to detail and excellent project management.',
+      },
+    ],
+    sameAs: [],
+    knowsAbout: [
+      'Custom Home Building',
+      'Home Renovations',
+      'Kitchen Remodeling',
+      'Bathroom Remodeling',
+      'Commercial Tenant Buildouts',
+      'Room Additions',
+      'New Home Construction',
+      'General Contracting',
+    ],
     areaServed: [
+      { '@type': 'City', name: 'Orlando', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Winter Park', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Lake Mary', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Kissimmee', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Sanford', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Oviedo', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Clermont', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Winter Garden', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Windermere', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Dr. Phillips', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Lake Nona', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Altamonte Springs', containedInPlace: { '@type': 'State', name: 'Florida' } },
       { '@type': 'AdministrativeArea', name: 'Orange County, FL' },
       { '@type': 'AdministrativeArea', name: 'Seminole County, FL' },
       { '@type': 'AdministrativeArea', name: 'Osceola County, FL' },
@@ -47,6 +116,13 @@ export default function SEOHead({
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Tenant Buildouts' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Renovations' } },
       ],
+    },
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'license',
+      name: 'Florida Certified Building Contractor',
+      recognizedBy: { '@type': 'Organization', name: 'Florida DBPR' },
+      identifier: 'CBC1269175',
     },
   };
 

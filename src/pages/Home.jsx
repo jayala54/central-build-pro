@@ -13,7 +13,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <SEOHead
         path="/"
-        description="J&N StructureWorks is a Florida Certified Building Contractor serving Central Florida since 2020. Custom homes, renovations, and commercial buildouts in Orange, Seminole, Osceola, and Lake counties."
+        description="J&N StructureWorks — Orlando's trusted custom home builder & general contractor. New home construction, renovations, kitchen & bath remodels in Orange, Seminole, Osceola & Lake counties. Call (321) 695-4964 for a free quote."
       />
       <Navbar onContactClick={scrollToContact} />
       <HeroSection onContactClick={scrollToContact} />

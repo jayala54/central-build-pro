@@ -14,9 +14,9 @@ export default function About() {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="About Us"
+        title="About J&N StructureWorks — Licensed General Contractor Orlando FL"
         path="/About"
-        description="Learn about J&N StructureWorks — a Florida Certified Building Contractor serving Central Florida since 2020 with 100+ completed projects across Orange, Seminole, Osceola, and Lake counties."
+        description="Meet J&N StructureWorks — Florida Certified Building Contractor (CBC1269175) with 100+ completed projects across Orlando, Winter Park, Lake Mary, Kissimmee & Central Florida since 2020."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
       <div className="pt-32">

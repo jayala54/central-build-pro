@@ -12,9 +12,9 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-slate-50">
       <SEOHead
-        title="Our Projects"
+        title="Project Portfolio — Custom Homes & Renovations Orlando FL"
         path="/Projects"
-        description="Browse our portfolio of custom homes, renovations, and commercial buildouts across Central Florida. See the quality craftsmanship of J&N StructureWorks."
+        description="View completed custom homes, kitchen & bath remodels, renovations, and commercial buildouts by J&N StructureWorks across Orlando & Central Florida. See our craftsmanship."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
       <div className="pt-32">

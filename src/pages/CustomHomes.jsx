@@ -39,15 +39,26 @@ export default function CustomHomes() {
         title="Custom Home Builder Orlando & Central Florida"
         path="/CustomHomes"
         description="Build your dream custom home in Orlando & Central Florida with J&N StructureWorks. Licensed CBC1269175. New home construction in Orange, Seminole, Osceola & Lake counties. Free consultation: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'Custom Home Building',
-          provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
-          areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
-          description: 'Custom home construction services in Central Florida. From design to move-in, we handle every aspect of building your new home.',
-          url: 'https://j-nsw.com/CustomHomes',
-        }}
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'Custom Home Building',
+            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
+            description: 'Custom home construction services in Central Florida. From design to move-in, we handle every aspect of building your new home.',
+            url: 'https://j-nsw.com/CustomHomes',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

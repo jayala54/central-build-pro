@@ -55,21 +55,32 @@ export default function ServiceAreaDrPhillips() {
         title="General Contractor Dr. Phillips FL | J&N StructureWorks"
         path="/ServiceAreaDrPhillips"
         description="Licensed general contractor in Dr. Phillips, FL (CBC1269175). Custom homes, upscale remodeling, renovations & commercial buildouts in Orange County. Free estimates: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'General Contractor Services in Dr. Phillips, FL',
-          provider: {
-            '@type': 'GeneralContractor',
-            name: 'J&N StructureWorks',
-            url: 'https://j-nsw.com',
-            telephone: '+13216954964',
-            address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL' },
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'General Contractor Services in Dr. Phillips, FL',
+            provider: {
+              '@type': 'GeneralContractor',
+              name: 'J&N StructureWorks',
+              url: 'https://j-nsw.com',
+              telephone: '+13216954964',
+              address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL' },
+            },
+            areaServed: { '@type': 'Place', name: 'Dr. Phillips, Orlando', addressRegion: 'FL' },
+            description: 'Licensed general contractor serving Dr. Phillips in Orlando, FL. Custom homes, upscale remodeling, renovations, and commercial construction in Orange County.',
+            url: 'https://j-nsw.com/ServiceAreaDrPhillips',
           },
-          areaServed: { '@type': 'Place', name: 'Dr. Phillips, Orlando', addressRegion: 'FL' },
-          description: 'Licensed general contractor serving Dr. Phillips in Orlando, FL. Custom homes, upscale remodeling, renovations, and commercial construction in Orange County.',
-          url: 'https://j-nsw.com/ServiceAreaDrPhillips',
-        }}
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

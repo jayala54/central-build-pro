@@ -55,21 +55,32 @@ export default function ServiceAreaWindermere() {
         title="General Contractor Windermere FL | J&N StructureWorks"
         path="/ServiceAreaWindermere"
         description="Licensed general contractor in Windermere, FL (CBC1269175). Luxury custom homes, lakefront builds, remodeling & renovations in Orange County. Free estimates: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'General Contractor Services in Windermere, FL',
-          provider: {
-            '@type': 'GeneralContractor',
-            name: 'J&N StructureWorks',
-            url: 'https://j-nsw.com',
-            telephone: '+13216954964',
-            address: { '@type': 'PostalAddress', addressLocality: 'Windermere', addressRegion: 'FL' },
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'General Contractor Services in Windermere, FL',
+            provider: {
+              '@type': 'GeneralContractor',
+              name: 'J&N StructureWorks',
+              url: 'https://j-nsw.com',
+              telephone: '+13216954964',
+              address: { '@type': 'PostalAddress', addressLocality: 'Windermere', addressRegion: 'FL' },
+            },
+            areaServed: { '@type': 'City', name: 'Windermere', addressRegion: 'FL' },
+            description: 'Licensed general contractor serving Windermere, FL. Luxury custom homes, lakefront construction, remodeling, and renovations in Orange County.',
+            url: 'https://j-nsw.com/ServiceAreaWindermere',
           },
-          areaServed: { '@type': 'City', name: 'Windermere', addressRegion: 'FL' },
-          description: 'Licensed general contractor serving Windermere, FL. Luxury custom homes, lakefront construction, remodeling, and renovations in Orange County.',
-          url: 'https://j-nsw.com/ServiceAreaWindermere',
-        }}
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

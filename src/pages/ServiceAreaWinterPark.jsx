@@ -55,21 +55,32 @@ export default function ServiceAreaWinterPark() {
         title="General Contractor Winter Park FL | J&N StructureWorks"
         path="/ServiceAreaWinterPark"
         description="Licensed general contractor in Winter Park, FL (CBC1269175). Custom homes, historic renovations, remodeling & additions in Orange County. Free estimates: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'General Contractor Services in Winter Park, FL',
-          provider: {
-            '@type': 'GeneralContractor',
-            name: 'J&N StructureWorks',
-            url: 'https://j-nsw.com',
-            telephone: '+13216954964',
-            address: { '@type': 'PostalAddress', addressLocality: 'Winter Park', addressRegion: 'FL' },
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'General Contractor Services in Winter Park, FL',
+            provider: {
+              '@type': 'GeneralContractor',
+              name: 'J&N StructureWorks',
+              url: 'https://j-nsw.com',
+              telephone: '+13216954964',
+              address: { '@type': 'PostalAddress', addressLocality: 'Winter Park', addressRegion: 'FL' },
+            },
+            areaServed: { '@type': 'City', name: 'Winter Park', addressRegion: 'FL' },
+            description: 'Licensed general contractor serving Winter Park, FL. Custom homes, historic renovations, remodeling, and additions in Orange County.',
+            url: 'https://j-nsw.com/ServiceAreaWinterPark',
           },
-          areaServed: { '@type': 'City', name: 'Winter Park', addressRegion: 'FL' },
-          description: 'Licensed general contractor serving Winter Park, FL. Custom homes, historic renovations, remodeling, and additions in Orange County.',
-          url: 'https://j-nsw.com/ServiceAreaWinterPark',
-        }}
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

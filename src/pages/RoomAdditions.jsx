@@ -39,15 +39,26 @@ export default function RoomAdditions() {
         title="Room Additions Contractor Orlando FL"
         path="/RoomAdditions"
         description="Professional room additions in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Bedrooms, family rooms, garage conversions, ADUs & more. Free estimate: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'Room Additions',
-          provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
-          areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
-          description: 'Room addition and home expansion services in Central Florida. Extra bedrooms, family rooms, garage conversions, ADUs, and more.',
-          url: 'https://j-nsw.com/RoomAdditions',
-        }}
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'Room Additions',
+            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
+            description: 'Room addition and home expansion services in Central Florida. Extra bedrooms, family rooms, garage conversions, ADUs, and more.',
+            url: 'https://j-nsw.com/RoomAdditions',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

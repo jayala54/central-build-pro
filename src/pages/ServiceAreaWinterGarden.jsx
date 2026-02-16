@@ -55,21 +55,32 @@ export default function ServiceAreaWinterGarden() {
         title="General Contractor Winter Garden FL | J&N StructureWorks"
         path="/ServiceAreaWinterGarden"
         description="Licensed general contractor in Winter Garden, FL (CBC1269175). Custom homes, remodeling, additions & renovations in west Orange County. Free estimates: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'General Contractor Services in Winter Garden, FL',
-          provider: {
-            '@type': 'GeneralContractor',
-            name: 'J&N StructureWorks',
-            url: 'https://j-nsw.com',
-            telephone: '+13216954964',
-            address: { '@type': 'PostalAddress', addressLocality: 'Winter Garden', addressRegion: 'FL' },
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'General Contractor Services in Winter Garden, FL',
+            provider: {
+              '@type': 'GeneralContractor',
+              name: 'J&N StructureWorks',
+              url: 'https://j-nsw.com',
+              telephone: '+13216954964',
+              address: { '@type': 'PostalAddress', addressLocality: 'Winter Garden', addressRegion: 'FL' },
+            },
+            areaServed: { '@type': 'City', name: 'Winter Garden', addressRegion: 'FL' },
+            description: 'Licensed general contractor serving Winter Garden, FL. Custom homes, remodeling, additions, and renovations in west Orange County.',
+            url: 'https://j-nsw.com/ServiceAreaWinterGarden',
           },
-          areaServed: { '@type': 'City', name: 'Winter Garden', addressRegion: 'FL' },
-          description: 'Licensed general contractor serving Winter Garden, FL. Custom homes, remodeling, additions, and renovations in west Orange County.',
-          url: 'https://j-nsw.com/ServiceAreaWinterGarden',
-        }}
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

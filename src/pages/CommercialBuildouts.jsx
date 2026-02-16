@@ -39,15 +39,26 @@ export default function CommercialBuildouts() {
         title="Commercial Tenant Buildouts Orlando FL"
         path="/CommercialBuildouts"
         description="Professional commercial tenant buildouts in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Office, retail, restaurant buildouts & ADA compliance. Free estimate: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'Commercial Tenant Buildouts',
-          provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
-          areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
-          description: 'Commercial tenant buildout services in Central Florida. Office buildouts, retail spaces, restaurant buildouts, ADA compliance, and tenant improvements.',
-          url: 'https://j-nsw.com/CommercialBuildouts',
-        }}
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'Commercial Tenant Buildouts',
+            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
+            description: 'Commercial tenant buildout services in Central Florida. Office buildouts, retail spaces, restaurant buildouts, ADA compliance, and tenant improvements.',
+            url: 'https://j-nsw.com/CommercialBuildouts',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

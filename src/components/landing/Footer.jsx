@@ -44,13 +44,17 @@ export default function Footer() {
           <div className="mt-0 md:mt-6">
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-3 text-slate-400">
-                <Phone className="w-4 h-4 text-amber-500" />
-                (321) 695-4964
+              <li>
+                <a href="tel:+13216954964" className="flex items-center gap-3 text-slate-400 hover:text-amber-400 transition-colors">
+                  <Phone className="w-4 h-4 text-amber-500" />
+                  (321) 695-4964
+                </a>
               </li>
-              <li className="flex items-center gap-3 text-slate-400">
-                <Mail className="w-4 h-4 text-amber-500" />
-                jnstructureworks@gmail.com
+              <li>
+                <a href="mailto:jnstructureworks@gmail.com" className="flex items-center gap-3 text-slate-400 hover:text-amber-400 transition-colors">
+                  <Mail className="w-4 h-4 text-amber-500" />
+                  jnstructureworks@gmail.com
+                </a>
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <MapPin className="w-4 h-4 text-amber-500" />

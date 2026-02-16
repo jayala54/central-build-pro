@@ -55,21 +55,32 @@ export default function ServiceAreaKissimmee() {
         title="General Contractor Kissimmee FL | J&N StructureWorks"
         path="/ServiceAreaKissimmee"
         description="Licensed general contractor in Kissimmee, FL (CBC1269175). Custom homes, remodeling, additions & commercial buildouts in Osceola County. Free estimates: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'General Contractor Services in Kissimmee, FL',
-          provider: {
-            '@type': 'GeneralContractor',
-            name: 'J&N StructureWorks',
-            url: 'https://j-nsw.com',
-            telephone: '+13216954964',
-            address: { '@type': 'PostalAddress', addressLocality: 'Kissimmee', addressRegion: 'FL' },
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'General Contractor Services in Kissimmee, FL',
+            provider: {
+              '@type': 'GeneralContractor',
+              name: 'J&N StructureWorks',
+              url: 'https://j-nsw.com',
+              telephone: '+13216954964',
+              address: { '@type': 'PostalAddress', addressLocality: 'Kissimmee', addressRegion: 'FL' },
+            },
+            areaServed: { '@type': 'City', name: 'Kissimmee', addressRegion: 'FL' },
+            description: 'Licensed general contractor serving Kissimmee, FL. Custom homes, remodeling, additions, and commercial construction in Osceola County.',
+            url: 'https://j-nsw.com/ServiceAreaKissimmee',
           },
-          areaServed: { '@type': 'City', name: 'Kissimmee', addressRegion: 'FL' },
-          description: 'Licensed general contractor serving Kissimmee, FL. Custom homes, remodeling, additions, and commercial construction in Osceola County.',
-          url: 'https://j-nsw.com/ServiceAreaKissimmee',
-        }}
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

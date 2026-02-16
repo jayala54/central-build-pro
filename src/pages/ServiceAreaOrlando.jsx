@@ -55,21 +55,32 @@ export default function ServiceAreaOrlando() {
         title="General Contractor Orlando FL | J&N StructureWorks"
         path="/ServiceAreaOrlando"
         description="J&N StructureWorks is a licensed general contractor in Orlando, FL (CBC1269175). Custom homes, remodeling, additions & commercial buildouts in Orange County. Free estimates: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'General Contractor Services in Orlando, FL',
-          provider: {
-            '@type': 'GeneralContractor',
-            name: 'J&N StructureWorks',
-            url: 'https://j-nsw.com',
-            telephone: '+13216954964',
-            address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL' },
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'General Contractor Services in Orlando, FL',
+            provider: {
+              '@type': 'GeneralContractor',
+              name: 'J&N StructureWorks',
+              url: 'https://j-nsw.com',
+              telephone: '+13216954964',
+              address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL' },
+            },
+            areaServed: { '@type': 'City', name: 'Orlando', addressRegion: 'FL' },
+            description: 'Licensed general contractor serving Orlando, FL. Custom home building, remodeling, additions, and commercial construction in Orange County.',
+            url: 'https://j-nsw.com/ServiceAreaOrlando',
           },
-          areaServed: { '@type': 'City', name: 'Orlando', addressRegion: 'FL' },
-          description: 'Licensed general contractor serving Orlando, FL. Custom home building, remodeling, additions, and commercial construction in Orange County.',
-          url: 'https://j-nsw.com/ServiceAreaOrlando',
-        }}
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

@@ -39,15 +39,26 @@ export default function KitchenBathRemodeling() {
         title="Kitchen & Bathroom Remodeling Orlando FL"
         path="/KitchenBathRemodeling"
         description="Professional kitchen and bathroom remodeling in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Custom cabinetry, countertops, tile, fixtures & more. Free estimate: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'Kitchen & Bathroom Remodeling',
-          provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
-          areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
-          description: 'Kitchen and bathroom remodeling services in Central Florida. From design to completion, we handle countertops, cabinetry, tile, fixtures, and full renovations.',
-          url: 'https://j-nsw.com/KitchenBathRemodeling',
-        }}
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'Kitchen & Bathroom Remodeling',
+            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
+            description: 'Kitchen and bathroom remodeling services in Central Florida. From design to completion, we handle countertops, cabinetry, tile, fixtures, and full renovations.',
+            url: 'https://j-nsw.com/KitchenBathRemodeling',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

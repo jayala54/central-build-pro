@@ -39,15 +39,26 @@ export default function WholeHomeRenovations() {
         title="Whole-Home Renovations Orlando & Central Florida"
         path="/WholeHomeRenovations"
         description="Complete whole-home renovations in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Gut renovations, modernization, structural changes & more. Free consultation: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'Whole-Home Renovations',
-          provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
-          areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
-          description: 'Whole-home renovation services in Central Florida. Complete home transformations including structural changes, modernization, and gut renovations.',
-          url: 'https://j-nsw.com/WholeHomeRenovations',
-        }}
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'Whole-Home Renovations',
+            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
+            description: 'Whole-home renovation services in Central Florida. Complete home transformations including structural changes, modernization, and gut renovations.',
+            url: 'https://j-nsw.com/WholeHomeRenovations',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

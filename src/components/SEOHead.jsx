@@ -166,7 +166,7 @@ export default function SEOHead({
       <meta name="geo.placename" content="Orlando" />
 
       {/* JSON-LD Structured Data */}
-      <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+      <script type="application/ld+json">{JSON.stringify(Array.isArray(structuredData) ? structuredData : structuredData)}</script>
     </Helmet>
   );
 }

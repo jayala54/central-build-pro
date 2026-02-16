@@ -39,15 +39,26 @@ export default function CommercialRenovations() {
         title="Commercial Renovations Orlando & Central Florida"
         path="/CommercialRenovations"
         description="Professional commercial renovations in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Office, retail, restaurant remodels, ADA upgrades & code compliance. Free estimate: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'Commercial Renovations',
-          provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
-          areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
-          description: 'Commercial renovation services in Central Florida. Office renovations, storefront updates, restaurant remodels, ADA upgrades, and code compliance.',
-          url: 'https://j-nsw.com/CommercialRenovations',
-        }}
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'Commercial Renovations',
+            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
+            description: 'Commercial renovation services in Central Florida. Office renovations, storefront updates, restaurant remodels, ADA upgrades, and code compliance.',
+            url: 'https://j-nsw.com/CommercialRenovations',
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

@@ -88,7 +88,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-slate-500 text-sm">Call Us</p>
-                  <p className="text-slate-900 font-semibold text-lg">(321) 695-4964</p>
+                  <a href="tel:+13216954964" className="text-slate-900 font-semibold text-lg hover:text-orange-600 transition-colors">(321) 695-4964</a>
                 </div>
               </div>
 
@@ -98,7 +98,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-slate-500 text-sm">Email Us</p>
-                  <p className="text-slate-900 font-semibold text-lg">jnstructureworks@gmail.com</p>
+                  <a href="mailto:jnstructureworks@gmail.com" className="text-slate-900 font-semibold text-lg hover:text-orange-600 transition-colors">jnstructureworks@gmail.com</a>
                 </div>
               </div>
 

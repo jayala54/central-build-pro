@@ -55,21 +55,32 @@ export default function ServiceAreaOviedo() {
         title="General Contractor Oviedo FL | J&N StructureWorks"
         path="/ServiceAreaOviedo"
         description="Licensed general contractor in Oviedo, FL (CBC1269175). Custom homes, remodeling, additions & renovations in Seminole County near UCF. Free estimates: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'General Contractor Services in Oviedo, FL',
-          provider: {
-            '@type': 'GeneralContractor',
-            name: 'J&N StructureWorks',
-            url: 'https://j-nsw.com',
-            telephone: '+13216954964',
-            address: { '@type': 'PostalAddress', addressLocality: 'Oviedo', addressRegion: 'FL' },
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'General Contractor Services in Oviedo, FL',
+            provider: {
+              '@type': 'GeneralContractor',
+              name: 'J&N StructureWorks',
+              url: 'https://j-nsw.com',
+              telephone: '+13216954964',
+              address: { '@type': 'PostalAddress', addressLocality: 'Oviedo', addressRegion: 'FL' },
+            },
+            areaServed: { '@type': 'City', name: 'Oviedo', addressRegion: 'FL' },
+            description: 'Licensed general contractor serving Oviedo, FL. Custom homes, remodeling, additions, and renovations in Seminole County.',
+            url: 'https://j-nsw.com/ServiceAreaOviedo',
           },
-          areaServed: { '@type': 'City', name: 'Oviedo', addressRegion: 'FL' },
-          description: 'Licensed general contractor serving Oviedo, FL. Custom homes, remodeling, additions, and renovations in Seminole County.',
-          url: 'https://j-nsw.com/ServiceAreaOviedo',
-        }}
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

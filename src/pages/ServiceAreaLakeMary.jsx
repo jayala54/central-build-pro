@@ -55,21 +55,32 @@ export default function ServiceAreaLakeMary() {
         title="General Contractor Lake Mary FL | J&N StructureWorks"
         path="/ServiceAreaLakeMary"
         description="Licensed general contractor in Lake Mary, FL (CBC1269175). Custom homes, remodeling, additions & renovations in Seminole County. Free estimates: (321) 695-4964."
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Service',
-          name: 'General Contractor Services in Lake Mary, FL',
-          provider: {
-            '@type': 'GeneralContractor',
-            name: 'J&N StructureWorks',
-            url: 'https://j-nsw.com',
-            telephone: '+13216954964',
-            address: { '@type': 'PostalAddress', addressLocality: 'Lake Mary', addressRegion: 'FL' },
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'General Contractor Services in Lake Mary, FL',
+            provider: {
+              '@type': 'GeneralContractor',
+              name: 'J&N StructureWorks',
+              url: 'https://j-nsw.com',
+              telephone: '+13216954964',
+              address: { '@type': 'PostalAddress', addressLocality: 'Lake Mary', addressRegion: 'FL' },
+            },
+            areaServed: { '@type': 'City', name: 'Lake Mary', addressRegion: 'FL' },
+            description: 'Licensed general contractor serving Lake Mary, FL. Custom homes, remodeling, additions, and renovations in Seminole County.',
+            url: 'https://j-nsw.com/ServiceAreaLakeMary',
           },
-          areaServed: { '@type': 'City', name: 'Lake Mary', addressRegion: 'FL' },
-          description: 'Licensed general contractor serving Lake Mary, FL. Custom homes, remodeling, additions, and renovations in Seminole County.',
-          url: 'https://j-nsw.com/ServiceAreaLakeMary',
-        }}
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a }
+            }))
+          }
+        ]}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 

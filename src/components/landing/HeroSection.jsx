@@ -81,7 +81,7 @@ export default function HeroSection({ onContactClick }) {
           >
             {[
               { icon: Award, label: 'Licensed & Insured', value: 'State Certified' },
-              { icon: Clock, label: 'Experience', value: '15+ Years' },
+              { icon: Clock, label: 'Experience', value: '5+ Years' },
               { icon: Shield, label: 'Projects Completed', value: '200+' },
             ].map((stat, idx) => (
               <div key={idx} className="text-center sm:text-left">

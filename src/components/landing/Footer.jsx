@@ -12,9 +12,9 @@ export default function Footer() {
               <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-slate-400 mb-4">
-              Florida Certified Building Contractor serving Central Florida with excellence since 2009.
+              Florida Certified Building Contractor serving Central Florida with excellence since 2020.
             </p>
-            <p className="text-amber-500 font-medium text-sm">License #CBC1234567</p>
+            <p className="text-amber-500 font-medium text-sm">License #CBC1269175</p>
           </div>
 
           <div>

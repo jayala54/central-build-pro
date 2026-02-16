@@ -7,11 +7,11 @@ export default function Footer() {
     <footer className="bg-slate-900 pt-8 md:pt-0 pb-8">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-10 mb-12">
-          <div className="mt-2 md:-mt-8">
-            <div className="mb-2 md:mb-0 md:-ml-6">
-              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-14 md:h-[14.5rem] w-auto brightness-0 invert" />
+          <div className="-mt-2 md:mt-4">
+            <div className="mb-5 md:mb-4">
+              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-14 md:h-28 w-auto brightness-0 invert" />
             </div>
-            <p className="text-slate-400 mb-0 md:-mt-14">
+            <p className="text-slate-400 mb-0">
               Florida Certified Building Contractor serving Central Florida with excellence since 2020.
             </p>
             <p className="text-amber-500 font-medium text-sm mt-1">License #CBC1269175</p>

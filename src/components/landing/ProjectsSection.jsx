@@ -4,40 +4,42 @@ import { MapPin, ArrowUpRight } from 'lucide-react';
 
 const sampleProjects = [
   {
-    title: 'Single Family Home',
+    title: 'Custom Home Build',
     category: 'Custom Home',
-    location: 'Orange County',
-    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80'
+    location: 'Summerfield, FL',
+    image: '/images/projects/completed-home.jpg'
   },
   {
-    title: 'Kitchen Renovation',
-    category: 'Renovation',
-    location: 'Seminole County',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80'
+    title: 'Investor Turnkey Build',
+    category: 'Custom Home',
+    location: 'Ocala, FL',
+    image: '/images/projects/investor-turnkey-cover.jpg',
+    hoverImage: '/images/projects/kitchen-interior.jpg'
   },
   {
-    title: 'Home Remodel',
-    category: 'Renovation',
-    location: 'Osceola County',
-    image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80'
+    title: 'Bathroom Addition',
+    category: 'Addition',
+    location: 'Saint Cloud, FL',
+    image: '/images/projects/bathroom-remodel.jpg'
   },
   {
     title: 'New Construction',
     category: 'Custom Home',
-    location: 'Lake County',
-    image: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80'
+    location: 'Ocala, FL',
+    image: '/images/projects/new-construction.jpg'
   },
   {
-    title: 'Office Buildout',
-    category: 'Tenant Buildout',
-    location: 'Volusia County',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80'
+    title: 'Custom Home Build',
+    category: 'Custom Home',
+    location: 'Summerfield, FL',
+    image: '/images/projects/home-render.jpg'
   },
   {
-    title: 'Bathroom Remodel',
-    category: 'Renovation',
-    location: 'Brevard County',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80'
+    title: 'Commercial Remodel',
+    category: 'Commercial',
+    location: 'Kissimmee, FL',
+    image: '/images/projects/commercial-repipe-cover.jpg',
+    hoverImage: '/images/projects/commercial-repipe-hover.jpg'
   }
 ];
 
@@ -73,11 +75,18 @@ export default function ProjectsSection({ projects = sampleProjects }) {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
-              <img 
-                src={project.image || project.image_url} 
+              <img
+                src={project.image || project.image_url}
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={`w-full h-full object-cover transition-all duration-700 group-hover:scale-110 ${project.hoverImage ? 'group-hover:opacity-0' : ''}`}
               />
+              {project.hoverImage && (
+                <img
+                  src={project.hoverImage}
+                  alt={`${project.title} — detail`}
+                  className="absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
               
               <div className="absolute inset-0 p-6 flex flex-col justify-end">

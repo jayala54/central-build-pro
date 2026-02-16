@@ -9,8 +9,8 @@ export default function HeroSection({ onContactClick }) {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1920&q=80" 
-          alt="Custom Home" 
+          src="/images/projects/completed-home.jpg"
+          alt="Custom home built by J&N StructureWorks in Central Florida" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />

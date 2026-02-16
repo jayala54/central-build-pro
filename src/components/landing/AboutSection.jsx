@@ -23,8 +23,8 @@ export default function AboutSection() {
           >
             <div className="relative rounded-2xl overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80"
-                alt="Modern farmhouse style home in Central Florida"
+                src="/images/projects/jobsite-truck.jpg"
+                alt="J&N StructureWorks truck at an active construction site in Central Florida"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />

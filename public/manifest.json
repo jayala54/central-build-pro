@@ -1,0 +1,10 @@
+{
+  "name": "J&N StructureWorks",
+  "short_name": "JN Structure",
+  "description": "Florida Certified Building Contractor - Custom Homes & Renovations in Central Florida",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#f97316",
+  "icons": []
+}

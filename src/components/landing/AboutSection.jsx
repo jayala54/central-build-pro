@@ -5,7 +5,7 @@ import { Shield, Award, Users, Clock } from 'lucide-react';
 const stats = [
   { icon: Shield, value: 'CBC Certified', label: 'Florida Licensed' },
   { icon: Award, value: '5+', label: 'Years Experience' },
-  { icon: Users, value: '200+', label: 'Happy Clients' },
+  { icon: Users, value: '100+', label: 'Happy Clients' },
   { icon: Clock, value: '100%', label: 'On-Time Delivery' }
 ];
 

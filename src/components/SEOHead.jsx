@@ -23,7 +23,7 @@ export default function SEOHead({
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
     telephone: '(321) 695-4964',
-    email: 'info@jnstructureworks.com',
+    email: 'jnstructureworks@gmail.com',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Orlando',

@@ -47,7 +47,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <Mail className="w-4 h-4 text-amber-500" />
-                info@yourcompany.com
+                jnstructureworks@gmail.com
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <MapPin className="w-4 h-4 text-amber-500" />

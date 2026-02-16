@@ -39,10 +39,10 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
         showSolidBg ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-52">
+          <div className="flex items-center justify-between h-40">
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-2">
-              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-48 w-auto" />
+              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[13.75rem] w-auto" />
             </Link>
 
             {/* Desktop Nav */}

@@ -19,7 +19,7 @@ export default function About() {
         description="Meet J&N StructureWorks — Florida Certified Building Contractor (CBC1269175) with 100+ completed projects across Orlando, Winter Park, Lake Mary, Kissimmee & Central Florida since 2020."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
-      <div className="pt-32">
+      <div className="pt-20 md:pt-32">
         <AboutSection />
         <ServiceAreasSection />
         <TestimonialsSection />

@@ -73,7 +73,7 @@ export default function Blog() {
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 
       {/* Hero Banner */}
-      <div className="bg-slate-900 pt-40 pb-16">
+      <div className="bg-slate-900 pt-20 md:pt-40 pb-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

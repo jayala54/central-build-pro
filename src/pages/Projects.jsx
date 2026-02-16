@@ -17,7 +17,7 @@ export default function Projects() {
         description="View completed custom homes, kitchen & bath remodels, renovations, and commercial buildouts by J&N StructureWorks across Orlando & Central Florida. See our craftsmanship."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
-      <div className="pt-32">
+      <div className="pt-20 md:pt-32">
         <ProjectsSection />
       </div>
       <Footer />

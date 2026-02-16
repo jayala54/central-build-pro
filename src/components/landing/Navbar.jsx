@@ -39,10 +39,10 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
         showSolidBg ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-32">
+          <div className="flex items-center justify-between h-14 md:h-32">
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-2">
-              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[14.5rem] w-auto" />
+              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-12 md:h-[14.5rem] w-auto" />
             </Link>
 
             {/* Desktop Nav */}
@@ -103,7 +103,7 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-slate-900 pt-36 px-6 md:hidden"
+            className="fixed inset-0 z-40 bg-slate-900 pt-16 px-6 md:hidden"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link) => (
@@ -116,8 +116,15 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
                   {link.label}
                 </Link>
               ))}
-              <Button 
-                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-14 text-lg mt-4"
+              <a
+                href="tel:+13216954964"
+                className="flex items-center justify-center gap-2 h-14 text-lg font-semibold text-white border border-white/20 rounded-md mt-4"
+              >
+                <Phone className="w-5 h-5" />
+                (321) 695-4964
+              </a>
+              <Button
+                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-14 text-lg"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
                   onContactClick();

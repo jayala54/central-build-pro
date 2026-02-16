@@ -17,7 +17,7 @@ export default function Services() {
         description="Full-service general contractor in Orlando FL — custom home building, kitchen & bath remodeling, whole-home renovations, room additions, and commercial tenant buildouts. Licensed CBC1269175. Free estimates."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
-      <div className="pt-32">
+      <div className="pt-20 md:pt-32">
         <ServicesSection />
       </div>
       <Footer />

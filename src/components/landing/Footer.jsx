@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-0">
               <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[14.5rem] w-auto brightness-0 invert" />
             </div>
-            <p className="text-slate-400 mb-0 -mt-6">
+            <p className="text-slate-400 mb-0 -mt-10">
               Florida Certified Building Contractor serving Central Florida with excellence since 2020.
             </p>
             <p className="text-amber-500 font-medium text-sm mt-1">License #CBC1269175</p>

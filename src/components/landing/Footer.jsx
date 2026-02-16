@@ -8,13 +8,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
+            <div className="flex items-center gap-2 mb-4">
+              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[14.5rem] w-auto brightness-0 invert" />
+            </div>
             <p className="text-slate-400 mb-2">
               Florida Certified Building Contractor serving Central Florida with excellence since 2020.
             </p>
-            <p className="text-amber-500 font-medium text-sm mb-4">License #CBC1269175</p>
-            <div className="flex items-center gap-2">
-              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[14.5rem] w-auto brightness-0 invert" />
-            </div>
+            <p className="text-amber-500 font-medium text-sm">License #CBC1269175</p>
           </div>
 
           <div>

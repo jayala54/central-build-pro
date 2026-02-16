@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div className="-mt-8">
-            <div className="flex items-center gap-2 mb-0">
+            <div className="mb-0 -ml-6">
               <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[14.5rem] w-auto brightness-0 invert" />
             </div>
             <p className="text-slate-400 mb-0 -mt-14">

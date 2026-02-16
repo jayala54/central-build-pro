@@ -76,7 +76,7 @@ export default function SEOHead({
         reviewBody: 'They handled our commercial tenant buildout flawlessly. Great attention to detail and excellent project management.',
       },
     ],
-    sameAs: [],
+    sameAs: ['https://share.google/feWTzOGTKyUrlkb2o'],
     knowsAbout: [
       'Custom Home Building',
       'Home Renovations',

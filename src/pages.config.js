@@ -53,6 +53,26 @@ import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+// Service Pages
+import CustomHomes from './pages/CustomHomes';
+import KitchenBathRemodeling from './pages/KitchenBathRemodeling';
+import WholeHomeRenovations from './pages/WholeHomeRenovations';
+import RoomAdditions from './pages/RoomAdditions';
+import CommercialBuildouts from './pages/CommercialBuildouts';
+import CommercialRenovations from './pages/CommercialRenovations';
+// Location Pages
+import ServiceAreaOrlando from './pages/ServiceAreaOrlando';
+import ServiceAreaWinterPark from './pages/ServiceAreaWinterPark';
+import ServiceAreaLakeMary from './pages/ServiceAreaLakeMary';
+import ServiceAreaKissimmee from './pages/ServiceAreaKissimmee';
+import ServiceAreaSanford from './pages/ServiceAreaSanford';
+import ServiceAreaOviedo from './pages/ServiceAreaOviedo';
+import ServiceAreaClermont from './pages/ServiceAreaClermont';
+import ServiceAreaWinterGarden from './pages/ServiceAreaWinterGarden';
+import ServiceAreaWindermere from './pages/ServiceAreaWindermere';
+import ServiceAreaAltamonteSprings from './pages/ServiceAreaAltamonteSprings';
+import ServiceAreaLakeNona from './pages/ServiceAreaLakeNona';
+import ServiceAreaDrPhillips from './pages/ServiceAreaDrPhillips';
 
 
 export const PAGES = {
@@ -62,6 +82,26 @@ export const PAGES = {
     "About": About,
     "Contact": Contact,
     "Blog": Blog,
+    // Service Pages
+    "CustomHomes": CustomHomes,
+    "KitchenBathRemodeling": KitchenBathRemodeling,
+    "WholeHomeRenovations": WholeHomeRenovations,
+    "RoomAdditions": RoomAdditions,
+    "CommercialBuildouts": CommercialBuildouts,
+    "CommercialRenovations": CommercialRenovations,
+    // Location Pages
+    "ServiceAreaOrlando": ServiceAreaOrlando,
+    "ServiceAreaWinterPark": ServiceAreaWinterPark,
+    "ServiceAreaLakeMary": ServiceAreaLakeMary,
+    "ServiceAreaKissimmee": ServiceAreaKissimmee,
+    "ServiceAreaSanford": ServiceAreaSanford,
+    "ServiceAreaOviedo": ServiceAreaOviedo,
+    "ServiceAreaClermont": ServiceAreaClermont,
+    "ServiceAreaWinterGarden": ServiceAreaWinterGarden,
+    "ServiceAreaWindermere": ServiceAreaWindermere,
+    "ServiceAreaAltamonteSprings": ServiceAreaAltamonteSprings,
+    "ServiceAreaLakeNona": ServiceAreaLakeNona,
+    "ServiceAreaDrPhillips": ServiceAreaDrPhillips,
 }
 
 export const pagesConfig = {

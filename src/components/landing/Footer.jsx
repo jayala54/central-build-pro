@@ -20,20 +20,23 @@ export default function Footer() {
           <div className="mt-6">
             <h4 className="text-white font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-slate-400">
-              <li className="hover:text-amber-400 transition-colors cursor-pointer">Custom Homes</li>
-              <li className="hover:text-amber-400 transition-colors cursor-pointer">Home Renovations</li>
-              <li className="hover:text-amber-400 transition-colors cursor-pointer">Kitchen & Bath</li>
-              <li className="hover:text-amber-400 transition-colors cursor-pointer">Tenant Buildouts</li>
+              <li><Link to="/CustomHomes" className="hover:text-amber-400 transition-colors">Custom Homes</Link></li>
+              <li><Link to="/WholeHomeRenovations" className="hover:text-amber-400 transition-colors">Home Renovations</Link></li>
+              <li><Link to="/KitchenBathRemodeling" className="hover:text-amber-400 transition-colors">Kitchen & Bath</Link></li>
+              <li><Link to="/RoomAdditions" className="hover:text-amber-400 transition-colors">Room Additions</Link></li>
+              <li><Link to="/CommercialBuildouts" className="hover:text-amber-400 transition-colors">Commercial Buildouts</Link></li>
             </ul>
           </div>
 
           <div className="mt-6">
             <h4 className="text-white font-semibold mb-4">Service Areas</h4>
             <ul className="space-y-2 text-slate-400">
-              <li>Orange County</li>
-              <li>Seminole County</li>
-              <li>Osceola County</li>
-              <li>Lake County</li>
+              <li><Link to="/ServiceAreaOrlando" className="hover:text-amber-400 transition-colors">Orlando</Link></li>
+              <li><Link to="/ServiceAreaWinterPark" className="hover:text-amber-400 transition-colors">Winter Park</Link></li>
+              <li><Link to="/ServiceAreaLakeMary" className="hover:text-amber-400 transition-colors">Lake Mary</Link></li>
+              <li><Link to="/ServiceAreaKissimmee" className="hover:text-amber-400 transition-colors">Kissimmee</Link></li>
+              <li><Link to="/ServiceAreaWindermere" className="hover:text-amber-400 transition-colors">Windermere</Link></li>
+              <li><Link to="/ServiceAreaLakeNona" className="hover:text-amber-400 transition-colors">Lake Nona</Link></li>
             </ul>
           </div>
 

@@ -42,7 +42,7 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-2">
-              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-24 w-auto" />
+              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[9.5rem] w-auto" />
             </Link>
 
             {/* Desktop Nav */}

@@ -71,8 +71,8 @@ export default function Footer() {
             </p>
             <div className="flex gap-6 text-slate-500 text-sm">
               <Link to="/Blog" className="hover:text-amber-400 transition-colors">Blog</Link>
-              <span className="hover:text-amber-400 transition-colors cursor-pointer">Privacy Policy</span>
-              <span className="hover:text-amber-400 transition-colors cursor-pointer">Terms of Service</span>
+              <Link to="/PrivacyPolicy" className="hover:text-amber-400 transition-colors">Privacy Policy</Link>
+              <Link to="/TermsOfService" className="hover:text-amber-400 transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>

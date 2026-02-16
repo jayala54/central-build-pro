@@ -73,6 +73,9 @@ import ServiceAreaWindermere from './pages/ServiceAreaWindermere';
 import ServiceAreaAltamonteSprings from './pages/ServiceAreaAltamonteSprings';
 import ServiceAreaLakeNona from './pages/ServiceAreaLakeNona';
 import ServiceAreaDrPhillips from './pages/ServiceAreaDrPhillips';
+// Legal Pages
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 
 export const PAGES = {
@@ -102,6 +105,9 @@ export const PAGES = {
     "ServiceAreaAltamonteSprings": ServiceAreaAltamonteSprings,
     "ServiceAreaLakeNona": ServiceAreaLakeNona,
     "ServiceAreaDrPhillips": ServiceAreaDrPhillips,
+    // Legal Pages
+    "PrivacyPolicy": PrivacyPolicy,
+    "TermsOfService": TermsOfService,
 }
 
 export const pagesConfig = {

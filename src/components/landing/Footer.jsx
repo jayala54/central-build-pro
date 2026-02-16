@@ -11,13 +11,13 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-0">
               <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[14.5rem] w-auto brightness-0 invert" />
             </div>
-            <p className="text-slate-400 mb-0 -mt-2">
+            <p className="text-slate-400 mb-0 -mt-6">
               Florida Certified Building Contractor serving Central Florida with excellence since 2020.
             </p>
-            <p className="text-amber-500 font-medium text-sm">License #CBC1269175</p>
+            <p className="text-amber-500 font-medium text-sm mt-1">License #CBC1269175</p>
           </div>
 
-          <div>
+          <div className="mt-6">
             <h4 className="text-white font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-slate-400">
               <li className="hover:text-amber-400 transition-colors cursor-pointer">Custom Homes</li>
@@ -27,7 +27,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="mt-6">
             <h4 className="text-white font-semibold mb-4">Service Areas</h4>
             <ul className="space-y-2 text-slate-400">
               <li>Orange County</li>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
 
-          <div>
+          <div className="mt-6">
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-slate-400">

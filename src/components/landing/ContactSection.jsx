@@ -79,7 +79,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-slate-500 text-sm">Call Us</p>
-                  <p className="text-slate-900 font-semibold text-lg">(407) 555-0123</p>
+                  <p className="text-slate-900 font-semibold text-lg">(321) 695-4964</p>
                 </div>
               </div>
 
@@ -154,7 +154,7 @@ export default function ContactSection() {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="(407) 555-0123"
+                        placeholder="(321) 695-4964"
                         required
                         className="h-12"
                       />

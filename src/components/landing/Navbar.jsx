@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Hammer, Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -42,10 +42,7 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-2">
-              <Hammer className={`w-8 h-8 ${showSolidBg ? 'text-orange-600' : 'text-white'}`} />
-              <span className={`text-xl font-bold ${showSolidBg ? 'text-slate-900' : 'text-white'}`}>
-                J&N StructureWorks
-              </span>
+              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-12 w-auto" />
             </Link>
 
             {/* Desktop Nav */}
@@ -68,13 +65,13 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
             {/* CTA */}
             <div className="hidden md:flex items-center gap-4">
               <a 
-                href="tel:+14075550123" 
+                href="tel:+13216954964" 
                 className={`flex items-center gap-2 font-medium transition-colors ${
                   showSolidBg ? 'text-slate-600' : 'text-white/80'
                 }`}
               >
                 <Phone className="w-4 h-4" />
-                (407) 555-0123
+                (321) 695-4964
               </a>
               <Button 
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold shadow-lg shadow-orange-500/30"

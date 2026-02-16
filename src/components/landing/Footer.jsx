@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Hammer, Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -9,8 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Hammer className="w-8 h-8 text-orange-500" />
-              <span className="text-xl font-bold text-white">J&N StructureWorks</span>
+              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-slate-400 mb-4">
               Florida Certified Building Contractor serving Central Florida with excellence since 2009.
@@ -44,7 +43,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-slate-400">
                 <Phone className="w-4 h-4 text-amber-500" />
-                (407) 555-0123
+                (321) 695-4964
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <Mail className="w-4 h-4 text-amber-500" />

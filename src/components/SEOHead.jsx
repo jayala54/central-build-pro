@@ -22,7 +22,7 @@ export default function SEOHead({
     name: SITE_NAME,
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
-    telephone: '(407) 555-0123',
+    telephone: '(321) 695-4964',
     email: 'info@jnstructureworks.com',
     address: {
       '@type': 'PostalAddress',

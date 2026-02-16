@@ -34,7 +34,7 @@ export default function BlogArticle() {
       <div className="min-h-screen bg-gray-50">
         <SEOHead title="Article Not Found" path={`/Blog/${slug}`} />
         <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
-        <div className="pt-28 text-center py-20">
+        <div className="pt-40 text-center py-20">
           <h1 className="text-2xl font-bold text-slate-900 mb-4">Article Not Found</h1>
           <p className="text-slate-500 mb-6">The article you're looking for doesn't exist.</p>
           <Link to="/Blog">
@@ -61,7 +61,7 @@ export default function BlogArticle() {
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 
       {/* Article Header */}
-      <div className="bg-slate-900 pt-28 pb-12">
+      <div className="bg-slate-900 pt-40 pb-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

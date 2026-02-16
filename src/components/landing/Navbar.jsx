@@ -39,10 +39,10 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
         showSolidBg ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-32">
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-2">
-              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[9.5rem] w-auto" />
+              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-28 w-auto" />
             </Link>
 
             {/* Desktop Nav */}
@@ -103,7 +103,7 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-slate-900 pt-24 px-6 md:hidden"
+            className="fixed inset-0 z-40 bg-slate-900 pt-36 px-6 md:hidden"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link) => (

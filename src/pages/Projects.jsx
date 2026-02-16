@@ -17,7 +17,7 @@ export default function Projects() {
         description="Browse our portfolio of custom homes, renovations, and commercial buildouts across Central Florida. See the quality craftsmanship of J&N StructureWorks."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
-      <div className="pt-20">
+      <div className="pt-32">
         <ProjectsSection />
       </div>
       <Footer />

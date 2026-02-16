@@ -13,7 +13,7 @@ export default function Contact() {
         description="Get a free quote from J&N StructureWorks. Contact us for custom home building, renovations, and commercial buildouts in Central Florida. Call (321) 695-4964."
       />
       <Navbar onContactClick={() => {}} alwaysSolid={true} />
-      <div className="pt-20">
+      <div className="pt-32">
         <ContactSection />
       </div>
       <Footer />

@@ -17,7 +17,7 @@ export default function Services() {
         description="Custom home building, whole-home renovations, kitchen & bath remodels, room additions, and commercial tenant buildouts in Central Florida. Licensed and insured."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
-      <div className="pt-20">
+      <div className="pt-32">
         <ServicesSection />
       </div>
       <Footer />

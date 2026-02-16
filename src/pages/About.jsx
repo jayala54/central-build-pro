@@ -19,7 +19,7 @@ export default function About() {
         description="Learn about J&N StructureWorks — a Florida Certified Building Contractor serving Central Florida since 2020 with 100+ completed projects across Orange, Seminole, Osceola, and Lake counties."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
-      <div className="pt-20">
+      <div className="pt-32">
         <AboutSection />
         <ServiceAreasSection />
         <TestimonialsSection />

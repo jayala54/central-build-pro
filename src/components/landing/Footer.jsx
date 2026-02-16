@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[9.5rem] w-auto brightness-0 invert" />
+              <img src="/logo.png" alt="J&N StructureWorks, LLC." className="h-[14.5rem] w-auto brightness-0 invert" />
             </div>
             <p className="text-slate-400 mb-4">
               Florida Certified Building Contractor serving Central Florida with excellence since 2020.

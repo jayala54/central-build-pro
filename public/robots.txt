@@ -40,4 +40,4 @@ User-agent: Meta-ExternalAgent
 Allow: /
 
 # Sitemap
-Sitemap: https://jnstructure.net/sitemap.xml
+Sitemap: https://j-nsw.com/sitemap.xml

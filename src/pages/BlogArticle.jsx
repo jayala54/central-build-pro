@@ -109,9 +109,10 @@ export default function BlogArticle() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="prose prose-lg prose-slate max-w-none
-            prose-headings:text-slate-900 prose-headings:font-bold
+            prose-headings:text-slate-900 prose-headings:font-bold prose-headings:text-center
             prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
             prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+            prose-h4:text-lg prose-h4:mt-6 prose-h4:mb-2
             prose-p:text-slate-600 prose-p:leading-relaxed
             prose-li:text-slate-600
             prose-strong:text-slate-900

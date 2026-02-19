@@ -78,12 +78,14 @@ export default function ProjectsSection({ projects = sampleProjects }) {
               <img
                 src={project.image || project.image_url}
                 alt={project.title}
+                loading="lazy"
                 className={`w-full h-full object-cover transition-all duration-700 group-hover:scale-110 ${project.hoverImage ? 'group-hover:opacity-0' : ''}`}
               />
               {project.hoverImage && (
                 <img
                   src={project.hoverImage}
                   alt={`${project.title} — detail`}
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
                 />
               )}

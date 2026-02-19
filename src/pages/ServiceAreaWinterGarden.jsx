@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { MapPin, CheckCircle, ChevronRight, Phone } from 'lucide-react';
+import FAQSection from '@/components/FAQSection';
 
 const services = [
   'Custom Home Building',
@@ -173,17 +174,7 @@ export default function ServiceAreaWinterGarden() {
         </div>
 
         {/* FAQ */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Winter Garden Construction FAQs</h2>
-          <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <div key={i} className="bg-white rounded-xl border border-slate-100 p-6">
-                <h3 className="font-semibold text-slate-900 mb-2">{faq.q}</h3>
-                <p className="text-slate-600">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <FAQSection faqs={faqs} title="Winter Garden Construction FAQs" />
 
         {/* CTA */}
         <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-xl p-8 md:p-10 mt-16 text-center">

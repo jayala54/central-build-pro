@@ -22,9 +22,10 @@ export default function AboutSection() {
             transition={{ duration: 0.6 }}
           >
             <div className="relative rounded-2xl overflow-hidden">
-              <img 
+              <img
                 src="/images/projects/jobsite-truck.jpg"
                 alt="J&N StructureWorks truck at an active construction site in Central Florida"
+                loading="lazy"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />

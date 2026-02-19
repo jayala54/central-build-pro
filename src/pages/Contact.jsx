@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/landing/Navbar';
 import ContactSection from '../components/landing/ContactSection';
+import ServiceAreaMap from '../components/landing/ServiceAreaMap';
 import Footer from '../components/landing/Footer';
 import SEOHead from '@/components/SEOHead';
 
@@ -16,6 +17,7 @@ export default function Contact() {
       <div className="pt-20 md:pt-32">
         <ContactSection />
       </div>
+      <ServiceAreaMap />
       <Footer />
     </div>
   );

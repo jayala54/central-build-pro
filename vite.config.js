@@ -17,6 +17,7 @@ export default defineConfig({
     react(),
   ],
   build: {
+    target: 'es2020',
     rollupOptions: {
       output: {
         manualChunks: {

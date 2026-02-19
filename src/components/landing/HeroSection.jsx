@@ -8,10 +8,11 @@ export default function HeroSection({ onContactClick }) {
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/images/projects/completed-home.jpg"
-          alt="Custom home built by J&N StructureWorks in Central Florida" 
+        <img
+          src="/images/projects/completed-home.webp"
+          alt="Custom home built by J&N StructureWorks in Central Florida"
           className="w-full h-full object-cover"
+          fetchpriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
       </div>

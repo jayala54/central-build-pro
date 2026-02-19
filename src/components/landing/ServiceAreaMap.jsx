@@ -1,4 +1,5 @@
 import React from 'react';
+import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Circle, Marker, Popup } from 'react-leaflet';
 
 const ORLANDO_CENTER = [28.5383, -81.3792];

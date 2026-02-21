@@ -26,6 +26,8 @@ const ServiceAreaWindermere = React.lazy(() => import('./pages/ServiceAreaWinder
 const ServiceAreaAltamonteSprings = React.lazy(() => import('./pages/ServiceAreaAltamonteSprings'));
 const ServiceAreaLakeNona = React.lazy(() => import('./pages/ServiceAreaLakeNona'));
 const ServiceAreaDrPhillips = React.lazy(() => import('./pages/ServiceAreaDrPhillips'));
+// Landing Pages
+const FreeQuote = React.lazy(() => import('./pages/FreeQuote'));
 // Legal Pages
 const PrivacyPolicy = React.lazy(() => import('./pages/PrivacyPolicy'));
 const TermsOfService = React.lazy(() => import('./pages/TermsOfService'));
@@ -58,6 +60,8 @@ export const PAGES = {
     "ServiceAreaAltamonteSprings": ServiceAreaAltamonteSprings,
     "ServiceAreaLakeNona": ServiceAreaLakeNona,
     "ServiceAreaDrPhillips": ServiceAreaDrPhillips,
+    // Landing Pages
+    "FreeQuote": FreeQuote,
     // Legal Pages
     "PrivacyPolicy": PrivacyPolicy,
     "TermsOfService": TermsOfService,

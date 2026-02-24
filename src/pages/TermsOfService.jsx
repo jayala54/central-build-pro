@@ -97,7 +97,7 @@ export default function TermsOfService() {
           </p>
           <ul>
             <li><strong>Email:</strong> <a href="mailto:jnstructureworks@gmail.com">jnstructureworks@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+13216954964">(321) 695-4964</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+13212199007">(321) 219-9007</a></li>
             <li><strong>Location:</strong> Orlando, FL</li>
           </ul>
         </div>

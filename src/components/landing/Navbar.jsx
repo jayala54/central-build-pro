@@ -65,13 +65,13 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
             {/* CTA */}
             <div className="hidden md:flex items-center gap-4">
               <a 
-                href="tel:+13216954964" 
+                href="tel:+13212199007" 
                 className={`flex items-center gap-2 font-medium transition-colors ${
                   showSolidBg ? 'text-slate-600' : 'text-white/80'
                 }`}
               >
                 <Phone className="w-4 h-4" />
-                (321) 695-4964
+                (321) 219-9007
               </a>
               <Button 
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold shadow-lg shadow-orange-500/30"
@@ -117,11 +117,11 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
                 </Link>
               ))}
               <a
-                href="tel:+13216954964"
+                href="tel:+13212199007"
                 className="flex items-center justify-center gap-2 h-14 text-lg font-semibold text-white border border-white/20 rounded-md mt-4"
               >
                 <Phone className="w-5 h-5" />
-                (321) 695-4964
+                (321) 219-9007
               </a>
               <Button
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-14 text-lg"

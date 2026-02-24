@@ -44,7 +44,7 @@ export default function ServiceAreaMap() {
               <Popup>
                 <strong>J&N StructureWorks</strong><br />
                 Orlando, FL<br />
-                <a href="tel:+13216954964">(321) 695-4964</a>
+                <a href="tel:+13212199007">(321) 219-9007</a>
               </Popup>
             </Marker>
           </MapContainer>

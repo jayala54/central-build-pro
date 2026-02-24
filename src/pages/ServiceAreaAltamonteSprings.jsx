@@ -55,7 +55,7 @@ export default function ServiceAreaAltamonteSprings() {
       <SEOHead
         title="General Contractor Altamonte Springs FL | J&N StructureWorks"
         path="/ServiceAreaAltamonteSprings"
-        description="Licensed general contractor in Altamonte Springs, FL (CBC1269175). Custom homes, remodeling, additions & commercial buildouts in Seminole County. Free estimates: (321) 695-4964."
+        description="Licensed general contractor in Altamonte Springs, FL (CBC1269175). Custom homes, remodeling, additions & commercial buildouts in Seminole County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
@@ -65,7 +65,7 @@ export default function ServiceAreaAltamonteSprings() {
               '@type': 'GeneralContractor',
               name: 'J&N StructureWorks',
               url: 'https://j-nsw.com',
-              telephone: '+13216954964',
+              telephone: '+13212199007',
               address: { '@type': 'PostalAddress', addressLocality: 'Altamonte Springs', addressRegion: 'FL' },
             },
             areaServed: { '@type': 'City', name: 'Altamonte Springs', addressRegion: 'FL' },
@@ -106,9 +106,9 @@ export default function ServiceAreaAltamonteSprings() {
                   Get a Free Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <a href="tel:+13216954964">
+              <a href="tel:+13212199007">
                 <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
-                  <Phone className="w-4 h-4 mr-2" /> (321) 695-4964
+                  <Phone className="w-4 h-4 mr-2" /> (321) 219-9007
                 </Button>
               </a>
             </div>

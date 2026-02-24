@@ -39,7 +39,7 @@ export default function CustomHomes() {
       <SEOHead
         title="Custom Home Builder Orlando & Central Florida"
         path="/CustomHomes"
-        description="Build your dream custom home in Orlando & Central Florida with J&N StructureWorks. Licensed CBC1269175. New home construction in Orange, Seminole, Osceola & Lake counties. Free consultation: (321) 695-4964."
+        description="Build your dream custom home in Orlando & Central Florida with J&N StructureWorks. Licensed CBC1269175. New home construction in Orange, Seminole, Osceola & Lake counties. Free consultation: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
@@ -84,9 +84,9 @@ export default function CustomHomes() {
                   Get a Free Consultation <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <a href="tel:+13216954964">
+              <a href="tel:+13212199007">
                 <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
-                  <Phone className="w-4 h-4 mr-2" /> (321) 695-4964
+                  <Phone className="w-4 h-4 mr-2" /> (321) 219-9007
                 </Button>
               </a>
             </div>

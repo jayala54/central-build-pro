@@ -39,7 +39,7 @@ export default function CommercialRenovations() {
       <SEOHead
         title="Commercial Renovations Orlando & Central Florida"
         path="/CommercialRenovations"
-        description="Professional commercial renovations in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Office, retail, restaurant remodels, ADA upgrades & code compliance. Free estimate: (321) 695-4964."
+        description="Professional commercial renovations in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Office, retail, restaurant remodels, ADA upgrades & code compliance. Free estimate: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
@@ -84,9 +84,9 @@ export default function CommercialRenovations() {
                   Get a Free Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <a href="tel:+13216954964">
+              <a href="tel:+13212199007">
                 <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
-                  <Phone className="w-4 h-4 mr-2" /> (321) 695-4964
+                  <Phone className="w-4 h-4 mr-2" /> (321) 219-9007
                 </Button>
               </a>
             </div>

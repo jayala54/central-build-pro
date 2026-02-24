@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 const SITE_NAME = 'J&N StructureWorks';
-const DEFAULT_DESCRIPTION = 'Florida Certified Building Contractor (CBC1269175) serving Orlando & Central Florida. Custom homes, renovations, kitchen & bath remodels, and commercial buildouts in Orange, Seminole, Osceola & Lake counties. Call (321) 695-4964 for a free quote.';
+const DEFAULT_DESCRIPTION = 'Florida Certified Building Contractor (CBC1269175) serving Orlando & Central Florida. Custom homes, renovations, kitchen & bath remodels, and commercial buildouts in Orange, Seminole, Osceola & Lake counties. Call (321) 219-9007 for a free quote.';
 const SITE_URL = 'https://j-nsw.com';
 
 export default function SEOHead({
@@ -23,7 +23,7 @@ export default function SEOHead({
     alternateName: 'J&N StructureWorks, LLC',
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
-    telephone: '+1-321-695-4964',
+    telephone: '+1-321-219-9007',
     email: 'jnstructureworks@gmail.com',
     image: `${SITE_URL}/logo.png`,
     logo: `${SITE_URL}/logo.png`,

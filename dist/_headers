@@ -1,0 +1,44 @@
+# Cloudflare Pages - Cache & Security Headers
+
+# All pages
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# HTML pages - short cache, revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# CSS and JS assets (Vite adds hashes to filenames)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Static files (robots, sitemap, manifest)
+/robots.txt
+  Cache-Control: public, max-age=86400
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+/manifest.json
+  Cache-Control: public, max-age=86400
+
+# Images
+*.png
+  Cache-Control: public, max-age=2592000
+*.jpg
+  Cache-Control: public, max-age=2592000
+*.jpeg
+  Cache-Control: public, max-age=2592000
+*.svg
+  Cache-Control: public, max-age=2592000
+*.webp
+  Cache-Control: public, max-age=2592000
+*.ico
+  Cache-Control: public, max-age=2592000
+
+# Fonts
+*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+*.woff
+  Cache-Control: public, max-age=31536000, immutable

@@ -122,6 +122,51 @@ async function prerender() {
       // Give react-helmet-async time to update <head> tags
       await new Promise((r) => setTimeout(r, 1500));
 
+      // Remove duplicate non-data-rh tags that react-helmet-async has replaced
+      // (react-helmet-async adds data-rh="true" to its managed tags but leaves originals)
+      await page.evaluate(() => {
+        const head = document.head;
+        // Remove non-data-rh canonical if a data-rh canonical exists
+        const canonicals = head.querySelectorAll('link[rel="canonical"]');
+        if (canonicals.length > 1) {
+          canonicals.forEach((el) => {
+            if (!el.hasAttribute('data-rh')) el.remove();
+          });
+        }
+        // Remove non-data-rh meta description if a data-rh version exists
+        const descs = head.querySelectorAll('meta[name="description"]');
+        if (descs.length > 1) {
+          descs.forEach((el) => {
+            if (!el.hasAttribute('data-rh')) el.remove();
+          });
+        }
+        // Remove non-data-rh JSON-LD if a data-rh version exists
+        const jsonlds = head.querySelectorAll('script[type="application/ld+json"]');
+        if (jsonlds.length > 1) {
+          jsonlds.forEach((el) => {
+            if (!el.hasAttribute('data-rh')) el.remove();
+          });
+        }
+        // Remove non-data-rh OG tags if data-rh versions exist
+        ['og:title', 'og:description', 'og:url', 'og:type', 'og:image'].forEach((prop) => {
+          const tags = head.querySelectorAll(`meta[property="${prop}"]`);
+          if (tags.length > 1) {
+            tags.forEach((el) => {
+              if (!el.hasAttribute('data-rh')) el.remove();
+            });
+          }
+        });
+        // Remove non-data-rh Twitter tags if data-rh versions exist
+        ['twitter:title', 'twitter:description', 'twitter:card', 'twitter:image'].forEach((name) => {
+          const tags = head.querySelectorAll(`meta[name="${name}"]`);
+          if (tags.length > 1) {
+            tags.forEach((el) => {
+              if (!el.hasAttribute('data-rh')) el.remove();
+            });
+          }
+        });
+      });
+
       let html = await page.content();
 
       // Ensure proper DOCTYPE

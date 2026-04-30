@@ -11,6 +11,7 @@ import { motion } from 'framer-motion';
 
 const ARTICLES_PER_PAGE = 12;
 const isPublished = (article) => article.date <= new Date().toISOString().slice(0, 10);
+const newestFirst = (a, b) => b.date.localeCompare(a.date);
 
 export default function Blog() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -22,7 +23,7 @@ export default function Blog() {
   };
 
   const filteredArticles = useMemo(() => {
-    let filtered = articles.filter(isPublished);
+    let filtered = articles.filter(isPublished).sort(newestFirst);
 
     if (selectedCategory !== 'All') {
       filtered = filtered.filter(a => a.category === selectedCategory);

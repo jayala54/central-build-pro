@@ -10,6 +10,7 @@ import { Calendar, Clock, ArrowLeft, ChevronRight, Tag } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const isPublished = (article) => article.date <= new Date().toISOString().slice(0, 10);
+const newestFirst = (a, b) => b.date.localeCompare(a.date);
 
 export default function BlogArticle() {
   const { slug } = useParams();
@@ -20,6 +21,7 @@ export default function BlogArticle() {
     if (!article) return [];
     return articles
       .filter(a => isPublished(a) && a.id !== article.id && a.category === article.category)
+      .sort(newestFirst)
       .slice(0, 3);
   }, [article]);
 

@@ -4,6 +4,7 @@ import http from 'http';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { getCanonicalRoutes } from './seo-routes.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.resolve(__dirname, '..', 'dist');
@@ -26,52 +27,7 @@ const MIME_TYPES = {
   '.xml': 'application/xml',
 };
 
-// Every route from the sitemap + router
-const ROUTES = [
-  '/',
-  '/Services',
-  '/Projects',
-  '/About',
-  '/Contact',
-  '/Blog',
-  '/CustomHomes',
-  '/KitchenBathRemodeling',
-  '/WholeHomeRenovations',
-  '/RoomAdditions',
-  '/CommercialBuildouts',
-  '/CommercialRenovations',
-  '/ServiceAreaOrlando',
-  '/ServiceAreaWinterPark',
-  '/ServiceAreaLakeMary',
-  '/ServiceAreaKissimmee',
-  '/ServiceAreaSanford',
-  '/ServiceAreaOviedo',
-  '/ServiceAreaClermont',
-  '/ServiceAreaWinterGarden',
-  '/ServiceAreaWindermere',
-  '/ServiceAreaAltamonteSprings',
-  '/ServiceAreaLakeNona',
-  '/ServiceAreaDrPhillips',
-  '/PrivacyPolicy',
-  '/TermsOfService',
-  // Blog articles
-  '/Blog/how-much-does-it-cost-to-build-a-home-in-central-florida',
-  '/Blog/choosing-the-right-lot-for-your-new-build',
-  '/Blog/building-permits-orange-county-florida',
-  '/Blog/new-home-construction-timeline',
-  '/Blog/open-floor-plan-vs-traditional-layout',
-  '/Blog/kitchen-renovation-guide-central-florida',
-  '/Blog/seminole-county-building-requirements',
-  '/Blog/hurricane-resistant-home-construction',
-  '/Blog/choosing-the-right-flooring-for-florida-homes',
-  '/Blog/bathroom-renovation-mistakes-to-avoid',
-  '/Blog/osceola-county-new-construction-guide',
-  '/Blog/energy-efficient-home-features',
-  '/Blog/fix-and-flip-construction-orlando',
-  '/Blog/how-to-choose-a-contractor-central-florida',
-  '/Blog/adu-guest-house-construction-florida',
-  '/Blog/lake-county-building-guide',
-];
+const ROUTES = getCanonicalRoutes().map((route) => route.path);
 
 function startServer() {
   return new Promise((resolve) => {

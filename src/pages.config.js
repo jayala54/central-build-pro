@@ -6,6 +6,7 @@ const Projects = React.lazy(() => import('./pages/Projects'));
 const About = React.lazy(() => import('./pages/About'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const Blog = React.lazy(() => import('./pages/Blog'));
+const TacoBellRepipeKissimmee = React.lazy(() => import('./pages/TacoBellRepipeKissimmee'));
 // Service Pages
 const CustomHomes = React.lazy(() => import('./pages/CustomHomes'));
 const KitchenBathRemodeling = React.lazy(() => import('./pages/KitchenBathRemodeling'));
@@ -40,6 +41,7 @@ export const PAGES = {
     "About": About,
     "Contact": Contact,
     "Blog": Blog,
+    "commercial-remodel-kissimmee-taco-bell": TacoBellRepipeKissimmee,
     // Service Pages
     "CustomHomes": CustomHomes,
     "KitchenBathRemodeling": KitchenBathRemodeling,

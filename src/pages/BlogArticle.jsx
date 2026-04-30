@@ -9,15 +9,17 @@ import ReactMarkdown from 'react-markdown';
 import { Calendar, Clock, ArrowLeft, ChevronRight, Tag } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+const isPublished = (article) => article.date <= new Date().toISOString().slice(0, 10);
+
 export default function BlogArticle() {
   const { slug } = useParams();
 
-  const article = useMemo(() => articles.find(a => a.slug === slug), [slug]);
+  const article = useMemo(() => articles.find(a => a.slug === slug && isPublished(a)), [slug]);
 
   const relatedArticles = useMemo(() => {
     if (!article) return [];
     return articles
-      .filter(a => a.id !== article.id && a.category === article.category)
+      .filter(a => isPublished(a) && a.id !== article.id && a.category === article.category)
       .slice(0, 3);
   }, [article]);
 

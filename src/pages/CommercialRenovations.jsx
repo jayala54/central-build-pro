@@ -81,7 +81,7 @@ export default function CommercialRenovations() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/Contact">
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
-                  Get a Free Estimate <ChevronRight className="w-4 h-4 ml-2" />
+                  Get a Commercial Renovation Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
               <a href="tel:+13212199007">
@@ -182,7 +182,7 @@ export default function CommercialRenovations() {
               </ul>
               <Link to="/Contact">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
-                  Get a Free Quote
+                  Get a Commercial Quote
                 </Button>
               </Link>
             </div>
@@ -200,7 +200,7 @@ export default function CommercialRenovations() {
           </p>
           <Link to="/Contact">
             <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
-              Start Your Project <ChevronRight className="w-4 h-4 ml-2" />
+              Start Your Commercial Renovation <ChevronRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
         </div>

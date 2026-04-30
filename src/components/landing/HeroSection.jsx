@@ -46,7 +46,7 @@ export default function HeroSection({ onContactClick }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            We build custom homes, renovate older ones, and handle commercial buildouts
+            We build custom homes, deliver expert renovations, and handle commercial buildouts
             across Central Florida. If you've got a project in mind, we'd love to talk about it.
           </motion.p>
 

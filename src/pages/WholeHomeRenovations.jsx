@@ -81,7 +81,7 @@ export default function WholeHomeRenovations() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/Contact">
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
-                  Get a Free Consultation <ChevronRight className="w-4 h-4 ml-2" />
+                  Get a Renovation Consultation <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
               <a href="tel:+13212199007">
@@ -181,7 +181,7 @@ export default function WholeHomeRenovations() {
               </ul>
               <Link to="/Contact">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
-                  Get a Free Quote
+                  Get a Whole-Home Renovation Quote
                 </Button>
               </Link>
             </div>
@@ -199,7 +199,7 @@ export default function WholeHomeRenovations() {
           </p>
           <Link to="/Contact">
             <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
-              Start Your Project <ChevronRight className="w-4 h-4 ml-2" />
+              Start Your Renovation <ChevronRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
         </div>

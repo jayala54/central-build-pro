@@ -10,6 +10,7 @@ import { Search, Calendar, Clock, ChevronLeft, ChevronRight, BookOpen } from 'lu
 import { motion } from 'framer-motion';
 
 const ARTICLES_PER_PAGE = 12;
+const isPublished = (article) => article.date <= new Date().toISOString().slice(0, 10);
 
 export default function Blog() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -21,7 +22,7 @@ export default function Blog() {
   };
 
   const filteredArticles = useMemo(() => {
-    let filtered = articles;
+    let filtered = articles.filter(isPublished);
 
     if (selectedCategory !== 'All') {
       filtered = filtered.filter(a => a.category === selectedCategory);
@@ -120,10 +121,10 @@ export default function Blog() {
                 : 'bg-white text-slate-600 hover:bg-orange-50 hover:text-orange-600 border border-slate-200'
             }`}
           >
-            All ({articles.length})
+            All ({articles.filter(isPublished).length})
           </button>
           {categories.map(cat => {
-            const count = articles.filter(a => a.category === cat).length;
+            const count = articles.filter(a => isPublished(a) && a.category === cat).length;
             return (
               <button
                 key={cat}

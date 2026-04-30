@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-0 md:mt-6">
-            <h4 className="text-white font-semibold mb-4">Services</h4>
+            <p className="text-white font-semibold mb-4">Services</p>
             <ul className="space-y-2 text-slate-400">
               <li><Link to="/CustomHomes" className="hover:text-amber-400 transition-colors">Custom Homes</Link></li>
               <li><Link to="/WholeHomeRenovations" className="hover:text-amber-400 transition-colors">Home Renovations</Link></li>
@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-0 md:mt-6">
-            <h4 className="text-white font-semibold mb-4">Service Areas</h4>
+            <p className="text-white font-semibold mb-4">Service Areas</p>
             <ul className="space-y-2 text-slate-400">
               <li><Link to="/ServiceAreaOrlando" className="hover:text-amber-400 transition-colors">Orlando</Link></li>
               <li><Link to="/ServiceAreaWinterPark" className="hover:text-amber-400 transition-colors">Winter Park</Link></li>
@@ -42,7 +42,7 @@ export default function Footer() {
 
 
           <div className="mt-0 md:mt-6">
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <p className="text-white font-semibold mb-4">Contact</p>
             <ul className="space-y-3">
               <li>
                 <a href="tel:+13212199007" className="flex items-center gap-3 text-slate-400 hover:text-amber-400 transition-colors">

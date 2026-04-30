@@ -1,46 +1,55 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MapPin, ArrowUpRight } from 'lucide-react';
 
 const sampleProjects = [
   {
+    title: 'Taco Bell Repipe & Bathroom Remodel',
+    category: 'Commercial',
+    location: 'Kissimmee, FL',
+    image: '/images/projects/taco-bell-repipe/finished-commercial-bathroom.jpg',
+    hoverImage: '/images/projects/taco-bell-repipe/open-walls-plumbing-access.jpg',
+    href: '/commercial-remodel-kissimmee-taco-bell',
+  },
+  {
     title: 'Custom Home Build',
     category: 'Custom Home',
     location: 'Summerfield, FL',
-    image: '/images/projects/completed-home.jpg'
+    image: '/images/projects/completed-home.jpg',
   },
   {
     title: 'Investor Turnkey Build',
     category: 'Custom Home',
     location: 'Ocala, FL',
     image: '/images/projects/investor-turnkey-cover.jpg',
-    hoverImage: '/images/projects/kitchen-interior.jpg'
+    hoverImage: '/images/projects/kitchen-interior.jpg',
   },
   {
     title: 'Bathroom Addition',
     category: 'Addition',
     location: 'Saint Cloud, FL',
-    image: '/images/projects/bathroom-remodel.jpg'
+    image: '/images/projects/bathroom-remodel.jpg',
   },
   {
     title: 'New Construction',
     category: 'Custom Home',
     location: 'Ocala, FL',
-    image: '/images/projects/new-construction.jpg'
+    image: '/images/projects/new-construction.jpg',
   },
   {
-    title: 'Custom Home Build',
+    title: 'Custom Home Design & Build',
     category: 'Custom Home',
     location: 'Summerfield, FL',
-    image: '/images/projects/home-render.jpg'
+    image: '/images/projects/home-render.jpg',
   },
   {
     title: 'Commercial Remodel',
     category: 'Commercial',
     location: 'Kissimmee, FL',
     image: '/images/projects/commercial-repipe-cover.jpg',
-    hoverImage: '/images/projects/commercial-repipe-hover.jpg'
-  }
+    hoverImage: '/images/projects/commercial-repipe-hover.jpg',
+  },
 ];
 
 export default function ProjectsSection({ projects = sampleProjects }) {
@@ -49,7 +58,7 @@ export default function ProjectsSection({ projects = sampleProjects }) {
   return (
     <section className="py-24 bg-slate-50" id="projects">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           className="text-center max-w-2xl mx-auto mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,49 +75,56 @@ export default function ProjectsSection({ projects = sampleProjects }) {
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {displayProjects.map((project, idx) => (
-            <motion.div
-              key={idx}
-              className="group relative rounded-2xl overflow-hidden aspect-[4/3] cursor-pointer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-            >
-              <img
-                src={project.image || project.image_url}
-                alt={project.title}
-                loading="lazy"
-                className={`w-full h-full object-cover transition-all duration-700 group-hover:scale-110 ${project.hoverImage ? 'group-hover:opacity-0' : ''}`}
-              />
-              {project.hoverImage && (
-                <img
-                  src={project.hoverImage}
-                  alt={`${project.title} — detail`}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
-                />
-              )}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <span className="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-xs font-medium mb-3">
-                    {project.category}
-                  </span>
-                  <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-                  <div className="flex items-center text-slate-300 text-sm">
-                    <MapPin className="w-4 h-4 mr-1" />
-                    {project.location}
-                  </div>
-                </div>
-              </div>
+          {displayProjects.map((project, idx) => {
+            const CardTag = project.href ? Link : 'div';
+            const cardProps = project.href ? { to: project.href } : {};
 
-              <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500">
-                <ArrowUpRight className="w-5 h-5 text-white" />
-              </div>
-            </motion.div>
-          ))}
+            return (
+              <motion.div
+                key={project.title}
+                className="group relative rounded-2xl overflow-hidden aspect-[4/3] cursor-pointer"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+              >
+                <CardTag {...cardProps} className="block w-full h-full">
+                  <img
+                    src={project.image || project.image_url}
+                    alt={project.title}
+                    loading="lazy"
+                    className={`w-full h-full object-cover transition-all duration-700 group-hover:scale-110 ${project.hoverImage ? 'group-hover:opacity-0' : ''}`}
+                  />
+                  {project.hoverImage && (
+                    <img
+                      src={project.hoverImage}
+                      alt={`${project.title} detail`}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+
+                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                    <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                      <span className="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-xs font-medium mb-3">
+                        {project.category}
+                      </span>
+                      <p className="text-xl font-semibold text-white mb-2">{project.title}</p>
+                      <div className="flex items-center text-slate-300 text-sm">
+                        <MapPin className="w-4 h-4 mr-1" />
+                        {project.location}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                    <ArrowUpRight className="w-5 h-5 text-white" />
+                  </div>
+                </CardTag>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

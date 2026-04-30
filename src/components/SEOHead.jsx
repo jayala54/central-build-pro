@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 const SITE_NAME = 'J&N StructureWorks';
 const DEFAULT_DESCRIPTION = 'Florida Certified Building Contractor (CBC1269175) serving Orlando & Central Florida. Custom homes, renovations, kitchen & bath remodels, and commercial buildouts in Orange, Seminole, Osceola & Lake counties. Call (321) 219-9007 for a free quote.';
 const SITE_URL = 'https://j-nsw.com';
+const DEFAULT_IMAGE = `${SITE_URL}/images/projects/completed-home.webp`;
 
 export default function SEOHead({
   title,
@@ -11,6 +12,8 @@ export default function SEOHead({
   type = 'website',
   article = null,
   jsonLd = null,
+  image = DEFAULT_IMAGE,
+  imageAlt = 'Custom home built by J&N StructureWorks in Central Florida',
 }) {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : `Custom Home Builder Orlando FL | ${SITE_NAME}`;
   const canonicalUrl = `${SITE_URL}${path}`;
@@ -155,11 +158,14 @@ export default function SEOHead({
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:type" content={type} />
       <meta property="og:locale" content="en_US" />
+      <meta property="og:image" content={image} />
+      <meta property="og:image:alt" content={imageAlt} />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
 
       {/* Geo / Local SEO */}
       <meta name="geo.region" content="US-FL" />

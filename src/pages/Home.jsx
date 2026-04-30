@@ -18,7 +18,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <SEOHead
         path="/"
-        description="J&N StructureWorks — Orlando's trusted custom home builder & general contractor. New home construction, renovations, kitchen & bath remodels in Orange, Seminole, Osceola & Lake counties. Call (321) 219-9007 for a free quote."
+        description="J&N StructureWorks — Orlando's trusted custom home builder & general contractor. New construction, renovations & remodels across Central Florida. (321) 219-9007."
       />
       <Navbar onContactClick={scrollToContact} />
       <HeroSection onContactClick={scrollToContact} />

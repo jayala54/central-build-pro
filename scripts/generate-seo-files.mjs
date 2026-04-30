@@ -8,6 +8,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
 const routes = getCanonicalRoutes();
 
+function withTrailingSlash(routePath) {
+  if (routePath === '/') return '/';
+  return routePath.endsWith('/') ? routePath : `${routePath}/`;
+}
+
 function escapeXml(value) {
   return value
     .replace(/&/g, '&amp;')
@@ -22,7 +27,7 @@ function makeSitemap() {
     const lastmod = route.lastmod ? `\n    <lastmod>${route.lastmod}</lastmod>` : '';
 
     return `  <url>
-    <loc>${escapeXml(`${SITE_URL}${route.path}`)}</loc>${lastmod}
+    <loc>${escapeXml(`${SITE_URL}${withTrailingSlash(route.path)}`)}</loc>${lastmod}
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority}</priority>
   </url>`;
@@ -38,7 +43,7 @@ ${urls.join('\n')}
 function makeRedirects() {
   const redirects = routes
     .filter((route) => route.path !== '/')
-    .map((route) => `${route.path}/  ${route.path}  301`);
+    .map((route) => `${route.path}  ${withTrailingSlash(route.path)}  301`);
 
   return `# Canonical URL redirects
 # Keep duplicate URL variants from being crawled as separate 200 pages.

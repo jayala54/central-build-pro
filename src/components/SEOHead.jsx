@@ -5,6 +5,11 @@ const DEFAULT_DESCRIPTION = 'Florida Certified Building Contractor (CBC1269175) 
 const SITE_URL = 'https://j-nsw.com';
 const DEFAULT_IMAGE = `${SITE_URL}/images/projects/completed-home.webp`;
 
+function normalizeCanonicalPath(path) {
+  if (!path || path === '/') return '/';
+  return path.endsWith('/') ? path : `${path}/`;
+}
+
 export default function SEOHead({
   title,
   description = DEFAULT_DESCRIPTION,
@@ -16,7 +21,7 @@ export default function SEOHead({
   imageAlt = 'Custom home built by J&N StructureWorks in Central Florida',
 }) {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : `Custom Home Builder Orlando FL | ${SITE_NAME}`;
-  const canonicalUrl = `${SITE_URL}${path}`;
+  const canonicalUrl = `${SITE_URL}${normalizeCanonicalPath(path)}`;
 
   const defaultJsonLd = {
     '@context': 'https://schema.org',

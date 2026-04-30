@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 
 const SITE_URL = 'https://j-nsw.com';
 const projectPath = '/commercial-remodel-kissimmee-taco-bell';
+const canonicalProjectUrl = `${SITE_URL}${projectPath}/`;
 const imageBase = '/images/projects/taco-bell-repipe';
 const heroImage = `${imageBase}/finished-commercial-bathroom.webp`;
 
@@ -76,7 +77,7 @@ const jsonLd = [
     name: 'Taco Bell Commercial Remodel, Repipe, and Bathroom Remodel in Kissimmee, FL',
     description:
       'Commercial repipe and bathroom remodel for a Taco Bell restaurant in Kissimmee, Florida, completed by J&N StructureWorks from beginning to end.',
-    url: `${SITE_URL}${projectPath}`,
+    url: canonicalProjectUrl,
     image: `${SITE_URL}${heroImage}`,
     location: {
       '@type': 'Place',

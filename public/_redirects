@@ -1,5 +1,7 @@
 # Canonical URL redirects
 # Keep duplicate URL variants from being crawled as separate 200 pages.
+/Home  /  301
+/Home/  /  301
 /Services  /Services/  301
 /Projects  /Projects/  301
 /About  /About/  301

@@ -44,10 +44,14 @@ function makeRedirects() {
   const redirects = routes
     .filter((route) => route.path !== '/')
     .map((route) => `${route.path}  ${withTrailingSlash(route.path)}  301`);
+  const legacyRedirects = [
+    '/Home  /  301',
+    '/Home/  /  301',
+  ];
 
   return `# Canonical URL redirects
 # Keep duplicate URL variants from being crawled as separate 200 pages.
-${redirects.join('\n')}
+${[...legacyRedirects, ...redirects].join('\n')}
 
 # Cloudflare Pages SPA fallback
 # All routes that don't match a static file serve index.html

@@ -32,7 +32,7 @@ const faqs = [
 ];
 
 export default function RoomAdditions() {
-  const scrollToContact = () => { window.location.href = '/Contact'; };
+  const scrollToContact = () => { window.location.href = '/Contact/'; };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -79,7 +79,7 @@ export default function RoomAdditions() {
               From extra bedrooms and family rooms to garage conversions and ADUs, J&N StructureWorks builds additions that blend seamlessly with your existing home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
                   Get a Room Addition Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -177,7 +177,7 @@ export default function RoomAdditions() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Licensed, bonded & insured</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
               </ul>
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
                   Get an Addition Quote
                 </Button>
@@ -195,7 +195,7 @@ export default function RoomAdditions() {
           <p className="text-slate-300 mb-6 max-w-xl mx-auto">
             Schedule a free on-site consultation with J&N StructureWorks. We'll evaluate your property, discuss your needs, and outline a plan for your addition.
           </p>
-          <Link to="/Contact">
+          <Link to="/Contact/">
             <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
               Start Your Addition <ChevronRight className="w-4 h-4 ml-2" />
             </Button>

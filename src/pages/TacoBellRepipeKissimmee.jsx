@@ -108,7 +108,7 @@ const jsonLd = [
 
 export default function TacoBellRepipeKissimmee() {
   const scrollToContact = () => {
-    window.location.href = '/Contact';
+    window.location.href = '/Contact/';
   };
 
   return (
@@ -152,13 +152,13 @@ export default function TacoBellRepipeKissimmee() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/Contact">
+                <Link to="/Contact/">
                   <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12 px-6">
                     Request a Similar Quote
                     <ChevronRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
-                <Link to="/CommercialRenovations">
+                <Link to="/CommercialRenovations/">
                   <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-6">
                     Commercial Renovations
                   </Button>
@@ -300,7 +300,7 @@ export default function TacoBellRepipeKissimmee() {
               Call J&N StructureWorks at (321) 219-9007 or request a quote for your commercial
               renovation project in Kissimmee or Central Florida.
             </p>
-            <Link to="/Contact">
+            <Link to="/Contact/">
               <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12 px-8">
                 Get a Free Quote
                 <ChevronRight className="w-4 h-4 ml-2" />

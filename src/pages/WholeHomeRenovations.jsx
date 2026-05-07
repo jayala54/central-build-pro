@@ -32,7 +32,7 @@ const faqs = [
 ];
 
 export default function WholeHomeRenovations() {
-  const scrollToContact = () => { window.location.href = '/Contact'; };
+  const scrollToContact = () => { window.location.href = '/Contact/'; };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -79,7 +79,7 @@ export default function WholeHomeRenovations() {
               From gut renovations and structural changes to full modernizations, J&N StructureWorks handles every aspect of your whole-home renovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
                   Get a Renovation Consultation <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -179,7 +179,7 @@ export default function WholeHomeRenovations() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Licensed, bonded & insured</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
               </ul>
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
                   Get a Whole-Home Renovation Quote
                 </Button>
@@ -197,7 +197,7 @@ export default function WholeHomeRenovations() {
           <p className="text-slate-300 mb-6 max-w-xl mx-auto">
             Schedule a free consultation with J&N StructureWorks. We'll assess your home, discuss your vision, and provide a detailed renovation plan.
           </p>
-          <Link to="/Contact">
+          <Link to="/Contact/">
             <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
               Start Your Renovation <ChevronRight className="w-4 h-4 ml-2" />
             </Button>

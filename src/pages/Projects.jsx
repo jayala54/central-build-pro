@@ -6,7 +6,7 @@ import SEOHead from '@/components/SEOHead';
 
 export default function Projects() {
   const scrollToContact = () => {
-    window.location.href = '/Contact';
+    window.location.href = '/Contact/';
   };
 
   return (

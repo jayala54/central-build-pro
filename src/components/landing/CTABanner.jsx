@@ -23,7 +23,7 @@ export default function CTABanner() {
             give you an honest assessment, a realistic budget, and a clear path forward.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/Contact">
+            <Link to="/Contact/">
               <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-14 text-base shadow-lg shadow-orange-500/30">
                 Get a Free Quote <ChevronRight className="w-5 h-5 ml-2" />
               </Button>

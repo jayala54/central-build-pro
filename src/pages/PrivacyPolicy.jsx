@@ -4,7 +4,7 @@ import Footer from '@/components/landing/Footer';
 import SEOHead from '@/components/SEOHead';
 
 export default function PrivacyPolicy() {
-  const scrollToContact = () => { window.location.href = '/Contact'; };
+  const scrollToContact = () => { window.location.href = '/Contact/'; };
 
   return (
     <div className="min-h-screen bg-gray-50">

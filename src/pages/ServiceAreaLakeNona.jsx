@@ -48,7 +48,7 @@ const faqs = [
 ];
 
 export default function ServiceAreaLakeNona() {
-  const scrollToContact = () => { window.location.href = '/Contact'; };
+  const scrollToContact = () => { window.location.href = '/Contact/'; };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -101,7 +101,7 @@ export default function ServiceAreaLakeNona() {
               J&N StructureWorks builds homes that match Lake Nona's innovative, forward-thinking lifestyle.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
                   Get a Free Lake Nona Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -166,7 +166,7 @@ export default function ServiceAreaLakeNona() {
                   </li>
                 ))}
               </ul>
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
                   Get Your Lake Nona Quote
                 </Button>
@@ -184,7 +184,7 @@ export default function ServiceAreaLakeNona() {
           <p className="text-slate-300 mb-6 max-w-xl mx-auto">
             Schedule a free consultation with J&N StructureWorks. We'll help you build or renovate your Lake Nona home to match the community's modern standards.
           </p>
-          <Link to="/Contact">
+          <Link to="/Contact/">
             <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
               Start Your Lake Nona Project <ChevronRight className="w-4 h-4 ml-2" />
             </Button>

@@ -48,7 +48,7 @@ const faqs = [
 ];
 
 export default function ServiceAreaLakeMary() {
-  const scrollToContact = () => { window.location.href = '/Contact'; };
+  const scrollToContact = () => { window.location.href = '/Contact/'; };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -101,7 +101,7 @@ export default function ServiceAreaLakeMary() {
               J&N StructureWorks delivers expert craftsmanship for Lake Mary homeowners and businesses.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
                   Get a Free Lake Mary Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -165,7 +165,7 @@ export default function ServiceAreaLakeMary() {
                   </li>
                 ))}
               </ul>
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
                   Get Your Lake Mary Quote
                 </Button>
@@ -183,7 +183,7 @@ export default function ServiceAreaLakeMary() {
           <p className="text-slate-300 mb-6 max-w-xl mx-auto">
             Schedule a free consultation with J&N StructureWorks. We'll help you plan your Lake Mary home improvement or new construction project.
           </p>
-          <Link to="/Contact">
+          <Link to="/Contact/">
             <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
               Start Your Lake Mary Project <ChevronRight className="w-4 h-4 ml-2" />
             </Button>

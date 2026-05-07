@@ -48,7 +48,7 @@ const faqs = [
 ];
 
 export default function ServiceAreaWindermere() {
-  const scrollToContact = () => { window.location.href = '/Contact'; };
+  const scrollToContact = () => { window.location.href = '/Contact/'; };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -101,7 +101,7 @@ export default function ServiceAreaWindermere() {
               J&N StructureWorks delivers refined craftsmanship for Windermere's lakefront estates and upscale residences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
                   Get a Free Windermere Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -166,7 +166,7 @@ export default function ServiceAreaWindermere() {
                   </li>
                 ))}
               </ul>
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
                   Get Your Windermere Quote
                 </Button>
@@ -184,7 +184,7 @@ export default function ServiceAreaWindermere() {
           <p className="text-slate-300 mb-6 max-w-xl mx-auto">
             Schedule a private consultation with J&N StructureWorks. We'll discuss your vision for your Windermere home or lakefront estate.
           </p>
-          <Link to="/Contact">
+          <Link to="/Contact/">
             <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
               Start Your Windermere Project <ChevronRight className="w-4 h-4 ml-2" />
             </Button>

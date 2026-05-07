@@ -32,7 +32,7 @@ const faqs = [
 ];
 
 export default function CommercialRenovations() {
-  const scrollToContact = () => { window.location.href = '/Contact'; };
+  const scrollToContact = () => { window.location.href = '/Contact/'; };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -79,7 +79,7 @@ export default function CommercialRenovations() {
               From office renovations and storefront updates to restaurant remodels and ADA compliance, J&N StructureWorks minimizes disruption and maximizes results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
                   Get a Commercial Renovation Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -180,7 +180,7 @@ export default function CommercialRenovations() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Licensed, bonded & insured</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
               </ul>
-              <Link to="/Contact">
+              <Link to="/Contact/">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
                   Get a Commercial Quote
                 </Button>
@@ -198,7 +198,7 @@ export default function CommercialRenovations() {
           <p className="text-slate-300 mb-6 max-w-xl mx-auto">
             Schedule a free consultation with J&N StructureWorks. We'll assess your space, discuss your goals, and provide a detailed renovation plan that minimizes business disruption.
           </p>
-          <Link to="/Contact">
+          <Link to="/Contact/">
             <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
               Start Your Commercial Renovation <ChevronRight className="w-4 h-4 ml-2" />
             </Button>

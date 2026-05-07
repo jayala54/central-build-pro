@@ -68,7 +68,7 @@ export default function HeroSection({ onContactClick }) {
               size="lg" 
               variant="outline" 
               className="border-white text-white bg-white/10 hover:bg-white/20 h-14 text-base"
-              onClick={() => window.location.href = '/Projects'}
+              onClick={() => window.location.href = '/Projects/'}
             >
               View Our Work
             </Button>

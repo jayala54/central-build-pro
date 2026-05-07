@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { articles, categories } from '@/data/articles';
+import { withTrailingSlash } from '@/utils';
 import { Search, Calendar, Clock, ChevronLeft, ChevronRight, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -19,7 +20,7 @@ export default function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const scrollToContact = () => {
-    window.location.href = '/Contact';
+    window.location.href = '/Contact/';
   };
 
   const filteredArticles = useMemo(() => {
@@ -158,7 +159,7 @@ export default function Blog() {
                 transition={{ duration: 0.4, delay: index * 0.05 }}
               >
                 <Link
-                  to={`/Blog/${article.slug}`}
+                  to={withTrailingSlash(`/Blog/${article.slug}`)}
                   className="group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full"
                 >
                   <div className="p-6 flex flex-col h-full">

@@ -5,6 +5,7 @@ import Footer from '@/components/landing/Footer';
 import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { articles } from '@/data/articles';
+import { withTrailingSlash } from '@/utils';
 import ReactMarkdown from 'react-markdown';
 import { Calendar, Clock, ArrowLeft, ChevronRight, Tag } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -30,7 +31,7 @@ export default function BlogArticle() {
   }, [article]);
 
   const scrollToContact = () => {
-    window.location.href = '/Contact';
+    window.location.href = '/Contact/';
   };
 
   if (!article) {
@@ -41,7 +42,7 @@ export default function BlogArticle() {
         <div className="pt-20 md:pt-40 text-center py-20">
           <h1 className="text-2xl font-bold text-slate-900 mb-4">Article Not Found</h1>
           <p className="text-slate-500 mb-6">The article you're looking for doesn't exist.</p>
-          <Link to="/Blog">
+          <Link to="/Blog/">
             <Button className="bg-orange-500 hover:bg-orange-600 text-white">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Blog
@@ -73,7 +74,7 @@ export default function BlogArticle() {
             transition={{ duration: 0.5 }}
           >
             <Link
-              to="/Blog"
+              to="/Blog/"
               className="inline-flex items-center gap-2 text-slate-400 hover:text-orange-400 transition-colors mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
@@ -123,7 +124,15 @@ export default function BlogArticle() {
             prose-a:text-orange-600 prose-a:no-underline hover:prose-a:underline
             prose-ul:my-4 prose-ol:my-4
           ">
-            <ReactMarkdown>{article.content}</ReactMarkdown>
+            <ReactMarkdown
+              components={{
+                a: ({ href, ...props }) => (
+                  <a href={withTrailingSlash(href)} {...props} />
+                ),
+              }}
+            >
+              {article.content}
+            </ReactMarkdown>
           </div>
         </motion.article>
 
@@ -148,13 +157,13 @@ export default function BlogArticle() {
             Osceola, and Lake counties. Get a free consultation today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/Contact">
+            <Link to="/Contact/">
               <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
                 Get a Free Quote
                 <ChevronRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
-            <Link to="/Services">
+            <Link to="/Services/">
               <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
                 View Our Services
               </Button>
@@ -170,7 +179,7 @@ export default function BlogArticle() {
               {relatedArticles.map(related => (
                 <Link
                   key={related.id}
-                  to={`/Blog/${related.slug}`}
+                  to={withTrailingSlash(`/Blog/${related.slug}`)}
                   className="group block bg-white rounded-xl shadow-sm border border-slate-100 p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                 >
                   <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-orange-50 text-orange-600 mb-3">

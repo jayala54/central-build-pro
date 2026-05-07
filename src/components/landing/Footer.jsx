@@ -20,23 +20,23 @@ export default function Footer() {
           <div className="mt-0 md:mt-6">
             <p className="text-white font-semibold mb-4">Services</p>
             <ul className="space-y-2 text-slate-400">
-              <li><Link to="/CustomHomes" className="hover:text-amber-400 transition-colors">Custom Homes</Link></li>
-              <li><Link to="/WholeHomeRenovations" className="hover:text-amber-400 transition-colors">Home Renovations</Link></li>
-              <li><Link to="/KitchenBathRemodeling" className="hover:text-amber-400 transition-colors">Kitchen & Bath</Link></li>
-              <li><Link to="/RoomAdditions" className="hover:text-amber-400 transition-colors">Room Additions</Link></li>
-              <li><Link to="/CommercialBuildouts" className="hover:text-amber-400 transition-colors">Commercial Buildouts</Link></li>
+              <li><Link to="/CustomHomes/" className="hover:text-amber-400 transition-colors">Custom Homes</Link></li>
+              <li><Link to="/WholeHomeRenovations/" className="hover:text-amber-400 transition-colors">Home Renovations</Link></li>
+              <li><Link to="/KitchenBathRemodeling/" className="hover:text-amber-400 transition-colors">Kitchen & Bath</Link></li>
+              <li><Link to="/RoomAdditions/" className="hover:text-amber-400 transition-colors">Room Additions</Link></li>
+              <li><Link to="/CommercialBuildouts/" className="hover:text-amber-400 transition-colors">Commercial Buildouts</Link></li>
             </ul>
           </div>
 
           <div className="mt-0 md:mt-6">
             <p className="text-white font-semibold mb-4">Service Areas</p>
             <ul className="space-y-2 text-slate-400">
-              <li><Link to="/ServiceAreaOrlando" className="hover:text-amber-400 transition-colors">Orlando</Link></li>
-              <li><Link to="/ServiceAreaWinterPark" className="hover:text-amber-400 transition-colors">Winter Park</Link></li>
-              <li><Link to="/ServiceAreaLakeMary" className="hover:text-amber-400 transition-colors">Lake Mary</Link></li>
-              <li><Link to="/ServiceAreaKissimmee" className="hover:text-amber-400 transition-colors">Kissimmee</Link></li>
-              <li><Link to="/ServiceAreaWindermere" className="hover:text-amber-400 transition-colors">Windermere</Link></li>
-              <li><Link to="/ServiceAreaLakeNona" className="hover:text-amber-400 transition-colors">Lake Nona</Link></li>
+              <li><Link to="/ServiceAreaOrlando/" className="hover:text-amber-400 transition-colors">Orlando</Link></li>
+              <li><Link to="/ServiceAreaWinterPark/" className="hover:text-amber-400 transition-colors">Winter Park</Link></li>
+              <li><Link to="/ServiceAreaLakeMary/" className="hover:text-amber-400 transition-colors">Lake Mary</Link></li>
+              <li><Link to="/ServiceAreaKissimmee/" className="hover:text-amber-400 transition-colors">Kissimmee</Link></li>
+              <li><Link to="/ServiceAreaWindermere/" className="hover:text-amber-400 transition-colors">Windermere</Link></li>
+              <li><Link to="/ServiceAreaLakeNona/" className="hover:text-amber-400 transition-colors">Lake Nona</Link></li>
             </ul>
           </div>
 
@@ -70,9 +70,9 @@ export default function Footer() {
               © {new Date().getFullYear()} J&N StructureWorks, LLC. All rights reserved.
             </p>
             <div className="flex gap-6 text-slate-500 text-sm">
-              <Link to="/Blog" className="hover:text-amber-400 transition-colors">Blog</Link>
-              <Link to="/PrivacyPolicy" className="hover:text-amber-400 transition-colors">Privacy Policy</Link>
-              <Link to="/TermsOfService" className="hover:text-amber-400 transition-colors">Terms of Service</Link>
+              <Link to="/Blog/" className="hover:text-amber-400 transition-colors">Blog</Link>
+              <Link to="/PrivacyPolicy/" className="hover:text-amber-400 transition-colors">Privacy Policy</Link>
+              <Link to="/TermsOfService/" className="hover:text-amber-400 transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>

@@ -54,24 +54,19 @@ export default function ServiceAreaLakeMary() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Lake Mary FL | J&N StructureWorks"
+        title="General Contractor Lake Mary FL"
         path="/ServiceAreaLakeMary"
+        geoPlace="Lake Mary"
         description="Licensed general contractor in Lake Mary, FL (CBC1269175). Custom homes, remodeling, additions & renovations in Seminole County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Lake Mary, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Lake Mary', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Lake Mary', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Lake Mary, FL. Custom homes, remodeling, additions, and renovations in Seminole County.',
-            url: 'https://j-nsw.com/ServiceAreaLakeMary',
+            url: 'https://j-nsw.com/ServiceAreaLakeMary/',
           },
           {
             '@context': 'https://schema.org',

@@ -11,7 +11,7 @@ const residentialServices = [
 ];
 
 const commercialServices = [
-  { icon: Building2, title: 'Commercial General Contracting', description: 'One accountable contractor coordinating commercial construction from planning and permits through closeout.', href: '/CommercialBuildouts/' },
+  { icon: Building2, title: 'Commercial General Contracting', description: 'One accountable contractor coordinating commercial construction from planning and permits through closeout.', href: '/Commercial/' },
   { icon: HardHat, title: 'Tenant Improvements', description: 'Code-compliant partitions, building systems, accessibility work, finishes, inspections, and occupancy coordination.', href: '/CommercialBuildouts/' },
   { icon: Store, title: 'Retail & Restaurant Buildouts', description: 'Customer-facing spaces with coordinated layouts, restrooms, specialized plumbing, finishes, and closeout.', href: '/CommercialBuildouts/' },
   { icon: BriefcaseBusiness, title: 'Office & Professional Spaces', description: 'Office, medical, and professional interiors planned around workflow, accessibility, and building systems.', href: '/CommercialBuildouts/' },
@@ -69,7 +69,7 @@ export default function ServicesSection() {
               <p className="text-sm font-semibold uppercase text-orange-600">Commercial Construction</p>
               <h3 className="text-2xl font-bold text-slate-900 mt-2">Buildouts and renovations for Central Florida businesses</h3>
             </div>
-            <Link to="/CommercialBuildouts/" className="hidden sm:block text-sm font-semibold text-orange-600 hover:text-orange-700">Explore commercial construction</Link>
+            <Link to="/Commercial/" className="hidden sm:block text-sm font-semibold text-orange-600 hover:text-orange-700">Explore commercial construction</Link>
           </div>
           <ServiceGrid services={commercialServices} />
         </div>

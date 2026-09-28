@@ -54,24 +54,19 @@ export default function ServiceAreaSanford() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Sanford FL | J&N StructureWorks"
+        title="General Contractor Sanford FL"
         path="/ServiceAreaSanford"
+        geoPlace="Sanford"
         description="Licensed general contractor in Sanford, FL (CBC1269175). Custom homes, historic renovations, remodeling & additions in Seminole County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Sanford, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Sanford', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Sanford', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Sanford, FL. Custom homes, historic renovations, remodeling, and additions in Seminole County.',
-            url: 'https://j-nsw.com/ServiceAreaSanford',
+            url: 'https://j-nsw.com/ServiceAreaSanford/',
           },
           {
             '@context': 'https://schema.org',

@@ -46,10 +46,10 @@ export default function KitchenBathRemodeling() {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'Kitchen & Bathroom Remodeling',
-            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
             description: 'Kitchen and bathroom remodeling services in Central Florida. From design to completion, we handle countertops, cabinetry, tile, fixtures, and full renovations.',
-            url: 'https://j-nsw.com/KitchenBathRemodeling',
+            url: 'https://j-nsw.com/KitchenBathRemodeling/',
           },
           {
             '@context': 'https://schema.org',

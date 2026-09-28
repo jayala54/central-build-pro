@@ -54,24 +54,19 @@ export default function ServiceAreaLakeNona() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Lake Nona FL | J&N StructureWorks"
+        title="General Contractor Lake Nona FL"
         path="/ServiceAreaLakeNona"
+        geoPlace="Lake Nona"
         description="Licensed general contractor in Lake Nona, FL (CBC1269175). Custom homes, modern renovations, remodeling & additions in Orlando's premier community. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Lake Nona, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'Place', name: 'Lake Nona, Orlando', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Lake Nona in Orlando, FL. Custom homes, modern renovations, remodeling, and additions in Orange County.',
-            url: 'https://j-nsw.com/ServiceAreaLakeNona',
+            url: 'https://j-nsw.com/ServiceAreaLakeNona/',
           },
           {
             '@context': 'https://schema.org',

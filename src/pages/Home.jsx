@@ -20,6 +20,8 @@ export default function Home() {
         title="General Contractor Orlando FL"
         path="/"
         description="J&N StructureWorks is a Florida Certified Building Contractor serving Orlando and Central Florida. Custom homes, renovations, additions and commercial construction."
+        geoPlace="Orlando"
+        preloadImage
       />
       <Navbar onContactClick={scrollToContact} />
       <HeroSection onContactClick={scrollToContact} />

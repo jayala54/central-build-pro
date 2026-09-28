@@ -14,6 +14,7 @@ export const staticRoutes = [
   { path: '/KitchenBathRemodeling', changefreq: 'monthly', priority: '0.9' },
   { path: '/WholeHomeRenovations', changefreq: 'monthly', priority: '0.9' },
   { path: '/RoomAdditions', changefreq: 'monthly', priority: '0.9' },
+  { path: '/Commercial', changefreq: 'monthly', priority: '0.9' },
   { path: '/CommercialBuildouts', changefreq: 'monthly', priority: '0.9' },
   { path: '/CommercialRenovations', changefreq: 'monthly', priority: '0.9' },
   { path: '/ServiceAreaOrlando', changefreq: 'monthly', priority: '0.8' },

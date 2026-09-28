@@ -9,6 +9,12 @@ const areas = [
   ['Winter Park', '/ServiceAreaWinterPark/'],
   ['Windermere', '/ServiceAreaWindermere/'],
   ['Lake Mary', '/ServiceAreaLakeMary/'],
+  ['Sanford', '/ServiceAreaSanford/'],
+  ['Oviedo', '/ServiceAreaOviedo/'],
+  ['Clermont', '/ServiceAreaClermont/'],
+  ['Winter Garden', '/ServiceAreaWinterGarden/'],
+  ['Altamonte Springs', '/ServiceAreaAltamonteSprings/'],
+  ['Dr. Phillips', '/ServiceAreaDrPhillips/'],
 ];
 
 export default function ServiceAreaLinks() {

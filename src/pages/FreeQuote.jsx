@@ -195,7 +195,7 @@ export default function FreeQuote() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="Free Quote | J&N StructureWorks — Orlando Home Builder"
+        title="Request a Free Construction Quote"
         path="/FreeQuote"
         description="Get a free quote from J&N StructureWorks, Orlando's trusted building contractor. Custom homes, renovations, and commercial buildouts. Call (321) 219-9007."
         noIndex

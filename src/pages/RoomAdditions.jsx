@@ -46,10 +46,10 @@ export default function RoomAdditions() {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'Room Additions',
-            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
             description: 'Room addition and home expansion services in Central Florida. Extra bedrooms, family rooms, garage conversions, ADUs, and more.',
-            url: 'https://j-nsw.com/RoomAdditions',
+            url: 'https://j-nsw.com/RoomAdditions/',
           },
           {
             '@context': 'https://schema.org',

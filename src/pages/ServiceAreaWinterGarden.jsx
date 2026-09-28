@@ -54,24 +54,19 @@ export default function ServiceAreaWinterGarden() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Winter Garden FL | J&N StructureWorks"
+        title="General Contractor Winter Garden FL"
         path="/ServiceAreaWinterGarden"
+        geoPlace="Winter Garden"
         description="Licensed general contractor in Winter Garden, FL (CBC1269175). Custom homes, remodeling, additions & renovations in west Orange County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Winter Garden, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Winter Garden', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Winter Garden', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Winter Garden, FL. Custom homes, remodeling, additions, and renovations in west Orange County.',
-            url: 'https://j-nsw.com/ServiceAreaWinterGarden',
+            url: 'https://j-nsw.com/ServiceAreaWinterGarden/',
           },
           {
             '@context': 'https://schema.org',

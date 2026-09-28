@@ -30,7 +30,6 @@ const faqs = [
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },
-  { label: 'Service Areas', href: '/ServiceAreaKissimmee/' },
   { label: 'Saint Cloud' },
 ];
 
@@ -42,6 +41,7 @@ export default function ServiceAreaSaintCloud() {
       <SEOHead
         title="General Contractor Saint Cloud FL"
         path="/ServiceAreaSaintCloud"
+        geoPlace="Saint Cloud"
         description="Florida Certified Building Contractor serving Saint Cloud, FL. Custom homes, renovations, additions, commercial construction and tenant buildouts."
         breadcrumbs={breadcrumbs}
         jsonLd={[
@@ -80,8 +80,8 @@ export default function ServiceAreaSaintCloud() {
                 J&N StructureWorks provides residential and commercial construction in Saint Cloud and surrounding Osceola County. We coordinate the work from planning and permits through construction, inspections, and closeout.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/Contact/"><Button className="h-12 px-7 bg-orange-500 hover:bg-orange-600 text-white">Request an Estimate <ChevronRight className="ml-2 w-4 h-4" /></Button></Link>
-                <a href="tel:+13212199007"><Button variant="outline" className="h-12 px-7 border-white text-white bg-white/10 hover:bg-white/20"><Phone className="mr-2 w-4 h-4" /> (321) 219-9007</Button></a>
+                <Button asChild className="h-12 px-7 bg-orange-500 hover:bg-orange-600 text-white"><Link to="/Contact/">Request an Estimate <ChevronRight className="ml-2 w-4 h-4" /></Link></Button>
+                <Button asChild variant="outline" className="h-12 px-7 border-white text-white bg-white/10 hover:bg-white/20"><a href="tel:+13212199007"><Phone className="mr-2 w-4 h-4" /> (321) 219-9007</a></Button>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function ServiceAreaSaintCloud() {
             <RelatedServices services={[
               { label: 'Custom Homes', href: '/CustomHomes/', description: 'Ground-up residential construction across Central Florida.' },
               { label: 'Home Additions', href: '/RoomAdditions/', description: 'Add living space or convert an existing garage.' },
-              { label: 'Commercial Construction', href: '/CommercialBuildouts/', description: 'Tenant improvements, retail, restaurant, and office buildouts.' },
+              { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial contracting, buildouts, renovations, and project coordination.' },
             ]} />
 
             <FAQSection faqs={faqs} title="Saint Cloud Construction FAQs" />
@@ -152,7 +152,7 @@ export default function ServiceAreaSaintCloud() {
           <div className="max-w-3xl mx-auto px-6">
             <h2 className="text-3xl font-bold text-white mb-4">Planning a project in Saint Cloud?</h2>
             <p className="text-slate-300 mb-7">Tell us about the property, scope, and target schedule. We’ll help you define the next practical step.</p>
-            <Link to="/Contact/"><Button className="h-12 px-8 bg-orange-500 hover:bg-orange-600 text-white">Request an Estimate</Button></Link>
+            <Button asChild className="h-12 px-8 bg-orange-500 hover:bg-orange-600 text-white"><Link to="/Contact/">Request an Estimate</Link></Button>
           </div>
         </section>
       </main>

@@ -54,24 +54,19 @@ export default function ServiceAreaOrlando() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Orlando FL | J&N StructureWorks"
+        title="Orlando Construction Services"
         path="/ServiceAreaOrlando"
+        geoPlace="Orlando"
         description="J&N StructureWorks is a licensed general contractor in Orlando, FL (CBC1269175). Custom homes, remodeling, additions & commercial buildouts in Orange County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Orlando, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Orlando', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Orlando, FL. Custom home building, remodeling, additions, and commercial construction in Orange County.',
-            url: 'https://j-nsw.com/ServiceAreaOrlando',
+            url: 'https://j-nsw.com/ServiceAreaOrlando/',
           },
           {
             '@context': 'https://schema.org',

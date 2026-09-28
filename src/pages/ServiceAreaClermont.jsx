@@ -54,24 +54,19 @@ export default function ServiceAreaClermont() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Clermont FL | J&N StructureWorks"
+        title="General Contractor Clermont FL"
         path="/ServiceAreaClermont"
+        geoPlace="Clermont"
         description="Licensed general contractor in Clermont, FL (CBC1269175). Custom homes, lakefront builds, remodeling & additions in Lake County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Clermont, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Clermont', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Clermont', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Clermont, FL. Custom homes, lakefront construction, remodeling, and additions in Lake County.',
-            url: 'https://j-nsw.com/ServiceAreaClermont',
+            url: 'https://j-nsw.com/ServiceAreaClermont/',
           },
           {
             '@context': 'https://schema.org',

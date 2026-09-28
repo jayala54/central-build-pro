@@ -40,16 +40,17 @@ export default function CommercialRenovations() {
       <SEOHead
         title="Commercial Renovations Orlando & Central Florida"
         path="/CommercialRenovations"
+        geoPlace="Orlando"
         description="Professional commercial renovations in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Office, retail, restaurant remodels, ADA upgrades & code compliance. Free estimate: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'Commercial Renovations',
-            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
             description: 'Commercial renovation services in Central Florida. Office renovations, storefront updates, restaurant remodels, ADA upgrades, and code compliance.',
-            url: 'https://j-nsw.com/CommercialRenovations',
+            url: 'https://j-nsw.com/CommercialRenovations/',
           },
           {
             '@context': 'https://schema.org',

@@ -38,25 +38,27 @@ export default function CommercialBuildouts() {
   const scrollToContact = () => { window.location.href = '/Contact/'; };
   const breadcrumbs = [
     { label: 'Home', href: '/' },
-    { label: 'Commercial Construction' },
+    { label: 'Commercial Construction', href: '/Commercial/' },
+    { label: 'Tenant Buildouts' },
   ];
 
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="Commercial General Contractor Orlando FL"
+        title="Tenant Buildout Contractor Orlando FL"
         path="/CommercialBuildouts"
-        description="Commercial general contractor in Orlando for tenant improvements, retail, restaurant and office buildouts, renovations, permitting and inspections."
+        geoPlace="Orlando"
+        description="Tenant buildout contractor serving Orlando and Central Florida. Retail, restaurant, office and professional-space improvements, permits and inspections."
         breadcrumbs={breadcrumbs}
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Commercial General Contracting and Tenant Buildouts',
+            name: 'Commercial Tenant Buildouts',
             provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: ['Orlando, FL', 'Saint Cloud, FL', 'Kissimmee, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Central Florida'],
-            serviceType: ['Commercial general contracting', 'Tenant improvements', 'Retail buildouts', 'Restaurant buildouts', 'Office buildouts', 'Commercial renovations', 'Commercial demolition'],
-            description: 'Commercial construction services in Central Florida, including tenant improvements, retail, restaurant and office buildouts, commercial renovations, permitting, inspections and closeout.',
+            serviceType: ['Tenant improvements', 'Retail buildouts', 'Restaurant buildouts', 'Office buildouts', 'Professional-space buildouts'],
+            description: 'Tenant improvement and commercial buildout services in Central Florida, including retail, restaurant, office and professional spaces.',
             url: 'https://j-nsw.com/CommercialBuildouts/',
           },
           {
@@ -79,25 +81,25 @@ export default function CommercialBuildouts() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 mb-6">
               <Building2 className="w-4 h-4 text-orange-400" />
-              <span className="text-orange-400 text-sm font-medium">Commercial General Contracting</span>
+              <span className="text-orange-400 text-sm font-medium">Tenant Improvements & Buildouts</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Commercial General Contractor in Orlando & Central Florida
+              Tenant Buildout Contractor in Orlando & Central Florida
             </h1>
             <p className="text-slate-300 text-lg max-w-3xl mb-8">
-              Commercial construction, tenant improvements, retail and restaurant buildouts, office and professional spaces, renovations, permitting, inspections, and closeout coordinated by a Florida Certified Building Contractor.
+              Interior construction for leased retail, restaurant, office, and professional spaces, coordinated from scope review and permitting through inspections and closeout.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/Contact/">
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
+              <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
+                <Link to="/Contact/">
                   Get a Buildout Estimate <ChevronRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
-              <a href="tel:+13212199007">
-                <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
+                </Link>
+              </Button>
+              <Button asChild variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
+                <a href="tel:+13212199007">
                   <Phone className="w-4 h-4 mr-2" /> (321) 219-9007
-                </Button>
-              </a>
+                </a>
+              </Button>
             </div>
           </motion.div>
         </div>
@@ -112,11 +114,11 @@ export default function CommercialBuildouts() {
               <p className="text-slate-600 mb-4">
                 A well-executed commercial buildout is the foundation of a successful business. Whether you're
                 opening a new office, launching a restaurant, building out a retail storefront, or preparing a
-                medical practice, the quality of your space directly impacts your employees, customers, and bottom
+                professional practice, the quality of your space directly impacts your employees, customers, and bottom
                 line. At J&N StructureWorks, we specialize in commercial tenant buildouts that transform raw or
                 existing shell space into functional, code-compliant, and aesthetically polished environments.
                 As a Florida Certified Building Contractor (CBC1269175), we have the licensing and expertise to
-                handle everything from structural modifications and mechanical systems to finish carpentry and
+                coordinate work from structural modifications and building systems through finishes and
                 ADA compliance.
               </p>
               <p className="text-slate-600 mb-4">
@@ -133,10 +135,9 @@ export default function CommercialBuildouts() {
                 Every commercial buildout has unique requirements based on the type of business, local code
                 requirements, landlord specifications, and ADA standards. Restaurant buildouts require grease
                 traps, commercial hood systems, and Health Department approvals. Medical offices need specialized
-                HVAC, privacy-compliant layouts, and medical gas systems. Retail spaces focus on customer flow,
-                lighting design, and storefront presentation. We've built them all, and we understand the
-                specific permit, inspection, and compliance requirements for each type of commercial space in
-                Orange, Seminole, Osceola, and Lake counties.
+                HVAC, privacy-conscious layouts, and equipment coordination. Retail spaces focus on customer flow,
+                lighting, and storefront presentation. The design team and reviewing agencies establish the
+                project-specific permit, inspection, and compliance requirements.
               </p>
 
               <h3 className="text-2xl font-bold text-slate-900 mb-4">What's Included</h3>
@@ -158,7 +159,7 @@ export default function CommercialBuildouts() {
                 ))}
               </div>
 
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Commercial Construction Services</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Tenant Buildout Types</h3>
               <div className="grid sm:grid-cols-2 gap-5 mb-10">
                 {[
                   ['Tenant Improvements', 'Interior construction for leased spaces, including partitions, systems coordination, accessibility work, finishes, and inspections.'],
@@ -207,11 +208,11 @@ export default function CommercialBuildouts() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Licensed, bonded & insured</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
               </ul>
-              <Link to="/Contact/">
-                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
+              <Button asChild className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
+                <Link to="/Contact/">
                   Get a Buildout Quote
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -228,9 +229,9 @@ export default function CommercialBuildouts() {
             <Link to="/commercial-remodel-kissimmee-taco-bell/" className="font-semibold text-orange-600 hover:text-orange-700 inline-flex items-center gap-2">View the commercial remodel case study <ChevronRight className="w-4 h-4" /></Link>
           </section>
           <RelatedServices services={[
+            { label: 'Commercial General Contracting', href: '/Commercial/', description: 'Commercial project coordination from preconstruction through closeout.' },
             { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Modernize or reconfigure an existing business property.' },
             { label: 'Kissimmee Commercial Project', href: '/commercial-remodel-kissimmee-taco-bell/', description: 'Commercial repipe and bathroom remodel case study.' },
-            { label: 'Saint Cloud Construction', href: '/ServiceAreaSaintCloud/', description: 'Residential and commercial contracting in Osceola County.' },
           ]} />
         </div>
 
@@ -240,11 +241,11 @@ export default function CommercialBuildouts() {
           <p className="text-slate-300 mb-6 max-w-xl mx-auto">
             Schedule a free consultation with J&N StructureWorks. We'll walk your space, discuss your requirements, and provide a detailed buildout estimate.
           </p>
-          <Link to="/Contact/">
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
+          <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
+            <Link to="/Contact/">
               Start Your Buildout <ChevronRight className="w-4 h-4 ml-2" />
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
 

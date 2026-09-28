@@ -54,24 +54,19 @@ export default function ServiceAreaWinterPark() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Winter Park FL | J&N StructureWorks"
+        title="General Contractor Winter Park FL"
         path="/ServiceAreaWinterPark"
+        geoPlace="Winter Park"
         description="Licensed general contractor in Winter Park, FL (CBC1269175). Custom homes, historic renovations, remodeling & additions in Orange County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Winter Park, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Winter Park', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Winter Park', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Winter Park, FL. Custom homes, historic renovations, remodeling, and additions in Orange County.',
-            url: 'https://j-nsw.com/ServiceAreaWinterPark',
+            url: 'https://j-nsw.com/ServiceAreaWinterPark/',
           },
           {
             '@context': 'https://schema.org',

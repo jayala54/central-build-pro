@@ -54,24 +54,19 @@ export default function ServiceAreaKissimmee() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Kissimmee FL | J&N StructureWorks"
+        title="General Contractor Kissimmee FL"
         path="/ServiceAreaKissimmee"
+        geoPlace="Kissimmee"
         description="Licensed general contractor in Kissimmee, FL (CBC1269175). Custom homes, remodeling, additions & commercial buildouts in Osceola County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Kissimmee, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Kissimmee', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Kissimmee', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Kissimmee, FL. Custom homes, remodeling, additions, and commercial construction in Osceola County.',
-            url: 'https://j-nsw.com/ServiceAreaKissimmee',
+            url: 'https://j-nsw.com/ServiceAreaKissimmee/',
           },
           {
             '@context': 'https://schema.org',

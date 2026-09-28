@@ -54,24 +54,19 @@ export default function ServiceAreaWindermere() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Windermere FL | J&N StructureWorks"
+        title="General Contractor Windermere FL"
         path="/ServiceAreaWindermere"
+        geoPlace="Windermere"
         description="Licensed general contractor in Windermere, FL (CBC1269175). Luxury custom homes, lakefront builds, remodeling & renovations in Orange County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Windermere, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Windermere', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Windermere', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Windermere, FL. Luxury custom homes, lakefront construction, remodeling, and renovations in Orange County.',
-            url: 'https://j-nsw.com/ServiceAreaWindermere',
+            url: 'https://j-nsw.com/ServiceAreaWindermere/',
           },
           {
             '@context': 'https://schema.org',

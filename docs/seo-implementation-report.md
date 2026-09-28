@@ -48,3 +48,32 @@ The existing GA4 installation is preserved. The following `dataLayer` events are
 - Publish additional case studies only when project facts and original photography are available.
 - Add verified project locations, scopes, challenges, and outcomes to future case studies.
 - Monitor Search Console queries and landing pages monthly, then strengthen pages already receiving impressions before creating additional location or service pages.
+
+## SEO QA review - September 28, 2026
+
+### Passed
+
+- Keyword ownership is distinct across the homepage, custom homes, commercial contracting, tenant buildouts, commercial renovations, Orlando, Saint Cloud, and Kissimmee pages.
+- All indexable pages have one canonical URL, one H1, unique metadata, valid JSON-LD, and at least one internal incoming link.
+- The sitemap contains canonical indexable URLs only. `robots.txt` references the sitemap and does not block important content.
+- Only `/FreeQuote/` is intentionally marked `noindex`; it is excluded from the sitemap.
+- Location pages contain roughly 420-500 page-specific words before shared navigation/footer content. Repeated long text is limited to shared site components.
+- Browser QA found no horizontal overflow, broken images, console errors, or mobile-menu failures on priority templates at 390px and 1440px.
+
+### Fixed during QA
+
+- Added `/Commercial/` as the commercial general-contracting hub and narrowed `/CommercialBuildouts/` to tenant-buildout intent.
+- Differentiated the Orlando location title from the homepage to reduce keyword cannibalization.
+- Removed repeated business-name suffixes from location titles.
+- Removed false city-address implications and duplicate contractor entities from location/service schema.
+- Added internal links to previously orphaned Altamonte Springs and Dr. Phillips pages and strengthened links to Sanford, Oviedo, Clermont, and Winter Garden.
+- Prevented prerendering from embedding a second Google Analytics script and limited hero-image preloading to the homepage.
+- Added missing favicon metadata, mobile navigation state/scroll behavior, and valid non-nested CTA controls.
+
+### Additional owner verification required
+
+- Verify all published cost-per-square-foot ranges, project-duration ranges, and percentage savings claims before treating them as current estimates.
+- Verify claims of experience with lakefront lots, sloped lots, historic properties, vacation rentals, occupied commercial phasing, after-hours work, and named neighborhoods or corridors.
+- Verify the statement that bilingual team members are available.
+- Verify promises such as "no hidden fees," "no surprise change orders," and complete permit or Certificate of Occupancy handling for every project type.
+- Confirm that every service shown, particularly medical/professional buildouts and specialized commercial systems, is within the company's current delivered scope.

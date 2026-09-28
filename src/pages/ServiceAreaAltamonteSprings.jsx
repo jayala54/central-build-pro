@@ -54,24 +54,19 @@ export default function ServiceAreaAltamonteSprings() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Altamonte Springs FL | J&N StructureWorks"
+        title="General Contractor Altamonte Springs FL"
         path="/ServiceAreaAltamonteSprings"
+        geoPlace="Altamonte Springs"
         description="Licensed general contractor in Altamonte Springs, FL (CBC1269175). Custom homes, remodeling, additions & commercial buildouts in Seminole County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Altamonte Springs, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Altamonte Springs', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Altamonte Springs', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Altamonte Springs, FL. Custom homes, remodeling, additions, and commercial construction in Seminole County.',
-            url: 'https://j-nsw.com/ServiceAreaAltamonteSprings',
+            url: 'https://j-nsw.com/ServiceAreaAltamonteSprings/',
           },
           {
             '@context': 'https://schema.org',

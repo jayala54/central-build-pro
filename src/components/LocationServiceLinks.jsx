@@ -5,7 +5,7 @@ const services = [
   { label: 'Custom Homes', href: '/CustomHomes/', description: 'Ground-up residential construction from planning through closeout.' },
   { label: 'Home Renovations', href: '/WholeHomeRenovations/', description: 'Whole-home updates, structural changes, and modernization.' },
   { label: 'Home Additions', href: '/RoomAdditions/', description: 'Expanded living space, garage conversions, porches, and lanais.' },
-  { label: 'Commercial Construction', href: '/CommercialBuildouts/', description: 'Tenant improvements, retail, restaurant, and office buildouts.' },
+  { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial contracting, buildouts, renovations, and project coordination.' },
   { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Reconfiguration and updates for existing commercial properties.' },
 ];
 

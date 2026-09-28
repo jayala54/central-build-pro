@@ -40,16 +40,17 @@ export default function CustomHomes() {
       <SEOHead
         title="Custom Home Builder Orlando & Central Florida"
         path="/CustomHomes"
+        geoPlace="Orlando"
         description="Build your dream custom home in Orlando & Central Florida with J&N StructureWorks. Licensed CBC1269175. New home construction in Orange, Seminole, Osceola & Lake counties. Free consultation: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'Custom Home Building',
-            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
             description: 'Custom home construction services in Central Florida. From design to move-in, we handle every aspect of building your new home.',
-            url: 'https://j-nsw.com/CustomHomes',
+            url: 'https://j-nsw.com/CustomHomes/',
           },
           {
             '@context': 'https://schema.org',

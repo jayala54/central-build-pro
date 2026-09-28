@@ -8,7 +8,7 @@ import { trackContactClick, trackEvent } from '@/utils/analytics';
 
 const navLinks = [
   { label: 'Residential', href: '/Services/' },
-  { label: 'Commercial', href: '/CommercialBuildouts/' },
+  { label: 'Commercial', href: '/Commercial/' },
   { label: 'Projects', href: '/Projects/' },
   { label: 'Service Areas', href: '/ServiceAreaOrlando/' },
   { label: 'Blog', href: '/Blog/' },
@@ -87,6 +87,8 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
               className="lg:hidden p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-navigation"
             >
               {isMobileMenuOpen ? (
                 <X className={showSolidBg ? 'text-slate-900' : 'text-white'} />
@@ -105,7 +107,8 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-slate-900 pt-20 px-6 lg:hidden"
+            id="mobile-navigation"
+            className="fixed inset-0 z-40 bg-slate-900 pt-20 px-6 pb-8 overflow-y-auto lg:hidden"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link) => (

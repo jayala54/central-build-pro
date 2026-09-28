@@ -69,8 +69,8 @@ export default function Blog() {
           '@type': 'Blog',
           name: 'J&N StructureWorks Blog',
           description: 'Expert insights on new home construction in Central Florida.',
-          url: 'https://j-nsw.com/Blog',
-          publisher: { '@type': 'Organization', name: 'J&N StructureWorks' },
+          url: 'https://j-nsw.com/Blog/',
+          publisher: { '@id': 'https://j-nsw.com/#business' },
         }}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />

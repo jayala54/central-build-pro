@@ -47,7 +47,7 @@ export default function BlogArticle() {
     const content = `${article.title} ${article.tags?.join(' ')} ${article.content}`.toLowerCase();
     if (content.includes('commercial') || content.includes('tenant') || content.includes('investor')) {
       return [
-        { label: 'Commercial Construction', href: '/CommercialBuildouts/', description: 'Tenant improvements, retail, restaurant, and office buildouts.' },
+        { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial contracting, buildouts, renovations, and project coordination.' },
         { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Reconfigure and modernize existing business properties.' },
         { label: 'Orlando General Contractor', href: '/ServiceAreaOrlando/', description: 'Residential and commercial construction in Orlando.' },
       ];
@@ -62,7 +62,7 @@ export default function BlogArticle() {
     return [
       { label: 'Custom Homes', href: '/CustomHomes/', description: 'Ground-up residential construction.' },
       { label: 'Home Renovations', href: '/WholeHomeRenovations/', description: 'Comprehensive renovation and modernization.' },
-      { label: 'General Contractor Orlando', href: '/ServiceAreaOrlando/', description: 'Residential and commercial construction in Orlando.' },
+      { label: 'Orlando Construction Services', href: '/ServiceAreaOrlando/', description: 'Residential and commercial construction in Orlando.' },
     ];
   }, [article]);
 

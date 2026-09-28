@@ -11,6 +11,24 @@ function normalizeCanonicalPath(path) {
   return path.endsWith('/') ? path : `${path}/`;
 }
 
+function normalizePageStructuredData(data) {
+  if (!data || typeof data !== 'object') return data;
+
+  if (data['@type'] === 'Service') {
+    const serviceUrl = typeof data.url === 'string' && data.url.startsWith(SITE_URL)
+      ? `${SITE_URL}${normalizeCanonicalPath(data.url.slice(SITE_URL.length))}`
+      : data.url;
+
+    return {
+      ...data,
+      provider: { '@id': `${SITE_URL}/#business` },
+      ...(serviceUrl ? { url: serviceUrl } : {}),
+    };
+  }
+
+  return data;
+}
+
 export default function SEOHead({
   title,
   description = DEFAULT_DESCRIPTION,
@@ -22,8 +40,12 @@ export default function SEOHead({
   imageAlt = 'Custom home built by J&N StructureWorks in Central Florida',
   breadcrumbs = null,
   noIndex = false,
+  geoPlace = 'Central Florida',
+  preloadImage = false,
 }) {
-  const fullTitle = title ? `${title} | ${SITE_NAME}` : `General Contractor Orlando FL | ${SITE_NAME}`;
+  const fullTitle = title
+    ? (title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`)
+    : `General Contractor Orlando FL | ${SITE_NAME}`;
   const canonicalUrl = `${SITE_URL}${normalizeCanonicalPath(path)}`;
 
   const businessJsonLd = {
@@ -126,7 +148,9 @@ export default function SEOHead({
       }
     : null;
 
-  const pageStructuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const pageStructuredData = jsonLd
+    ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]).map(normalizePageStructuredData)
+    : [];
   const structuredData = [
     businessJsonLd,
     ...(path === '/' ? [websiteJsonLd] : []),
@@ -141,6 +165,7 @@ export default function SEOHead({
       <meta name="description" content={description} />
       {noIndex && <meta name="robots" content="noindex,follow" />}
       <link rel="canonical" href={canonicalUrl} />
+      {preloadImage && <link rel="preload" as="image" href={image} fetchPriority="high" />}
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
@@ -160,7 +185,7 @@ export default function SEOHead({
 
       {/* Geo / Local SEO */}
       <meta name="geo.region" content="US-FL" />
-      <meta name="geo.placename" content="Orlando" />
+      <meta name="geo.placename" content={geoPlace} />
 
       {/* JSON-LD Structured Data */}
       {structuredData.map((data, index) => (

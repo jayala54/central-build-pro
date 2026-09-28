@@ -46,10 +46,10 @@ export default function WholeHomeRenovations() {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'Whole-Home Renovations',
-            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
             description: 'Whole-home renovation services in Central Florida. Complete home transformations including structural changes, modernization, and gut renovations.',
-            url: 'https://j-nsw.com/WholeHomeRenovations',
+            url: 'https://j-nsw.com/WholeHomeRenovations/',
           },
           {
             '@context': 'https://schema.org',

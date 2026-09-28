@@ -54,24 +54,19 @@ export default function ServiceAreaOviedo() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Oviedo FL | J&N StructureWorks"
+        title="General Contractor Oviedo FL"
         path="/ServiceAreaOviedo"
+        geoPlace="Oviedo"
         description="Licensed general contractor in Oviedo, FL (CBC1269175). Custom homes, remodeling, additions & renovations in Seminole County near UCF. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Oviedo, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Oviedo', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Oviedo', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Oviedo, FL. Custom homes, remodeling, additions, and renovations in Seminole County.',
-            url: 'https://j-nsw.com/ServiceAreaOviedo',
+            url: 'https://j-nsw.com/ServiceAreaOviedo/',
           },
           {
             '@context': 'https://schema.org',

@@ -54,24 +54,19 @@ export default function ServiceAreaDrPhillips() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="General Contractor Dr. Phillips FL | J&N StructureWorks"
+        title="General Contractor Dr. Phillips FL"
         path="/ServiceAreaDrPhillips"
+        geoPlace="Dr. Phillips"
         description="Licensed general contractor in Dr. Phillips, FL (CBC1269175). Custom homes, upscale remodeling, renovations & commercial buildouts in Orange County. Free estimates: (321) 219-9007."
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'General Contractor Services in Dr. Phillips, FL',
-            provider: {
-              '@type': 'GeneralContractor',
-              name: 'J&N StructureWorks',
-              url: 'https://j-nsw.com',
-              telephone: '+13212199007',
-              address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL' },
-            },
+            provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'Place', name: 'Dr. Phillips, Orlando', addressRegion: 'FL' },
             description: 'Licensed general contractor serving Dr. Phillips in Orlando, FL. Custom homes, upscale remodeling, renovations, and commercial construction in Orange County.',
-            url: 'https://j-nsw.com/ServiceAreaDrPhillips',
+            url: 'https://j-nsw.com/ServiceAreaDrPhillips/',
           },
           {
             '@context': 'https://schema.org',

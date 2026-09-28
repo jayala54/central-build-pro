@@ -169,17 +169,17 @@ export default function TacoBellRepipeKissimmee() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/Contact/">
-                  <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12 px-6">
+                <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12 px-6">
+                  <Link to="/Contact/">
                     Request a Similar Quote
                     <ChevronRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
-                <Link to="/CommercialBuildouts/">
-                  <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-6">
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-6">
+                  <Link to="/Commercial/">
                     Commercial Construction
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -323,12 +323,12 @@ export default function TacoBellRepipeKissimmee() {
               Call J&N StructureWorks at (321) 219-9007 or request a quote for your commercial
               renovation project in Kissimmee or Central Florida.
             </p>
-            <Link to="/Contact/">
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12 px-8">
+            <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12 px-8">
+              <Link to="/Contact/">
                 Get a Free Quote
                 <ChevronRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </section>
       </main>

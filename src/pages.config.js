@@ -12,6 +12,7 @@ const CustomHomes = React.lazy(() => import('./pages/CustomHomes'));
 const KitchenBathRemodeling = React.lazy(() => import('./pages/KitchenBathRemodeling'));
 const WholeHomeRenovations = React.lazy(() => import('./pages/WholeHomeRenovations'));
 const RoomAdditions = React.lazy(() => import('./pages/RoomAdditions'));
+const Commercial = React.lazy(() => import('./pages/Commercial'));
 const CommercialBuildouts = React.lazy(() => import('./pages/CommercialBuildouts'));
 const CommercialRenovations = React.lazy(() => import('./pages/CommercialRenovations'));
 // Location Pages
@@ -48,6 +49,7 @@ export const PAGES = {
     "KitchenBathRemodeling": KitchenBathRemodeling,
     "WholeHomeRenovations": WholeHomeRenovations,
     "RoomAdditions": RoomAdditions,
+    "Commercial": Commercial,
     "CommercialBuildouts": CommercialBuildouts,
     "CommercialRenovations": CommercialRenovations,
     // Location Pages

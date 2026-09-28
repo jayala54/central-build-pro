@@ -131,6 +131,10 @@ async function prerender() {
             });
           }
         });
+
+        // The deferred analytics loader already appends this script after load.
+        // Do not bake Puppeteer's dynamically inserted copy into static HTML.
+        head.querySelectorAll('script[src*="googletagmanager.com/gtag/js"]').forEach((el) => el.remove());
       });
 
       let html = await page.content();

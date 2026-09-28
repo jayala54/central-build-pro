@@ -14,7 +14,6 @@ export default function HeroSection({ onContactClick }) {
           width="1200"
           height="480"
           className="w-full h-full object-cover"
-          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
       </div>

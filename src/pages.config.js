@@ -19,6 +19,7 @@ const ServiceAreaOrlando = React.lazy(() => import('./pages/ServiceAreaOrlando')
 const ServiceAreaWinterPark = React.lazy(() => import('./pages/ServiceAreaWinterPark'));
 const ServiceAreaLakeMary = React.lazy(() => import('./pages/ServiceAreaLakeMary'));
 const ServiceAreaKissimmee = React.lazy(() => import('./pages/ServiceAreaKissimmee'));
+const ServiceAreaSaintCloud = React.lazy(() => import('./pages/ServiceAreaSaintCloud'));
 const ServiceAreaSanford = React.lazy(() => import('./pages/ServiceAreaSanford'));
 const ServiceAreaOviedo = React.lazy(() => import('./pages/ServiceAreaOviedo'));
 const ServiceAreaClermont = React.lazy(() => import('./pages/ServiceAreaClermont'));
@@ -54,6 +55,7 @@ export const PAGES = {
     "ServiceAreaWinterPark": ServiceAreaWinterPark,
     "ServiceAreaLakeMary": ServiceAreaLakeMary,
     "ServiceAreaKissimmee": ServiceAreaKissimmee,
+    "ServiceAreaSaintCloud": ServiceAreaSaintCloud,
     "ServiceAreaSanford": ServiceAreaSanford,
     "ServiceAreaOviedo": ServiceAreaOviedo,
     "ServiceAreaClermont": ServiceAreaClermont,

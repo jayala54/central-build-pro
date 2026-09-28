@@ -18,6 +18,7 @@
 /ServiceAreaWinterPark  /ServiceAreaWinterPark/  301
 /ServiceAreaLakeMary  /ServiceAreaLakeMary/  301
 /ServiceAreaKissimmee  /ServiceAreaKissimmee/  301
+/ServiceAreaSaintCloud  /ServiceAreaSaintCloud/  301
 /ServiceAreaSanford  /ServiceAreaSanford/  301
 /ServiceAreaOviedo  /ServiceAreaOviedo/  301
 /ServiceAreaClermont  /ServiceAreaClermont/  301
@@ -28,6 +29,7 @@
 /ServiceAreaDrPhillips  /ServiceAreaDrPhillips/  301
 /PrivacyPolicy  /PrivacyPolicy/  301
 /TermsOfService  /TermsOfService/  301
+/FreeQuote  /FreeQuote/  301
 /Blog/how-much-does-it-cost-to-build-a-home-in-central-florida  /Blog/how-much-does-it-cost-to-build-a-home-in-central-florida/  301
 /Blog/choosing-the-right-lot-for-your-new-build  /Blog/choosing-the-right-lot-for-your-new-build/  301
 /Blog/building-permits-orange-county-florida  /Blog/building-permits-orange-county-florida/  301
@@ -59,7 +61,6 @@
 /Blog/what-is-a-certified-building-contractor  /Blog/what-is-a-certified-building-contractor/  301
 /Blog/difference-between-gc-and-builder  /Blog/difference-between-gc-and-builder/  301
 /Blog/how-construction-draw-schedules-work  /Blog/how-construction-draw-schedules-work/  301
-
-# Cloudflare Pages SPA fallback
-# All routes that don't match a static file serve index.html
-/*  /index.html  200
+/Blog/what-happens-if-construction-fails-inspection  /Blog/what-happens-if-construction-fails-inspection/  301
+/Blog/how-warranties-work-on-new-construction-homes  /Blog/how-warranties-work-on-new-construction-homes/  301
+/Blog/how-to-become-a-general-contractor-in-florida  /Blog/how-to-become-a-general-contractor-in-florida/  301

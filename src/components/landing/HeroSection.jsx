@@ -10,9 +10,11 @@ export default function HeroSection({ onContactClick }) {
       <div className="absolute inset-0 z-0">
         <img
           src="/images/projects/completed-home.webp"
-          alt="Custom home built by J&N StructureWorks in Central Florida"
+          alt="Completed Central Florida home built by J&N StructureWorks"
+          width="1200"
+          height="480"
           className="w-full h-full object-cover"
-          fetchpriority="high"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
       </div>
@@ -36,8 +38,8 @@ export default function HeroSection({ onContactClick }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Custom Homes &
-            <span className="block text-orange-500">Expert Renovations</span>
+            General Contractor
+            <span className="block text-orange-500">Orlando & Central Florida</span>
           </motion.h1>
 
           <motion.p 
@@ -46,8 +48,8 @@ export default function HeroSection({ onContactClick }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            We build custom homes, deliver expert renovations, and handle commercial buildouts
-            across Central Florida. If you've got a project in mind, we'd love to talk about it.
+            Residential construction <span aria-hidden="true">&bull;</span> Custom homes <span aria-hidden="true">&bull;</span> Renovations <span aria-hidden="true">&bull;</span>{' '}
+            Commercial construction <span aria-hidden="true">&bull;</span> Tenant buildouts
           </motion.p>
 
           <motion.div 
@@ -61,7 +63,7 @@ export default function HeroSection({ onContactClick }) {
               className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-14 text-base shadow-lg shadow-orange-500/50"
               onClick={onContactClick}
             >
-              Start Your Project
+              Request an Estimate
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button 

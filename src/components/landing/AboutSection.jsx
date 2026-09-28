@@ -23,9 +23,11 @@ export default function AboutSection() {
           >
             <div className="relative rounded-2xl overflow-hidden">
               <img
-                src="/images/projects/jobsite-truck.jpg"
+                src="/images/projects/jobsite-truck.webp"
                 alt="J&N StructureWorks truck at an active construction site in Central Florida"
                 loading="lazy"
+                width="1200"
+                height="900"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />

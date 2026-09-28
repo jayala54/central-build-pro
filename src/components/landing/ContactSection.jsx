@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Send, CheckCircle, Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import { trackContactClick, trackEvent } from '@/utils/analytics';
 
 const projectTypes = [
   { value: 'custom_home', label: 'Custom Home Build' },
@@ -53,6 +54,11 @@ export default function ContactSection() {
         '5ihhxCIFZvr_J5Fbi'
       );
       setIsSubmitted(true);
+      trackEvent('contact_form_submit', {
+        form_name: 'contact_form',
+        project_type: formData.project_type || 'not_selected',
+        county: formData.county || 'not_selected',
+      });
       setFormData({ name: '', email: '', phone: '', project_type: '', county: '', message: '' });
     } catch (error) {
       alert('Something went wrong. Please call us at (321) 219-9007 or try again.');
@@ -88,7 +94,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-slate-500 text-sm">Call Us</p>
-                  <a href="tel:+13212199007" className="text-slate-900 font-semibold text-lg hover:text-orange-600 transition-colors">(321) 219-9007</a>
+                  <a href="tel:+13212199007" onClick={() => trackContactClick('phone', 'contact_page')} className="text-slate-900 font-semibold text-lg hover:text-orange-600 transition-colors">(321) 219-9007</a>
                 </div>
               </div>
 
@@ -98,7 +104,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-slate-500 text-sm">Email Us</p>
-                  <a href="mailto:jnstructureworks@gmail.com" className="text-slate-900 font-semibold text-lg hover:text-orange-600 transition-colors">jnstructureworks@gmail.com</a>
+                  <a href="mailto:jnstructureworks@gmail.com" onClick={() => trackContactClick('email', 'contact_page')} className="text-slate-900 font-semibold text-lg hover:text-orange-600 transition-colors">jnstructureworks@gmail.com</a>
                 </div>
               </div>
 
@@ -140,7 +146,7 @@ export default function ContactSection() {
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 shadow-xl border border-slate-100">
+              <form id="contact-request-estimate-form" data-conversion-event="contact_form_submit" onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 shadow-xl border border-slate-100">
                 <h3 className="text-xl font-semibold text-slate-900 mb-6">Request a Free Quote</h3>
                 
                 <div className="space-y-5">

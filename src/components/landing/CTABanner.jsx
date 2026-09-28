@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { ChevronRight, Phone } from 'lucide-react';
+import { trackContactClick, trackEvent } from '@/utils/analytics';
 
 export default function CTABanner() {
   return (
@@ -23,12 +24,12 @@ export default function CTABanner() {
             give you an honest assessment, a realistic budget, and a clear path forward.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/Contact/">
+            <Link to="/Contact/" onClick={() => trackEvent('request_estimate_click', { link_location: 'homepage_cta' })}>
               <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-14 text-base shadow-lg shadow-orange-500/30">
-                Get a Free Quote <ChevronRight className="w-5 h-5 ml-2" />
+                Request an Estimate <ChevronRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
-            <a href="tel:+13212199007">
+            <a href="tel:+13212199007" onClick={() => trackContactClick('phone', 'homepage_cta')}>
               <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-14 px-8 text-base">
                 <Phone className="w-5 h-5 mr-2" /> (321) 219-9007
               </Button>

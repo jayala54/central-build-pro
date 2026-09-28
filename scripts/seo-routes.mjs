@@ -20,6 +20,7 @@ export const staticRoutes = [
   { path: '/ServiceAreaWinterPark', changefreq: 'monthly', priority: '0.8' },
   { path: '/ServiceAreaLakeMary', changefreq: 'monthly', priority: '0.8' },
   { path: '/ServiceAreaKissimmee', changefreq: 'monthly', priority: '0.8' },
+  { path: '/ServiceAreaSaintCloud', changefreq: 'monthly', priority: '0.8' },
   { path: '/ServiceAreaSanford', changefreq: 'monthly', priority: '0.8' },
   { path: '/ServiceAreaOviedo', changefreq: 'monthly', priority: '0.8' },
   { path: '/ServiceAreaClermont', changefreq: 'monthly', priority: '0.8' },
@@ -30,6 +31,7 @@ export const staticRoutes = [
   { path: '/ServiceAreaDrPhillips', changefreq: 'monthly', priority: '0.8' },
   { path: '/PrivacyPolicy', changefreq: 'yearly', priority: '0.3' },
   { path: '/TermsOfService', changefreq: 'yearly', priority: '0.3' },
+  { path: '/FreeQuote', changefreq: 'yearly', priority: '0.1', indexable: false },
 ];
 
 export function getBuildDate() {

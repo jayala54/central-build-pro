@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { trackContactClick } from '@/utils/analytics';
 
 export default function Footer() {
   return (
@@ -12,19 +13,20 @@ export default function Footer() {
               <img src="/logo.webp" alt="J&N StructureWorks, LLC." loading="lazy" className="h-14 md:h-28 w-auto brightness-0 invert" width="400" height="196" />
             </div>
             <p className="text-slate-400 mb-0">
-              Florida Certified Building Contractor serving Central Florida with excellence since 2020.
+              Residential and commercial general contractor serving Orlando and Central Florida.
             </p>
             <p className="text-amber-500 font-medium text-sm mt-1">License #CBC1269175</p>
           </div>
 
           <div className="mt-0 md:mt-6">
-            <p className="text-white font-semibold mb-4">Services</p>
+            <p className="text-white font-semibold mb-4">Construction Services</p>
             <ul className="space-y-2 text-slate-400">
               <li><Link to="/CustomHomes/" className="hover:text-amber-400 transition-colors">Custom Homes</Link></li>
               <li><Link to="/WholeHomeRenovations/" className="hover:text-amber-400 transition-colors">Home Renovations</Link></li>
               <li><Link to="/KitchenBathRemodeling/" className="hover:text-amber-400 transition-colors">Kitchen & Bath</Link></li>
               <li><Link to="/RoomAdditions/" className="hover:text-amber-400 transition-colors">Room Additions</Link></li>
               <li><Link to="/CommercialBuildouts/" className="hover:text-amber-400 transition-colors">Commercial Buildouts</Link></li>
+              <li><Link to="/CommercialRenovations/" className="hover:text-amber-400 transition-colors">Commercial Renovations</Link></li>
             </ul>
           </div>
 
@@ -35,6 +37,7 @@ export default function Footer() {
               <li><Link to="/ServiceAreaWinterPark/" className="hover:text-amber-400 transition-colors">Winter Park</Link></li>
               <li><Link to="/ServiceAreaLakeMary/" className="hover:text-amber-400 transition-colors">Lake Mary</Link></li>
               <li><Link to="/ServiceAreaKissimmee/" className="hover:text-amber-400 transition-colors">Kissimmee</Link></li>
+              <li><Link to="/ServiceAreaSaintCloud/" className="hover:text-amber-400 transition-colors">Saint Cloud</Link></li>
               <li><Link to="/ServiceAreaWindermere/" className="hover:text-amber-400 transition-colors">Windermere</Link></li>
               <li><Link to="/ServiceAreaLakeNona/" className="hover:text-amber-400 transition-colors">Lake Nona</Link></li>
             </ul>
@@ -45,13 +48,13 @@ export default function Footer() {
             <p className="text-white font-semibold mb-4">Contact</p>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+13212199007" className="flex items-center gap-3 text-slate-400 hover:text-amber-400 transition-colors">
+                <a href="tel:+13212199007" onClick={() => trackContactClick('phone', 'footer')} className="flex items-center gap-3 text-slate-400 hover:text-amber-400 transition-colors">
                   <Phone className="w-4 h-4 text-amber-500" />
                   (321) 219-9007
                 </a>
               </li>
               <li>
-                <a href="mailto:jnstructureworks@gmail.com" className="flex items-center gap-3 text-slate-400 hover:text-amber-400 transition-colors">
+                <a href="mailto:jnstructureworks@gmail.com" onClick={() => trackContactClick('email', 'footer')} className="flex items-center gap-3 text-slate-400 hover:text-amber-400 transition-colors">
                   <Mail className="w-4 h-4 text-amber-500" />
                   jnstructureworks@gmail.com
                 </a>

@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 
 const SITE_NAME = 'J&N StructureWorks';
-const DEFAULT_DESCRIPTION = 'Florida Certified Building Contractor (CBC1269175) serving Orlando & Central Florida. Custom homes, renovations, kitchen & bath remodels, and commercial buildouts in Orange, Seminole, Osceola & Lake counties. Call (321) 219-9007 for a free quote.';
+const LEGAL_NAME = 'J&N StructureWorks, LLC';
+const DEFAULT_DESCRIPTION = 'J&N StructureWorks is a Florida Certified Building Contractor serving Orlando and Central Florida with residential and commercial construction services.';
 const SITE_URL = 'https://j-nsw.com';
 const DEFAULT_IMAGE = `${SITE_URL}/images/projects/completed-home.webp`;
 
@@ -19,72 +20,24 @@ export default function SEOHead({
   jsonLd = null,
   image = DEFAULT_IMAGE,
   imageAlt = 'Custom home built by J&N StructureWorks in Central Florida',
+  breadcrumbs = null,
+  noIndex = false,
 }) {
-  const fullTitle = title ? `${title} | ${SITE_NAME}` : `Custom Home Builder Orlando FL | ${SITE_NAME}`;
+  const fullTitle = title ? `${title} | ${SITE_NAME}` : `General Contractor Orlando FL | ${SITE_NAME}`;
   const canonicalUrl = `${SITE_URL}${normalizeCanonicalPath(path)}`;
 
-  const defaultJsonLd = {
+  const businessJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'GeneralContractor',
-    '@id': SITE_URL,
+    '@id': `${SITE_URL}/#business`,
     name: SITE_NAME,
-    alternateName: 'J&N StructureWorks, LLC',
+    legalName: LEGAL_NAME,
     description: DEFAULT_DESCRIPTION,
-    url: SITE_URL,
+    url: `${SITE_URL}/`,
     telephone: '+1-321-219-9007',
     email: 'jnstructureworks@gmail.com',
-    image: `${SITE_URL}/logo.png`,
-    logo: `${SITE_URL}/logo.png`,
-    priceRange: '$$$$',
-    foundingDate: '2020',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Orlando',
-      addressRegion: 'FL',
-      postalCode: '32801',
-      addressCountry: 'US',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 28.5383,
-      longitude: -81.3792,
-    },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '17:00',
-      },
-    ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      reviewCount: '47',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    review: [
-      {
-        '@type': 'Review',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        author: { '@type': 'Person', name: 'Michael R.' },
-        reviewBody: 'J&N StructureWorks built our dream home in Winter Park. Outstanding quality, on time, and within budget. Highly recommend!',
-      },
-      {
-        '@type': 'Review',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        author: { '@type': 'Person', name: 'Sarah T.' },
-        reviewBody: 'Complete kitchen and bathroom renovation. The team was professional, communicative, and the results exceeded our expectations.',
-      },
-      {
-        '@type': 'Review',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        author: { '@type': 'Person', name: 'David & Lisa M.' },
-        reviewBody: 'They handled our commercial tenant buildout flawlessly. Great attention to detail and excellent project management.',
-      },
-    ],
-    sameAs: ['https://share.google/feWTzOGTKyUrlkb2o'],
+    image: `${SITE_URL}/logo.webp`,
+    logo: `${SITE_URL}/logo.webp`,
     knowsAbout: [
       'Custom Home Building',
       'Home Renovations',
@@ -100,6 +53,7 @@ export default function SEOHead({
       { '@type': 'City', name: 'Winter Park', containedInPlace: { '@type': 'State', name: 'Florida' } },
       { '@type': 'City', name: 'Lake Mary', containedInPlace: { '@type': 'State', name: 'Florida' } },
       { '@type': 'City', name: 'Kissimmee', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Saint Cloud', containedInPlace: { '@type': 'State', name: 'Florida' } },
       { '@type': 'City', name: 'Sanford', containedInPlace: { '@type': 'State', name: 'Florida' } },
       { '@type': 'City', name: 'Oviedo', containedInPlace: { '@type': 'State', name: 'Florida' } },
       { '@type': 'City', name: 'Clermont', containedInPlace: { '@type': 'State', name: 'Florida' } },
@@ -134,6 +88,15 @@ export default function SEOHead({
     },
   };
 
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    name: SITE_NAME,
+    url: `${SITE_URL}/`,
+    publisher: { '@id': `${SITE_URL}/#business` },
+  };
+
   const articleJsonLd = article
     ? {
         '@context': 'https://schema.org',
@@ -141,19 +104,42 @@ export default function SEOHead({
         headline: article.title,
         description: article.metaDescription,
         datePublished: article.date,
-        author: { '@type': 'Organization', name: SITE_NAME },
-        publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+        dateModified: article.modifiedDate || article.date,
+        image,
+        author: { '@id': `${SITE_URL}/#business` },
+        publisher: { '@id': `${SITE_URL}/#business` },
         mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
         keywords: article.tags?.join(', '),
       }
     : null;
 
-  const structuredData = jsonLd || articleJsonLd || defaultJsonLd;
+  const breadcrumbJsonLd = breadcrumbs?.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbs.map((item, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: item.label,
+          item: item.href ? `${SITE_URL}${normalizeCanonicalPath(item.href)}` : canonicalUrl,
+        })),
+      }
+    : null;
+
+  const pageStructuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const structuredData = [
+    businessJsonLd,
+    ...(path === '/' ? [websiteJsonLd] : []),
+    ...(articleJsonLd ? [articleJsonLd] : []),
+    ...(breadcrumbJsonLd ? [breadcrumbJsonLd] : []),
+    ...pageStructuredData,
+  ];
 
   return (
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {noIndex && <meta name="robots" content="noindex,follow" />}
       <link rel="canonical" href={canonicalUrl} />
 
       {/* Open Graph */}
@@ -177,7 +163,9 @@ export default function SEOHead({
       <meta name="geo.placename" content="Orlando" />
 
       {/* JSON-LD Structured Data */}
-      <script type="application/ld+json">{JSON.stringify(Array.isArray(structuredData) ? structuredData : structuredData)}</script>
+      {structuredData.map((data, index) => (
+        <script key={`jsonld-${index}`} type="application/ld+json">{JSON.stringify(data)}</script>
+      ))}
     </Helmet>
   );
 }

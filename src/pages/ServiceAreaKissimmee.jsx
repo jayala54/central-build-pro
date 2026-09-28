@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { MapPin, CheckCircle, ChevronRight, Phone } from 'lucide-react';
 import FAQSection from '@/components/FAQSection';
+import LocationServiceLinks from '@/components/LocationServiceLinks';
 
 const services = [
   'Custom Home Building',
@@ -173,6 +174,8 @@ export default function ServiceAreaKissimmee() {
             </div>
           </div>
         </div>
+
+        <LocationServiceLinks />
 
         {/* FAQ */}
         <FAQSection faqs={faqs} title="Kissimmee Construction FAQs" />

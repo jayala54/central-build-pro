@@ -6,41 +6,59 @@ import Footer from '@/components/landing/Footer';
 import SEOHead from '@/components/SEOHead';
 import FAQSection from '@/components/FAQSection';
 import { Button } from '@/components/ui/button';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const SITE_URL = 'https://j-nsw.com';
 const projectPath = '/commercial-remodel-kissimmee-taco-bell';
 const canonicalProjectUrl = `${SITE_URL}${projectPath}/`;
 const imageBase = '/images/projects/taco-bell-repipe';
 const heroImage = `${imageBase}/finished-commercial-bathroom.webp`;
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Projects', href: '/Projects/' },
+  { label: 'Taco Bell Commercial Remodel' },
+];
 
 const gallery = [
   {
     src: `${imageBase}/finished-commercial-bathroom.webp`,
+    width: 720,
+    height: 1200,
     alt: 'Finished commercial bathroom remodel for a Taco Bell in Kissimmee Florida',
     caption: 'Finished restroom with new tile, partitions, and fixtures',
   },
   {
     src: `${imageBase}/finished-restroom-stalls.webp`,
+    width: 675,
+    height: 1200,
     alt: 'Completed restroom stalls after Taco Bell bathroom remodel in Kissimmee',
     caption: 'Completed restroom stalls and wall finishes',
   },
   {
     src: `${imageBase}/floor-patching-plumbing.webp`,
+    width: 1600,
+    height: 900,
     alt: 'Floor patching and plumbing rough-in during commercial repipe',
     caption: 'Floor access and patching during repipe work',
   },
   {
     src: `${imageBase}/plumbing-rough-in.webp`,
+    width: 1600,
+    height: 900,
     alt: 'Plumbing rough-in inside commercial restroom wall',
     caption: 'Plumbing rough-in before closing the walls',
   },
   {
     src: `${imageBase}/open-walls-plumbing-access.webp`,
+    width: 1600,
+    height: 1200,
     alt: 'Open walls exposing plumbing access for commercial bathroom repipe',
     caption: 'Wall access opened for plumbing replacement',
   },
   {
     src: `${imageBase}/bathroom-rebuild-progress.webp`,
+    width: 1600,
+    height: 1200,
     alt: 'Commercial bathroom rebuild progress after repipe work',
     caption: 'Restroom rebuild progress after rough-in',
   },
@@ -88,12 +106,7 @@ const jsonLd = [
         addressCountry: 'US',
       },
     },
-    provider: {
-      '@type': 'GeneralContractor',
-      name: 'J&N StructureWorks',
-      telephone: '+1-321-219-9007',
-      url: SITE_URL,
-    },
+    provider: { '@id': `${SITE_URL}/#business` },
   },
   {
     '@context': 'https://schema.org',
@@ -120,6 +133,7 @@ export default function TacoBellRepipeKissimmee() {
         image={`${SITE_URL}${heroImage}`}
         imageAlt="Finished Taco Bell commercial bathroom remodel in Kissimmee Florida"
         jsonLd={jsonLd}
+        breadcrumbs={breadcrumbs}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 
@@ -129,6 +143,8 @@ export default function TacoBellRepipeKissimmee() {
             <img
               src={heroImage}
               alt="Finished Taco Bell commercial bathroom remodel in Kissimmee Florida"
+              width="720"
+              height="1200"
               className="w-full h-full object-cover opacity-45"
               fetchPriority="high"
             />
@@ -136,6 +152,7 @@ export default function TacoBellRepipeKissimmee() {
           </div>
 
           <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+            <Breadcrumbs items={breadcrumbs} className="mb-8 [&_*]:text-slate-200" />
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/15 border border-orange-400/20 mb-6">
                 <Building2 className="w-4 h-4 text-orange-300" />
@@ -158,9 +175,9 @@ export default function TacoBellRepipeKissimmee() {
                     <ChevronRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
-                <Link to="/CommercialRenovations/">
+                <Link to="/CommercialBuildouts/">
                   <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-6">
-                    Commercial Renovations
+                    Commercial Construction
                   </Button>
                 </Link>
               </div>
@@ -257,6 +274,8 @@ export default function TacoBellRepipeKissimmee() {
                     <img
                       src={image.src}
                       alt={image.alt}
+                      width={image.width}
+                      height={image.height}
                       loading={index === 0 ? 'eager' : 'lazy'}
                       className="w-full h-full object-cover"
                     />
@@ -288,6 +307,10 @@ export default function TacoBellRepipeKissimmee() {
             </div>
 
             <FAQSection faqs={faqs} title="Commercial Repipe & Bathroom Remodel FAQs" />
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link to="/CommercialRenovations/" className="font-semibold text-orange-600 hover:text-orange-700">Explore commercial renovations</Link>
+              <Link to="/ServiceAreaKissimmee/" className="font-semibold text-orange-600 hover:text-orange-700">General contractor services in Kissimmee</Link>
+            </div>
           </div>
         </section>
 

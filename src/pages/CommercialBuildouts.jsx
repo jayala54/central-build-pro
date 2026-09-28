@@ -7,6 +7,9 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Building2, CheckCircle, ChevronRight, Phone } from 'lucide-react';
 import FAQSection from '@/components/FAQSection';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import RelatedServices from '@/components/RelatedServices';
+import ServiceAreaLinks from '@/components/ServiceAreaLinks';
 
 const faqs = [
   {
@@ -33,22 +36,28 @@ const faqs = [
 
 export default function CommercialBuildouts() {
   const scrollToContact = () => { window.location.href = '/Contact/'; };
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Commercial Construction' },
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="Commercial Tenant Buildouts Orlando FL"
+        title="Commercial General Contractor Orlando FL"
         path="/CommercialBuildouts"
-        description="Professional commercial tenant buildouts in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Office, retail, restaurant buildouts & ADA compliance. Free estimate: (321) 219-9007."
+        description="Commercial general contractor in Orlando for tenant improvements, retail, restaurant and office buildouts, renovations, permitting and inspections."
+        breadcrumbs={breadcrumbs}
         jsonLd={[
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Commercial Tenant Buildouts',
-            provider: { '@type': 'GeneralContractor', name: 'J&N StructureWorks', url: 'https://j-nsw.com' },
-            areaServed: ['Orlando, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Kissimmee, FL', 'Central Florida'],
-            description: 'Commercial tenant buildout services in Central Florida. Office buildouts, retail spaces, restaurant buildouts, ADA compliance, and tenant improvements.',
-            url: 'https://j-nsw.com/CommercialBuildouts',
+            name: 'Commercial General Contracting and Tenant Buildouts',
+            provider: { '@id': 'https://j-nsw.com/#business' },
+            areaServed: ['Orlando, FL', 'Saint Cloud, FL', 'Kissimmee, FL', 'Winter Park, FL', 'Lake Mary, FL', 'Central Florida'],
+            serviceType: ['Commercial general contracting', 'Tenant improvements', 'Retail buildouts', 'Restaurant buildouts', 'Office buildouts', 'Commercial renovations', 'Commercial demolition'],
+            description: 'Commercial construction services in Central Florida, including tenant improvements, retail, restaurant and office buildouts, commercial renovations, permitting, inspections and closeout.',
+            url: 'https://j-nsw.com/CommercialBuildouts/',
           },
           {
             '@context': 'https://schema.org',
@@ -66,17 +75,17 @@ export default function CommercialBuildouts() {
       {/* Hero */}
       <div className="bg-slate-900 pt-20 md:pt-40 pb-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <Breadcrumbs items={breadcrumbs} className="mb-8 [&_*]:text-slate-300" />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 mb-6">
               <Building2 className="w-4 h-4 text-orange-400" />
-              <span className="text-orange-400 text-sm font-medium">Commercial Buildouts</span>
+              <span className="text-orange-400 text-sm font-medium">Commercial General Contracting</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Commercial Tenant Buildouts in Orlando FL
+              Commercial General Contractor in Orlando & Central Florida
             </h1>
             <p className="text-slate-300 text-lg max-w-3xl mb-8">
-              Build out your commercial space with a Florida Certified Building Contractor.
-              From office buildouts and retail spaces to restaurant construction and ADA compliance, J&N StructureWorks delivers on time and on budget.
+              Commercial construction, tenant improvements, retail and restaurant buildouts, office and professional spaces, renovations, permitting, inspections, and closeout coordinated by a Florida Certified Building Contractor.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/Contact/">
@@ -149,6 +158,23 @@ export default function CommercialBuildouts() {
                 ))}
               </div>
 
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Commercial Construction Services</h3>
+              <div className="grid sm:grid-cols-2 gap-5 mb-10">
+                {[
+                  ['Tenant Improvements', 'Interior construction for leased spaces, including partitions, systems coordination, accessibility work, finishes, and inspections.'],
+                  ['Retail Buildouts', 'Customer-facing retail interiors planned around circulation, displays, lighting, storefront conditions, and code requirements.'],
+                  ['Restaurant Construction', 'Restaurant buildouts involving specialized plumbing, restrooms, kitchen coordination, finishes, and applicable agency reviews.'],
+                  ['Office Buildouts', 'Private offices, conference rooms, open work areas, break rooms, restrooms, data, lighting, and mechanical coordination.'],
+                  ['Medical & Professional Spaces', 'Professional interiors coordinated around workflow, privacy, accessibility, equipment, and building systems.'],
+                  ['Commercial Demolition', 'Selective interior demolition and removal needed to prepare an existing property for its approved new scope.'],
+                ].map(([title, description]) => (
+                  <div key={title} className="border-l-4 border-orange-500 pl-4 py-1">
+                    <h4 className="font-bold text-slate-900">{title}</h4>
+                    <p className="text-sm text-slate-600 mt-2">{description}</p>
+                  </div>
+                ))}
+              </div>
+
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Commercial Buildout Process</h3>
               <div className="space-y-4 mb-10">
                 {[
@@ -190,8 +216,23 @@ export default function CommercialBuildouts() {
           </div>
         </div>
 
+        <ServiceAreaLinks />
+
         {/* FAQ */}
         <FAQSection faqs={faqs} />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-16">
+          <section aria-labelledby="commercial-project-heading" className="border-t border-slate-200 pt-12">
+            <h2 id="commercial-project-heading" className="text-3xl font-bold text-slate-900 mb-5">Commercial Project Experience</h2>
+            <p className="text-slate-600 max-w-3xl mb-6">See how J&N StructureWorks coordinated a commercial repipe and bathroom remodel in Kissimmee from demolition and plumbing access through reconstruction and finished restrooms.</p>
+            <Link to="/commercial-remodel-kissimmee-taco-bell/" className="font-semibold text-orange-600 hover:text-orange-700 inline-flex items-center gap-2">View the commercial remodel case study <ChevronRight className="w-4 h-4" /></Link>
+          </section>
+          <RelatedServices services={[
+            { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Modernize or reconfigure an existing business property.' },
+            { label: 'Kissimmee Commercial Project', href: '/commercial-remodel-kissimmee-taco-bell/', description: 'Commercial repipe and bathroom remodel case study.' },
+            { label: 'Saint Cloud Construction', href: '/ServiceAreaSaintCloud/', description: 'Residential and commercial contracting in Osceola County.' },
+          ]} />
+        </div>
 
         {/* CTA */}
         <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-xl p-8 md:p-10 mt-16 text-center">

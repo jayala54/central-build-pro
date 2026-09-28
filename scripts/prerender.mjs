@@ -9,6 +9,7 @@ import { getCanonicalRoutes } from './seo-routes.mjs';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.resolve(__dirname, '..', 'dist');
 const PORT = 4173;
+let appShell = '';
 
 const MIME_TYPES = {
   '.html': 'text/html',
@@ -44,10 +45,9 @@ function startServer() {
         return;
       }
 
-      // SPA fallback — serve index.html for all routes
-      const indexPath = path.join(DIST, 'index.html');
+      // Serve the original Vite shell while the browser renders each route.
       res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.end(fs.readFileSync(indexPath));
+      res.end(appShell);
     });
 
     server.listen(PORT, () => resolve(server));
@@ -57,6 +57,9 @@ function startServer() {
 async function prerender() {
   console.log(`\nPre-rendering ${ROUTES.length} pages...\n`);
 
+  // Keep the original Vite shell in memory. The root prerender overwrites
+  // dist/index.html, which must not become the fallback for later routes.
+  appShell = fs.readFileSync(path.join(DIST, 'index.html'));
   const server = await startServer();
   const browser = await puppeteer.launch({
     headless: true,
@@ -75,8 +78,15 @@ async function prerender() {
         timeout: 30000,
       });
 
-      // Give react-helmet-async time to update <head> tags
-      await new Promise((r) => setTimeout(r, 1500));
+      const expectedCanonical = route === '/'
+        ? 'https://j-nsw.com/'
+        : `https://j-nsw.com${route}/`;
+
+      await page.waitForFunction(
+        (canonical) => document.querySelector('link[rel="canonical"]')?.href === canonical,
+        { timeout: 15000 },
+        expectedCanonical,
+      );
 
       // Remove duplicate non-data-rh tags that react-helmet-async has replaced
       // (react-helmet-async adds data-rh="true" to its managed tags but leaves originals)
@@ -129,6 +139,7 @@ async function prerender() {
       if (!/^<!DOCTYPE/i.test(html)) {
         html = '<!DOCTYPE html>' + html;
       }
+      html = `${html.replace(/[ \t]+$/gm, '').trimEnd()}\n`;
 
       // Write to dist/[route]/index.html (root route overwrites dist/index.html)
       if (route === '/') {

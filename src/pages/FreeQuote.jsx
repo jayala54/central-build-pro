@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -7,10 +7,11 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import SEOHead from '@/components/SEOHead';
 import emailjs from '@emailjs/browser';
+import { trackEvent } from '@/utils/analytics';
 import {
-  Phone, Mail, Shield, Award, Clock, Star,
+  Phone, Shield, Award, Clock, Star,
   CheckCircle, Loader2, Send, Home, Hammer,
-  Wrench, SquarePlus, Building2, HardHat, ArrowRight
+  Wrench, SquarePlus, Building2, HardHat
 } from 'lucide-react';
 
 const projectTypes = [
@@ -68,6 +69,11 @@ function QuoteForm({ id, utmParams }) {
         '5ihhxCIFZvr_J5Fbi'
       );
       setIsSubmitted(true);
+      trackEvent('request_estimate_submit', {
+        form_name: id,
+        project_type: formData.project_type || 'not_selected',
+        source: 'landing_page',
+      });
       setFormData({ name: '', phone: '', email: '', project_type: '' });
     } catch {
       alert('Something went wrong. Please call us at (321) 219-9007 or try again.');
@@ -192,6 +198,7 @@ export default function FreeQuote() {
         title="Free Quote | J&N StructureWorks — Orlando Home Builder"
         path="/FreeQuote"
         description="Get a free quote from J&N StructureWorks, Orlando's trusted building contractor. Custom homes, renovations, and commercial buildouts. Call (321) 219-9007."
+        noIndex
       />
       <Helmet>
         <meta name="robots" content="noindex, nofollow" />
@@ -226,6 +233,9 @@ export default function FreeQuote() {
           <img
             src="/images/projects/completed-home.webp"
             alt=""
+            width="1200"
+            height="480"
+            fetchPriority="high"
             className="w-full h-full object-cover"
             aria-hidden="true"
           />

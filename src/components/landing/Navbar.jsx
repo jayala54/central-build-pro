@@ -4,14 +4,15 @@ import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
+import { trackContactClick, trackEvent } from '@/utils/analytics';
 
 const navLinks = [
-  { label: 'Home', href: '/Home' },
-  { label: 'Services', href: '/Services' },
-  { label: 'Projects', href: '/Projects' },
-  { label: 'About', href: '/About' },
-  { label: 'Blog', href: '/Blog' },
-  { label: 'Contact', href: '/Contact' }
+  { label: 'Residential', href: '/Services/' },
+  { label: 'Commercial', href: '/CommercialBuildouts/' },
+  { label: 'Projects', href: '/Projects/' },
+  { label: 'Service Areas', href: '/ServiceAreaOrlando/' },
+  { label: 'Blog', href: '/Blog/' },
+  { label: 'About', href: '/About/' },
 ];
 
 export default function Navbar({ onContactClick, alwaysSolid = false }) {
@@ -28,29 +29,24 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
 
   const showSolidBg = alwaysSolid || isScrolled;
 
-  const handleNavClick = (href) => {
-    window.location.href = href;
-    setIsMobileMenuOpen(false);
-  };
-
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         showSolidBg ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-14 md:h-32">
+          <div className="flex items-center justify-between h-14 lg:h-32">
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-2">
-              <img src="/logo.webp" alt="J&N StructureWorks, LLC." className="h-12 md:h-24 w-auto" width="400" height="196" />
+              <img src="/logo.webp" alt="J&N StructureWorks, LLC." className="h-12 lg:h-24 w-auto" width="400" height="196" />
             </Link>
 
             {/* Desktop Nav */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden lg:flex items-center gap-5 xl:gap-7">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
-                  to={createPageUrl(link.href.slice(1))}
+                  to={link.href}
                   className={`font-medium transition-colors ${
                     showSolidBg 
                       ? 'text-slate-600 hover:text-orange-600' 
@@ -63,9 +59,10 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
             </div>
 
             {/* CTA */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-3">
               <a 
                 href="tel:+13212199007" 
+                onClick={() => trackContactClick('phone', 'desktop_navigation')}
                 className={`flex items-center gap-2 font-medium transition-colors ${
                   showSolidBg ? 'text-slate-600' : 'text-white/80'
                 }`}
@@ -74,17 +71,22 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
                 (321) 219-9007
               </a>
               <Button 
+                id="nav-request-estimate"
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold shadow-lg shadow-orange-500/30"
-                onClick={onContactClick}
+                onClick={() => {
+                  trackEvent('request_estimate_click', { link_location: 'desktop_navigation' });
+                  onContactClick();
+                }}
               >
-                Get Quote
+                Request Estimate
               </Button>
             </div>
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden p-2"
+              className="lg:hidden p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             >
               {isMobileMenuOpen ? (
                 <X className={showSolidBg ? 'text-slate-900' : 'text-white'} />
@@ -103,13 +105,13 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-slate-900 pt-16 px-6 md:hidden"
+            className="fixed inset-0 z-40 bg-slate-900 pt-20 px-6 lg:hidden"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
-                  to={createPageUrl(link.href.slice(1))}
+                  to={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-2xl font-semibold text-white text-left"
                 >
@@ -118,19 +120,22 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
               ))}
               <a
                 href="tel:+13212199007"
+                onClick={() => trackContactClick('phone', 'mobile_navigation')}
                 className="flex items-center justify-center gap-2 h-14 text-lg font-semibold text-white border border-white/20 rounded-md mt-4"
               >
                 <Phone className="w-5 h-5" />
                 (321) 219-9007
               </a>
               <Button
+                id="mobile-nav-request-estimate"
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold h-14 text-lg"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
+                  trackEvent('request_estimate_click', { link_location: 'mobile_navigation' });
                   onContactClick();
                 }}
               >
-                Get Free Quote
+                Request an Estimate
               </Button>
             </div>
           </motion.div>

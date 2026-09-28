@@ -17,8 +17,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <SEOHead
+        title="General Contractor Orlando FL"
         path="/"
-        description="J&N StructureWorks — Orlando's trusted custom home builder & general contractor. New construction, renovations & remodels across Central Florida. (321) 219-9007."
+        description="J&N StructureWorks is a Florida Certified Building Contractor serving Orlando and Central Florida. Custom homes, renovations, additions and commercial construction."
       />
       <Navbar onContactClick={scrollToContact} />
       <HeroSection onContactClick={scrollToContact} />

@@ -9,6 +9,8 @@ import { withTrailingSlash } from '@/utils';
 import ReactMarkdown from 'react-markdown';
 import { Calendar, Clock, ArrowLeft, ChevronRight, Tag } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import RelatedServices from '@/components/RelatedServices';
 
 const isPublished = (article) => article.date <= new Date().toISOString().slice(0, 10);
 const newestFirst = (a, b) => b.date.localeCompare(a.date);
@@ -34,10 +36,40 @@ export default function BlogArticle() {
     window.location.href = '/Contact/';
   };
 
+  const breadcrumbs = article ? [
+    { label: 'Home', href: '/' },
+    { label: 'Blog', href: '/Blog/' },
+    { label: article.title },
+  ] : [];
+
+  const relatedServices = useMemo(() => {
+    if (!article) return [];
+    const content = `${article.title} ${article.tags?.join(' ')} ${article.content}`.toLowerCase();
+    if (content.includes('commercial') || content.includes('tenant') || content.includes('investor')) {
+      return [
+        { label: 'Commercial Construction', href: '/CommercialBuildouts/', description: 'Tenant improvements, retail, restaurant, and office buildouts.' },
+        { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Reconfigure and modernize existing business properties.' },
+        { label: 'Orlando General Contractor', href: '/ServiceAreaOrlando/', description: 'Residential and commercial construction in Orlando.' },
+      ];
+    }
+    if (content.includes('adu') || content.includes('addition') || content.includes('garage')) {
+      return [
+        { label: 'Home Additions', href: '/RoomAdditions/', description: 'Room additions, garage conversions, and expanded living space.' },
+        { label: 'Custom Homes', href: '/CustomHomes/', description: 'Ground-up home construction in Central Florida.' },
+        { label: 'Saint Cloud General Contractor', href: '/ServiceAreaSaintCloud/', description: 'Construction services in Saint Cloud and Osceola County.' },
+      ];
+    }
+    return [
+      { label: 'Custom Homes', href: '/CustomHomes/', description: 'Ground-up residential construction.' },
+      { label: 'Home Renovations', href: '/WholeHomeRenovations/', description: 'Comprehensive renovation and modernization.' },
+      { label: 'General Contractor Orlando', href: '/ServiceAreaOrlando/', description: 'Residential and commercial construction in Orlando.' },
+    ];
+  }, [article]);
+
   if (!article) {
     return (
       <div className="min-h-screen bg-gray-50">
-        <SEOHead title="Article Not Found" path={`/Blog/${slug}`} />
+        <SEOHead title="Article Not Found" path={`/Blog/${slug}`} noIndex />
         <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
         <div className="pt-20 md:pt-40 text-center py-20">
           <h1 className="text-2xl font-bold text-slate-900 mb-4">Article Not Found</h1>
@@ -62,12 +94,14 @@ export default function BlogArticle() {
         description={article.metaDescription}
         type="article"
         article={article}
+        breadcrumbs={breadcrumbs}
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
 
       {/* Article Header */}
       <div className="bg-slate-900 pt-20 md:pt-40 pb-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <Breadcrumbs items={breadcrumbs} className="mb-7 [&_*]:text-slate-300" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -151,15 +185,14 @@ export default function BlogArticle() {
 
         {/* CTA Banner */}
         <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-xl p-8 md:p-10 mt-12 text-center">
-          <h3 className="text-2xl font-bold text-white mb-3">Ready to Start Your New Home Build?</h3>
+          <h2 className="text-2xl font-bold text-white mb-3">Planning a construction project in Central Florida?</h2>
           <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-            J&N StructureWorks is a Florida Certified Building Contractor serving Orange, Seminole,
-            Osceola, and Lake counties. Get a free consultation today.
+            J&N StructureWorks provides residential and commercial general contracting throughout Orlando, Saint Cloud, Kissimmee, and surrounding communities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/Contact/">
               <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 h-12">
-                Get a Free Quote
+                Request an Estimate
                 <ChevronRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
@@ -170,6 +203,8 @@ export default function BlogArticle() {
             </Link>
           </div>
         </div>
+
+        <RelatedServices services={relatedServices} />
 
         {/* Related Articles */}
         {relatedArticles.length > 0 && (

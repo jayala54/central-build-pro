@@ -8,47 +8,67 @@ const sampleProjects = [
     title: 'Taco Bell Repipe & Bathroom Remodel',
     category: 'Commercial',
     location: 'Kissimmee, FL',
-    image: '/images/projects/taco-bell-repipe/finished-commercial-bathroom.jpg',
-    hoverImage: '/images/projects/taco-bell-repipe/open-walls-plumbing-access.jpg',
-    href: '/commercial-remodel-kissimmee-taco-bell',
+    image: '/images/projects/taco-bell-repipe/finished-commercial-bathroom.webp',
+    width: 720,
+    height: 1200,
+    hoverImage: '/images/projects/taco-bell-repipe/open-walls-plumbing-access.webp',
+    hoverWidth: 1600,
+    hoverHeight: 1200,
+    href: '/commercial-remodel-kissimmee-taco-bell/',
   },
   {
     title: 'Custom Home Build',
     category: 'Custom Home',
     location: 'Summerfield, FL',
-    image: '/images/projects/completed-home.jpg',
+    image: '/images/projects/completed-home.webp',
+    width: 1200,
+    height: 480,
   },
   {
     title: 'Investor Turnkey Build',
     category: 'Custom Home',
     location: 'Ocala, FL',
-    image: '/images/projects/investor-turnkey-cover.jpg',
-    hoverImage: '/images/projects/kitchen-interior.jpg',
+    image: '/images/projects/investor-turnkey-cover.webp',
+    width: 1200,
+    height: 900,
+    hoverImage: '/images/projects/kitchen-interior.webp',
+    hoverWidth: 1200,
+    hoverHeight: 900,
   },
   {
     title: 'Bathroom Addition',
     category: 'Addition',
     location: 'Saint Cloud, FL',
-    image: '/images/projects/bathroom-remodel.jpg',
+    image: '/images/projects/bathroom-remodel.webp',
+    width: 1200,
+    height: 900,
   },
   {
     title: 'New Construction',
     category: 'Custom Home',
     location: 'Ocala, FL',
-    image: '/images/projects/new-construction.jpg',
+    image: '/images/projects/new-construction.webp',
+    width: 1200,
+    height: 900,
   },
   {
     title: 'Custom Home Design & Build',
     category: 'Custom Home',
     location: 'Summerfield, FL',
-    image: '/images/projects/home-render.jpg',
+    image: '/images/projects/home-render.webp',
+    width: 1200,
+    height: 800,
   },
   {
     title: 'Commercial Remodel',
     category: 'Commercial',
     location: 'Kissimmee, FL',
-    image: '/images/projects/commercial-repipe-cover.jpg',
-    hoverImage: '/images/projects/commercial-repipe-hover.jpg',
+    image: '/images/projects/commercial-repipe-cover.webp',
+    width: 1200,
+    height: 900,
+    hoverImage: '/images/projects/commercial-repipe-hover.webp',
+    hoverWidth: 1200,
+    hoverHeight: 550,
   },
 ];
 
@@ -93,6 +113,8 @@ export default function ProjectsSection({ projects = sampleProjects }) {
                     src={project.image || project.image_url}
                     alt={project.title}
                     loading="lazy"
+                    width={project.width}
+                    height={project.height}
                     className={`w-full h-full object-cover transition-all duration-700 group-hover:scale-110 ${project.hoverImage ? 'group-hover:opacity-0' : ''}`}
                   />
                   {project.hoverImage && (
@@ -100,6 +122,8 @@ export default function ProjectsSection({ projects = sampleProjects }) {
                       src={project.hoverImage}
                       alt={`${project.title} detail`}
                       loading="lazy"
+                      width={project.hoverWidth}
+                      height={project.hoverHeight}
                       className="absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
                     />
                   )}

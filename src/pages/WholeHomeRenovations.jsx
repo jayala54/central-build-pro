@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Hammer, CheckCircle, ChevronRight, Phone } from 'lucide-react';
 import FAQSection from '@/components/FAQSection';
+import ServiceAreaLinks from '@/components/ServiceAreaLinks';
 
 const faqs = [
   {
@@ -187,6 +188,8 @@ export default function WholeHomeRenovations() {
             </div>
           </div>
         </div>
+
+        <ServiceAreaLinks />
 
         {/* FAQ */}
         <FAQSection faqs={faqs} />

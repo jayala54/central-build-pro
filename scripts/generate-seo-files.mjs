@@ -23,7 +23,7 @@ function escapeXml(value) {
 }
 
 function makeSitemap() {
-  const urls = routes.map((route) => {
+  const urls = routes.filter((route) => route.indexable !== false).map((route) => {
     const lastmod = route.lastmod ? `\n    <lastmod>${route.lastmod}</lastmod>` : '';
 
     return `  <url>
@@ -52,10 +52,6 @@ function makeRedirects() {
   return `# Canonical URL redirects
 # Keep duplicate URL variants from being crawled as separate 200 pages.
 ${[...legacyRedirects, ...redirects].join('\n')}
-
-# Cloudflare Pages SPA fallback
-# All routes that don't match a static file serve index.html
-/*  /index.html  200
 `;
 }
 

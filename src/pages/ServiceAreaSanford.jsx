@@ -24,7 +24,7 @@ const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Experience with Sanford historic district building guidelines',
   'Familiar with Seminole County permitting processes',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Transparent pricing with no hidden fees',
   'Fully licensed, bonded, and insured',
 ];

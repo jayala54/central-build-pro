@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Familiar with Seminole County permitting and zoning requirements',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Transparent pricing with detailed project budgets',
   'Fully licensed, bonded, and insured',
   'Consistent communication from start to finish',

@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Experience working with Winter Park historic district guidelines',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Transparent pricing with no hidden fees',
   'Fully licensed, bonded, and insured',
   'Respectful of your property and your neighbors during construction',

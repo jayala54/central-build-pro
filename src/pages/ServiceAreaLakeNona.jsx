@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Experience building in master-planned communities like Lake Nona',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Modern construction techniques and energy-efficient building practices',
   'Fully licensed, bonded, and insured',
   'Familiar with Lake Nona community standards and HOA processes',

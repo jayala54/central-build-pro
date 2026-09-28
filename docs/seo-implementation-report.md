@@ -8,10 +8,10 @@ The following claims existed before this SEO implementation. They were not used 
 | --- | --- |
 | "100+ projects completed" / "over 100 projects" | `src/pages/About.jsx`; `src/pages/CommercialBuildouts.jsx`; `src/pages/CommercialRenovations.jsx`; `src/pages/CustomHomes.jsx`; `src/pages/KitchenBathRemodeling.jsx`; `src/pages/RoomAdditions.jsx`; `src/pages/WholeHomeRenovations.jsx`; all pre-existing `ServiceArea*.jsx` pages; `src/components/landing/HeroSection.jsx`; `src/components/landing/WhyChooseUsSection.jsx` |
 | "100+ happy clients" | `src/components/landing/AboutSection.jsx` |
-| "Since 2020" / founding year 2020 | `src/pages/About.jsx`; service and location pages listed above; `src/components/landing/WhyChooseUsSection.jsx` |
-| "5+ years experience" | `src/components/landing/HeroSection.jsx`; `src/pages/FreeQuote.jsx` |
 | Fully licensed, bonded, and insured | Several existing location and service pages; verify the current bonding and insurance wording before using it in new campaigns |
 | Project-specific neighborhood experience statements | Existing location pages contain statements about work throughout named neighborhoods; verify the project history supporting each statement |
+
+Owner-confirmed wording: the site now states **10+ years of experience in construction**. The former founding-year wording has been removed and no founding year is asserted.
 
 The shared JSON-LD previously contained an aggregate rating of 5.0 from 47 reviews, three named reviews, a founding date, operating hours, a downtown Orlando ZIP code, and geographic coordinates. These unsupported structured-data fields were removed. No rating or review schema is now emitted.
 

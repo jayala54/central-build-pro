@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Experience with upscale residential renovations in Dr. Phillips',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Attention to premium finishes and high-end materials',
   'Fully licensed, bonded, and insured',
   'Respectful, professional crews for established neighborhoods',

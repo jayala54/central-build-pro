@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Experienced with Lake County permitting and building requirements',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Transparent pricing with no hidden fees or surprises',
   'Fully licensed, bonded, and insured',
   'Responsive communication throughout your project',

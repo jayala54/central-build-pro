@@ -302,7 +302,7 @@ export default function FreeQuote() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
             {[
               { icon: Shield, label: 'State Certified', value: 'License CBC1269175' },
-              { icon: Clock, label: 'Experience', value: '5+ Years' },
+              { icon: Clock, label: 'Construction Experience', value: '10+ Years' },
               { icon: Award, label: 'Projects Completed', value: '100+' },
               { icon: Star, label: 'Customer Rating', value: '5-Star Rated' },
             ].map((item, i) => (

@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Knowledgeable about Osceola County permitting and zoning codes',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Transparent pricing with detailed written estimates',
   'Fully licensed, bonded, and insured',
   'Bilingual team members to serve our diverse community',

@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Deep familiarity with Orange County permitting and zoning codes',
-  'Over 100 projects completed across the Orlando metro area since 2020',
+  'Over 100 projects completed across the Orlando metro area',
   'Transparent pricing with no hidden fees or change-order surprises',
   'Fully licensed, bonded, and insured for your protection',
   'Dedicated project managers who communicate at every milestone',

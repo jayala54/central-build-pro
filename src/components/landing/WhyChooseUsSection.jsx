@@ -11,7 +11,7 @@ const reasons = [
   {
     icon: Briefcase,
     title: '100+ Projects Completed',
-    description: 'From custom homes to commercial buildouts, we\'ve delivered over 100 projects across Central Florida since 2020.',
+    description: 'From custom homes to commercial buildouts, we\'ve delivered over 100 projects across Central Florida.',
   },
   {
     icon: DollarSign,

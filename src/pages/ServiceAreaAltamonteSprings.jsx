@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Familiar with Seminole County and City of Altamonte Springs permitting',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Transparent pricing with no hidden fees',
   'Fully licensed, bonded, and insured',
   'Consistent communication and on-time project delivery',

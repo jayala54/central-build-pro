@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Familiar with City of Winter Garden and Orange County permitting',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Transparent pricing with no hidden fees',
   'Fully licensed, bonded, and insured',
   'Clean, professional job sites and respectful crews',

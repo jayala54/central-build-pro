@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Experience building luxury and lakefront homes in Windermere',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Attention to high-end finishes and architectural detail',
   'Fully licensed, bonded, and insured',
   'Discreet, professional service in exclusive communities',

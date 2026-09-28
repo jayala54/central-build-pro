@@ -23,7 +23,7 @@ const services = [
 const whyChoose = [
   'Licensed Florida Certified Building Contractor (CBC1269175)',
   'Familiar with Seminole County and City of Oviedo permitting',
-  'Over 100 projects completed across Central Florida since 2020',
+  'Over 100 projects completed across Central Florida',
   'Transparent pricing with detailed written estimates',
   'Fully licensed, bonded, and insured',
   'Dedicated project managers for every job',

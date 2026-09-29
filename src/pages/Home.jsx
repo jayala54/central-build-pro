@@ -21,6 +21,8 @@ export default function Home() {
         path="/"
         description="J&N StructureWorks is a Florida Certified Building Contractor serving Orlando and Central Florida. Custom homes, renovations, additions and commercial construction."
         geoPlace="Orlando"
+        image="https://j-nsw.com/images/projects/14316-custom-home-hero.webp"
+        imageAlt="Completed custom home built by J&N StructureWorks in Central Florida"
         preloadImage
       />
       <Navbar onContactClick={scrollToContact} />

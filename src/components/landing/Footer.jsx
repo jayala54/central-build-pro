@@ -28,6 +28,7 @@ export default function Footer() {
               <li><Link to="/Commercial/" className="hover:text-amber-400 transition-colors">Commercial Contracting</Link></li>
               <li><Link to="/CommercialBuildouts/" className="hover:text-amber-400 transition-colors">Commercial Buildouts</Link></li>
               <li><Link to="/CommercialRenovations/" className="hover:text-amber-400 transition-colors">Commercial Renovations</Link></li>
+              <li><Link to="/Demolition/" className="hover:text-amber-400 transition-colors">Demolition</Link></li>
             </ul>
           </div>
 

@@ -7,6 +7,7 @@ const services = [
   { label: 'Home Additions', href: '/RoomAdditions/', description: 'Expanded living space, garage conversions, porches, and lanais.' },
   { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial contracting, buildouts, renovations, and project coordination.' },
   { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Reconfiguration and updates for existing commercial properties.' },
+  { label: 'Demolition', href: '/Demolition/', description: 'Selective and structural demolition with site preparation and debris removal.' },
 ];
 
 export default function LocationServiceLinks() {

@@ -69,6 +69,8 @@ export default function SEOHead({
       'Room Additions',
       'New Home Construction',
       'General Contracting',
+      'Commercial Demolition',
+      'Selective Demolition',
     ],
     areaServed: [
       { '@type': 'City', name: 'Orlando', containedInPlace: { '@type': 'State', name: 'Florida' } },
@@ -99,6 +101,7 @@ export default function SEOHead({
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Room Additions' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Tenant Buildouts' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Renovations' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Demolition' } },
       ],
     },
     hasCredential: {

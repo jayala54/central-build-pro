@@ -139,6 +139,7 @@ export default function Commercial() {
             <RelatedServices services={[
               { label: 'Tenant Buildouts', href: '/CommercialBuildouts/', description: 'Interior construction for leased retail, restaurant, office, and professional spaces.' },
               { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Modernize or reconfigure an existing commercial property.' },
+              { label: 'Demolition', href: '/Demolition/', description: 'Selective and structural demolition coordinated for redevelopment or renovation.' },
               { label: 'Kissimmee Project', href: '/commercial-remodel-kissimmee-taco-bell/', description: 'Commercial repipe and bathroom remodel case study.' },
             ]} />
             <ServiceAreaLinks />

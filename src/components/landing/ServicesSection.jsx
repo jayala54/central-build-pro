@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Home, Building2, Hammer, PlusSquare, Ruler, HardHat, Warehouse, Store, BriefcaseBusiness } from 'lucide-react';
+import { Home, Building2, Hammer, PlusSquare, Ruler, HardHat, Warehouse, Store, BriefcaseBusiness, Construction } from 'lucide-react';
 
 const residentialServices = [
   { icon: Home, title: 'Custom Home Building', description: 'Ground-up home construction coordinated from preconstruction and permitting through final inspections and closeout.', href: '/CustomHomes/' },
@@ -16,6 +16,7 @@ const commercialServices = [
   { icon: Store, title: 'Retail & Restaurant Buildouts', description: 'Customer-facing spaces with coordinated layouts, restrooms, specialized plumbing, finishes, and closeout.', href: '/CommercialBuildouts/' },
   { icon: BriefcaseBusiness, title: 'Office & Professional Spaces', description: 'Office, medical, and professional interiors planned around workflow, accessibility, and building systems.', href: '/CommercialBuildouts/' },
   { icon: Warehouse, title: 'Commercial Renovations', description: 'Selective demolition, repairs, reconfiguration, system updates, and new finishes for existing properties.', href: '/CommercialRenovations/' },
+  { icon: Construction, title: 'Demolition', description: 'Selective and structural demolition coordinated with permitting, utility planning, debris removal, and site preparation.', href: '/Demolition/' },
 ];
 
 function ServiceGrid({ services }) {
@@ -49,7 +50,7 @@ export default function ServicesSection() {
         <motion.div className="text-center max-w-3xl mx-auto mb-16" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <span className="text-orange-600 font-medium text-sm tracking-wider uppercase">What We Do</span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">Residential and Commercial Construction</h2>
-          <p className="text-slate-600 text-lg">One Florida Certified Building Contractor for ground-up construction, renovations, additions, tenant improvements, and commercial buildouts.</p>
+          <p className="text-slate-600 text-lg">One Florida Certified Building Contractor for ground-up construction, renovations, additions, tenant improvements, commercial buildouts, and demolition.</p>
         </motion.div>
 
         <div className="mb-16">

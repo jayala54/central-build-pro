@@ -2,7 +2,7 @@
 import puppeteer from 'puppeteer';
 
 const baseUrl = process.env.QA_BASE_URL || 'http://127.0.0.1:5173';
-const routes = ['/', '/Commercial/', '/CommercialBuildouts/', '/ServiceAreaOrlando/', '/ServiceAreaSaintCloud/'];
+const routes = ['/', '/Commercial/', '/CommercialBuildouts/', '/Demolition/', '/ServiceAreaOrlando/', '/ServiceAreaSaintCloud/'];
 const viewports = [
   { name: 'mobile', width: 390, height: 844 },
   { name: 'desktop', width: 1440, height: 1000 },

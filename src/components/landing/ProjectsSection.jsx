@@ -55,9 +55,9 @@ const sampleProjects = [
     title: 'Custom Home Design & Build',
     category: 'Custom Home',
     location: 'Summerfield, FL',
-    image: '/images/projects/home-render.webp',
-    width: 1200,
-    height: 800,
+    image: '/images/projects/14316-custom-home-featured.webp',
+    width: 1558,
+    height: 1039,
   },
   {
     title: 'Commercial Remodel',

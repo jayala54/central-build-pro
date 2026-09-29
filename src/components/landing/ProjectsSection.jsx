@@ -17,6 +17,18 @@ const sampleProjects = [
     href: '/commercial-remodel-kissimmee-taco-bell/',
   },
   {
+    title: 'Fire-Damaged Detached Garage Demo',
+    category: 'Demolition',
+    location: 'Central Florida',
+    image: '/images/projects/demolition/active-commercial-demolition.webp',
+    width: 1600,
+    height: 1200,
+    hoverImage: '/images/projects/demolition/cleared-demolition-site.webp',
+    hoverWidth: 1200,
+    hoverHeight: 1600,
+    href: '/Demolition/',
+  },
+  {
     title: 'Custom Home Build',
     category: 'Custom Home',
     location: 'Summerfield, FL',

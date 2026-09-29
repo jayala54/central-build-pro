@@ -48,7 +48,7 @@ export default function HeroSection({ onContactClick }) {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Residential construction <span aria-hidden="true">&bull;</span> Custom homes <span aria-hidden="true">&bull;</span> Renovations <span aria-hidden="true">&bull;</span>{' '}
-            Commercial construction <span aria-hidden="true">&bull;</span> Tenant buildouts
+            Commercial construction <span aria-hidden="true">&bull;</span> Tenant buildouts <span aria-hidden="true">&bull;</span> Demolition
           </motion.p>
 
           <motion.div 

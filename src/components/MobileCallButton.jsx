@@ -1,8 +1,15 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 import { trackContactClick } from '@/utils/analytics';
 
 export default function MobileCallButton() {
+  const { pathname } = useLocation();
+
+  if (pathname === '/FreeQuote' || pathname === '/FreeQuote/') {
+    return null;
+  }
+
   return (
     <a
       href="tel:+13216954964"

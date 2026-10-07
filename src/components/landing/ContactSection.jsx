@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Send, CheckCircle, Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { trackContactClick, trackEvent } from '@/utils/analytics';
+import ProjectInquiryFields, { buildProjectSummary } from '@/components/ProjectInquiryFields';
 
 const projectTypes = [
   { value: 'custom_home', label: 'Custom Home Build' },
@@ -16,6 +16,7 @@ const projectTypes = [
   { value: 'addition', label: 'Room Addition' },
   { value: 'tenant_buildout', label: 'Commercial Tenant Buildout' },
   { value: 'commercial_renovation', label: 'Commercial Renovation' },
+  { value: 'demolition', label: 'Demolition' },
   { value: 'other', label: 'Other' }
 ];
 
@@ -37,20 +38,28 @@ export default function ContactSection() {
     phone: '',
     project_type: '',
     county: '',
+    project_address: '',
+    property_status: '',
+    plans_status: '',
+    budget_range: '',
+    timeline: '',
     message: ''
   });
+  const [attachment, setAttachment] = useState({ name: '', error: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (attachment.error) return;
+    const form = e.currentTarget;
     setIsSubmitting(true);
 
     try {
-      await emailjs.send(
+      await emailjs.sendForm(
         'service_xmtwtve',
         'template_b9mf40y',
-        formData,
+        form,
         '5ihhxCIFZvr_J5Fbi'
       );
       setIsSubmitted(true);
@@ -59,7 +68,12 @@ export default function ContactSection() {
         project_type: formData.project_type || 'not_selected',
         county: formData.county || 'not_selected',
       });
-      setFormData({ name: '', email: '', phone: '', project_type: '', county: '', message: '' });
+      setFormData({
+        name: '', email: '', phone: '', project_type: '', county: '', project_address: '',
+        property_status: '', plans_status: '', budget_range: '', timeline: '', message: ''
+      });
+      setAttachment({ name: '', error: '' });
+      form.reset();
     } catch (error) {
       alert('Something went wrong. Please call us at (321) 695-4964 or try again.');
     }
@@ -146,8 +160,9 @@ export default function ContactSection() {
                 </div>
               </div>
             ) : (
-              <form id="contact-request-estimate-form" data-conversion-event="contact_form_submit" onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 shadow-xl border border-slate-100">
+              <form id="contact-request-estimate-form" data-conversion-event="contact_form_submit" onSubmit={handleSubmit} encType="multipart/form-data" className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl border border-slate-100">
                 <h3 className="text-xl font-semibold text-slate-900 mb-6">Request a Free Quote</h3>
+                <input type="hidden" name="message" value={buildProjectSummary(formData, attachment.name)} />
                 
                 <div className="space-y-5">
                   <div className="grid sm:grid-cols-2 gap-5">
@@ -155,6 +170,7 @@ export default function ContactSection() {
                       <Label htmlFor="name">Full Name *</Label>
                       <Input
                         id="name"
+                        name="name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="John Smith"
@@ -166,6 +182,7 @@ export default function ContactSection() {
                       <Label htmlFor="phone">Phone Number *</Label>
                       <Input
                         id="phone"
+                        name="phone"
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -180,6 +197,7 @@ export default function ContactSection() {
                     <Label htmlFor="email">Email Address *</Label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -192,6 +210,7 @@ export default function ContactSection() {
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
                       <Label>Project Type</Label>
+                      <input type="hidden" name="project_type" value={formData.project_type} />
                       <Select
                         value={formData.project_type}
                         onValueChange={(value) => setFormData({ ...formData, project_type: value })}
@@ -210,6 +229,7 @@ export default function ContactSection() {
                     </div>
                     <div className="space-y-2">
                       <Label>County</Label>
+                      <input type="hidden" name="county" value={formData.county} />
                       <Select
                         value={formData.county}
                         onValueChange={(value) => setFormData({ ...formData, county: value })}
@@ -228,17 +248,13 @@ export default function ContactSection() {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Project Details</Label>
-                    <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Tell us about your project..."
-                      rows={4}
-                      className="resize-none"
-                    />
-                  </div>
+                  <ProjectInquiryFields
+                    idPrefix="contact"
+                    formData={formData}
+                    setFormData={setFormData}
+                    attachment={attachment}
+                    setAttachment={setAttachment}
+                  />
 
                   <Button 
                     type="submit" 

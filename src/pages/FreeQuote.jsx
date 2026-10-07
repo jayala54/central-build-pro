@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import SEOHead from '@/components/SEOHead';
+import ProjectInquiryFields, { buildProjectSummary } from '@/components/ProjectInquiryFields';
 import emailjs from '@emailjs/browser';
 import { trackEvent } from '@/utils/analytics';
 import {
@@ -55,19 +56,23 @@ const testimonials = [
 
 function QuoteForm({ id, utmParams }) {
   const [formData, setFormData] = useState({
-    name: '', phone: '', email: '', project_type: '',
+    name: '', phone: '', email: '', project_type: '', county: '', project_address: '',
+    property_status: '', plans_status: '', budget_range: '', timeline: '', message: '',
   });
+  const [attachment, setAttachment] = useState({ name: '', error: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (attachment.error) return;
+    const form = e.currentTarget;
     setIsSubmitting(true);
     try {
-      await emailjs.send(
+      await emailjs.sendForm(
         'service_xmtwtve',
         'template_b9mf40y',
-        { ...formData, ...utmParams, source: 'landing_page' },
+        form,
         '5ihhxCIFZvr_J5Fbi'
       );
       setIsSubmitted(true);
@@ -76,7 +81,12 @@ function QuoteForm({ id, utmParams }) {
         project_type: formData.project_type || 'not_selected',
         source: 'landing_page',
       });
-      setFormData({ name: '', phone: '', email: '', project_type: '' });
+      setFormData({
+        name: '', phone: '', email: '', project_type: '', county: '', project_address: '',
+        property_status: '', plans_status: '', budget_range: '', timeline: '', message: '',
+      });
+      setAttachment({ name: '', error: '' });
+      form.reset();
     } catch {
       alert('Something went wrong. Please call us at (321) 695-4964 or try again.');
     }
@@ -101,11 +111,15 @@ function QuoteForm({ id, utmParams }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} id={id} className="space-y-4">
+    <form onSubmit={handleSubmit} id={id} encType="multipart/form-data" className="space-y-4">
+      <input type="hidden" name="message" value={buildProjectSummary(formData, attachment.name)} />
+      <input type="hidden" name="source" value="landing_page" />
+      {Object.entries(utmParams).map(([name, value]) => <input key={name} type="hidden" name={name} value={value} />)}
       <div className="space-y-1.5">
         <Label htmlFor={`${id}-name`}>Full Name *</Label>
         <Input
           id={`${id}-name`}
+          name="name"
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           placeholder="John Smith"
@@ -117,6 +131,7 @@ function QuoteForm({ id, utmParams }) {
         <Label htmlFor={`${id}-phone`}>Phone Number *</Label>
         <Input
           id={`${id}-phone`}
+          name="phone"
           type="tel"
           value={formData.phone}
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -129,6 +144,7 @@ function QuoteForm({ id, utmParams }) {
         <Label htmlFor={`${id}-email`}>Email Address *</Label>
         <Input
           id={`${id}-email`}
+          name="email"
           type="email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -139,6 +155,7 @@ function QuoteForm({ id, utmParams }) {
       </div>
       <div className="space-y-1.5">
         <Label>Project Type</Label>
+        <input type="hidden" name="project_type" value={formData.project_type} />
         <Select
           value={formData.project_type}
           onValueChange={(value) => setFormData({ ...formData, project_type: value })}
@@ -153,6 +170,13 @@ function QuoteForm({ id, utmParams }) {
           </SelectContent>
         </Select>
       </div>
+      <ProjectInquiryFields
+        idPrefix={id}
+        formData={formData}
+        setFormData={setFormData}
+        attachment={attachment}
+        setAttachment={setAttachment}
+      />
       <Button
         type="submit"
         disabled={isSubmitting}
@@ -237,7 +261,6 @@ export default function FreeQuote() {
             alt=""
             width="1200"
             height="480"
-            fetchPriority="high"
             className="w-full h-full object-cover"
             aria-hidden="true"
           />
@@ -290,7 +313,7 @@ export default function FreeQuote() {
                   FREE ESTIMATE
                 </div>
                 <h2 className="text-xl font-bold text-slate-900 mb-1 mt-2">Request Your Quote</h2>
-                <p className="text-slate-500 text-sm mb-5">Takes less than 60 seconds</p>
+                <p className="text-slate-500 text-sm mb-5">The more you share, the better we can prepare.</p>
                 <QuoteForm id="hero-form" utmParams={utmParams} />
               </div>
             </motion.div>

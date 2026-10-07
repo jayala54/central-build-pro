@@ -2,7 +2,7 @@
 import puppeteer from 'puppeteer';
 
 const baseUrl = process.env.QA_BASE_URL || 'http://127.0.0.1:5173';
-const routes = ['/', '/Commercial/', '/CommercialBuildouts/', '/Demolition/', '/ServiceAreaOrlando/', '/ServiceAreaSaintCloud/'];
+const routes = ['/', '/Contact/', '/FreeQuote/', '/Commercial/', '/CommercialBuildouts/', '/Demolition/', '/ServiceAreaOrlando/', '/ServiceAreaSaintCloud/'];
 const viewports = [
   { name: 'mobile', width: 390, height: 844 },
   { name: 'desktop', width: 1440, height: 1000 },
@@ -52,7 +52,7 @@ try {
       if (result.brokenImages.length) issues.push(`${viewport.name} ${route}: broken images ${result.brokenImages.join(', ')}`);
       if (consoleErrors.length) issues.push(`${viewport.name} ${route}: console errors ${consoleErrors.join(' | ')}`);
 
-      if (viewport.name === 'mobile') {
+      if (viewport.name === 'mobile' && route !== '/FreeQuote/') {
         const menuButton = await page.$('button[aria-controls="mobile-navigation"]');
         if (!menuButton) {
           issues.push(`mobile ${route}: navigation toggle is missing`);

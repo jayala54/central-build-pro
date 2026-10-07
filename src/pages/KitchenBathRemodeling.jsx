@@ -40,7 +40,7 @@ export default function KitchenBathRemodeling() {
       <SEOHead
         title="Kitchen & Bathroom Remodeling Orlando FL"
         path="/KitchenBathRemodeling"
-        description="Professional kitchen and bathroom remodeling in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Custom cabinetry, countertops, tile, fixtures & more. Free estimate: (321) 219-9007."
+        description="Professional kitchen and bathroom remodeling in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Custom cabinetry, countertops, tile, fixtures & more. Free estimate: (321) 695-4964."
         jsonLd={[
           {
             '@context': 'https://schema.org',
@@ -85,9 +85,9 @@ export default function KitchenBathRemodeling() {
                   Get a Kitchen & Bath Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <a href="tel:+13212199007">
+              <a href="tel:+13216954964">
                 <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
-                  <Phone className="w-4 h-4 mr-2" /> (321) 219-9007
+                  <Phone className="w-4 h-4 mr-2" /> (321) 695-4964
                 </Button>
               </a>
             </div>

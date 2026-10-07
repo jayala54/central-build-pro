@@ -41,7 +41,7 @@ export default function CustomHomes() {
         title="Custom Home Builder Orlando & Central Florida"
         path="/CustomHomes"
         geoPlace="Orlando"
-        description="Build your dream custom home in Orlando & Central Florida with J&N StructureWorks. Licensed CBC1269175. New home construction in Orange, Seminole, Osceola & Lake counties. Free consultation: (321) 219-9007."
+        description="Build your dream custom home in Orlando & Central Florida with J&N StructureWorks. Licensed CBC1269175. New home construction in Orange, Seminole, Osceola & Lake counties. Free consultation: (321) 695-4964."
         jsonLd={[
           {
             '@context': 'https://schema.org',
@@ -86,9 +86,9 @@ export default function CustomHomes() {
                   Get a Custom Home Consultation <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <a href="tel:+13212199007">
+              <a href="tel:+13216954964">
                 <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
-                  <Phone className="w-4 h-4 mr-2" /> (321) 219-9007
+                  <Phone className="w-4 h-4 mr-2" /> (321) 695-4964
                 </Button>
               </a>
             </div>

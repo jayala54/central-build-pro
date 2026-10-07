@@ -61,7 +61,7 @@ export default function ContactSection() {
       });
       setFormData({ name: '', email: '', phone: '', project_type: '', county: '', message: '' });
     } catch (error) {
-      alert('Something went wrong. Please call us at (321) 219-9007 or try again.');
+      alert('Something went wrong. Please call us at (321) 695-4964 or try again.');
     }
 
     setIsSubmitting(false);
@@ -94,7 +94,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-slate-500 text-sm">Call Us</p>
-                  <a href="tel:+13212199007" onClick={() => trackContactClick('phone', 'contact_page')} className="text-slate-900 font-semibold text-lg hover:text-orange-600 transition-colors">(321) 219-9007</a>
+                  <a href="tel:+13216954964" onClick={() => trackContactClick('phone', 'contact_page')} className="text-slate-900 font-semibold text-lg hover:text-orange-600 transition-colors">(321) 695-4964</a>
                 </div>
               </div>
 
@@ -169,7 +169,7 @@ export default function ContactSection() {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="(321) 219-9007"
+                        placeholder="(321) 695-4964"
                         required
                         className="h-12"
                       />

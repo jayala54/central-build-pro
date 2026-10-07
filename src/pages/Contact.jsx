@@ -11,7 +11,7 @@ export default function Contact() {
       <SEOHead
         title="Request a Construction Estimate Orlando FL"
         path="/Contact"
-        description="Request a free estimate from J&N StructureWorks, Orlando's trusted general contractor. Custom homes, renovations, kitchen & bath remodels. Call (321) 219-9007 or fill out our form."
+        description="Request a free estimate from J&N StructureWorks, Orlando's trusted general contractor. Custom homes, renovations, kitchen & bath remodels. Call (321) 695-4964 or fill out our form."
       />
       <Navbar onContactClick={() => {}} alwaysSolid={true} />
       <header className="bg-slate-900 pt-24 lg:pt-40 pb-12">

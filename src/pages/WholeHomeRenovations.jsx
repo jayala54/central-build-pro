@@ -40,7 +40,7 @@ export default function WholeHomeRenovations() {
       <SEOHead
         title="Whole-Home Renovations Orlando & Central Florida"
         path="/WholeHomeRenovations"
-        description="Complete whole-home renovations in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Gut renovations, modernization, structural changes & more. Free consultation: (321) 219-9007."
+        description="Complete whole-home renovations in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Gut renovations, modernization, structural changes & more. Free consultation: (321) 695-4964."
         jsonLd={[
           {
             '@context': 'https://schema.org',
@@ -85,9 +85,9 @@ export default function WholeHomeRenovations() {
                   Get a Renovation Consultation <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <a href="tel:+13212199007">
+              <a href="tel:+13216954964">
                 <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
-                  <Phone className="w-4 h-4 mr-2" /> (321) 219-9007
+                  <Phone className="w-4 h-4 mr-2" /> (321) 695-4964
                 </Button>
               </a>
             </div>

@@ -40,7 +40,7 @@ export default function RoomAdditions() {
       <SEOHead
         title="Room Additions Contractor Orlando FL"
         path="/RoomAdditions"
-        description="Professional room additions in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Bedrooms, family rooms, garage conversions, ADUs & more. Free estimate: (321) 219-9007."
+        description="Professional room additions in Orlando & Central Florida by J&N StructureWorks. Licensed CBC1269175. Bedrooms, family rooms, garage conversions, ADUs & more. Free estimate: (321) 695-4964."
         jsonLd={[
           {
             '@context': 'https://schema.org',
@@ -85,9 +85,9 @@ export default function RoomAdditions() {
                   Get a Room Addition Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <a href="tel:+13212199007">
+              <a href="tel:+13216954964">
                 <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
-                  <Phone className="w-4 h-4 mr-2" /> (321) 219-9007
+                  <Phone className="w-4 h-4 mr-2" /> (321) 695-4964
                 </Button>
               </a>
             </div>

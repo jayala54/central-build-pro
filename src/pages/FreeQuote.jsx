@@ -78,7 +78,7 @@ function QuoteForm({ id, utmParams }) {
       });
       setFormData({ name: '', phone: '', email: '', project_type: '' });
     } catch {
-      alert('Something went wrong. Please call us at (321) 219-9007 or try again.');
+      alert('Something went wrong. Please call us at (321) 695-4964 or try again.');
     }
     setIsSubmitting(false);
   };
@@ -92,7 +92,7 @@ function QuoteForm({ id, utmParams }) {
         <h3 className="text-2xl font-bold text-slate-900 mb-2">Thank You!</h3>
         <p className="text-slate-600 mb-6">We'll get back to you within 24 hours.</p>
         <p className="text-slate-500 text-sm">Or call now for an immediate response:</p>
-        <a href="tel:+13212199007" className="text-orange-600 font-bold text-lg mt-1 hover:text-orange-700">(321) 219-9007</a>
+        <a href="tel:+13216954964" className="text-orange-600 font-bold text-lg mt-1 hover:text-orange-700">(321) 695-4964</a>
         <Button variant="outline" className="mt-6" onClick={() => setIsSubmitted(false)}>
           Send Another Request
         </Button>
@@ -199,7 +199,7 @@ export default function FreeQuote() {
       <SEOHead
         title="Request a Free Construction Quote"
         path="/FreeQuote"
-        description="Get a free quote from J&N StructureWorks, Orlando's trusted building contractor. Custom homes, renovations, and commercial buildouts. Call (321) 219-9007."
+        description="Get a free quote from J&N StructureWorks, Orlando's trusted building contractor. Custom homes, renovations, and commercial buildouts. Call (321) 695-4964."
         noIndex
       />
       <Helmet>
@@ -214,11 +214,11 @@ export default function FreeQuote() {
           <div className="flex items-center justify-between h-16">
             <img src="/logo.webp" alt="J&N StructureWorks" width="400" height="196" className="h-10 w-auto" />
             <div className="flex items-center gap-3">
-              <a href="tel:+13212199007" className="hidden sm:flex items-center gap-2 text-slate-700 font-semibold hover:text-orange-600 transition-colors">
+              <a href="tel:+13216954964" className="hidden sm:flex items-center gap-2 text-slate-700 font-semibold hover:text-orange-600 transition-colors">
                 <Phone className="w-4 h-4 text-orange-500" />
-                (321) 219-9007
+                (321) 695-4964
               </a>
-              <a href="tel:+13212199007">
+              <a href="tel:+13216954964">
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-md shadow-orange-500/30">
                   <Phone className="w-4 h-4 mr-2" />
                   Call Now
@@ -261,13 +261,13 @@ export default function FreeQuote() {
               </p>
 
               {/* Mobile phone CTA */}
-              <a href="tel:+13212199007" className="lg:hidden inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl px-6 py-4 mb-6 hover:bg-white/15 transition-colors">
+              <a href="tel:+13216954964" className="lg:hidden inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl px-6 py-4 mb-6 hover:bg-white/15 transition-colors">
                 <div className="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
                 <div>
                   <p className="text-white/70 text-sm">Call us directly</p>
-                  <p className="text-white font-bold text-xl">(321) 219-9007</p>
+                  <p className="text-white font-bold text-xl">(321) 695-4964</p>
                 </div>
               </a>
 
@@ -399,13 +399,13 @@ export default function FreeQuote() {
               <p className="text-slate-300 text-lg mb-8 leading-relaxed">
                 Get a free, no-obligation quote from a licensed Florida contractor. We'll walk through your project and give you an honest price.
               </p>
-              <a href="tel:+13212199007" className="inline-flex items-center gap-4 bg-white/10 border border-white/20 rounded-xl px-6 py-5 hover:bg-white/15 transition-colors">
+              <a href="tel:+13216954964" className="inline-flex items-center gap-4 bg-white/10 border border-white/20 rounded-xl px-6 py-5 hover:bg-white/15 transition-colors">
                 <div className="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <p className="text-white/70 text-sm">Prefer to talk? Call us now</p>
-                  <p className="text-white font-bold text-2xl">(321) 219-9007</p>
+                  <p className="text-white font-bold text-2xl">(321) 695-4964</p>
                 </div>
               </a>
             </motion.div>
@@ -434,7 +434,7 @@ export default function FreeQuote() {
             <div className="flex items-center gap-4 text-slate-400">
               <span>License #CBC1269175</span>
               <span className="text-slate-700">|</span>
-              <a href="tel:+13212199007" className="hover:text-orange-400 transition-colors">(321) 219-9007</a>
+              <a href="tel:+13216954964" className="hover:text-orange-400 transition-colors">(321) 695-4964</a>
               <span className="text-slate-700">|</span>
               <a href="mailto:jnstructureworks@gmail.com" className="hover:text-orange-400 transition-colors">Email</a>
             </div>
@@ -444,9 +444,9 @@ export default function FreeQuote() {
 
       {/* ── MOBILE STICKY CALL BUTTON ── */}
       <div className="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-slate-900/95 backdrop-blur-sm border-t border-slate-700 p-3">
-        <a href="tel:+13212199007" className="flex items-center justify-center gap-2 w-full h-12 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg shadow-lg shadow-orange-500/40 transition-colors">
+        <a href="tel:+13216954964" className="flex items-center justify-center gap-2 w-full h-12 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg shadow-lg shadow-orange-500/40 transition-colors">
           <Phone className="w-5 h-5" />
-          Call (321) 219-9007 — Free Quote
+          Call (321) 695-4964 — Free Quote
         </a>
       </div>
     </div>

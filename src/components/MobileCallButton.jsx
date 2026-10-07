@@ -5,7 +5,7 @@ import { trackContactClick } from '@/utils/analytics';
 export default function MobileCallButton() {
   return (
     <a
-      href="tel:+13212199007"
+      href="tel:+13216954964"
       onClick={() => trackContactClick('phone', 'mobile_floating_button')}
       className="md:hidden fixed bottom-4 right-4 z-50 flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-5 rounded-full shadow-lg shadow-orange-500/40 transition-colors"
       aria-label="Call J&N StructureWorks"

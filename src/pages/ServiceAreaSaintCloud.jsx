@@ -81,7 +81,7 @@ export default function ServiceAreaSaintCloud() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild className="h-12 px-7 bg-orange-500 hover:bg-orange-600 text-white"><Link to="/Contact/">Request an Estimate <ChevronRight className="ml-2 w-4 h-4" /></Link></Button>
-                <Button asChild variant="outline" className="h-12 px-7 border-white text-white bg-white/10 hover:bg-white/20"><a href="tel:+13212199007"><Phone className="mr-2 w-4 h-4" /> (321) 219-9007</a></Button>
+                <Button asChild variant="outline" className="h-12 px-7 border-white text-white bg-white/10 hover:bg-white/20"><a href="tel:+13216954964"><Phone className="mr-2 w-4 h-4" /> (321) 695-4964</a></Button>
               </div>
             </div>
           </div>

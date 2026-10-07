@@ -56,7 +56,7 @@ export default function SEOHead({
     legalName: LEGAL_NAME,
     description: DEFAULT_DESCRIPTION,
     url: `${SITE_URL}/`,
-    telephone: '+1-321-219-9007',
+    telephone: '+1-321-695-4964',
     email: 'jnstructureworks@gmail.com',
     image: `${SITE_URL}/logo.webp`,
     logo: `${SITE_URL}/logo.webp`,

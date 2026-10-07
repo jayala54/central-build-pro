@@ -50,9 +50,9 @@ export default function Footer() {
             <p className="text-white font-semibold mb-4">Contact</p>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+13212199007" onClick={() => trackContactClick('phone', 'footer')} className="flex items-center gap-3 text-slate-400 hover:text-amber-400 transition-colors">
+                <a href="tel:+13216954964" onClick={() => trackContactClick('phone', 'footer')} className="flex items-center gap-3 text-slate-400 hover:text-amber-400 transition-colors">
                   <Phone className="w-4 h-4 text-amber-500" />
-                  (321) 219-9007
+                  (321) 695-4964
                 </a>
               </li>
               <li>

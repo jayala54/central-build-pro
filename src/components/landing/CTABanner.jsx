@@ -29,9 +29,9 @@ export default function CTABanner() {
                 Request an Estimate <ChevronRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
-            <a href="tel:+13212199007" onClick={() => trackContactClick('phone', 'homepage_cta')}>
+            <a href="tel:+13216954964" onClick={() => trackContactClick('phone', 'homepage_cta')}>
               <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-14 px-8 text-base">
-                <Phone className="w-5 h-5 mr-2" /> (321) 219-9007
+                <Phone className="w-5 h-5 mr-2" /> (321) 695-4964
               </Button>
             </a>
           </div>

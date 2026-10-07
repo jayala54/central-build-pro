@@ -61,14 +61,14 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
             {/* CTA */}
             <div className="hidden lg:flex items-center gap-3">
               <a 
-                href="tel:+13212199007" 
+                href="tel:+13216954964"
                 onClick={() => trackContactClick('phone', 'desktop_navigation')}
                 className={`flex items-center gap-2 font-medium transition-colors ${
                   showSolidBg ? 'text-slate-600' : 'text-white/80'
                 }`}
               >
                 <Phone className="w-4 h-4" />
-                (321) 219-9007
+                (321) 695-4964
               </a>
               <Button 
                 id="nav-request-estimate"
@@ -122,12 +122,12 @@ export default function Navbar({ onContactClick, alwaysSolid = false }) {
                 </Link>
               ))}
               <a
-                href="tel:+13212199007"
+                href="tel:+13216954964"
                 onClick={() => trackContactClick('phone', 'mobile_navigation')}
                 className="flex items-center justify-center gap-2 h-14 text-lg font-semibold text-white border border-white/20 rounded-md mt-4"
               >
                 <Phone className="w-5 h-5" />
-                (321) 219-9007
+                (321) 695-4964
               </a>
               <Button
                 id="mobile-nav-request-estimate"

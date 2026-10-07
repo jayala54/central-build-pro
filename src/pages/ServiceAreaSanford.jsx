@@ -57,7 +57,7 @@ export default function ServiceAreaSanford() {
         title="General Contractor Sanford FL"
         path="/ServiceAreaSanford"
         geoPlace="Sanford"
-        description="Licensed general contractor in Sanford, FL (CBC1269175). Custom homes, historic renovations, remodeling & additions in Seminole County. Free estimates: (321) 219-9007."
+        description="Licensed general contractor in Sanford, FL (CBC1269175). Custom homes, historic renovations, remodeling & additions in Seminole County. Free estimates: (321) 695-4964."
         jsonLd={[
           {
             '@context': 'https://schema.org',
@@ -102,9 +102,9 @@ export default function ServiceAreaSanford() {
                   Get a Free Sanford Estimate <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <a href="tel:+13212199007">
+              <a href="tel:+13216954964">
                 <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white/20 h-12 px-8">
-                  <Phone className="w-4 h-4 mr-2" /> (321) 219-9007
+                  <Phone className="w-4 h-4 mr-2" /> (321) 695-4964
                 </Button>
               </a>
             </div>

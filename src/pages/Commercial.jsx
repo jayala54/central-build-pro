@@ -15,14 +15,15 @@ const services = [
   ['Retail and restaurant construction', 'Customer-facing spaces coordinated around approved plans, operational needs, specialized systems, and applicable agency reviews.'],
   ['Office and professional spaces', 'Workplaces planned around circulation, privacy, accessibility, data, lighting, plumbing, and mechanical requirements.'],
   ['Commercial renovations', 'Selective demolition, reconfiguration, repairs, system updates, accessibility improvements, and new finishes in existing properties.'],
-  ['Commercial demolition', 'Selective removal and site preparation coordinated with the approved redevelopment or renovation scope.'],
+  ['Complete demolition', 'Entire-structure removal coordinated with the approved redevelopment scope, applicable permits, debris removal, and site turnover.'],
+  ['Selective demolition', 'Targeted removal of identified building components while protecting the portions that remain for renovation or reuse.'],
   ['Permitting and inspections', 'Permit-document coordination, required inspections, correction items, and construction closeout for the contracted scope.'],
 ];
 
 const faqs = [
   {
     q: 'What types of commercial construction does J&N StructureWorks perform?',
-    a: 'Our commercial work includes tenant improvements, retail and restaurant buildouts, office and professional spaces, commercial renovations, selective demolition, and the permitting and inspection coordination associated with the contracted construction scope.',
+    a: 'Our commercial work includes tenant improvements, retail and restaurant buildouts, office and professional spaces, commercial renovations, complete demolition, selective demolition, and the permitting and inspection coordination associated with the contracted construction scope.',
   },
   {
     q: 'Do commercial projects require an architect or engineer?',
@@ -60,7 +61,7 @@ export default function Commercial() {
             name: 'Commercial General Contracting',
             provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: ['Orlando, FL', 'Saint Cloud, FL', 'Kissimmee, FL', 'Central Florida'],
-            serviceType: ['Commercial general contracting', 'Tenant buildouts', 'Commercial renovations', 'Retail buildouts', 'Restaurant buildouts', 'Office buildouts', 'Commercial demolition'],
+            serviceType: ['Commercial general contracting', 'Tenant buildouts', 'Commercial renovations', 'Retail buildouts', 'Restaurant buildouts', 'Office buildouts', 'Complete demolition', 'Selective demolition'],
             url: 'https://j-nsw.com/Commercial/',
           },
           {
@@ -139,7 +140,8 @@ export default function Commercial() {
             <RelatedServices services={[
               { label: 'Tenant Buildouts', href: '/CommercialBuildouts/', description: 'Interior construction for leased retail, restaurant, office, and professional spaces.' },
               { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Modernize or reconfigure an existing commercial property.' },
-              { label: 'Demolition', href: '/Demolition/', description: 'Selective and structural demolition coordinated for redevelopment or renovation.' },
+              { label: 'Complete Demolition', href: '/Demolition/#complete-demolition', description: 'Entire-structure removal coordinated for redevelopment or replacement construction.' },
+              { label: 'Selective Demolition', href: '/Demolition/#selective-demolition', description: 'Targeted removal coordinated for commercial renovation or reuse.' },
               { label: 'Kissimmee Project', href: '/commercial-remodel-kissimmee-taco-bell/', description: 'Commercial repipe and bathroom remodel case study.' },
             ]} />
             <ServiceAreaLinks />

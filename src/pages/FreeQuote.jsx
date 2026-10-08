@@ -22,7 +22,8 @@ const projectTypes = [
   { value: 'addition', label: 'Room Addition' },
   { value: 'tenant_buildout', label: 'Commercial Buildout' },
   { value: 'commercial_renovation', label: 'Commercial Renovation' },
-  { value: 'demolition', label: 'Demolition' },
+  { value: 'complete_demolition', label: 'Complete Demolition' },
+  { value: 'selective_demolition', label: 'Selective Demolition' },
   { value: 'other', label: 'Other' },
 ];
 
@@ -33,7 +34,8 @@ const services = [
   { icon: SquarePlus, title: 'Room Additions', desc: 'Expand your living space seamlessly' },
   { icon: Building2, title: 'Commercial Buildouts', desc: 'Tenant improvements and new commercial spaces' },
   { icon: HardHat, title: 'Commercial Renovations', desc: 'Upgrade your business space with expert builds' },
-  { icon: Hammer, title: 'Demolition', desc: 'Selective and structural removal with coordinated site preparation' },
+  { icon: Hammer, title: 'Complete Demolition', desc: 'Entire-structure removal with coordinated site preparation' },
+  { icon: Hammer, title: 'Selective Demolition', desc: 'Targeted removal while protecting construction that remains' },
 ];
 
 const testimonials = [

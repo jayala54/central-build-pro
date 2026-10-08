@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { CheckCircle, ChevronRight, Construction, Phone } from 'lucide-react';
 import Navbar from '@/components/landing/Navbar';
 import Footer from '@/components/landing/Footer';
@@ -12,10 +12,23 @@ import { Button } from '@/components/ui/button';
 
 const SITE_URL = 'https://j-nsw.com';
 
+const demolitionCategories = [
+  {
+    id: 'complete-demolition',
+    title: 'Complete Demolition',
+    description: 'Removal of an entire approved structure when the site is being cleared for redevelopment, replacement construction, or another planned use.',
+    examples: ['Detached structures and garages', 'Residential or commercial structures', 'Removal through debris cleanup and site turnover'],
+  },
+  {
+    id: 'selective-demolition',
+    title: 'Selective Demolition',
+    description: 'Controlled removal of only the identified building components while protecting the structure, finishes, and systems designated to remain.',
+    examples: ['Interior walls, ceilings, finishes, and fixtures', 'Targeted structural components within an approved scope', 'Preparation for renovations, buildouts, additions, or repairs'],
+  },
+];
+
 const demolitionServices = [
-  ['Selective demolition', 'Targeted removal of walls, ceilings, finishes, fixtures, and building components while protecting work that will remain.'],
-  ['Structural demolition', 'Removal of approved structural elements or complete structures according to the project documents and site conditions.'],
-  ['Commercial interior demolition', 'Preparation of retail, restaurant, office, and other commercial interiors for renovation or tenant improvements.'],
+  ['Commercial interior preparation', 'Removal work that prepares retail, restaurant, office, and other commercial interiors for renovation or tenant improvements.'],
   ['Debris removal', 'Collection and removal of demolition debris as part of the contracted scope, with a clean work area prepared for the next phase.'],
   ['Site preparation', 'Coordination of access, protection, removal limits, and turnover requirements before reconstruction or redevelopment begins.'],
   ['Permit and inspection coordination', 'Management of applicable demolition permits and required inspections for the contracted construction scope.'],
@@ -58,6 +71,10 @@ const projectImages = [
 
 const faqs = [
   {
+    q: 'What is the difference between complete demolition and selective demolition?',
+    a: 'Complete demolition removes an entire approved structure. Selective demolition removes only identified portions of a building, such as walls, ceilings, finishes, fixtures, or approved structural components, while protecting the areas that will remain.',
+  },
+  {
     q: 'Do I need a permit for demolition in Orlando or Central Florida?',
     a: 'Permit requirements depend on the jurisdiction, property, structure, and scope. Structural or complete-building demolition commonly requires a permit, while some limited interior removal may be reviewed as part of a renovation permit. We identify applicable requirements and coordinate permits for our contracted scope.',
   },
@@ -77,19 +94,29 @@ const faqs = [
 
 export default function Demolition() {
   const goToContact = () => { window.location.href = '/Contact/'; };
+  const { hash } = useLocation();
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Commercial Construction', href: '/Commercial/' },
     { label: 'Demolition' },
   ];
 
+  useEffect(() => {
+    const targetId = hash.slice(1);
+    if (!targetId) return;
+
+    window.requestAnimationFrame(() => {
+      document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }, [hash]);
+
   return (
     <div className="min-h-screen bg-white">
       <SEOHead
-        title="Demolition Contractor Orlando FL"
+        title="Complete & Selective Demolition Orlando FL"
         path="/Demolition"
         geoPlace="Orlando"
-        description="Demolition contractor serving Orlando and Central Florida. Selective, structural and commercial demolition with permits, debris removal and site preparation."
+        description="Complete and selective demolition contractor serving Orlando and Central Florida with permit coordination, debris removal and site preparation."
         image={`${SITE_URL}${projectImages[0].src}`}
         imageAlt={projectImages[0].alt}
         breadcrumbs={breadcrumbs}
@@ -97,11 +124,11 @@ export default function Demolition() {
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Demolition Services',
-            serviceType: ['Selective demolition', 'Structural demolition', 'Commercial interior demolition', 'Debris removal', 'Site preparation'],
+            name: 'Complete and Selective Demolition Services',
+            serviceType: ['Complete demolition', 'Selective demolition', 'Commercial interior demolition', 'Debris removal', 'Site preparation'],
             provider: { '@id': `${SITE_URL}/#business` },
             areaServed: ['Orlando, FL', 'Kissimmee, FL', 'Saint Cloud, FL', 'Winter Park, FL', 'Central Florida'],
-            description: 'Selective, structural, and commercial demolition services coordinated with permitting, debris removal, and site preparation.',
+            description: 'Complete and selective demolition services coordinated with permitting, debris removal, and site preparation.',
             image: projectImages.map((item) => `${SITE_URL}${item.src}`),
             url: `${SITE_URL}/Demolition/`,
           },
@@ -128,9 +155,9 @@ export default function Demolition() {
                   <Construction className="w-4 h-4 text-orange-400" />
                   <span className="text-orange-400 text-sm font-medium">Demolition Services</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Demolition Contractor in Orlando & Central Florida</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Complete & Selective Demolition in Orlando & Central Florida</h1>
                 <p className="text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl">
-                  Selective, structural, and commercial demolition coordinated from site review and permitting through debris removal and preparation for the next phase.
+                  Complete structure removal and controlled selective demolition coordinated from site review and permitting through debris removal and preparation for the next phase.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild className="h-12 px-8 bg-orange-500 hover:bg-orange-600 text-white font-semibold">
@@ -155,12 +182,12 @@ export default function Demolition() {
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-[1.3fr_0.7fr] gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-5">Planned demolition for the work that comes next</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-5">The right demolition scope for what comes next</h2>
               <p className="text-slate-600 leading-relaxed mb-4">
                 Demolition is more than tearing materials out. A successful project starts with clear removal limits, protected areas, coordinated utilities, site access, debris handling, and a turnover condition that supports the planned renovation or redevelopment.
               </p>
               <p className="text-slate-600 leading-relaxed">
-                J&N StructureWorks provides demolition as a standalone contracted service or as the opening phase of a commercial renovation, tenant improvement, or reconstruction project. We review the available project information and existing conditions before defining the scope, schedule, and permit requirements.
+                J&N StructureWorks provides complete demolition and selective demolition as standalone contracted services or as the opening phase of a commercial renovation, tenant improvement, or reconstruction project. We review the available project information and existing conditions before defining the scope, schedule, and permit requirements.
               </p>
             </div>
             <aside className="bg-slate-50 border border-slate-200 rounded-lg p-7">
@@ -176,9 +203,25 @@ export default function Demolition() {
 
         <section className="py-16 bg-slate-50">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Demolition services</h2>
-            <p className="text-slate-600 max-w-3xl mb-9">The final scope depends on the property, approved plans, jurisdiction, existing conditions, and intended use after demolition.</p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Two distinct demolition services</h2>
+            <p className="text-slate-600 max-w-3xl mb-9">The correct approach depends on whether the full structure is being removed or specific portions must come out while the remaining construction is protected.</p>
+            <div className="grid md:grid-cols-2 gap-6 mb-14">
+              {demolitionCategories.map((category) => (
+                <article id={category.id} key={category.id} className="scroll-mt-28 bg-white border border-slate-200 rounded-lg p-7">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3">{category.title}</h3>
+                  <p className="text-slate-600 leading-relaxed mb-5">{category.description}</p>
+                  <ul className="space-y-3">
+                    {category.examples.map((example) => (
+                      <li key={example} className="flex gap-3 text-slate-600"><CheckCircle className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" /><span>{example}</span></li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+
+            <h2 className="text-2xl font-bold text-slate-900 mb-3">Coordination and site turnover</h2>
+            <p className="text-slate-600 max-w-3xl mb-7">Both categories can include the coordination needed to complete the approved scope and prepare the property for its next phase.</p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {demolitionServices.map(([title, description]) => (
                 <article key={title} className="bg-white border border-slate-200 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-slate-900 mb-3">{title}</h3>

@@ -101,7 +101,8 @@ export default function SEOHead({
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Room Additions' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Tenant Buildouts' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Renovations' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Demolition' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Complete Demolition' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Selective Demolition' } },
       ],
     },
     hasCredential: {

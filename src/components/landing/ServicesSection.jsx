@@ -16,7 +16,8 @@ const commercialServices = [
   { icon: Store, title: 'Retail & Restaurant Buildouts', description: 'Customer-facing spaces with coordinated layouts, restrooms, specialized plumbing, finishes, and closeout.', href: '/CommercialBuildouts/' },
   { icon: BriefcaseBusiness, title: 'Office & Professional Spaces', description: 'Office, medical, and professional interiors planned around workflow, accessibility, and building systems.', href: '/CommercialBuildouts/' },
   { icon: Warehouse, title: 'Commercial Renovations', description: 'Selective demolition, repairs, reconfiguration, system updates, and new finishes for existing properties.', href: '/CommercialRenovations/' },
-  { icon: Construction, title: 'Demolition', description: 'Selective and structural demolition coordinated with permitting, utility planning, debris removal, and site preparation.', href: '/Demolition/' },
+  { icon: Construction, title: 'Complete Demolition', description: 'Removal of an entire approved structure with coordinated permitting, utility planning, debris removal, and site turnover.', href: '/Demolition/#complete-demolition' },
+  { icon: Construction, title: 'Selective Demolition', description: 'Targeted removal of identified walls, finishes, fixtures, or structural components while protecting the work that remains.', href: '/Demolition/#selective-demolition' },
 ];
 
 function ServiceGrid({ services }) {

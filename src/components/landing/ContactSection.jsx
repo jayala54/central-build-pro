@@ -16,7 +16,8 @@ const projectTypes = [
   { value: 'addition', label: 'Room Addition' },
   { value: 'tenant_buildout', label: 'Commercial Tenant Buildout' },
   { value: 'commercial_renovation', label: 'Commercial Renovation' },
-  { value: 'demolition', label: 'Demolition' },
+  { value: 'complete_demolition', label: 'Complete Demolition' },
+  { value: 'selective_demolition', label: 'Selective Demolition' },
   { value: 'other', label: 'Other' }
 ];
 

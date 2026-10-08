@@ -62,6 +62,7 @@ export function buildProjectSummary(formData, attachmentName = '') {
   return [
     `Project type: ${projectTypeLabel(formData.project_type)}`,
     `Project address: ${formData.project_address || 'Not provided'}`,
+    `Parcel ID: ${formData.parcel_id || 'Not provided'}`,
     `County: ${formData.county || 'Not provided'}`,
     `Property status: ${optionLabel('property_status', formData.property_status)}`,
     `Plans: ${optionLabel('plans_status', formData.plans_status)}`,
@@ -132,6 +133,18 @@ export default function ProjectInquiryFields({ idPrefix, formData, setFormData, 
           value={formData.project_address}
           onChange={(event) => setFormData((current) => ({ ...current, project_address: event.target.value }))}
           placeholder="Street address or city"
+          className="h-12 bg-white border-slate-200"
+        />
+      </div>
+
+      <div className="space-y-2">
+        <Label htmlFor={`${idPrefix}-parcel-id`}>Parcel ID <span className="font-normal text-slate-500">(optional)</span></Label>
+        <Input
+          id={`${idPrefix}-parcel-id`}
+          name="parcel_id"
+          value={formData.parcel_id}
+          onChange={(event) => setFormData((current) => ({ ...current, parcel_id: event.target.value }))}
+          placeholder="Enter the property parcel ID"
           className="h-12 bg-white border-slate-200"
         />
       </div>

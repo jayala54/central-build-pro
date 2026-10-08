@@ -39,6 +39,7 @@ export default function ContactSection() {
     project_type: '',
     county: '',
     project_address: '',
+    parcel_id: '',
     property_status: '',
     plans_status: '',
     budget_range: '',
@@ -69,7 +70,7 @@ export default function ContactSection() {
         county: formData.county || 'not_selected',
       });
       setFormData({
-        name: '', email: '', phone: '', project_type: '', county: '', project_address: '',
+        name: '', email: '', phone: '', project_type: '', county: '', project_address: '', parcel_id: '',
         property_status: '', plans_status: '', budget_range: '', timeline: '', message: ''
       });
       setAttachment({ name: '', error: '' });

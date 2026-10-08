@@ -56,7 +56,7 @@ const testimonials = [
 
 function QuoteForm({ id, utmParams }) {
   const [formData, setFormData] = useState({
-    name: '', phone: '', email: '', project_type: '', county: '', project_address: '',
+    name: '', phone: '', email: '', project_type: '', county: '', project_address: '', parcel_id: '',
     property_status: '', plans_status: '', budget_range: '', timeline: '', message: '',
   });
   const [attachment, setAttachment] = useState({ name: '', error: '' });
@@ -82,7 +82,7 @@ function QuoteForm({ id, utmParams }) {
         source: 'landing_page',
       });
       setFormData({
-        name: '', phone: '', email: '', project_type: '', county: '', project_address: '',
+        name: '', phone: '', email: '', project_type: '', county: '', project_address: '', parcel_id: '',
         property_status: '', plans_status: '', budget_range: '', timeline: '', message: '',
       });
       setAttachment({ name: '', error: '' });

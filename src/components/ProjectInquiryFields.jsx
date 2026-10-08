@@ -167,7 +167,7 @@ export default function ProjectInquiryFields({ idPrefix, formData, setFormData, 
           accept=".pdf,.jpg,.jpeg,.png,.webp,.heic,.heif,image/jpeg,image/png,image/webp,image/heic,image/heif,application/pdf"
           onChange={handleFileChange}
           aria-describedby={`${idPrefix}-attachment-help`}
-          className="h-12 bg-white border-slate-200 py-2"
+          className="h-14 bg-white border-slate-300 p-1.5 text-slate-600 file:mr-4 file:h-10 file:cursor-pointer file:rounded-md file:bg-orange-500 file:px-4 file:font-semibold file:text-white hover:file:bg-orange-600 focus-visible:ring-2 focus-visible:ring-orange-500"
         />
         <p id={`${idPrefix}-attachment-help`} className={`text-xs ${attachment.error ? 'text-red-600' : 'text-slate-500'}`} role={attachment.error ? 'alert' : undefined}>
           {attachment.error || 'Optional. Upload one PDF or image up to 5 MB.'}

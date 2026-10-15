@@ -5,8 +5,8 @@ import { Shield, Award, Users, Clock } from 'lucide-react';
 const stats = [
   { icon: Shield, value: 'CBC Certified', label: 'Florida Licensed' },
   { icon: Award, value: '10+', label: 'Years in Construction' },
-  { icon: Users, value: '100+', label: 'Happy Clients' },
-  { icon: Clock, value: '100%', label: 'On-Time Delivery' }
+  { icon: Users, value: 'Residential +', label: 'Commercial Projects' },
+  { icon: Clock, value: 'Central Florida', label: 'Service Area' }
 ];
 
 export default function AboutSection() {
@@ -61,12 +61,12 @@ export default function AboutSection() {
             <p className="text-slate-600 text-lg mb-6 leading-relaxed">
               We're a state certified building contractor based right here in Central Florida.
               We do custom homes, full renovations, and commercial work. We've been at this for years,
-              and the people we've built for keep sending their friends our way.
+              with experience across residential and commercial construction.
             </p>
             <p className="text-slate-600 mb-8 leading-relaxed">
               Whether it's a ground-up build, a kitchen remodel, or a commercial tenant buildout,
               we stay on top of the job from start to finish. You'll always know what's going on
-              with your project, and we don't cut corners.
+              with your project, scope, and schedule.
             </p>
 
             <div className="grid grid-cols-2 gap-6">

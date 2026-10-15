@@ -12,11 +12,11 @@ import ServiceAreaLinks from '@/components/ServiceAreaLinks';
 const faqs = [
   {
     q: 'How much does it cost to build a custom home in Central Florida?',
-    a: 'Custom home construction in Central Florida typically ranges from $200 to $400+ per square foot depending on finishes, lot conditions, and design complexity. A 2,500 sq ft home may cost between $500,000 and $1,000,000+. We provide detailed estimates during our free consultation.',
+    a: 'Custom-home pricing depends on the property, plans, site work, utilities, permit requirements, material selections, and current trade pricing. We prepare a project-specific written estimate after reviewing the proposed scope.',
   },
   {
     q: 'How long does it take to build a custom home in Orlando?',
-    a: 'Most custom homes take 8 to 14 months from permit approval to final inspection. Factors like design complexity, weather, and material availability can affect the timeline. We keep you updated at every stage.',
+    a: 'The schedule depends on design completion, permitting, site conditions, material lead times, inspections, weather, and scope changes. We develop a project-specific schedule after the plans and major selections are defined.',
   },
   {
     q: 'Do I need to own a lot before contacting you?',
@@ -160,9 +160,9 @@ export default function CustomHomes() {
               <h3 className="text-lg font-bold text-slate-900 mb-4">Why Choose J&N StructureWorks?</h3>
               <ul className="space-y-3 text-slate-600 text-sm mb-6">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor (CBC1269175)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> 100+ projects completed</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Transparent pricing — no hidden fees</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Licensed, bonded & insured</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor CBC1269175</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Detailed written scopes and estimates</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Permit and inspection coordination for the contracted scope</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
               </ul>
               <Link to="/Contact/">

@@ -21,26 +21,26 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Experience with Sanford historic district building guidelines',
-  'Familiar with Seminole County permitting processes',
-  'Over 100 projects completed across Central Florida',
-  'Transparent pricing with no hidden fees',
-  'Fully licensed, bonded, and insured',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does a home renovation cost in Sanford, FL?',
-    a: 'Home renovation costs in Sanford vary by scope but typically range from $100 to $275+ per square foot. Sanford offers some of the most favorable construction costs in the Orlando metro area, making it an excellent market for home improvements and investment properties. We provide free detailed estimates.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'Are there special requirements for renovating in the Sanford Historic District?',
-    a: 'Yes. Properties within the Sanford Historic District may require approval from the Historic Preservation Board. Exterior modifications, additions, and demolitions often need additional review. J&N StructureWorks has experience working within these guidelines and will manage the approval process for you.',
+    a: 'Properties within a Sanford historic district may require additional review for exterior work, additions, or demolition. We identify applicable approvals and coordination responsibilities during preconstruction.',
   },
   {
     q: 'Can you build a new home on a lakefront lot near Lake Monroe?',
-    a: 'Absolutely. Lakefront construction near Lake Monroe and other Sanford-area lakes requires attention to setback requirements, flood zone regulations, and environmental considerations. We conduct thorough lot evaluations and manage all permitting to ensure your lakefront home is built to code.',
+    a: 'Lakefront construction can involve setbacks, floodplain requirements, environmental review, utilities, and site-specific design. The project team evaluates those constraints and defines permit coordination during preconstruction.',
   },
   {
     q: 'How long does a full home remodel take in Sanford?',

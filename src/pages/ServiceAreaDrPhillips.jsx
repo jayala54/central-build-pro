@@ -21,22 +21,22 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Experience with upscale residential renovations in Dr. Phillips',
-  'Over 100 projects completed across Central Florida',
-  'Attention to premium finishes and high-end materials',
-  'Fully licensed, bonded, and insured',
-  'Respectful, professional crews for established neighborhoods',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does a home renovation cost in Dr. Phillips?',
-    a: 'Home renovation costs in Dr. Phillips typically range from $150 to $350+ per square foot depending on scope and finish selections. Dr. Phillips homeowners often invest in premium finishes, which can push costs toward the higher end. Kitchen remodels frequently range from $60,000 to $120,000. We provide detailed, transparent estimates during your free consultation.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'Do I need permits for remodeling in the Dr. Phillips area?',
-    a: 'Yes. Dr. Phillips is an unincorporated community in Orange County, so building permits are obtained through the Orange County Building Division. Most structural, electrical, plumbing, and mechanical work requires permits. J&N StructureWorks manages all permitting and inspections on your behalf.',
+    a: 'Dr. Phillips properties are generally reviewed through Orange County. Permit requirements depend on the work, property, and applicable agencies. We coordinate permits and required inspections for the contracted scope.',
   },
   {
     q: 'Can you renovate homes in Bay Hill and other Dr. Phillips communities?',

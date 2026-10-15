@@ -13,23 +13,20 @@ export const articles = [
   {
     id: 1,
     slug: "how-much-does-it-cost-to-build-a-home-in-central-florida",
-    title: "How Much Does It Cost to Build a Home in Central Florida in 2025?",
+    title: "Central Florida Home Building Cost Factors",
     category: "Budgeting",
     metaDescription: "A detailed breakdown of new construction costs in Orange, Seminole, Osceola, and Lake counties, covering land, permits, materials, and labor.",
     tags: ["budgeting", "cost per square foot", "new construction", "Central Florida"],
     date: "2025-01-15",
+    modifiedDate: "2026-10-14",
     readTime: "8 min read",
     content: `## What New Builds Actually Cost in Central Florida
 
 We get this question more than any other. People want a number, and the honest answer is that it depends. But we can give you real ranges based on what we're seeing on the ground across Orange, Seminole, Osceola, and Lake counties right now.
 
-### Cost Per Square Foot in 2025
+### Why a Universal Cost Per Square Foot Is Misleading
 
-Right now, you're looking at somewhere between **$150 and $250+ per square foot** for a new build in the Central Florida area. That range is wide because finishes, lot conditions, and which county you're in make a big difference. Here's how it breaks down:
-
-- **Budget-conscious builds:** $150 to $180/sq ft. You're getting a solid home with builder-grade finishes. Nothing wrong with that.
-- **Mid-range [custom homes](/CustomHomes):** $180 to $220/sq ft. Upgraded cabinets, quartz counters, better tile. This is where most of our clients land.
-- **High-end custom builds:** $220 to $300+/sq ft. We're talking custom everything, premium materials, smart home systems, the works.
+Per-square-foot figures can omit site work, design, permits, utility connections, owner selections, and other major scope items. Current pricing also changes with plans, location, market conditions, and trade availability. Compare written estimates using the same plans, specifications, allowances, and exclusions.
 
 ### What's Actually in That Number?
 
@@ -46,15 +43,15 @@ A full construction budget covers more than just walls and a roof:
 
 First-time builders almost always get surprised by a few line items that aren't in the base quote:
 
-- **Impact fees** can run anywhere from **$5,000 to $20,000+** depending on whether you're in Orange County, Osceola, or elsewhere
-- **Utility connections** for water, sewer, and electric can tack on **$3,000 to $15,000**. If you're on a rural lot off Avalon Road or out past Christmas, it could be even more.
-- **Soil testing and surveying** usually costs **$2,000 to $5,000**
+- **Impact and mobility fees** vary by jurisdiction, project type, prior-use credits, and current schedules
+- **Utility connections** depend on service availability, provider requirements, distance, capacity, and whether private well or septic systems are involved
+- **Surveying, geotechnical work, and engineering** depend on the parcel and proposed design
 - **Landscaping and the driveway** are almost never included in builder quotes. Budget separately for those.
 
 ### Keeping Your Build on Budget
 
 - Get a detailed, itemized estimate. If someone just gives you a per-square-foot price and won't break it down, that's a problem.
-- Set aside **10 to 15%** as a contingency fund. Things come up. They always do.
+- Establish a project-specific contingency with your construction and finance professionals based on design completeness and identified risks.
 - Pick your lot carefully. A lot with bad soil or a high water table on the east side of Orange County is going to cost more to build on than a clean lot in [Clermont](/ServiceAreaClermont).
 - Lock in material prices early when you can. Lumber and concrete prices still fluctuate.
 
@@ -123,12 +120,17 @@ We evaluate lots alongside our clients at J&N StructureWorks before they sign an
   {
     id: 3,
     slug: "building-permits-orange-county-florida",
-    title: "Building Permits in Orange County, Florida: A Step-by-Step Breakdown",
+    title: "Orange County Florida Building Permit Guide",
     category: "County Regulations",
     metaDescription: "Step-by-step breakdown of the building permit process in Orange County, including what you need, how long it takes, and common pitfalls.",
     tags: ["permits", "Orange County", "regulations", "inspections"],
     date: "2025-02-15",
+    modifiedDate: "2026-10-14",
     readTime: "6 min read",
+    sources: [
+      { label: "Orange County Fast Track permitting portal", url: "https://fasttrack.ocfl.net/OnlineServices/Portal.aspx" },
+      { label: "Orange County Impact Fee Assessment Guide", url: "https://www.orangecountyfl.net/Portals/0/Library/Permitting-Licensing/docs/Impact%20Fee%20Assessment%20Guide%202026_02_06.pdf" },
+    ],
     content: `## How the Orange County Permit Process Works
 
 The permit process in Orange County isn't complicated, but it does take time. If you don't understand the steps, you're going to end up with delays that push your whole project back. We've pulled permits on dozens of builds in [Orlando](/ServiceAreaOrlando) and Orange County, so we know what to expect.
@@ -146,7 +148,7 @@ For a standard [single-family build](/CustomHomes), you're filing for:
 ### Step by Step Through the Process
 
 1. **Submit your plans** to the Orange County Building Division. You'll need architectural drawings, engineering plans, and a site plan. Everything goes through their online portal now.
-2. **Plan review** takes about **2 to 4 weeks** for residential projects. Could be faster, could be slower depending on how backed up they are.
+2. **Plan review** timing varies with project type, submission completeness, agency workload, and correction cycles. Check the county portal for the current status of a specific application.
 3. **Respond to comments** if the reviewer flags anything. They might ask for structural modifications or additional detail on your plans. Turn these around fast.
 4. **Pick up your permit** once it's approved and post it where inspectors can see it at the job site.
 5. **Schedule inspections** at each construction milestone. Don't get ahead of yourself. If you pour your slab before the foundation inspection, you've got a problem.
@@ -165,7 +167,7 @@ Miss an inspection or fail one, and work stops until it's resolved. That's just 
 
 ### Impact Fees in Orange County
 
-Orange County charges impact fees that fund roads, schools, parks, and other infrastructure. For a single-family home, budget for **$10,000 to $18,000** in total impact fees. The exact amount depends on the size and location of your home.
+Orange County assesses impact fees by project and use category. The amount can depend on jurisdiction, development type, prior use credits, and other project facts, so use the county's current assessment guide and obtain a project-specific determination.
 
 These are due at the time you pull your permit, so they need to be in your [budget from day one](/Blog/how-much-does-it-cost-to-build-a-home-in-central-florida).
 
@@ -195,7 +197,7 @@ Most [custom homes](/CustomHomes) in Central Florida take **8 to 14 months** fro
 This is the paperwork and planning phase. It doesn't feel like much is happening, but this is where the foundation for a smooth build gets laid.
 - Finalize your floor plans and specifications
 - Complete engineering and site plans
-- Submit for [building permits](/Blog/building-permits-orange-county-florida) (expect the county to take 2 to 4 weeks)
+- Submit for [building permits](/Blog/building-permits-orange-county-florida) and allow for the agency's current review and correction cycles
 - Order any long-lead materials like custom windows, specialty trusses, or specific tile
 
 ### Phase 2: Site Work and Foundation (2 to 3 Weeks)
@@ -310,7 +312,7 @@ The right layout is the one that matches how your family actually spends their t
   {
     id: 6,
     slug: "kitchen-renovation-guide-central-florida",
-    title: "Kitchen Renovation in Central Florida: Costs, Timelines, and What to Know",
+    title: "Central Florida Kitchen Renovation Guide",
     category: "Renovations",
     metaDescription: "Real costs, timelines, and design trends for kitchen renovations in Central Florida, plus tips on choosing the right contractor.",
     tags: ["kitchen renovation", "remodeling", "countertops", "cabinetry"],
@@ -367,12 +369,16 @@ J&N StructureWorks handles kitchen renovations across Central Florida from desig
   {
     id: 7,
     slug: "seminole-county-building-requirements",
-    title: "Building a Home in Seminole County: Permits, Fees, and Regulations",
+    title: "Seminole County Home Building Guide",
     category: "County Regulations",
     metaDescription: "Key building requirements, permits, impact fees, and regulations for new home construction in Seminole County, Florida.",
     tags: ["Seminole County", "permits", "regulations", "zoning"],
     date: "2025-04-15",
+    modifiedDate: "2026-10-14",
     readTime: "6 min read",
+    sources: [
+      { label: "Seminole County impact fee information", url: "https://www.seminolecountyfl.gov/departments-services/development-services/fees-calculators/building-permit-impact-fees/county-impact-fees" },
+    ],
     content: `## What You Should Know About Building in Seminole County
 
 Seminole County does things a little differently from Orange and Osceola. The county is more built-out, the lots tend to be smaller, and the regulations are tighter in some areas. That doesn't mean it's harder to build here. You just need to know what you're working with.
@@ -399,12 +405,7 @@ The building department office is off Bush Boulevard in [Sanford](/ServiceAreaSa
 ### Impact Fees (2025 Estimates)
 
 These are approximate for a single-family home:
-- Transportation: roughly **$5,500**
-- Schools: roughly **$4,800**
-- Parks and Recreation: roughly **$1,200**
-- Fire: roughly **$600**
-- Law Enforcement: roughly **$400**
-- **Total: approximately $12,500**
+Impact fees change and depend on the proposed use, location, and applicable credits. Request a current, parcel-specific calculation from Seminole County before finalizing a construction budget.
 
 That's on the lower end compared to Osceola County, which is one reason some people look at Seminole County even though the land costs more.
 
@@ -414,7 +415,7 @@ That's on the lower end compared to Osceola County, which is one reason some peo
 - **Septic systems** are still required in some unincorporated pockets without municipal sewer. The county health department handles those permits separately.
 - Properties along the **St. Johns River corridor** have strict flood zone requirements. If you're looking at land near Geneva or along the river east of Sanford, get a flood determination early.
 
-J&N StructureWorks has built extensively throughout Seminole County, from Winter Springs to [Lake Mary](/ServiceAreaLakeMary) to Oviedo. We know the local requirements and handle all the permitting, inspections, and regulatory work so you can focus on the fun part of designing your home.`
+J&N StructureWorks serves Seminole County, including [Lake Mary](/ServiceAreaLakeMary) and Oviedo. Permit and inspection responsibilities are defined in each project's written scope.`
   },
   {
     id: 8,
@@ -424,7 +425,12 @@ J&N StructureWorks has built extensively throughout Seminole County, from Winter
     metaDescription: "How modern Florida building codes and construction techniques protect your new home from hurricanes and severe storms.",
     tags: ["hurricane", "wind resistance", "Florida Building Code", "impact windows"],
     date: "2025-05-01",
+    modifiedDate: "2026-10-14",
     readTime: "8 min read",
+    sources: [
+      { label: "Florida Building Commission guidance on opening protection", url: "https://www.floridabuilding.org/fbc/commission/FBC_0414/STructural_TAC/Staff_analysis_DS2014-023_final.htm" },
+      { label: "Florida DFS wind mitigation discount guide", url: "https://www.myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/premium-discounts-for-hurricane-loss-mitigation.pdf" },
+    ],
     content: `## Why Florida Homes Are Built Different
 
 If you've moved here from somewhere up north, you probably noticed that construction looks different in Florida. There's a reason for that. The Florida Building Code is one of the strictest in the country when it comes to wind resistance, and every choice, from the concrete blocks to the roof straps, is designed to keep your house standing in a hurricane.
@@ -433,8 +439,8 @@ If you've moved here from somewhere up north, you probably noticed that construc
 
 Every [new home](/CustomHomes) in Florida has to meet the FBC, and that includes some serious structural requirements:
 
-- **Wind speed design** means your home must withstand sustained winds based on your specific location. In Central Florida, that's typically **130 to 150 mph**.
-- **Impact protection** on all windows and doors. They need to be impact-rated or you need approved hurricane shutters. There's no middle ground.
+- **Wind design criteria** are determined for the specific location, building, risk category, exposure, and current code edition by the project design professional.
+- **Opening protection where required.** In wind-borne debris regions, applicable glazed openings must use approved impact-resistant glazing or approved protective coverings. The project designer and local building official determine the requirements for a specific property.
 - **Roof-to-wall connections** with hurricane straps or clips at every single truss-to-wall connection point.
 - **Continuous load path** from roof to foundation. The whole structure needs to be tied together so wind forces transfer all the way down into the ground.
 
@@ -447,7 +453,7 @@ These are the single best upgrade you can make. Impact windows:
 - Block UV rays that fade furniture and flooring
 - Eliminate the scramble to put up plywood or shutters when a storm is coming
 
-They cost more upfront, but they pay for themselves in insurance savings and peace of mind.
+These features can increase upfront cost. Any insurance effect must be confirmed with the insurer for the specific property and policy.
 
 #### Concrete Block Construction (CBS)
 Most [Central Florida](/Services) homes are built with **CMU (concrete masonry unit)** walls. The blocks get reinforced with steel rebar and filled with concrete. It's a completely different animal from wood-frame construction when it comes to wind resistance. This is standard here and it's one of the reasons Florida homes hold up as well as they do.
@@ -469,7 +475,7 @@ At J&N StructureWorks, we usually recommend exceeding code minimums in a few key
 
 ### How This Saves You Money
 
-Building above code can cut your homeowner's insurance premiums significantly. Many Florida insurers offer **wind mitigation discounts of 20 to 40%** when you can document specific hurricane-resistant features. Over the life of the home, those savings add up to tens of thousands of dollars.
+Qualifying wind-mitigation features may affect a homeowner's insurance premium, but the amount varies by insurer, policy, inspection findings, and property. Ask the insurer for a property-specific quote rather than relying on a fixed percentage.
 
 Good construction isn't just about surviving a storm. It's about building something that protects your family and [saves you money](/Blog/energy-efficient-home-features) for decades.`
   },
@@ -500,7 +506,7 @@ The one downside is that tile can feel cold underfoot during those few weeks of 
 
 **Works best in:** Main living areas, bedrooms, and whole-house installations
 
-LVP has taken over the Central Florida market and it's easy to see why. It's **100% waterproof**, warm and comfortable to walk on, and the better brands genuinely look like real hardwood. If you've got kids and dogs, this is probably your best option.
+Many luxury vinyl plank products are marketed as waterproof, but performance and warranty coverage vary by product and installation. Review the manufacturer's specifications for wet-area limitations, subfloor requirements, and warranty exclusions.
 
 Installation is faster than tile, and if a plank gets damaged down the road, replacing a section is straightforward.
 
@@ -584,7 +590,7 @@ Relocating a toilet or shower drain is expensive. If your current layout is func
 Painting? Go for it. Swapping a faucet? Probably fine. But plumbing rough-in, electrical work, and tile installation in a wet area? Hire a professional. A bad shower pan installation will cost you way more in water damage repairs than the labor you saved.
 
 ### 10. Skipping the Permit
-Bathroom renovations that involve plumbing, electrical, or structural changes require [permits](/Blog/building-permits-orange-county-florida) in every Central Florida county. An unpermitted renovation can cause problems when you sell the house and can void your insurance if something goes wrong.
+Bathroom renovations involving plumbing, electrical, structural, or other regulated work commonly require [permits](/Blog/building-permits-orange-county-florida). Requirements vary by jurisdiction and scope. Unpermitted work can complicate inspections, future permits, a sale, or an insurance claim.
 
 J&N StructureWorks handles bathroom renovations the right way, with proper permits, licensed tradespeople, and attention to the details that matter. We've renovated bathrooms in homes from [Winter Garden](/ServiceAreaWinterGarden) to [Oviedo](/ServiceAreaOviedo), and we know what works in this climate.`
   },
@@ -596,7 +602,12 @@ J&N StructureWorks handles bathroom renovations the right way, with proper permi
     metaDescription: "What you need to know about building a new home in Osceola County, including permits, impact fees, growth areas, and local regulations.",
     tags: ["Osceola County", "permits", "impact fees", "new construction"],
     date: "2025-06-15",
+    modifiedDate: "2026-10-14",
     readTime: "6 min read",
+    sources: [
+      { label: "Osceola County building permit fees", url: "https://www.osceola.org/Doing-Business/Building-and-Permits/Building-Permit-Fees" },
+      { label: "Osceola County impact and mobility fees office", url: "https://www.osceola.org/Government/Agencies-and-Departments-Directory/Impact-and-Mobility-Fees-Office" },
+    ],
     content: `## Building in Osceola County
 
 Osceola County is where a lot of the growth is happening in Central Florida right now. Land is more affordable than in Orange or Seminole, there's a ton of new development, and the infrastructure is catching up fast. It's a good place to build if you know what to expect going in.
@@ -621,17 +632,9 @@ The building department is in [Kissimmee](/ServiceAreaKissimmee), and the staff 
 
 ### Impact Fees (2025 Estimates)
 
-This is the part that catches people off guard. Osceola County's impact fees are some of the highest in the region:
+Impact and mobility fees can be a significant part of an Osceola County development budget:
 
-- Transportation: roughly **$7,800**
-- Schools: roughly **$6,200**
-- Parks: roughly **$1,400**
-- Fire and EMS: roughly **$700**
-- Law Enforcement: roughly **$500**
-- Library: roughly **$300**
-- **Total: approximately $16,900** for a single-family home
-
-That's about **$4,000 more** than [Seminole County](/Blog/seminole-county-building-requirements) for the same type of home. Make sure these are in your budget from the start.
+Impact fees are revised over time and depend on the proposed use, location, and available credits. Obtain a current estimate from Osceola County or the applicable municipality for the parcel and scope before finalizing a budget.
 
 ### Regulations to Know
 
@@ -647,7 +650,7 @@ That's about **$4,000 more** than [Seminole County](/Blog/seminole-county-buildi
 - **Poinciana** continues to expand. It's more affordable than other areas, though the commute into Orlando is longer.
 - **Harmony and NeoCity** are planned communities with a tech-forward approach. NeoCity in particular is tied to the BRIDG semiconductor facility.
 
-J&N StructureWorks has built throughout Osceola County and we're familiar with the local permitting offices, impact fee schedules, and community-specific requirements. We'll walk you through all of it.`
+J&N StructureWorks serves Osceola County. We identify permit and inspection coordination responsibilities in the written project scope.`
   },
   {
     id: 12,
@@ -657,16 +660,20 @@ J&N StructureWorks has built throughout Osceola County and we're familiar with t
     metaDescription: "Smart energy-efficient features that save money and increase comfort in Central Florida's hot, humid climate.",
     tags: ["energy efficiency", "solar", "insulation", "HVAC", "green building"],
     date: "2025-07-01",
+    modifiedDate: "2026-10-14",
     readTime: "7 min read",
+    sources: [
+      { label: "IRS guidance on federal home energy credit expirations", url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb" },
+    ],
     content: `## Building a Home That Doesn't Cost a Fortune to Cool
 
-Florida electricity bills are no joke. We've had clients move here from the Midwest and nearly fall over when they see their first July Duke Energy bill. The good news is that smart choices during construction can cut your monthly costs dramatically. And most of these upgrades pay for themselves within a few years.
+Energy-efficient design can improve comfort and reduce consumption, but savings and payback depend on the home, equipment, occupancy, utility rates, and installation quality.
 
 ### Start with the HVAC System
 
 Your air conditioner is the single biggest energy consumer in a Florida home. It's running most of the year, so this is where efficiency matters most.
 
-- Go with a **16+ SEER2 rated system** at minimum. Code requires 15 SEER2, but that extra step up is worth it.
+- Select HVAC equipment using the current efficiency standards, a project-specific load calculation, humidity-control needs, and lifecycle cost rather than a universal rating recommendation.
 - **Variable-speed compressors** adjust their output based on demand instead of cycling on and off constantly. They use less energy and do a much better job of controlling humidity.
 - **Zoned systems** let you cool occupied rooms without wasting energy on empty guest bedrooms.
 - Make sure the unit is properly sized. An oversized AC cycles too frequently and doesn't dehumidify well. Your house might be cool but it'll feel clammy.
@@ -692,7 +699,7 @@ Your windows and doors are where you either keep the heat out or invite it in.
 Florida gets roughly **230 sunny days** per year. Putting solar panels on your roof makes a lot of financial sense.
 
 - A typical **8 to 12 kW system** can offset most or all of your electric bill
-- **Federal tax credits** cover **30%** of the installation cost through 2032
+- The federal residential clean energy credit under Section 25D is not available for expenditures made after December 31, 2025, under current IRS guidance. Confirm any state, utility, or future federal incentive before relying on it.
 - **Net metering** through FPL and Duke Energy lets you sell excess power back to the grid
 - If you're not ready for solar right now, at least have your builder run **solar-ready wiring** during construction. It costs almost nothing to add during the build and saves thousands later.
 
@@ -712,7 +719,7 @@ Your water heater is the second or third biggest energy consumer in the house, d
 
 ### The Bottom Line on ROI
 
-An energy-efficient home in Central Florida can save you **$150 to $300+ per month** compared to a home [built to bare minimums](/Blog/how-much-does-it-cost-to-build-a-home-in-central-florida). Over 10 years, that's **$18,000 to $36,000** in savings. Many of the upgrades pay for themselves in 3 to 5 years, and they increase your home's resale value too.
+Energy savings and payback periods depend on the design, equipment, occupancy, utility rates, and installation quality. Use an energy model and current utility rates to compare upgrades for a specific home.
 
 J&N StructureWorks builds energy efficiency into every [custom home](/CustomHomes). We'll walk you through the options and help you figure out where to put your dollars for the biggest return.`
   },
@@ -764,7 +771,7 @@ Time is money on a flip. Every extra week is another month of holding costs. A w
 - **Moderate renovation** (kitchen remodel, bath remodel, some layout changes, new flooring throughout): **6 to 10 weeks**
 - **Major rehab** (structural work, roof, plumbing or electrical overhaul, full gut): **12 to 16+ weeks**
 
-Permits are the wild card. If you're doing anything beyond cosmetic work in Orange or Osceola County, you're pulling [permits](/Blog/building-permits-orange-county-florida). Factor **2 to 4 weeks** of review time into your project schedule.
+Permits are a schedule dependency. Confirm whether the scope requires permits and use the applicable agency's current process and status information rather than assuming a fixed review duration.
 
 ### Common Investor Mistakes
 
@@ -788,7 +795,12 @@ Flip investors need a contractor who works differently than someone building a c
     metaDescription: "How to vet and choose a reliable general contractor in Central Florida, including license verification, insurance checks, red flags, and the right questions to ask.",
     tags: ["contractor", "hiring", "license", "DBPR", "insurance", "Central Florida"],
     date: "2025-08-15",
+    modifiedDate: "2026-10-14",
     readTime: "6 min read",
+    sources: [
+      { label: "Florida Statute 489.126 - Moneys received by contractors", url: "https://leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0489/Sections/0489.126.html" },
+      { label: "Florida DBPR license search", url: "https://www.myfloridalicense.com/wl11.asp" },
+    ],
     content: `## Finding a Contractor You Can Actually Trust
 
 Picking the wrong contractor is one of the most expensive mistakes you can make. We hear horror stories all the time from homeowners who hired someone based on a low bid or a smooth sales pitch and ended up with half-finished work, blown budgets, and a guy who stopped returning calls. It doesn't have to go that way. You just need to know what to look for and what to run from.
@@ -808,8 +820,8 @@ If someone tells you they don't need a license for the work they're doing, that'
 
 Ask to see a current Certificate of Insurance. You need to see two things:
 
-- **General liability insurance** with at least **$1,000,000** in coverage. This protects you if something goes wrong during construction, like property damage or an injury on your land.
-- **Workers' compensation insurance** that covers their crew. If a worker gets hurt on your job site and the contractor doesn't carry workers' comp, you could be on the hook.
+- **General liability insurance** appropriate to the project and contract requirements.
+- **Workers' compensation coverage or a valid exemption**, as applicable. Ask your insurance or legal adviser what documentation matters for your project.
 
 Call the insurance company listed on the certificate to verify it's current. Certificates can be forged or outdated.
 
@@ -845,7 +857,7 @@ A good contract protects both sides. Make sure it includes:
 - Warranty information
 - [Permit](/Blog/building-permits-orange-county-florida) responsibilities (the contractor should be pulling permits, not you)
 
-Never pay more than **10 to 15%** upfront as a deposit. Florida law limits contractor deposits to **10%** of the contract price or **$1,000**, whichever is less, unless the contractor has a surety bond.
+Evaluate any deposit in the context of the written scope, payment schedule, materials, and project risk. Florida Statute 489.126 does not impose the cap previously stated here. For covered residential work, it imposes permit-application and start-of-work deadlines when the initial payment exceeds 10% of the contract price, subject to statutory exceptions and written extensions. Read the current statute and obtain legal advice for a specific contract.
 
 ### Red Flags That Should Send You Running
 
@@ -860,20 +872,24 @@ Never pay more than **10 to 15%** upfront as a deposit. Florida law limits contr
 
 ### The Contractor Relationship
 
-Building or [renovating a home](/WholeHomeRenovations) is a partnership that lasts months. You want someone who communicates well, shows up when they say they will, and treats your project like it matters. At [J&N StructureWorks](/Contact), we're happy to provide our license, insurance, references, and detailed bids to anyone considering working with us. That's how it should work.`
+Building or [renovating a home](/WholeHomeRenovations) is a substantial commitment. At [J&N StructureWorks](/Contact), we provide our license information and a written proposal for review. Request current project-specific insurance documentation before signing any construction contract.`
   },
   {
     id: 15,
     slug: "adu-guest-house-construction-florida",
-    title: "ADU and Guest House Construction in Florida: Costs, Permits, and New Laws",
+    title: "ADU and Guest House Construction in Florida: Planning and Permits",
     category: "Building Process",
-    metaDescription: "Everything you need to know about building an ADU or guest house in Florida, including new state laws, costs, permitting, design tips, and rental income potential.",
+    metaDescription: "Planning an ADU or guest house in Florida: local zoning, property eligibility, permitting, utilities, design, and construction considerations.",
     tags: ["ADU", "guest house", "accessory dwelling unit", "Florida law", "rental income"],
     date: "2025-09-01",
+    modifiedDate: "2026-10-14",
     readTime: "7 min read",
+    sources: [
+      { label: "Florida Statute 163.31771 - Accessory dwelling units", url: "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0163/Sections/0163.31771.html" },
+    ],
     content: `## ADUs Are Having a Moment in Florida
 
-Accessory dwelling units, or ADUs, have been around for a long time. But recent changes to Florida law have made them a much more realistic option for homeowners across the state. Whether you want to build a guest house for aging parents, create a rental unit for extra income, or just add a detached home office, ADUs are worth a serious look.
+Accessory dwelling units, or ADUs, can provide independent living space on the same property as a primary dwelling. Whether one is allowed depends on the local code, zoning district, lot, utilities, association restrictions, and proposed use.
 
 ### What Counts as an ADU?
 
@@ -886,28 +902,13 @@ An ADU is a secondary dwelling unit on a single-family residential lot. It can b
 
 To qualify as a true ADU, it needs its own kitchen, bathroom, sleeping area, and separate entrance. It's basically a small, independent home on the same lot as your primary residence.
 
-### Florida's New ADU Laws
+### Florida and Local ADU Rules
 
-Florida passed legislation (SB 102, effective July 2023) that preempts local governments from outright banning ADUs on single-family residential lots. That's a big deal because many cities and counties previously made it nearly impossible to build one.
-
-What the law does:
-- Requires local governments to allow ADUs on lots zoned for single-family residential use
-- Prohibits local governments from requiring the owner to live in either the primary home or the ADU (this was a big barrier before)
-- Allows ADUs to be used as rental units
-- Still allows local governments to set reasonable standards for size, setbacks, parking, and design
-
-What the law doesn't do:
-- It doesn't override HOA restrictions. If your HOA covenants prohibit ADUs or accessory structures, the state law doesn't help you.
-- It doesn't waive permitting requirements. You still need to go through the full permit process.
+Florida Statute 163.31771 defines ADUs for its affordable-housing provisions and says a local government may adopt an ordinance allowing them in single-family residential areas. It does not create blanket statewide approval for every residential lot. Confirm the current city or county code, zoning, occupancy or rental conditions, setbacks, parking, utilities, and any association restrictions before design begins.
 
 ### What It Costs to Build an ADU in Central Florida
 
-ADU costs depend heavily on size, finishes, and whether you're building from scratch or converting existing space.
-
-- **Garage conversion:** $30,000 to $60,000. You're working with an existing structure, so costs are lower. Adding plumbing for a kitchen and bath is the biggest expense.
-- **Detached ADU (400 to 600 sq ft):** $80,000 to $150,000. This is a ground-up build with its own foundation, utilities, and everything.
-- **Detached ADU (600 to 1,000 sq ft):** $120,000 to $200,000+. A larger unit with a full kitchen, bedroom, bathroom, and living area.
-- **Above-garage unit:** $60,000 to $120,000. The structure already exists, but you're adding living space with plumbing, electrical, and HVAC.
+ADU costs depend on eligibility, design, existing conditions, foundation and structural work, utilities, fire separation, access, permits, and finishes. A garage conversion can still require substantial code and system upgrades; a detached unit carries new-building site and utility costs. Obtain a property-specific feasibility review and estimate.
 
 ### The Permitting Process
 
@@ -921,7 +922,7 @@ Building an ADU in [Orange County](/Blog/building-permits-orange-county-florida)
 6. **Schedule inspections** at each phase, just like a regular build
 7. **Receive your Certificate of Occupancy** when the unit is complete
 
-Plan for **4 to 8 weeks** for the permitting phase, depending on the county.
+Review time varies by jurisdiction, submission completeness, utility coordination, agency comments, and correction cycles. Check the applicable permitting portal for current status and requirements.
 
 ### Design Considerations
 
@@ -934,10 +935,7 @@ A few things to think about as you plan:
 
 ### Rental Income Potential
 
-An ADU in the [Orlando](/ServiceAreaOrlando) metro area can bring in real money:
-
-- A well-finished **1-bed, 1-bath ADU** in a decent location can rent for **$1,200 to $1,800 per month** on a standard lease
-- Short-term rental income through platforms like Airbnb or Vrbo can be higher, but check local short-term rental regulations first. Orange County and several municipalities have specific rules about this.
+Potential rent depends on legal use, location, size, condition, market demand, expenses, and lease type. Confirm that the proposed rental use is allowed and obtain current local rental data before including income in a financial plan. Short-term rentals may be subject to separate local and association restrictions.
 - Even at **$1,400 per month** in rent, you're looking at **$16,800 per year** in income. That's a solid return on your investment.
 
 J&N StructureWorks builds ADUs and guest houses across Central Florida. We handle everything from design and permitting through construction and final inspection. If you're thinking about adding an ADU to your property, we can walk you through the options and the numbers.`
@@ -945,12 +943,16 @@ J&N StructureWorks builds ADUs and guest houses across Central Florida. We handl
   {
     id: 16,
     slug: "lake-county-building-guide",
-    title: "Building a Home in Lake County, Florida: Permits, Fees, and Growth Areas",
+    title: "Lake County Florida Home Building Guide",
     category: "County Regulations",
     metaDescription: "A practical guide to building in Lake County, Florida, covering permits, impact fees, growth areas like Clermont and Mount Dora, and how Lake County differs from Orange and Seminole.",
     tags: ["Lake County", "Clermont", "Mount Dora", "permits", "impact fees", "new construction"],
     date: "2025-09-15",
+    modifiedDate: "2026-10-14",
     readTime: "6 min read",
+    sources: [
+      { label: "Lake County impact fee schedules and guidance", url: "https://www.lakecountyfl.gov/288/Impact-Fees" },
+    ],
     content: `## Building in Lake County: What Makes It Different
 
 Lake County is becoming one of the most popular places to build in the greater Orlando area, and it's easy to see why. You get more land for your money, the commute into Orlando has gotten easier with the 429 extension and widening of US-27, and the rolling hills and lakes give it a different feel from the flat suburban sprawl further east. But Lake County has its own set of rules, fees, and quirks that are worth understanding before you commit.
@@ -974,19 +976,9 @@ Lake County's building department operates out of Tavares. The process follows t
 
 Lake County has been investing in their building department staff, and turnaround times have improved. That said, during busy periods you might wait a bit longer for reviews.
 
-### Impact Fees (2025 Estimates)
+### Impact Fees
 
-Lake County's impact fees for a single-family home:
-
-- Transportation: roughly **$4,900**
-- Schools: roughly **$4,100**
-- Parks and Recreation: roughly **$800**
-- Fire and EMS: roughly **$500**
-- Law Enforcement: roughly **$350**
-- Library: roughly **$200**
-- **Total: approximately $10,850**
-
-That's lower than both Orange County (roughly **$14,000+**) and [Osceola County](/Blog/osceola-county-new-construction-guide) (roughly **$16,900**). The impact fee savings alone can offset some of the slightly longer commute for people who work in Orlando.
+Lake County publishes current residential and commercial impact-fee schedules. Fees depend on the project, district, use, prior-use credits, and possible exemptions, so request a parcel-specific calculation instead of relying on a regional comparison or an old total.
 
 ### Growth Areas to Watch
 
@@ -1006,9 +998,9 @@ South Lake County along US-27. This is where you'll find the most affordable lan
 
 A few things stand out when you compare:
 
-- **Lower impact fees** save you money upfront. That $4,000 to $6,000 difference adds up.
+- **Impact fees vary by project and district.** Use the county's current schedules and confirm available credits or exemptions.
 - **Larger lots are easier to find.** In Orange County, especially in Horizon West, you're often looking at lots under a quarter acre. In Lake County, half-acre and one-acre lots are common in many areas.
-- **Well and septic** are more common in unincorporated Lake County, especially in rural areas. Municipal water and sewer are available in Clermont, Mount Dora, and Tavares, but outside city limits, plan on a well and septic system, which adds **$15,000 to $25,000** to your build cost.
+- **Well and septic systems** may apply to properties without municipal service. Utility availability, system design, permitting, and pricing must be confirmed for the parcel.
 - **Tree and environmental regulations** are present but generally less restrictive than Seminole County's Wekiva Protection Area rules.
 - **HOA-free living** is still possible. Many Lake County lots outside master-planned communities don't have HOA restrictions, which gives you more freedom on your design.
 
@@ -1018,7 +1010,7 @@ A few things stand out when you compare:
 - **Elevation changes.** Lake County has hills. That's part of the appeal, but it also means some lots need more site work and retaining walls. Get a survey and soil test before you buy.
 - **Rural lot infrastructure.** Some cheaper lots outside the growth corridors might not have paved road access, nearby electrical service, or internet options beyond satellite. Drive out and look before you buy.
 
-J&N StructureWorks builds [custom homes](/CustomHomes) in Lake County regularly, with projects in Clermont, Mount Dora, Groveland, and surrounding areas. We know the local building department, understand the fee structures, and can help you find the right lot and get your project moving.`
+J&N StructureWorks serves Lake County, including Clermont, Mount Dora, Groveland, and surrounding areas. We define preconstruction, permitting, and inspection coordination in each project's written scope.`
   },
   {
     id: 17,
@@ -1028,7 +1020,12 @@ J&N StructureWorks builds [custom homes](/CustomHomes) in Lake County regularly,
     metaDescription: "Warning signs every Florida homeowner should watch for when hiring a contractor, from missing licenses to sketchy payment demands.",
     tags: ["contractor", "red flags", "hiring", "Florida", "scams"],
     date: "2025-10-01",
+    modifiedDate: "2026-10-14",
     readTime: "6 min read",
+    sources: [
+      { label: "Florida Statute 489.126 - Moneys received by contractors", url: "https://leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0489/Sections/0489.126.html" },
+      { label: "Florida DBPR license search", url: "https://www.myfloridalicense.com/wl11.asp" },
+    ],
     content: `## Warning Signs You Should Never Ignore
 
 Hiring a contractor is one of the biggest financial decisions most homeowners will make. Get it right and your project runs smooth. Get it wrong and you could be out tens of thousands of dollars with nothing to show for it. We have seen it all in Central Florida, and these are the five biggest warning signs that should make you think twice before signing anything.
@@ -1037,13 +1034,13 @@ Hiring a contractor is one of the biggest financial decisions most homeowners wi
 
 This is the most basic check you can do, and it takes about 30 seconds. Every general contractor in Florida is required to hold an active license through the Department of Business and Professional Regulation (DBPR). Go to **myfloridalicense.com** and type in their name or license number.
 
-If their license is expired, suspended, or doesn't exist at all, stop the conversation right there. An unlicensed contractor can't legally pull [permits](/Blog/building-permits-orange-county-florida), which means your project is operating outside the law from day one. If something goes wrong, you have almost zero legal recourse.
+If the license is expired, suspended, absent, or does not cover the proposed scope, do not proceed until the issue is resolved. Unlicensed contracting can create permitting, enforcement, insurance, and consumer-protection problems; consult DBPR or legal counsel about a specific situation.
 
 We have talked to homeowners who found out halfway through a build that their "contractor" was never licensed. At that point, you're stuck.
 
 ### 2. They Want a Huge Payment Upfront
 
-Florida law caps contractor deposits at **10% of the contract price or $1,000**, whichever is less, unless the contractor has a payment and performance bond. If someone is asking you for 30%, 40%, or half the project cost before they have even picked up a hammer, that is a massive red flag.
+Treat a large upfront payment as a reason to examine the contract, draw schedule, materials, and contractor carefully. Florida Statute 489.126 does not create the cap previously stated here. For covered residential work, an initial payment above 10% triggers permit-application and start-of-work deadlines, subject to statutory exceptions and written extensions.
 
 Legitimate contractors use a draw schedule tied to completed work milestones. You pay as work gets done, not before. A contractor who needs all the money upfront either has cash flow problems or is planning to disappear. Either way, you lose.
 
@@ -1075,9 +1072,9 @@ Anyone who is trying to rush you into a commitment doesn't want you to have time
 - Get at least **3 bids** and compare them carefully
 - Ask for references and actually call them
 - Read every word of the contract before signing
-- Never pay more than what Florida law allows upfront
+- Review the deposit, draw schedule, cancellation terms, and Florida Statute 489.126 before making an initial payment
 
-At [J&N StructureWorks](/Contact), we are happy to show you our license, our insurance, our references, and a detailed written proposal any time you ask. That is how every contractor should operate.`
+At [J&N StructureWorks](/Contact), we provide our license information and a detailed written proposal. Consumers should independently verify licensing and request current project-specific insurance documentation.`
   },
   {
     id: 18,
@@ -1143,9 +1140,9 @@ In Florida, subcontractors and material suppliers can place a lien on your prope
 
 ### The Bottom Line
 
-The best defense against construction scams is doing your homework before you hire anyone. Verify their license, confirm their insurance, check their references, get a detailed written contract, and never pay more upfront than Florida law allows. If something feels off, trust your gut and walk away. There are plenty of honest, hardworking contractors in Central Florida.
+The best defense against construction scams is doing your homework before hiring anyone. Verify the license, request current insurance documentation, check independently verifiable references, and get a detailed written contract. Review Florida Statute 489.126 for rules that apply when initial residential payments exceed 10% of the contract price.
 
-J&N StructureWorks is a licensed and insured Florida Certified Building Contractor. We welcome any questions about our credentials and are happy to provide references from past clients across [Orlando](/ServiceAreaOrlando), [Clermont](/ServiceAreaClermont), and the surrounding areas.`
+J&N StructureWorks holds Florida Certified Building Contractor license CBC1269175. Verify the license through DBPR and request current project-specific documentation before contracting.`
   },
   {
     id: 19,
@@ -1194,7 +1191,7 @@ That said, you should absolutely expect [regular communication](/Blog/why-commun
 
 The permit process in Florida involves plan submission, county review, possible revisions, and inspections at every phase of construction. None of that can be skipped or rushed. Counties have their own timelines and their own backlogs.
 
-When your contractor tells you permits will take 2 to 4 weeks, they are not padding the schedule. They are giving you a realistic estimate based on experience. Trying to start work before permits are issued is illegal and will cause much bigger problems down the road.
+Permit review time varies by agency, project type, workload, completeness, and correction cycles. Work that requires a permit should not begin until the applicable permit is issued and any required commencement conditions are satisfied.
 
 ### The Cheapest Option Is Rarely the Best Value
 
@@ -1269,7 +1266,7 @@ A vague estimate hides costs. A [detailed estimate](/Blog/how-much-does-it-cost-
 
 The common thread in all of these is planning. The more homework you do before breaking ground, the fewer surprises you face during construction. Work with a contractor who gives you transparent pricing, communicates honestly about potential risks, and helps you build a realistic budget from day one.
 
-At J&N StructureWorks, we provide detailed, itemized estimates and walk every client through the numbers before we start. No guesswork and no hidden costs.`
+At J&N StructureWorks, proposals identify the contracted scope, assumptions, allowances, and written change-order process so clients can evaluate the project before construction begins.`
   },
   {
     id: 21,
@@ -1615,7 +1612,7 @@ For real estate investors, time is literally money. Every day you own a property
 
 Here is what we typically see across Central Florida counties for residential construction and renovation permits:
 
-- **[Orange County](/Blog/building-permits-orange-county-florida):** 2 to 4 weeks for standard residential plan review
+- **[Orange County](/Blog/building-permits-orange-county-florida):** timing varies by permit type, submission quality, workload, and correction cycles
 - **[Seminole County](/Blog/seminole-county-building-requirements):** 10 to 15 business days
 - **[Osceola County](/Blog/osceola-county-new-construction-guide):** 10 to 20 business days
 - **[Lake County](/Blog/lake-county-building-guide):** 10 to 20 business days
@@ -1682,7 +1679,7 @@ When you are calculating your [investment timeline](/Blog/due-diligence-checklis
 
 Permitting is a cost of doing business in Florida construction. It exists for good reasons, and trying to skip it creates much bigger problems down the road. The smart approach is to plan for it, prepare properly, and work with professionals who know how to navigate the process efficiently.
 
-J&N StructureWorks works with investors throughout the Central Florida market and handles all permitting on our projects. We know the local building departments and what it takes to get approvals as quickly as possible. [Contact us](/Contact) to discuss your next project.`
+J&N StructureWorks serves investors in Central Florida and can coordinate permitting for the contracted scope. Review times are controlled by the applicable agencies and cannot be guaranteed. [Contact us](/Contact) to discuss your next project.`
   },
   {
     id: 26,
@@ -1731,7 +1728,7 @@ Smoke penetrates everything. It gets into drywall, insulation, ductwork, electri
 
 #### Water Damage from Firefighting
 
-The fire department used thousands of gallons of water to put the fire out. That water soaked into floors, walls, insulation, and the foundation. In Florida's climate, mold can establish itself within **24 to 48 hours** in wet conditions. If the property sat for any length of time after the fire, mold is almost guaranteed.
+Fire suppression can leave substantial water in floors, walls, insulation, and other assemblies. Moisture should be assessed promptly by qualified restoration and environmental professionals; the extent of microbial growth depends on conditions and elapsed time.
 
 #### Hazardous Materials
 
@@ -1826,7 +1823,7 @@ When a contractor says they do dirt-to-keys work, they should be covering every 
 
 The alternative to dirt-to-keys is managing parts of the process yourself. Some homeowners act as their own general contractor or hire separate companies for site work, construction, and finishing. That can work if you know what you are doing, but it comes with risks:
 
-- **Coordination headaches.** When multiple companies are involved, scheduling conflicts and communication gaps are almost guaranteed.
+- **Coordination risk.** Multiple companies can increase scheduling and communication dependencies.
 - **Accountability gaps.** If something goes wrong between the site work contractor and the building contractor, who is responsible? With a single dirt-to-keys contractor, the answer is always clear.
 - **Budget surprises.** Separate contracts mean separate estimates, and the gaps between them are where unexpected costs hide.
 - **Timeline delays.** Every handoff between contractors is an opportunity for the schedule to slip.
@@ -1987,7 +1984,7 @@ An unlicensed contractor operating in Florida is breaking the law. More importan
 
 ### J&N StructureWorks
 
-J&N StructureWorks holds a Florida Certified Building Contractor license. We are fully licensed, insured, and qualified to handle residential construction, [renovations](/WholeHomeRenovations), and commercial projects up to three stories across every county in Florida. You can verify our credentials anytime at myfloridalicense.com.`
+J&N StructureWorks holds Florida Certified Building Contractor license CBC1269175. The license can be verified through DBPR; the permitted scope of a specific project also depends on plans, jurisdiction, and required specialty trades.`
   },
   {
     id: 30,
@@ -2013,7 +2010,7 @@ A **general contractor (GC)** is a licensed professional who manages and coordin
 - Keeping the project on schedule and on budget
 - Ensuring work meets the Florida Building Code
 
-In Florida, a general contractor must hold either a [CBC or CGC license](/Blog/what-is-a-certified-building-contractor) from the DBPR. They carry insurance, they are bonded (in many cases), and they are accountable to the state if something goes wrong.
+Florida construction licensing depends on the scope of work. Consumers should verify the contractor's active license category through DBPR and request current insurance documentation applicable to the project. A bond is not universal proof of licensure.
 
 A GC may or may not do any of the physical construction work themselves. Their primary role is project management and coordination. On a typical home build, the GC hires specialized subcontractors for framing, roofing, plumbing, electrical, HVAC, drywall, painting, and other trades.
 
@@ -2063,7 +2060,7 @@ For a [custom home build](/CustomHomes), a major renovation, or a significant [a
 
 Whether you call them a GC, a builder, or a contractor, what matters is that they hold a valid Florida license, carry proper insurance, and have a track record of completing projects on time and on budget. The title on their business card matters less than their credentials and their reputation.
 
-J&N StructureWorks is a licensed Florida Certified Building Contractor that operates as both a general contractor and a custom home builder. Whatever you want to call us, we are qualified, insured, and ready to handle your project from [dirt to keys](/Blog/what-does-dirt-to-keys-construction-mean).`
+J&N StructureWorks holds Florida Certified Building Contractor license CBC1269175 and provides custom-home and general-contracting services. The exact responsibilities for a [dirt-to-keys project](/Blog/what-does-dirt-to-keys-construction-mean) are defined in the written contract.`
   },
   {
     id: 31,
@@ -2222,7 +2219,7 @@ A minor failed inspection (missing a hurricane strap, a nail spacing issue) migh
 
 A more significant failure (structural issue, plumbing system redesign) could add **1 to 2 weeks** or more, depending on the scope of the correction.
 
-The best way to minimize delays is to work with a [contractor who knows the code](/Blog/how-to-choose-a-contractor-central-florida) inside and out and builds to pass inspections the first time. No contractor has a 100% pass rate on every inspection, but experienced contractors fail far less often than inexperienced ones.
+Complete plans, coordinated trades, and timely responses to inspector comments can reduce avoidable delays. Inspection outcomes depend on the work, approved plans, code requirements, and the authority having jurisdiction.
 
 ### Who Pays for Corrections?
 

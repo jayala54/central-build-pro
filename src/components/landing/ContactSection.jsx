@@ -150,7 +150,7 @@ export default function ContactSection() {
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-3">Thank You!</h3>
                   <p className="text-slate-600">
-                    We've received your message and will get back to you within 24 hours.
+                    We've received your message and will follow up as soon as possible.
                   </p>
                   <Button 
                     variant="outline" 

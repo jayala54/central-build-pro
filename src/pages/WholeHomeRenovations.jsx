@@ -12,11 +12,11 @@ import ServiceAreaLinks from '@/components/ServiceAreaLinks';
 const faqs = [
   {
     q: 'How much does a whole-home renovation cost in Orlando?',
-    a: 'Whole-home renovations in Orlando typically range from $100 to $250+ per square foot depending on the scope of work, structural changes, and finish selections. For a 2,000 sq ft home, expect a total investment between $200,000 and $500,000+. Cosmetic-focused renovations (new flooring, paint, fixtures) fall on the lower end, while gut renovations involving structural work, new plumbing, and electrical rewiring fall on the higher end. J&N StructureWorks provides a detailed, line-item estimate during our free consultation.',
+    a: 'Whole-home renovation pricing depends on existing conditions, plans, structural and system changes, permits, temporary protection, material selections, and current trade pricing. We prepare a project-specific written estimate after reviewing the home and scope.',
   },
   {
     q: 'How long does a whole-home renovation take?',
-    a: 'A comprehensive whole-home renovation in Central Florida typically takes 3 to 8 months depending on the size of the home and the scope of work. Cosmetic renovations may be completed in 6 to 10 weeks, while full gut renovations that involve structural modifications, roof work, and complete system replacements can take 6 to 12 months. We build a detailed project schedule before construction begins and provide regular progress updates.',
+    a: 'The schedule depends on design, permitting, inspections, hidden conditions, structural and system work, material lead times, and owner changes. We build a project-specific schedule before construction begins.',
   },
   {
     q: 'Can I live in my home during a whole-home renovation?',
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'Is it cheaper to renovate or build new in Central Florida?',
-    a: 'In most cases, renovating is more cost-effective than building new — especially when the existing structure, foundation, and lot are in good condition. A whole-home renovation typically costs 30–50% less than new construction of comparable size and quality. However, if the existing home has major structural issues, foundation problems, or outdated systems throughout, new construction may be the better long-term investment. We can evaluate your specific situation during a free consultation and help you determine the best path forward.',
+    a: 'The better option depends on the structure, foundation, systems, code implications, desired layout, site, financing, and project goals. We can compare the construction scope for each option, while your design, real-estate, insurance, tax, and finance professionals address their respective considerations.',
   },
 ];
 
@@ -175,9 +175,9 @@ export default function WholeHomeRenovations() {
               <h3 className="text-lg font-bold text-slate-900 mb-4">Why Choose J&N StructureWorks?</h3>
               <ul className="space-y-3 text-slate-600 text-sm mb-6">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor (CBC1269175)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> 100+ projects completed</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Transparent pricing — no hidden fees</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Licensed, bonded & insured</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor CBC1269175</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Detailed written scopes and estimates</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Permit and inspection coordination for the contracted scope</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
               </ul>
               <Link to="/Contact/">

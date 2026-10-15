@@ -12,7 +12,7 @@ import ServiceAreaLinks from '@/components/ServiceAreaLinks';
 const faqs = [
   {
     q: 'How much does a room addition cost in Orlando, FL?',
-    a: 'Room additions in Orlando typically cost between $150 and $350+ per square foot depending on the type of addition, foundation requirements, and finish level. A standard 400 sq ft bedroom addition may cost $60,000 to $140,000, while a more complex two-story addition or one requiring significant foundation work can exceed $200,000. Garage conversions are generally more affordable at $50 to $150 per square foot since the structure already exists. J&N StructureWorks provides detailed estimates during our free consultation.',
+    a: 'Addition pricing depends on the plans, foundation and structural work, utilities, tie-ins to the existing home, permits, site access, and finishes. We prepare a project-specific written estimate after reviewing the property and proposed scope.',
   },
   {
     q: 'Do I need a permit for a room addition in Florida?',
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'How long does it take to build a room addition?',
-    a: 'A typical room addition in Central Florida takes 2 to 5 months from permit approval to completion. A simple single-room addition (bedroom, office, or family room) may be completed in 8 to 12 weeks, while more complex additions involving a second story, new bathroom, or kitchen expansion can take 4 to 6 months. The permitting process itself typically adds 2 to 6 weeks before construction begins. We provide a detailed timeline during the planning phase.',
+    a: 'An addition schedule depends on design, engineering, permitting, site conditions, inspections, material lead times, weather, and complexity. We develop a project-specific schedule during planning.',
   },
   {
     q: 'Can you match the addition to my existing home\'s style?',
@@ -173,9 +173,9 @@ export default function RoomAdditions() {
               <h3 className="text-lg font-bold text-slate-900 mb-4">Why Choose J&N StructureWorks?</h3>
               <ul className="space-y-3 text-slate-600 text-sm mb-6">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor (CBC1269175)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> 100+ projects completed</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Transparent pricing — no hidden fees</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Licensed, bonded & insured</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor CBC1269175</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Detailed written scopes and estimates</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Permit and inspection coordination for the contracted scope</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
               </ul>
               <Link to="/Contact/">

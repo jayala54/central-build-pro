@@ -127,7 +127,7 @@ export default function TacoBellRepipeKissimmee() {
   return (
     <div className="min-h-screen bg-slate-50">
       <SEOHead
-        title="Commercial Remodel Kissimmee FL | Taco Bell Repipe & Bathroom Remodel"
+        title="Taco Bell Commercial Remodel in Kissimmee FL"
         path={projectPath}
         description="Commercial remodel in Kissimmee, FL for a Taco Bell restaurant, including repipe work, bathroom remodeling, finishes, and full project coordination by J&N StructureWorks."
         image={`${SITE_URL}${heroImage}`}

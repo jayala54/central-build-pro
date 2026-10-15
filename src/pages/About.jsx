@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from '../components/landing/Navbar';
 import AboutSection from '../components/landing/AboutSection';
 import ServiceAreasSection from '../components/landing/ServiceAreasSection';
-import TestimonialsSection from '../components/landing/TestimonialsSection';
 import Footer from '../components/landing/Footer';
 import SEOHead from '@/components/SEOHead';
 
@@ -28,7 +27,6 @@ export default function About() {
       <div>
         <AboutSection />
         <ServiceAreasSection />
-        <TestimonialsSection />
       </div>
       <Footer />
     </div>

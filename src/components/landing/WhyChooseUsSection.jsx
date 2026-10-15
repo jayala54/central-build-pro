@@ -6,27 +6,27 @@ const reasons = [
   {
     icon: Shield,
     title: 'Licensed & Certified',
-    description: 'Florida Certified Building Contractor (CBC1269175). Fully licensed, bonded, and insured for your protection.',
+    description: 'Florida Certified Building Contractor license CBC1269175. Verify the license through the Florida DBPR before hiring any contractor.',
   },
   {
     icon: Briefcase,
-    title: '100+ Projects Completed',
-    description: 'From custom homes to commercial buildouts, we\'ve delivered over 100 projects across Central Florida.',
+    title: 'Residential & Commercial',
+    description: 'Construction services include custom homes, renovations, additions, commercial buildouts, and demolition.',
   },
   {
     icon: DollarSign,
-    title: 'Transparent Pricing',
-    description: 'Detailed estimates upfront with no hidden fees or surprise change orders. You know what you\'re paying before we start.',
+    title: 'Detailed Written Scopes',
+    description: 'Proposals identify the contracted scope, project assumptions, and how written changes will be documented.',
   },
   {
     icon: Clock,
-    title: 'On-Time Delivery',
-    description: 'We set realistic timelines and stick to them. Regular progress updates keep you informed at every milestone.',
+    title: 'Schedule Communication',
+    description: 'Project-specific schedules and progress updates help you understand milestones, decisions, and potential delays.',
   },
   {
     icon: Wrench,
     title: 'Full-Service Builder',
-    description: 'One point of contact from permits to final walkthrough. We manage every trade so you don\'t have to.',
+    description: 'We coordinate the contracted construction scope from preconstruction through the final walkthrough.',
   },
   {
     icon: Heart,

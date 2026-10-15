@@ -10,7 +10,7 @@ import ProjectInquiryFields, { buildProjectSummary } from '@/components/ProjectI
 import emailjs from '@emailjs/browser';
 import { trackEvent } from '@/utils/analytics';
 import {
-  Phone, Shield, Award, Clock, Star,
+  Phone, Shield, Award, Clock,
   CheckCircle, Loader2, Send, Home, Hammer,
   Wrench, SquarePlus, Building2, HardHat
 } from 'lucide-react';
@@ -36,24 +36,6 @@ const services = [
   { icon: HardHat, title: 'Commercial Renovations', desc: 'Upgrade your business space with expert builds' },
   { icon: Hammer, title: 'Complete Demolition', desc: 'Entire-structure removal with coordinated site preparation' },
   { icon: Hammer, title: 'Selective Demolition', desc: 'Targeted removal while protecting construction that remains' },
-];
-
-const testimonials = [
-  {
-    text: 'J&N StructureWorks transformed our outdated kitchen into a modern masterpiece. The attention to detail was incredible.',
-    name: 'Sarah M.',
-    location: 'Winter Park',
-  },
-  {
-    text: 'Professional from start to finish. They completed our home renovation on time and within budget.',
-    name: 'Michael R.',
-    location: 'Orlando',
-  },
-  {
-    text: "Best contractor experience we've ever had. They treated our home like it was their own.",
-    name: 'David & Lisa K.',
-    location: 'Lake Mary',
-  },
 ];
 
 function QuoteForm({ id, utmParams }) {
@@ -102,7 +84,7 @@ function QuoteForm({ id, utmParams }) {
           <CheckCircle className="w-8 h-8 text-green-600" />
         </div>
         <h3 className="text-2xl font-bold text-slate-900 mb-2">Thank You!</h3>
-        <p className="text-slate-600 mb-6">We'll get back to you within 24 hours.</p>
+        <p className="text-slate-600 mb-6">We received your project information and will follow up as soon as possible.</p>
         <p className="text-slate-500 text-sm">Or call now for an immediate response:</p>
         <a href="tel:+13216954964" className="text-orange-600 font-bold text-lg mt-1 hover:text-orange-700">(321) 695-4964</a>
         <Button variant="outline" className="mt-6" onClick={() => setIsSubmitted(false)}>
@@ -190,7 +172,7 @@ function QuoteForm({ id, utmParams }) {
           <><Send className="mr-2 w-5 h-5" /> Get My Free Quote</>
         )}
       </Button>
-      <p className="text-xs text-slate-400 text-center pt-1">No obligation. We respond within 24 hours.</p>
+      <p className="text-xs text-slate-400 text-center pt-1">No obligation. Response time may vary with project volume.</p>
     </form>
   );
 }
@@ -275,7 +257,7 @@ export default function FreeQuote() {
             <motion.div {...fadeUp} className="pt-2 lg:pt-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/15 border border-orange-500/30 mb-6">
                 <Shield className="w-4 h-4 text-orange-400" />
-                <span className="text-orange-300 text-sm font-medium">Licensed & Insured — CBC1269175</span>
+                <span className="text-orange-300 text-sm font-medium">Florida Certified Building Contractor — CBC1269175</span>
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-[1.1] mb-5 tracking-tight">
                 Orlando's Trusted<br />Home Builder —
@@ -299,7 +281,7 @@ export default function FreeQuote() {
               {/* Desktop trust badges */}
               <div className="hidden lg:flex items-center gap-6 text-sm text-slate-400">
                 <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> Free Estimates</div>
-                <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> 24hr Response</div>
+                <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> Project-Specific Follow-Up</div>
                 <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> No Obligation</div>
               </div>
             </motion.div>
@@ -330,8 +312,8 @@ export default function FreeQuote() {
             {[
               { icon: Shield, label: 'State Certified', value: 'License CBC1269175' },
               { icon: Clock, label: 'Construction Experience', value: '10+ Years' },
-              { icon: Award, label: 'Projects Completed', value: '100+' },
-              { icon: Star, label: 'Customer Rating', value: '5-Star Rated' },
+              { icon: Award, label: 'Project Types', value: 'Residential + Commercial' },
+              { icon: Building2, label: 'Service Area', value: 'Central Florida' },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-orange-500/15 flex items-center justify-center shrink-0">
@@ -375,39 +357,6 @@ export default function FreeQuote() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
-      <section className="py-16 sm:py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div {...fadeUp} className="text-center mb-12">
-            <span className="text-orange-600 font-semibold text-sm tracking-wider uppercase">Reviews</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">What Our Clients Say</h2>
-          </motion.div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="bg-white rounded-xl p-6 shadow-sm border border-slate-100"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, j) => (
-                    <Star key={j} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                <p className="text-slate-700 leading-relaxed mb-5 italic">"{t.text}"</p>
-                <div className="border-t border-slate-100 pt-4">
-                  <p className="font-semibold text-slate-900 text-sm">{t.name}</p>
-                  <p className="text-slate-400 text-xs">{t.location}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── FINAL CTA ── */}
       <section className="relative py-16 sm:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
@@ -443,7 +392,7 @@ export default function FreeQuote() {
             >
               <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-2xl">
                 <h3 className="text-xl font-bold text-slate-900 mb-1">Get Your Free Quote</h3>
-                <p className="text-slate-500 text-sm mb-5">No obligation. We respond within 24 hours.</p>
+                <p className="text-slate-500 text-sm mb-5">No obligation. Response time may vary with project volume.</p>
                 <QuoteForm id="bottom-form" utmParams={utmParams} />
               </div>
             </motion.div>

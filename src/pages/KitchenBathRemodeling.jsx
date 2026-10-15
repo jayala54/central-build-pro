@@ -12,11 +12,11 @@ import ServiceAreaLinks from '@/components/ServiceAreaLinks';
 const faqs = [
   {
     q: 'How much does a kitchen remodel cost in Orlando, FL?',
-    a: 'Kitchen remodel costs in Orlando typically range from $25,000 to $75,000+ depending on the scope of work, materials, and finishes selected. A mid-range kitchen remodel averages around $40,000 to $55,000, while a high-end renovation with custom cabinetry, stone countertops, and premium appliances can exceed $80,000. J&N StructureWorks provides detailed, line-item estimates during our free consultation so you know exactly where every dollar goes.',
+    a: 'Kitchen-remodel pricing depends on the existing conditions, layout changes, cabinetry, surfaces, appliances, trade work, permits, and finish selections. We prepare a project-specific written estimate after reviewing the room and proposed scope.',
   },
   {
     q: 'How long does a bathroom renovation take in Central Florida?',
-    a: 'A standard bathroom renovation in Central Florida typically takes 3 to 6 weeks from demolition to final walkthrough. A simple cosmetic refresh (new tile, vanity, and fixtures) may take 2 to 3 weeks, while a full gut renovation involving plumbing relocation, structural changes, or expanding the footprint can take 6 to 10 weeks. We provide a detailed project timeline before work begins and keep you updated throughout the process.',
+    a: 'A bathroom-renovation schedule depends on design, permits, inspections, hidden conditions, material lead times, and whether plumbing or structural work is required. We prepare a project-specific schedule before construction.',
   },
   {
     q: 'Do I need a permit for a kitchen or bathroom remodel in Orlando?',
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'What is the ROI on a kitchen or bathroom remodel in Florida?',
-    a: 'According to national remodeling cost-vs-value data, a mid-range kitchen remodel typically recoups 60–80% of its cost at resale, while bathroom renovations recoup 55–75%. In the competitive Central Florida real estate market, updated kitchens and bathrooms are among the most valuable improvements you can make. Beyond resale value, these renovations significantly improve daily livability and comfort.',
+    a: 'Resale value varies by neighborhood, market conditions, project cost, workmanship, and buyer preferences. A local real-estate professional or appraiser can provide property-specific guidance; no renovation return is guaranteed.',
   },
   {
     q: 'Can I stay in my home during a kitchen or bathroom remodel?',
@@ -113,7 +113,7 @@ export default function KitchenBathRemodeling() {
                 We serve homeowners throughout Orange, Seminole, Osceola, and Lake counties — including Orlando,
                 Winter Park, Lake Mary, Kissimmee, Sanford, Oviedo, Clermont, Winter Garden, and Windermere.
                 Every project begins with a detailed scope of work and a transparent, line-item estimate. No surprises,
-                no hidden fees, and no guessing about what's included. We coordinate plumbing, electrical, tile,
+                documented assumptions, and a written process for scope changes. We coordinate plumbing, electrical, tile,
                 cabinetry, and finish work under one roof so you have a single point of contact from start to finish.
               </p>
               <p className="text-slate-600 mb-8">
@@ -171,9 +171,9 @@ export default function KitchenBathRemodeling() {
               <h3 className="text-lg font-bold text-slate-900 mb-4">Why Choose J&N StructureWorks?</h3>
               <ul className="space-y-3 text-slate-600 text-sm mb-6">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor (CBC1269175)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> 100+ projects completed</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Transparent pricing — no hidden fees</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Licensed, bonded & insured</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor CBC1269175</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Detailed written scopes and estimates</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Permit and inspection coordination for the contracted scope</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
               </ul>
               <Link to="/Contact/">

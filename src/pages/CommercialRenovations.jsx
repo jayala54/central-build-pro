@@ -12,7 +12,7 @@ import ServiceAreaLinks from '@/components/ServiceAreaLinks';
 const faqs = [
   {
     q: 'How much does a commercial renovation cost in Orlando?',
-    a: 'Commercial renovation costs in Orlando typically range from $40 to $175+ per square foot depending on the type of space, scope of work, and finish level. A basic office refresh (new paint, flooring, and fixtures) may cost $40 to $60 per square foot, while a full restaurant remodel or medical office renovation can exceed $150 per square foot. Structural modifications, ADA upgrades, and code compliance work add to the cost. J&N StructureWorks provides detailed, line-item estimates based on your specific project requirements.',
+    a: 'Commercial-renovation pricing depends on the existing building, approved plans, occupancy and use, accessibility requirements, structural or system changes, finishes, and operating constraints. We prepare a project-specific written estimate after reviewing the space and scope.',
   },
   {
     q: 'How do you minimize disruption to my business during renovation?',
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'How long does a commercial renovation take?',
-    a: 'Commercial renovation timelines vary significantly based on the scope of work. A cosmetic refresh of a 3,000 sq ft office may take 3 to 5 weeks, while a full restaurant remodel or major structural renovation of 5,000+ sq ft can take 8 to 16 weeks. The permitting process typically adds 2 to 6 weeks before construction begins. We develop a detailed project schedule during pre-construction that accounts for permitting, material lead times, and any phasing required to minimize business disruption.',
+    a: 'Commercial-renovation schedules depend on design, permitting, phasing, operating-hour restrictions, existing conditions, inspections, and material lead times. We develop a project-specific schedule during preconstruction.',
   },
 ];
 
@@ -177,9 +177,9 @@ export default function CommercialRenovations() {
               <h3 className="text-lg font-bold text-slate-900 mb-4">Why Choose J&N StructureWorks?</h3>
               <ul className="space-y-3 text-slate-600 text-sm mb-6">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor (CBC1269175)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> 100+ projects completed</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Transparent pricing — no hidden fees</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Licensed, bonded & insured</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor CBC1269175</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Detailed written scopes and estimates</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Permit and inspection coordination for the contracted scope</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
               </ul>
               <Link to="/Contact/">

@@ -21,22 +21,22 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Familiar with Seminole County permitting and zoning requirements',
-  'Over 100 projects completed across Central Florida',
-  'Transparent pricing with detailed project budgets',
-  'Fully licensed, bonded, and insured',
-  'Consistent communication from start to finish',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does a home remodel cost in Lake Mary, FL?',
-    a: 'Home remodeling costs in Lake Mary range from $100 to $300+ per square foot depending on the scope of work and finishes. A full kitchen remodel typically runs $50,000 to $90,000, while whole-home renovations vary widely. We provide free, detailed estimates tailored to your specific project.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'Do I need a permit for construction in Lake Mary?',
-    a: 'Yes. Most construction work in Lake Mary requires permits through the City of Lake Mary Building Department or Seminole County, depending on whether your property is within city limits or unincorporated Seminole County. J&N StructureWorks manages all permitting and inspections for you.',
+    a: 'Yes. Most construction work in Lake Mary requires permits through the City of Lake Mary Building Department or Seminole County, depending on whether your property is within city limits or unincorporated Seminole County. J&N StructureWorks coordinates permitting and required inspections for the contracted scope.',
   },
   {
     q: 'Can you build custom homes in Lake Mary subdivisions with HOA restrictions?',

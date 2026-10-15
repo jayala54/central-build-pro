@@ -21,22 +21,22 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Experience building in master-planned communities like Lake Nona',
-  'Over 100 projects completed across Central Florida',
-  'Modern construction techniques and energy-efficient building practices',
-  'Fully licensed, bonded, and insured',
-  'Familiar with Lake Nona community standards and HOA processes',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does it cost to build a custom home in Lake Nona?',
-    a: 'Custom home construction in Lake Nona typically ranges from $225 to $450+ per square foot depending on the community, lot conditions, design complexity, and finish selections. Lake Nona\'s modern aesthetic and energy-efficiency standards often influence material choices and costs. We provide detailed estimates during a free consultation.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'Can you work within Lake Nona\'s architectural guidelines?',
-    a: 'Yes. Lake Nona has specific architectural review and design standards that all new construction and renovations must meet. J&N StructureWorks has experience navigating these requirements and will manage all HOA and architectural review board submittals on your behalf.',
+    a: 'Requirements vary by community and property. We review the available association or architectural guidelines and identify submittal coordination included in the project scope.',
   },
   {
     q: 'Do you build energy-efficient and smart homes in Lake Nona?',

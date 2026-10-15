@@ -29,6 +29,12 @@ function normalizePageStructuredData(data) {
   return data;
 }
 
+function truncateDescription(value, maxLength = 155) {
+  if (value.length <= maxLength) return value;
+  const shortened = value.slice(0, maxLength + 1);
+  return `${shortened.slice(0, shortened.lastIndexOf(' ')).replace(/[.,;:]$/, '')}...`;
+}
+
 export default function SEOHead({
   title,
   description = DEFAULT_DESCRIPTION,
@@ -43,9 +49,11 @@ export default function SEOHead({
   geoPlace = 'Central Florida',
   preloadImage = false,
 }) {
+  const brandedTitle = title && !title.includes(SITE_NAME) ? `${title} | ${SITE_NAME}` : title;
   const fullTitle = title
-    ? (title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`)
+    ? (brandedTitle.length <= 62 ? brandedTitle : title)
     : `General Contractor Orlando FL | ${SITE_NAME}`;
+  const metaDescription = truncateDescription(description);
   const canonicalUrl = `${SITE_URL}${normalizeCanonicalPath(path)}`;
 
   const businessJsonLd = {
@@ -166,14 +174,14 @@ export default function SEOHead({
   return (
     <Helmet>
       <title>{fullTitle}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={metaDescription} />
       {noIndex && <meta name="robots" content="noindex,follow" />}
       <link rel="canonical" href={canonicalUrl} />
       {preloadImage && <link rel="preload" as="image" href={image} fetchPriority="high" />}
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={metaDescription} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:type" content={type} />
@@ -184,7 +192,7 @@ export default function SEOHead({
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={image} />
 
       {/* Geo / Local SEO */}

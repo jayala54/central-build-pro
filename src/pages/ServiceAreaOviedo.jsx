@@ -21,18 +21,18 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Familiar with Seminole County and City of Oviedo permitting',
-  'Over 100 projects completed across Central Florida',
-  'Transparent pricing with detailed written estimates',
-  'Fully licensed, bonded, and insured',
-  'Dedicated project managers for every job',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does a home remodel cost in Oviedo, FL?',
-    a: 'Remodeling costs in Oviedo typically range from $100 to $300+ per square foot depending on the scope of work. Kitchen remodels average $50,000 to $85,000, while whole-home renovations depend on the size and finish level. We provide detailed, no-obligation estimates during your free consultation.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'Do I need a permit for home improvements in Oviedo?',
@@ -134,7 +134,7 @@ export default function ServiceAreaOviedo() {
               <p className="text-slate-600 mb-8">
                 As a Florida Certified Building Contractor (CBC1269175), J&N StructureWorks handles every aspect
                 of your Oviedo construction project — from initial design and permitting through construction
-                and final inspection. We are fully licensed, bonded, and insured for your peace of mind.
+                and final inspection for the contracted scope. Our Florida Certified Building Contractor license is CBC1269175.
               </p>
 
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Services We Offer in Oviedo</h3>

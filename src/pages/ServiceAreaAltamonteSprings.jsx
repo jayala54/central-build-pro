@@ -21,22 +21,22 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Familiar with Seminole County and City of Altamonte Springs permitting',
-  'Over 100 projects completed across Central Florida',
-  'Transparent pricing with no hidden fees',
-  'Fully licensed, bonded, and insured',
-  'Consistent communication and on-time project delivery',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does a home remodel cost in Altamonte Springs?',
-    a: 'Home remodeling in Altamonte Springs typically ranges from $100 to $275+ per square foot depending on the project scope. Kitchen remodels average $45,000 to $80,000, while whole-home renovations vary by size and finish level. We provide free, detailed estimates tailored to your specific project.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'Do I need a permit for construction work in Altamonte Springs?',
-    a: 'Yes. Most construction, electrical, plumbing, and mechanical work in Altamonte Springs requires a building permit through the City of Altamonte Springs Building Division or Seminole County. J&N StructureWorks handles all permit applications and inspection coordination for you.',
+    a: 'Yes. Most construction, electrical, plumbing, and mechanical work in Altamonte Springs requires a building permit through the City of Altamonte Springs Building Division or Seminole County. J&N StructureWorks coordinates permits and required inspections for the contracted scope.',
   },
   {
     q: 'Can you do commercial buildouts in the Altamonte Springs area?',

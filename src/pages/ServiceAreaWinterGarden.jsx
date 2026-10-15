@@ -21,18 +21,18 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Familiar with City of Winter Garden and Orange County permitting',
-  'Over 100 projects completed across Central Florida',
-  'Transparent pricing with no hidden fees',
-  'Fully licensed, bonded, and insured',
-  'Clean, professional job sites and respectful crews',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does a home remodel cost in Winter Garden, FL?',
-    a: 'Home remodeling costs in Winter Garden typically range from $125 to $300+ per square foot depending on scope and finishes. Kitchen remodels generally start around $50,000 to $90,000. Whole-home renovations vary based on size and complexity. We provide free, itemized estimates for every project.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'Do I need permits for construction in Winter Garden?',

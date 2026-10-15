@@ -134,6 +134,9 @@ export default function BlogArticle() {
                 <Clock className="w-4 h-4" />
                 {article.readTime}
               </span>
+              {article.modifiedDate && (
+                <span>Reviewed {new Date(article.modifiedDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+              )}
             </div>
           </motion.div>
         </div>
@@ -147,6 +150,9 @@ export default function BlogArticle() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
+          <div className="mb-8 border-l-4 border-orange-500 bg-orange-50 p-4 text-sm leading-relaxed text-slate-700">
+            Construction codes, fees, incentives, prices, and review times can change. Confirm current requirements with the authority having jurisdiction and obtain project-specific professional advice.
+          </div>
           <div className="prose prose-lg prose-slate max-w-none
             prose-headings:text-slate-900 prose-headings:font-bold prose-headings:text-center
             prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
@@ -168,6 +174,20 @@ export default function BlogArticle() {
               {article.content}
             </ReactMarkdown>
           </div>
+          {article.sources?.length > 0 && (
+            <section className="mt-10 border-t border-slate-200 pt-8" aria-labelledby="article-sources">
+              <h2 id="article-sources" className="text-xl font-bold text-slate-900 mb-4">Official Sources</h2>
+              <ul className="space-y-2 text-sm text-slate-600">
+                {article.sources.map((source) => (
+                  <li key={source.url}>
+                    <a className="text-orange-700 hover:underline" href={source.url} target="_blank" rel="noreferrer">
+                      {source.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
         </motion.article>
 
         {/* Tags */}

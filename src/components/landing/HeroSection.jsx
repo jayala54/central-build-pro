@@ -82,9 +82,9 @@ export default function HeroSection({ onContactClick }) {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             {[
-              { icon: Award, label: 'Licensed & Insured', value: 'State Certified' },
+              { icon: Award, label: 'Florida License CBC1269175', value: 'State Certified' },
               { icon: Clock, label: 'Construction Experience', value: '10+ Years' },
-              { icon: Shield, label: 'Projects Completed', value: '100+' },
+              { icon: Shield, label: 'Project Types', value: 'Residential + Commercial' },
             ].map((stat, idx) => (
               <div key={idx} className="text-center sm:text-left">
                 <stat.icon className="w-5 h-5 text-blue-400 mb-2 mx-auto sm:mx-0" />

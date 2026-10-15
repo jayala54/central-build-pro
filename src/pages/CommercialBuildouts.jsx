@@ -14,11 +14,11 @@ import ServiceAreaLinks from '@/components/ServiceAreaLinks';
 const faqs = [
   {
     q: 'How much does a commercial tenant buildout cost in Orlando?',
-    a: 'Commercial tenant buildout costs in Orlando typically range from $50 to $200+ per square foot depending on the type of space, complexity of the build, and finish level. A basic office buildout with standard finishes may cost $50 to $80 per square foot, while a restaurant buildout requiring grease traps, hood systems, and specialized plumbing can exceed $150 to $250 per square foot. We provide detailed, line-item estimates based on your specific space and requirements during our free consultation.',
+    a: 'Tenant-buildout pricing depends on the existing space, approved plans, change of use, accessibility work, utility capacity, specialized systems, finish selections, and agency requirements. We prepare a project-specific written estimate after reviewing the space and scope.',
   },
   {
     q: 'How long does a commercial buildout take in Central Florida?',
-    a: 'Commercial buildout timelines in Central Florida typically range from 4 to 16 weeks depending on the size and complexity of the project. A straightforward office buildout (2,000–5,000 sq ft) may take 4 to 8 weeks, while a restaurant buildout or medical office with specialized systems can take 10 to 16 weeks. The permitting process typically adds 2 to 6 weeks before construction begins. We work with you to establish a realistic timeline that aligns with your lease commencement date.',
+    a: 'Buildout schedules depend on design, landlord approvals, permitting, long-lead equipment, inspections, existing conditions, and the project scope. We develop a project-specific schedule and identify assumptions that could affect a lease commencement date.',
   },
   {
     q: 'Can you help with lease negotiations for tenant improvement allowances?',
@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: 'What permits are required for a commercial buildout in Orlando?',
-    a: 'Commercial buildouts in Orlando and Orange County require building permits for construction, electrical permits, plumbing permits (if applicable), mechanical permits for HVAC work, and fire alarm/suppression permits. Restaurant and food service buildouts also require Health Department approvals. Depending on the location, you may need zoning approval and a Certificate of Use. As a Florida Certified Building Contractor (CBC1269175), J&N StructureWorks manages all permit applications and inspections throughout the project.',
+    a: 'Required approvals depend on jurisdiction, occupancy, use, and scope. They may include building and trade permits, zoning or use approval, fire review, and agency review for regulated operations. J&N StructureWorks coordinates the permits and inspections included in the contracted scope.',
   },
   {
     q: 'Do you handle ADA compliance for commercial spaces?',
@@ -203,9 +203,9 @@ export default function CommercialBuildouts() {
               <h3 className="text-lg font-bold text-slate-900 mb-4">Why Choose J&N StructureWorks?</h3>
               <ul className="space-y-3 text-slate-600 text-sm mb-6">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor (CBC1269175)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> 100+ projects completed</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Transparent pricing — no hidden fees</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Licensed, bonded & insured</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor CBC1269175</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Detailed written scopes and estimates</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Permit and inspection coordination for the contracted scope</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
               </ul>
               <Button asChild className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">

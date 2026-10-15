@@ -21,18 +21,18 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Deep familiarity with Orange County permitting and zoning codes',
-  'Over 100 projects completed across the Orlando metro area',
-  'Transparent pricing with no hidden fees or change-order surprises',
-  'Fully licensed, bonded, and insured for your protection',
-  'Dedicated project managers who communicate at every milestone',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does home construction cost in Orlando, FL?',
-    a: 'New home construction in Orlando typically ranges from $200 to $400+ per square foot depending on lot conditions, design complexity, and finish selections. Remodeling projects generally start around $50,000 for a major kitchen renovation. Contact us for a detailed, no-obligation estimate tailored to your Orlando property.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'Do I need a permit for remodeling in Orlando?',
@@ -54,7 +54,7 @@ export default function ServiceAreaOrlando() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="Orlando Construction Services"
+        title="General Contractor Orlando FL"
         path="/ServiceAreaOrlando"
         geoPlace="Orlando"
         description="J&N StructureWorks is a licensed general contractor in Orlando, FL (CBC1269175). Custom homes, remodeling, additions & commercial buildouts in Orange County. Free estimates: (321) 695-4964."
@@ -121,16 +121,16 @@ export default function ServiceAreaOrlando() {
               <p className="text-slate-600 mb-4">
                 Orlando is the heart of Central Florida — a dynamic city where historic bungalows in College Park sit
                 just minutes from the modern high-rises of Downtown and the master-planned neighborhoods of Lake Nona.
-                J&N StructureWorks has completed projects across every corner of Orlando, from the tree-lined streets of
-                Thornton Park to the eclectic Mills 50 district. We understand the unique character of each neighborhood
-                and the specific building requirements that come with working in Orange County.
+                J&N StructureWorks serves Orlando and surrounding Orange County communities, from the tree-lined streets
+                of Thornton Park to the Mills 50 district. The permitting authority, zoning, impact fees, and site
+                requirements vary by property, so we confirm those items during preconstruction.
               </p>
               <p className="text-slate-600 mb-4">
                 Whether you are planning a full custom home build on an infill lot in Baldwin Park, a kitchen renovation
                 in Colonialtown, or a commercial tenant improvement near the Central Business District, our team brings
                 the same attention to detail and code compliance to every project. As a Florida Certified Building
-                Contractor (CBC1269175), we are fully licensed to pull permits, manage inspections, and deliver
-                turnkey construction throughout the City of Orlando and unincorporated Orange County.
+                Contractor (CBC1269175), we coordinate the contracted construction scope, permits, and required
+                inspections throughout the City of Orlando and unincorporated Orange County.
               </p>
               <p className="text-slate-600 mb-8">
                 Orlando's rapid growth means navigating evolving zoning regulations, impact fees, and HOA requirements.

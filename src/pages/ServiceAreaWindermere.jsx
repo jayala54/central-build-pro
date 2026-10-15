@@ -21,26 +21,26 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Experience building luxury and lakefront homes in Windermere',
-  'Over 100 projects completed across Central Florida',
-  'Attention to high-end finishes and architectural detail',
-  'Fully licensed, bonded, and insured',
-  'Discreet, professional service in exclusive communities',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does it cost to build a luxury home in Windermere?',
-    a: 'Luxury custom home construction in Windermere typically ranges from $300 to $600+ per square foot depending on lot conditions, lakefront access, architectural complexity, and finish selections. Lakefront properties on the Butler Chain of Lakes command premium build costs due to site preparation, seawalls, and elevated finishes. We provide detailed estimates during our consultation.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'Can you build on lakefront lots along the Butler Chain of Lakes?',
-    a: 'Yes. We specialize in lakefront construction in the Windermere area, including lots on the Butler Chain of Lakes. We manage all environmental permits, seawall considerations, setback requirements, and dock approvals in addition to standard building permits.',
+    a: 'Lakefront work can involve environmental review, setbacks, floodplain requirements, seawalls, docks, and other site-specific approvals. We evaluate the property and define the construction and permit-coordination scope before work begins.',
   },
   {
     q: 'Do you work in gated communities like Isleworth?',
-    a: 'Yes. We serve homeowners in Windermere\'s most prestigious communities including Isleworth, Keenes Pointe, Lake Butler Sound, and Windermere Trails. We work within each community\'s architectural review board requirements and maintain the standards expected in these neighborhoods.',
+    a: 'We evaluate projects throughout the Windermere area. Association and architectural-review requirements vary by property, so owners should provide the current community guidelines during preconstruction.',
   },
   {
     q: 'How long does a whole-home renovation take in Windermere?',

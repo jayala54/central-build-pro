@@ -21,22 +21,22 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Experience working with Winter Park historic district guidelines',
-  'Over 100 projects completed across Central Florida',
-  'Transparent pricing with no hidden fees',
-  'Fully licensed, bonded, and insured',
-  'Respectful of your property and your neighbors during construction',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does a home renovation cost in Winter Park?',
-    a: 'Renovation costs in Winter Park typically range from $150 to $350+ per square foot depending on the scope and finishes selected. Kitchen remodels often start around $60,000 to $100,000 due to the higher-end finishes common in the area. We provide detailed estimates during a free on-site consultation.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'Are there special permit requirements for historic homes in Winter Park?',
-    a: 'Yes. Properties within the Winter Park Historic Districts may require approval from the Historic Preservation Board in addition to standard building permits. J&N StructureWorks has experience navigating these requirements and will manage the entire approval process on your behalf.',
+    a: 'Properties within a Winter Park historic district may require additional review as well as standard permits. We identify applicable approvals and coordination responsibilities during preconstruction.',
   },
   {
     q: 'Can you add a second story to my Winter Park home?',

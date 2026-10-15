@@ -21,22 +21,22 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Knowledgeable about Osceola County permitting and zoning codes',
-  'Over 100 projects completed across Central Florida',
-  'Transparent pricing with detailed written estimates',
-  'Fully licensed, bonded, and insured',
-  'Bilingual team members to serve our diverse community',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does it cost to build a home in Kissimmee, FL?',
-    a: 'New home construction in Kissimmee generally ranges from $175 to $350+ per square foot depending on design, lot conditions, and finishes. Kissimmee offers some of the most competitive building costs in the Orlando metro area. Contact us for a free estimate specific to your project.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'What permits do I need for construction in Kissimmee?',
-    a: 'Most construction projects in Kissimmee require permits through either the City of Kissimmee Building Department or Osceola County, depending on your property location. J&N StructureWorks handles all permit applications, plan reviews, and inspections on your behalf.',
+    a: 'Most construction projects in Kissimmee require permits through either the City of Kissimmee Building Department or Osceola County, depending on your property location. J&N StructureWorks coordinates permit applications, plan review responses, and required inspections for the contracted scope.',
   },
   {
     q: 'Can you remodel vacation rental properties near the theme parks?',

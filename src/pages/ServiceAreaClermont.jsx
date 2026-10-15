@@ -21,26 +21,26 @@ const services = [
 ];
 
 const whyChoose = [
-  'Licensed Florida Certified Building Contractor (CBC1269175)',
-  'Experienced with Lake County permitting and building requirements',
-  'Over 100 projects completed across Central Florida',
-  'Transparent pricing with no hidden fees or surprises',
-  'Fully licensed, bonded, and insured',
-  'Responsive communication throughout your project',
+  'Florida Certified Building Contractor (CBC1269175)',
+  'Residential and commercial construction services',
+  'Detailed written project scopes and estimates',
+  'Permit and inspection coordination for the contracted scope',
+  'Project-specific scheduling and communication',
+  'Central Florida service area',
 ];
 
 const faqs = [
   {
     q: 'How much does it cost to build a custom home in Clermont, FL?',
-    a: 'Custom home construction in Clermont typically ranges from $180 to $350+ per square foot depending on lot conditions (especially elevation changes on hillside lots), design complexity, and finish selections. Clermont offers competitive building costs compared to closer-in Orlando suburbs. Contact us for a tailored estimate.',
+    a: 'Construction costs depend on the property, plans, site conditions, permit requirements, material selections, and current trade pricing. We provide a project-specific written estimate after reviewing the scope.',
   },
   {
     q: 'What permits are needed for building in Clermont?',
-    a: 'Construction in Clermont requires permits through either the City of Clermont Building Department or Lake County, depending on your property\'s jurisdiction. Impact fees, utility connection fees, and tree removal permits may also apply. J&N StructureWorks manages all permitting on your behalf.',
+    a: 'The permitting authority may be the City of Clermont or Lake County, depending on the property. Impact fees, utility fees, and other approvals may apply. We coordinate the permits and inspections included in the contracted scope.',
   },
   {
     q: 'Can you build on hillside or sloped lots in Clermont?',
-    a: 'Yes. Clermont is unique in Central Florida for its rolling hills and elevation changes. We have experience building on sloped lots, which may require specialized foundation work, retaining walls, and drainage solutions. We evaluate each lot during our pre-construction process.',
+    a: 'Sloped lots may require additional survey, geotechnical, drainage, retaining, or foundation design. The project team evaluates the parcel and engineering requirements during preconstruction.',
   },
   {
     q: 'Do you build lakefront homes in the Clermont area?',

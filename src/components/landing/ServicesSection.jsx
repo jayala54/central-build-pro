@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Home, Building2, Hammer, PlusSquare, Ruler, HardHat, Warehouse, Store, BriefcaseBusiness, Construction } from 'lucide-react';
+import { Home, Building2, Hammer, PlusSquare, HardHat, Warehouse, Store, BriefcaseBusiness, Construction, CookingPot, Bath, Layers3 } from 'lucide-react';
 
 const residentialServices = [
   { icon: Home, title: 'Custom Home Building', description: 'Ground-up home construction coordinated from preconstruction and permitting through final inspections and closeout.', href: '/CustomHomes/' },
   { icon: Hammer, title: 'Whole-Home Renovations', description: 'Comprehensive renovations that update layouts, building systems, finishes, and the way an existing home works.', href: '/WholeHomeRenovations/' },
-  { icon: Ruler, title: 'Kitchen & Bath Remodeling', description: 'Coordinated demolition, plumbing, electrical, cabinetry, tile, fixtures, finishes, permits, and inspections.', href: '/KitchenBathRemodeling/' },
+  { icon: CookingPot, title: 'Kitchen Remodeling', description: 'Coordinated layouts, cabinetry, countertops, plumbing, electrical work, lighting, flooring, and finishes.', href: '/KitchenRemodeling/' },
+  { icon: Bath, title: 'Bathroom Remodeling', description: 'Showers, waterproofing, tile, vanities, fixtures, ventilation, trade work, permits, and inspections.', href: '/BathroomRemodeling/' },
+  { icon: Layers3, title: 'Flooring Installation', description: 'Floor removal, substrate evaluation and preparation, tile, luxury vinyl, engineered flooring, and transitions.', href: '/FlooringInstallation/' },
   { icon: PlusSquare, title: 'Home Additions & Conversions', description: 'Bedrooms, living areas, porches, lanais, and garage conversions planned to work with the existing home.', href: '/RoomAdditions/' },
 ];
 

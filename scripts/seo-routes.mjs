@@ -12,6 +12,9 @@ export const staticRoutes = [
   { path: '/commercial-remodel-kissimmee-taco-bell', changefreq: 'monthly', priority: '0.8' },
   { path: '/CustomHomes', changefreq: 'monthly', priority: '0.9' },
   { path: '/KitchenBathRemodeling', changefreq: 'monthly', priority: '0.9' },
+  { path: '/KitchenRemodeling', changefreq: 'monthly', priority: '0.9' },
+  { path: '/BathroomRemodeling', changefreq: 'monthly', priority: '0.9' },
+  { path: '/FlooringInstallation', changefreq: 'monthly', priority: '0.9' },
   { path: '/WholeHomeRenovations', changefreq: 'monthly', priority: '0.9' },
   { path: '/RoomAdditions', changefreq: 'monthly', priority: '0.9' },
   { path: '/Commercial', changefreq: 'monthly', priority: '0.9' },
@@ -47,7 +50,7 @@ export function getPublishedArticles(buildDate = getBuildDate()) {
 export function getBlogRoutes(buildDate = getBuildDate()) {
   return getPublishedArticles(buildDate).map((article) => ({
     path: `/Blog/${article.slug}`,
-    lastmod: article.date,
+    lastmod: article.modifiedDate || article.date,
     changefreq: 'monthly',
     priority: '0.7',
   }));

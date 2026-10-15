@@ -23,7 +23,9 @@ export default function Footer() {
             <ul className="space-y-2 text-slate-400">
               <li><Link to="/CustomHomes/" className="hover:text-amber-400 transition-colors">Custom Homes</Link></li>
               <li><Link to="/WholeHomeRenovations/" className="hover:text-amber-400 transition-colors">Home Renovations</Link></li>
-              <li><Link to="/KitchenBathRemodeling/" className="hover:text-amber-400 transition-colors">Kitchen & Bath</Link></li>
+              <li><Link to="/KitchenRemodeling/" className="hover:text-amber-400 transition-colors">Kitchen Remodeling</Link></li>
+              <li><Link to="/BathroomRemodeling/" className="hover:text-amber-400 transition-colors">Bathroom Remodeling</Link></li>
+              <li><Link to="/FlooringInstallation/" className="hover:text-amber-400 transition-colors">Flooring Installation</Link></li>
               <li><Link to="/RoomAdditions/" className="hover:text-amber-400 transition-colors">Room Additions</Link></li>
               <li><Link to="/Commercial/" className="hover:text-amber-400 transition-colors">Commercial Contracting</Link></li>
               <li><Link to="/CommercialBuildouts/" className="hover:text-amber-400 transition-colors">Commercial Buildouts</Link></li>

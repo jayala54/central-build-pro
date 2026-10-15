@@ -44,6 +44,28 @@ export default function BlogArticle() {
 
   const relatedServices = useMemo(() => {
     if (!article) return [];
+    const intent = `${article.title} ${article.tags?.join(' ')}`.toLowerCase();
+    if (intent.includes('kitchen')) {
+      return [
+        { label: 'Kitchen Remodeling', href: '/KitchenRemodeling/', description: 'Layouts, cabinetry, countertops, building systems, and finishes.' },
+        { label: 'Flooring Installation', href: '/FlooringInstallation/', description: 'Floor preparation, installation, and transitions.' },
+        { label: 'Whole-Home Renovations', href: '/WholeHomeRenovations/', description: 'Coordinate the kitchen within a larger renovation.' },
+      ];
+    }
+    if (intent.includes('bathroom')) {
+      return [
+        { label: 'Bathroom Remodeling', href: '/BathroomRemodeling/', description: 'Showers, waterproofing, tile, fixtures, and coordinated trade work.' },
+        { label: 'Flooring Installation', href: '/FlooringInstallation/', description: 'Wet-area tile and flooring preparation.' },
+        { label: 'Room Additions', href: '/RoomAdditions/', description: 'Add a bathroom within an addition or conversion.' },
+      ];
+    }
+    if (intent.includes('flooring') || intent.includes('tile') || intent.includes('hardwood')) {
+      return [
+        { label: 'Flooring Installation', href: '/FlooringInstallation/', description: 'Removal, substrate preparation, installation, and transitions.' },
+        { label: 'Kitchen Remodeling', href: '/KitchenRemodeling/', description: 'Coordinate flooring with a kitchen renovation.' },
+        { label: 'Bathroom Remodeling', href: '/BathroomRemodeling/', description: 'Coordinate wet-area flooring with the full bathroom assembly.' },
+      ];
+    }
     const content = `${article.title} ${article.tags?.join(' ')} ${article.content}`.toLowerCase();
     if (content.includes('commercial') || content.includes('tenant') || content.includes('investor')) {
       return [
@@ -92,6 +114,8 @@ export default function BlogArticle() {
         title={article.title}
         path={`/Blog/${article.slug}`}
         description={article.metaDescription}
+        image={article.image}
+        imageAlt={article.imageAlt}
         type="article"
         article={article}
         breadcrumbs={breadcrumbs}

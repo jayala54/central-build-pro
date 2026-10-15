@@ -73,6 +73,7 @@ export default function SEOHead({
       'Home Renovations',
       'Kitchen Remodeling',
       'Bathroom Remodeling',
+      'Flooring Installation',
       'Commercial Tenant Buildouts',
       'Room Additions',
       'New Home Construction',
@@ -105,7 +106,9 @@ export default function SEOHead({
       itemListElement: [
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Custom Home Building' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Whole-Home Renovations' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kitchen & Bath Remodels' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kitchen Remodeling' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bathroom Remodeling' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Flooring Installation' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Room Additions' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Tenant Buildouts' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Renovations' } },

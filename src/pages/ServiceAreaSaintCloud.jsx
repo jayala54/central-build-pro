@@ -51,7 +51,7 @@ export default function ServiceAreaSaintCloud() {
             name: 'General Contractor Services in Saint Cloud, Florida',
             provider: { '@id': 'https://j-nsw.com/#business' },
             areaServed: { '@type': 'City', name: 'Saint Cloud', containedInPlace: { '@type': 'State', name: 'Florida' } },
-            serviceType: ['Residential construction', 'Custom homes', 'Home renovations', 'Home additions', 'Commercial construction', 'Tenant buildouts'],
+            serviceType: ['Residential construction', 'Custom homes', 'Kitchen remodeling', 'Bathroom remodeling', 'Flooring installation', 'Home renovations', 'Home additions', 'Commercial construction', 'Tenant buildouts'],
             url: 'https://j-nsw.com/ServiceAreaSaintCloud/',
           },
           {
@@ -102,7 +102,7 @@ export default function ServiceAreaSaintCloud() {
               <Home className="w-8 h-8 text-orange-600 mb-5" />
               <h3 className="text-xl font-bold text-slate-900 mb-4">Residential services</h3>
               <ul className="space-y-3">
-                {['Custom homes and new construction', 'Whole-home renovations', 'Home and room additions', 'Kitchen and bathroom remodeling', 'Garage conversions', 'Porches, lanais, and outdoor additions'].map((item) => <li key={item} className="flex gap-3 text-slate-600"><CheckCircle className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />{item}</li>)}
+                {['Custom homes and new construction', 'Whole-home renovations', 'Home and room additions', 'Kitchen remodeling', 'Bathroom remodeling', 'Flooring installation', 'Garage conversions', 'Porches, lanais, and outdoor additions'].map((item) => <li key={item} className="flex gap-3 text-slate-600"><CheckCircle className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />{item}</li>)}
               </ul>
             </div>
           </div>
@@ -140,6 +140,7 @@ export default function ServiceAreaSaintCloud() {
 
             <RelatedServices services={[
               { label: 'Custom Homes', href: '/CustomHomes/', description: 'Ground-up residential construction across Central Florida.' },
+              { label: 'Interior Remodeling', href: '/KitchenBathRemodeling/', description: 'Kitchen, bathroom, and flooring renovation services.' },
               { label: 'Home Additions', href: '/RoomAdditions/', description: 'Add living space or convert an existing garage.' },
               { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial contracting, buildouts, renovations, and project coordination.' },
             ]} />

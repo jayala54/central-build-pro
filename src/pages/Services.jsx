@@ -14,7 +14,7 @@ export default function Services() {
       <SEOHead
         title="Residential Construction Services Orlando FL"
         path="/Services"
-        description="Full-service general contractor in Orlando FL — custom home building, kitchen & bath remodeling, whole-home renovations, room additions, and commercial tenant buildouts. Licensed CBC1269175. Free estimates."
+        description="Residential construction services in Orlando and Central Florida, including custom homes, kitchen and bathroom remodeling, flooring, renovations and additions."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
       <header className="bg-slate-900 pt-24 lg:pt-40 pb-12">

@@ -10,6 +10,9 @@ const TacoBellRepipeKissimmee = React.lazy(() => import('./pages/TacoBellRepipeK
 // Service Pages
 const CustomHomes = React.lazy(() => import('./pages/CustomHomes'));
 const KitchenBathRemodeling = React.lazy(() => import('./pages/KitchenBathRemodeling'));
+const KitchenRemodeling = React.lazy(() => import('./pages/KitchenRemodeling'));
+const BathroomRemodeling = React.lazy(() => import('./pages/BathroomRemodeling'));
+const FlooringInstallation = React.lazy(() => import('./pages/FlooringInstallation'));
 const WholeHomeRenovations = React.lazy(() => import('./pages/WholeHomeRenovations'));
 const RoomAdditions = React.lazy(() => import('./pages/RoomAdditions'));
 const Commercial = React.lazy(() => import('./pages/Commercial'));
@@ -48,6 +51,9 @@ export const PAGES = {
     // Service Pages
     "CustomHomes": CustomHomes,
     "KitchenBathRemodeling": KitchenBathRemodeling,
+    "KitchenRemodeling": KitchenRemodeling,
+    "BathroomRemodeling": BathroomRemodeling,
+    "FlooringInstallation": FlooringInstallation,
     "WholeHomeRenovations": WholeHomeRenovations,
     "RoomAdditions": RoomAdditions,
     "Commercial": Commercial,

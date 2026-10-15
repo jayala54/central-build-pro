@@ -10,15 +10,17 @@ import ProjectInquiryFields, { buildProjectSummary } from '@/components/ProjectI
 import emailjs from '@emailjs/browser';
 import { trackEvent } from '@/utils/analytics';
 import {
-  Phone, Shield, Award, Clock,
+  Phone, Shield, Award, Clock, Bath, CookingPot, Layers3,
   CheckCircle, Loader2, Send, Home, Hammer,
-  Wrench, SquarePlus, Building2, HardHat
+  SquarePlus, Building2, HardHat
 } from 'lucide-react';
 
 const projectTypes = [
   { value: 'custom_home', label: 'Custom Home Build' },
   { value: 'whole_home_renovation', label: 'Whole-Home Renovation' },
-  { value: 'kitchen_bath', label: 'Kitchen & Bath Remodel' },
+  { value: 'kitchen_remodel', label: 'Kitchen Remodel' },
+  { value: 'bathroom_remodel', label: 'Bathroom Remodel' },
+  { value: 'flooring', label: 'Flooring Installation' },
   { value: 'addition', label: 'Room Addition' },
   { value: 'tenant_buildout', label: 'Commercial Buildout' },
   { value: 'commercial_renovation', label: 'Commercial Renovation' },
@@ -30,7 +32,9 @@ const projectTypes = [
 const services = [
   { icon: Home, title: 'Custom Homes', desc: 'Ground-up new construction tailored to your vision' },
   { icon: Hammer, title: 'Whole-Home Renovations', desc: 'Complete home transformations inside and out' },
-  { icon: Wrench, title: 'Kitchen & Bath Remodeling', desc: 'Modern upgrades that increase your home value' },
+  { icon: CookingPot, title: 'Kitchen Remodeling', desc: 'Layouts, cabinetry, countertops, systems, and finishes' },
+  { icon: Bath, title: 'Bathroom Remodeling', desc: 'Showers, waterproofing, tile, fixtures, and ventilation' },
+  { icon: Layers3, title: 'Flooring Installation', desc: 'Removal, floor preparation, installation, and transitions' },
   { icon: SquarePlus, title: 'Room Additions', desc: 'Expand your living space seamlessly' },
   { icon: Building2, title: 'Commercial Buildouts', desc: 'Tenant improvements and new commercial spaces' },
   { icon: HardHat, title: 'Commercial Renovations', desc: 'Upgrade your business space with expert builds' },

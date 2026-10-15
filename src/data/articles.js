@@ -314,57 +314,58 @@ The right layout is the one that matches how your family actually spends their t
     slug: "kitchen-renovation-guide-central-florida",
     title: "Central Florida Kitchen Renovation Guide",
     category: "Renovations",
-    metaDescription: "Real costs, timelines, and design trends for kitchen renovations in Central Florida, plus tips on choosing the right contractor.",
+    metaDescription: "Plan a Central Florida kitchen remodel around scope, selections, permits, sequencing, existing conditions and contractor coordination.",
     tags: ["kitchen renovation", "remodeling", "countertops", "cabinetry"],
     date: "2025-04-01",
+    modifiedDate: "2026-10-14",
     readTime: "7 min read",
+    image: "https://j-nsw.com/images/projects/kitchen-interior.webp",
+    imageAlt: "Completed Central Florida kitchen remodel with island and tile flooring",
     content: `## What a Kitchen Renovation Actually Looks Like
 
-[Kitchens](/KitchenBathRemodeling) are the most popular renovation we do, and for good reason. A well-done kitchen upgrade makes your house more enjoyable to live in every single day. It also tends to return **60 to 80%** of its cost at resale, which makes it one of the smarter home improvement investments out there.
+[Kitchen remodeling](/KitchenRemodeling) can improve storage, circulation, lighting, cooking space, and the way a home supports everyday routines. The right project starts with the existing room and a defined scope, not a generic price or trend list.
 
-### What Kitchens Cost in Central Florida
+### What Shapes a Kitchen Remodeling Budget
 
-Prices depend heavily on the scope. A cosmetic refresh and a full gut-job are two very different animals.
+Two kitchens of the same size can require very different budgets. Important cost drivers include:
 
-- **Cosmetic refresh:** $15,000 to $30,000. New cabinet faces, counters, backsplash, and maybe updated fixtures. You're keeping the existing layout.
-- **Mid-range remodel:** $30,000 to $60,000. New cabinets, new countertops, updated flooring, new appliances, and some layout changes.
-- **Full renovation:** $60,000 to $100,000+. Walls coming down, plumbing and electrical getting moved, custom cabinetry, premium everything.
+- Whether the layout and appliance locations stay in place
+- Cabinet quantity, construction, accessories, and installation requirements
+- Countertop material, edge details, cutouts, and fabrication
+- Plumbing, electrical, lighting, ventilation, and gas work
+- [Flooring](/FlooringInstallation), backsplash, trim, paint, and adjacent-room transitions
+- Permits, plans, access, protection, and concealed conditions
 
-### Where the Money Goes
+A project-specific estimate should identify what is included, what the owner is selecting, any allowances, and the assumptions used for pricing.
 
-1. **Cabinetry** eats up the biggest chunk, usually **30 to 40%** of the total budget. Semi-custom vs. fully custom makes a huge difference in price.
-2. **Countertops** vary wildly. Quartz runs about **$50 to $100** per square foot installed. Marble and exotic granite push past **$150**.
-3. **Appliances** for a full suite (fridge, range, dishwasher, microwave, hood) typically cost **$5,000 to $15,000** depending on brands.
-4. **Flooring** is usually tile or luxury vinyl plank in Central Florida kitchens. Both hold up well to moisture and heavy foot traffic.
-5. **Plumbing and electrical work** can blow up a budget fast if you're moving the sink, adding an island with a cooktop, or relocating outlets.
+### Decide the Scope Before the Finishes
 
-### What's Trending in 2025
+Begin by deciding what needs to function differently. A same-layout renovation may replace cabinets, counters, fixtures, lighting, flooring, and finishes. A reconfigured kitchen may also require wall changes, engineering, new utility locations, ventilation changes, and more extensive permit review.
 
-- White or light-colored cabinets paired with warm wood accent pieces
-- Large-format porcelain tile backsplashes, sometimes running all the way to the ceiling
-- Waterfall-edge countertops on kitchen islands
-- Integrated smart appliances with Wi-Fi connectivity
-- Pot fillers above the range and touchless faucets at the sink
+Document appliance specifications and major selections early. Cabinet dimensions affect appliance openings, countertop templates, plumbing locations, electrical requirements, ventilation, and finished clearances.
 
-### How Long It Takes
+### Build a Realistic Schedule
 
-Plan on **6 to 10 weeks** from demo day to the final walkthrough:
-- Week 1: Demolition and any rough-in work
-- Weeks 2 to 3: Electrical updates, plumbing changes, and drywall patching
-- Weeks 4 to 5: Cabinet installation
-- Weeks 6 to 7: Countertop templating, fabrication, and installation
-- Weeks 8 to 10: Backsplash, fixtures, appliance install, and final touch-ups
+The construction schedule depends on the approved scope, permit review, product lead times, inspection availability, existing conditions, and change decisions. A typical sequence may include:
 
-Countertop fabrication is the usual bottleneck. Templates can't happen until cabinets are in, and fabrication takes 1 to 2 weeks after that.
+1. Site protection and selective demolition
+2. Framing or wall changes included in the plans
+3. Plumbing, electrical, ventilation, and other rough-in work
+4. Required inspections and wall close-up
+5. Cabinetry, flooring, and countertop coordination
+6. Backsplash, fixtures, appliances, trim, paint, and punch work
 
-### Making It Go Smoothly
+Countertop fabrication often follows cabinet installation because field dimensions need to be confirmed. That dependency should be reflected in the project schedule.
 
-- Set up a temporary kitchen somewhere else in the house. A folding table, a microwave, and a coffee maker in the garage goes a long way.
-- Make every single material selection before demolition starts. Changing your mind on cabinet color in week 3 will push your timeline back by weeks.
-- Budget **15%** above your base estimate for contingencies. Older homes in places like [Winter Park](/ServiceAreaWinterPark), College Park, and Maitland almost always have surprises behind the walls.
-- Make sure your contractor is licensed and pulling [permits](/Blog/building-permits-orange-county-florida). Kitchen renovations in Florida require them.
+### Make the Project Easier to Manage
 
-J&N StructureWorks handles kitchen renovations across Central Florida from design through final walkthrough. We keep the process organized so your kitchen isn't torn up any longer than it needs to be.`
+- Complete key selections before demolition so dimensions and lead times can be coordinated.
+- Ask for a written scope that identifies exclusions, allowances, and change-order procedures.
+- Confirm which party is responsible for appliances, design documents, permits, and finish selections.
+- Plan a safe temporary food-preparation area outside the work zone.
+- Verify license information and confirm whether the project requires [permits](/Blog/building-permits-orange-county-florida) in the property's jurisdiction.
+
+J&N StructureWorks provides kitchen remodeling in Orlando and Central Florida with a written, project-specific scope. [Request a kitchen remodeling consultation](/Contact) to discuss the property, plans, selections, budget range, and intended schedule.`
   },
   {
     id: 7,
@@ -484,23 +485,24 @@ Good construction isn't just about surviving a storm. It's about building someth
     slug: "choosing-the-right-flooring-for-florida-homes",
     title: "Best Flooring Options for Florida Homes",
     category: "Design & Planning",
-    metaDescription: "Comparing flooring options for Central Florida homes including tile, luxury vinyl plank, hardwood, and polished concrete, with costs and recommendations.",
+    metaDescription: "Compare tile, luxury vinyl, engineered wood and other flooring options for Central Florida homes, including moisture and substrate considerations.",
     tags: ["flooring", "tile", "luxury vinyl", "hardwood", "interior design"],
     date: "2025-05-15",
+    modifiedDate: "2026-10-14",
     readTime: "6 min read",
+    image: "https://j-nsw.com/images/projects/kitchen-interior.webp",
+    imageAlt: "Large-format tile floor in a completed Central Florida home interior",
     content: `## Picking Flooring That Can Handle Florida
 
 Flooring in Florida takes a beating. Between the humidity, the afternoon rainstorms that blow in through the lanai, and the sand that gets tracked in constantly, you need something that can hold up. Not every flooring material is cut out for it.
 
 ### Porcelain and Ceramic Tile
 
-**Works best in:** [Bathrooms, kitchens](/KitchenBathRemodeling), entryways, and Florida rooms
+**Common applications:** [Bathrooms](/BathroomRemodeling), [kitchens](/KitchenRemodeling), entryways, and Florida rooms
 
 Tile is a workhorse. It's extremely durable, completely water-resistant, and available in more styles than you could look through in a month. Wood-look porcelain planks are hugely popular right now, and some of them are hard to tell from real wood unless you touch them.
 
-The one downside is that tile can feel cold underfoot during those few weeks of Florida "winter." Some people add area rugs. Others don't mind.
-
-- **Cost:** $3 to $15 per square foot installed
+Tile selection and installation should account for the substrate, flatness, movement joints, grout, slip resistance, transitions, and the manufacturer's requirements.
 
 ### Luxury Vinyl Plank (LVP)
 
@@ -508,38 +510,31 @@ The one downside is that tile can feel cold underfoot during those few weeks of 
 
 Many luxury vinyl plank products are marketed as waterproof, but performance and warranty coverage vary by product and installation. Review the manufacturer's specifications for wet-area limitations, subfloor requirements, and warranty exclusions.
 
-Installation is faster than tile, and if a plank gets damaged down the road, replacing a section is straightforward.
-
-- **Cost:** $4 to $10 per square foot installed
+Installation requirements and repair options vary by product and layout. Door clearances, transitions, base details, floor flatness, and expansion space should be addressed in the scope.
 
 ### Engineered Hardwood
 
 **Works best in:** Living rooms, dining rooms, and bedrooms
 
-If you want real wood, go engineered rather than solid hardwood in Florida. The layered construction handles humidity swings much better. You can refinish most engineered hardwood once or twice depending on the veneer thickness.
-
-Keep it out of bathrooms and laundry rooms though. Moisture is still its weakness.
-
-- **Cost:** $6 to $15 per square foot installed
+Engineered wood products vary in construction, wear-layer thickness, installation method, moisture limits, and refinishing potential. Review the specific product requirements before selecting it for the room and substrate.
 
 ### Polished Concrete
 
 **Works best in:** Modern, contemporary, and industrial-style homes
 
-This one surprises people. Since Florida homes are built on concrete slabs, you've already got the floor. Polishing, staining, or scoring the existing slab gives you an incredibly durable, low-maintenance floor with a modern look.
-
-We've done this in a few builds out in the [Lake Nona](/ServiceAreaLakeNona) and Horizon West areas, and clients love it.
-
-- **Cost:** $3 to $8 per square foot to polish the existing slab
+Where a suitable concrete slab is present, polishing or another approved finish can create a durable surface. Existing coatings, cracks, repairs, moisture, flatness, and the desired appearance need to be evaluated first.
 
 ### What We Usually Recommend
 
-For most of our [Central Florida builds](/CustomHomes), we suggest a combination approach:
-- **LVP or large-format tile** throughout the main living areas and hallways
-- **Porcelain tile** in all bathrooms and wet areas
-- **Carpet** only in bedrooms, and only if you actually want it. A lot of our clients are skipping carpet entirely.
+There is no single material that is right for every Central Florida home. Compare:
+- Expected water and moisture exposure
+- Substrate type and preparation needs
+- Traffic, pets, maintenance, and slip resistance
+- Product warranty and installation requirements
+- Transitions to adjacent rooms, doors, cabinets, and stairs
+- Repairability, replacement availability, and long-term appearance
 
-J&N StructureWorks helps clients pick flooring that fits their lifestyle, holds up to Florida's climate, and looks great. We'll walk you through samples and pricing so you can make a decision you won't regret.`
+J&N StructureWorks provides [flooring installation in Orlando and Central Florida](/FlooringInstallation), including removal, substrate evaluation, preparation, installation, and transitions as defined in the written scope.`
   },
   {
     id: 10,
@@ -549,21 +544,19 @@ J&N StructureWorks helps clients pick flooring that fits their lifestyle, holds 
     metaDescription: "Common bathroom remodeling mistakes that Central Florida homeowners make and how to avoid them for a successful renovation.",
     tags: ["bathroom renovation", "remodeling mistakes", "plumbing", "design"],
     date: "2025-06-01",
+    modifiedDate: "2026-10-14",
     readTime: "7 min read",
+    image: "https://j-nsw.com/images/projects/bathroom-remodel.webp",
+    imageAlt: "Completed accessible bathroom remodel with tiled shower in Central Florida",
     content: `## Bathroom Renovations Gone Wrong (and How to Avoid It)
 
-[Bathroom remodels](/KitchenBathRemodeling) can add real value to your home and make your morning routine about ten times better. But they can also go sideways fast if you don't plan carefully. We've cleaned up after enough botched bathroom jobs to know what goes wrong and why.
+[Bathroom remodeling](/BathroomRemodeling) brings finishes, waterproofing, drainage, ventilation, plumbing, electrical work, clearances, and storage into one compact space. Careful planning helps those pieces work together.
 
 ### 1. Underestimating the Budget
-This is the number one mistake. People see a bathroom on Pinterest and assume they can get it for $10,000. In Central Florida, here's what you're actually looking at:
-- **Half bath remodel:** $8,000 to $15,000
-- **Full guest bath:** $15,000 to $30,000
-- **Master bathroom renovation:** $25,000 to $50,000+
-
-The difference between the low end and the high end mostly comes down to tile, fixtures, and whether you're moving plumbing.
+Online averages rarely describe a specific bathroom. Room size, demolition, concealed damage, plumbing or layout changes, waterproofing, tile quantity, fixture specifications, electrical and ventilation work, permits, access, and finish choices all affect pricing. Use a written, project-specific scope and identify allowances before work begins.
 
 ### 2. Ignoring Ventilation
-Florida is humid. Your bathroom is humid. Without proper ventilation, you're going to get mold. Every bathroom needs an exhaust fan rated for the room's square footage. This is not optional here the way it might be in a drier climate.
+Ventilation needs to be evaluated for the room and applicable requirements. Fan capacity, duct route, termination location, controls, and replacement air all matter; simply installing a fan does not guarantee good moisture control.
 
 ### 3. Prioritizing Looks Over Function
 That freestanding soaking tub looks stunning in photos. But if you've got two kids under five who need baths every night, a built-in tub with a handheld showerhead is way more practical. Think about how you actually use the room before falling in love with a design.
@@ -575,13 +568,13 @@ Bathrooms need layers of light, not just one overhead fixture:
 - **Accent lighting** like an LED strip under a floating vanity or in a shower niche
 
 ### 5. Cutting Corners on Waterproofing
-This is where cheap renovations come back to haunt you. In Florida's humidity, proper waterproofing behind shower tile and around tub surrounds is non-negotiable. We use systems like Schluter DITRA or RedGard membrane to make sure water stays where it belongs.
+Tile and grout are not the entire water-management system. The selected shower or tub assembly should address approved substrates, waterproofing, transitions, penetrations, drainage, product compatibility, and inspection requirements.
 
 ### 6. Forgetting About Storage
 Floating vanities are trendy and they look clean. But if you don't plan additional storage, you're going to have stuff piled on every surface within a month. Think about medicine cabinets, linen closets or built-in shelving, and recessed shower niches.
 
 ### 7. Not Planning Electrical Outlets
-You need GFCI-protected outlets near every water source. That's code. But beyond that, think about where you actually need power. Outlets inside vanity drawers for electric toothbrushes and hair tools are a small detail that makes a big difference.
+Electrical requirements depend on the applicable code and project scope. Plan receptacles, lighting, switching, ventilation controls, and any listed in-cabinet power products with the electrical contractor and permitting authority.
 
 ### 8. Moving Plumbing for No Good Reason
 Relocating a toilet or shower drain is expensive. If your current layout is functional, keep the plumbing where it is. Spend the money on better finishes instead. You'll get more impact for less cost.
@@ -592,7 +585,7 @@ Painting? Go for it. Swapping a faucet? Probably fine. But plumbing rough-in, el
 ### 10. Skipping the Permit
 Bathroom renovations involving plumbing, electrical, structural, or other regulated work commonly require [permits](/Blog/building-permits-orange-county-florida). Requirements vary by jurisdiction and scope. Unpermitted work can complicate inspections, future permits, a sale, or an insurance claim.
 
-J&N StructureWorks handles bathroom renovations the right way, with proper permits, licensed tradespeople, and attention to the details that matter. We've renovated bathrooms in homes from [Winter Garden](/ServiceAreaWinterGarden) to [Oviedo](/ServiceAreaOviedo), and we know what works in this climate.`
+J&N StructureWorks coordinates bathroom renovation scopes, trade work, permits, inspections, and finishes for projects in Central Florida. [Request a bathroom remodeling consultation](/Contact) to discuss the existing room, plans, goals, selections, and budget range.`
   },
   {
     id: 11,

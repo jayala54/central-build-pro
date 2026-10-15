@@ -1,0 +1,43 @@
+import React from 'react';
+import InteriorRemodelingServicePage from '@/components/InteriorRemodelingServicePage';
+
+const service = {
+  title: 'Flooring Installation Contractor Orlando FL',
+  path: '/FlooringInstallation',
+  breadcrumb: 'Flooring Installation',
+  schemaName: 'Residential Flooring Installation',
+  description: 'Flooring installation in Orlando and Central Florida with removal, substrate evaluation, floor preparation, tile, luxury vinyl and engineered flooring coordination.',
+  image: '/images/projects/kitchen-interior.webp',
+  imageAlt: 'Large-format tile flooring installed in a completed Central Florida home interior',
+  heading: 'Flooring Installation in Orlando & Central Florida',
+  intro: 'Select and install a flooring system around the room, substrate, moisture conditions, transitions, product requirements, and long-term use.',
+  scopeHeading: 'Good flooring starts below the finished surface',
+  body: [
+    'Floor performance depends on the existing substrate, flatness, moisture conditions, movement joints, transitions, manufacturer requirements, and installation method. Product selection should account for the room, traffic, maintenance expectations, and compatibility with the assembly below.',
+    'J&N StructureWorks can coordinate flooring as a focused renovation or as part of kitchen, bathroom, commercial, and whole-home work. The written scope identifies removal, preparation, installation, transitions, base details, and related finish work included in the project.',
+  ],
+  includes: ['Existing flooring and substrate review', 'Flooring removal and disposal', 'Substrate preparation and approved underlayments', 'Tile, luxury vinyl and engineered flooring coordination', 'Transitions, baseboards and finish details', 'Phasing with kitchen, bathroom or whole-home renovations'],
+  process: [
+    { title: 'Evaluate', description: 'Review rooms, existing flooring, substrate access, transitions, product choice, and occupied-space constraints.' },
+    { title: 'Prepare', description: 'Define removal, substrate preparation, moisture-related requirements, layout, transitions, and finish details.' },
+    { title: 'Install', description: 'Coordinate material handling, layout, installation, protection, base details, and adjacent trade work.' },
+    { title: 'Turn Over', description: 'Complete punch work and provide applicable product and care information available for the project.' },
+  ],
+  faqs: [
+    { q: 'What flooring works well in Central Florida homes?', a: 'The right product depends on the room, substrate, moisture exposure, traffic, maintenance, budget, and manufacturer requirements. Tile, luxury vinyl, and engineered products can each be appropriate in different conditions.' },
+    { q: 'Can new flooring be installed over existing flooring?', a: 'Sometimes, but only after evaluating the existing assembly, height transitions, flatness, bond, moisture conditions, product instructions, and applicable requirements. Removal may be the more reliable option.' },
+    { q: 'Do you remove old flooring and baseboards?', a: 'Removal, disposal, base work, and substrate preparation can be included in the written scope. The exact work depends on the existing materials and intended finished assembly.' },
+    { q: 'Can flooring be part of a larger remodel?', a: 'Yes. Flooring is commonly coordinated with kitchen remodeling, bathroom remodeling, whole-home renovations, commercial renovations, and selective demolition.' },
+  ],
+  faqTitle: 'Flooring Installation FAQs',
+  related: [
+    { label: 'Kitchen Remodeling', href: '/KitchenRemodeling/', description: 'Coordinate new flooring with cabinets, appliances, and kitchen finishes.' },
+    { label: 'Bathroom Remodeling', href: '/BathroomRemodeling/', description: 'Wet-area tile and flooring coordinated with the full bathroom assembly.' },
+    { label: 'Whole-Home Renovations', href: '/WholeHomeRenovations/', description: 'Plan continuous flooring and transitions across a larger renovation.' },
+  ],
+  ctaLabel: 'flooring installation',
+};
+
+export default function FlooringInstallation() {
+  return <InteriorRemodelingServicePage service={service} />;
+}

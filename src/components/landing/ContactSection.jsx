@@ -12,7 +12,9 @@ import ProjectInquiryFields, { buildProjectSummary } from '@/components/ProjectI
 const projectTypes = [
   { value: 'custom_home', label: 'Custom Home Build' },
   { value: 'whole_home_renovation', label: 'Whole-Home Renovation' },
-  { value: 'kitchen_bath', label: 'Kitchen & Bath Remodel' },
+  { value: 'kitchen_remodel', label: 'Kitchen Remodel' },
+  { value: 'bathroom_remodel', label: 'Bathroom Remodel' },
+  { value: 'flooring', label: 'Flooring Installation' },
   { value: 'addition', label: 'Room Addition' },
   { value: 'tenant_buildout', label: 'Commercial Tenant Buildout' },
   { value: 'commercial_renovation', label: 'Commercial Renovation' },

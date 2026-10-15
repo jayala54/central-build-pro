@@ -4,6 +4,9 @@ import RelatedServices from '@/components/RelatedServices';
 const services = [
   { label: 'Custom Homes', href: '/CustomHomes/', description: 'Ground-up residential construction from planning through closeout.' },
   { label: 'Home Renovations', href: '/WholeHomeRenovations/', description: 'Whole-home updates, structural changes, and modernization.' },
+  { label: 'Kitchen Remodeling', href: '/KitchenRemodeling/', description: 'Cabinetry, countertops, layouts, building systems, and finishes.' },
+  { label: 'Bathroom Remodeling', href: '/BathroomRemodeling/', description: 'Showers, waterproofing, tile, fixtures, and coordinated trade work.' },
+  { label: 'Flooring Installation', href: '/FlooringInstallation/', description: 'Removal, substrate preparation, flooring, and transitions.' },
   { label: 'Home Additions', href: '/RoomAdditions/', description: 'Expanded living space, garage conversions, porches, and lanais.' },
   { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial contracting, buildouts, renovations, and project coordination.' },
   { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Reconfiguration and updates for existing commercial properties.' },

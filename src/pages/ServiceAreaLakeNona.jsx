@@ -11,7 +11,9 @@ import LocationServiceLinks from '@/components/LocationServiceLinks';
 
 const services = [
   'Custom Home Building',
-  'Kitchen & Bathroom Remodeling',
+  'Kitchen Remodeling',
+  'Bathroom Remodeling',
+  'Flooring Installation',
   'Room Additions & Home Extensions',
   'Whole-Home Renovations',
   'Outdoor Living Spaces & Screen Enclosures',

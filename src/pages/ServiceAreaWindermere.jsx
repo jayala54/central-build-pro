@@ -12,7 +12,9 @@ import LocationServiceLinks from '@/components/LocationServiceLinks';
 const services = [
   'Luxury Custom Home Building',
   'Lakefront Home Construction',
-  'Kitchen & Bathroom Remodeling',
+  'Kitchen Remodeling',
+  'Bathroom Remodeling',
+  'Flooring Installation',
   'Whole-Home Renovations',
   'Room Additions & Second Stories',
   'Outdoor Living, Pools & Summer Kitchens',

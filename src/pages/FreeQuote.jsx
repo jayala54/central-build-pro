@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -7,8 +7,10 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import SEOHead from '@/components/SEOHead';
 import ProjectInquiryFields, { buildProjectSummary } from '@/components/ProjectInquiryFields';
+import RecaptchaVerification, { isRecaptchaConfigured } from '@/components/RecaptchaVerification';
 import emailjs from '@emailjs/browser';
 import { trackEvent } from '@/utils/analytics';
+import { validateInquiryContact } from '@/utils/inquiryValidation';
 import {
   Phone, Shield, Award, Clock, Bath, CookingPot, Layers3,
   CheckCircle, Loader2, Send, Home, Hammer,
@@ -50,11 +52,36 @@ function QuoteForm({ id, utmParams }) {
   const [attachment, setAttachment] = useState({ name: '', error: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formError, setFormError] = useState('');
+  const [captchaToken, setCaptchaToken] = useState('');
+  const captchaRef = useRef(null);
+  const formStartedAt = useRef(Date.now());
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setFormError('');
     if (attachment.error) return;
     const form = e.currentTarget;
+
+    const contactError = validateInquiryContact(formData);
+    if (contactError) {
+      setFormError(contactError);
+      return;
+    }
+
+    form.elements.name.value = formData.name.trim();
+    form.elements.email.value = formData.email.trim();
+    form.elements.phone.value = formData.phone.trim();
+
+    if (form.elements.website?.value) {
+      setIsSubmitted(true);
+      return;
+    }
+    if (Date.now() - formStartedAt.current < 1500) return;
+    if (isRecaptchaConfigured && !captchaToken) {
+      alert('Please complete the human verification before sending your request.');
+      return;
+    }
     setIsSubmitting(true);
     try {
       await emailjs.sendForm(
@@ -74,8 +101,11 @@ function QuoteForm({ id, utmParams }) {
         property_status: '', plans_status: '', budget_range: '', timeline: '', message: '',
       });
       setAttachment({ name: '', error: '' });
+      captchaRef.current?.reset();
+      formStartedAt.current = Date.now();
       form.reset();
     } catch {
+      captchaRef.current?.reset();
       alert('Something went wrong. Please call us at (321) 695-4964 or try again.');
     }
     setIsSubmitting(false);
@@ -101,7 +131,11 @@ function QuoteForm({ id, utmParams }) {
   return (
     <form onSubmit={handleSubmit} id={id} encType="multipart/form-data" className="space-y-4">
       <input type="hidden" name="message" value={buildProjectSummary(formData, attachment.name)} />
-      <input type="hidden" name="source" value="landing_page" />
+      <input type="hidden" name="source" value="website_quote_form" />
+      <div className="absolute -left-[10000px] h-px w-px overflow-hidden" aria-hidden="true">
+        <label htmlFor={`${id}-website`}>Website</label>
+        <input id={`${id}-website`} name="website" type="text" tabIndex={-1} autoComplete="off" />
+      </div>
       {Object.entries(utmParams).map(([name, value]) => <input key={name} type="hidden" name={name} value={value} />)}
       <div className="space-y-1.5">
         <Label htmlFor={`${id}-name`}>Full Name *</Label>
@@ -112,6 +146,8 @@ function QuoteForm({ id, utmParams }) {
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           placeholder="John Smith"
           required
+          minLength={2}
+          autoComplete="name"
           className="h-12 bg-white border-slate-200 focus:border-orange-500 focus:ring-orange-500"
         />
       </div>
@@ -125,6 +161,9 @@ function QuoteForm({ id, utmParams }) {
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
           placeholder="(321) 555-0123"
           required
+          minLength={10}
+          inputMode="tel"
+          autoComplete="tel"
           className="h-12 bg-white border-slate-200 focus:border-orange-500 focus:ring-orange-500"
         />
       </div>
@@ -138,6 +177,7 @@ function QuoteForm({ id, utmParams }) {
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           placeholder="john@example.com"
           required
+          autoComplete="email"
           className="h-12 bg-white border-slate-200 focus:border-orange-500 focus:ring-orange-500"
         />
       </div>
@@ -165,9 +205,15 @@ function QuoteForm({ id, utmParams }) {
         attachment={attachment}
         setAttachment={setAttachment}
       />
+      {formError && (
+        <p role="alert" aria-live="polite" className="text-sm font-medium text-red-700">
+          {formError}
+        </p>
+      )}
+      <RecaptchaVerification ref={captchaRef} onChange={setCaptchaToken} />
       <Button
         type="submit"
-        disabled={isSubmitting}
+        disabled={isSubmitting || (isRecaptchaConfigured && !captchaToken)}
         className="w-full h-14 bg-orange-500 hover:bg-orange-600 text-white font-bold text-base shadow-lg shadow-orange-500/40 transition-all hover:shadow-orange-500/60 hover:scale-[1.01]"
       >
         {isSubmitting ? (

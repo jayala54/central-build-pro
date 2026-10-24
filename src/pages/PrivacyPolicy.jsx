@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
       <div className="bg-slate-900 pt-20 md:pt-40 pb-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-white">Privacy Policy</h1>
-          <p className="text-slate-400 mt-3">Last updated: February 2026</p>
+          <p className="text-slate-400 mt-3">Last updated: October 15, 2026</p>
         </div>
       </div>
 
@@ -41,6 +41,7 @@ export default function PrivacyPolicy() {
           <ul>
             <li><strong>Analytics data:</strong> We use Google Analytics to collect anonymous usage data including pages visited, time on site, device type, and general location. This data is not personally identifiable.</li>
             <li><strong>Cookies:</strong> Google Analytics uses cookies to distinguish unique users and sessions. You can opt out through your browser settings.</li>
+            <li><strong>Form security data:</strong> Google reCAPTCHA may process device, browser, interaction, and risk signals to distinguish people from automated submissions.</li>
           </ul>
 
           <h2>How We Use Your Information</h2>
@@ -59,6 +60,7 @@ export default function PrivacyPolicy() {
           <ul>
             <li><strong>Service providers:</strong> We use EmailJS to process contact form submissions. Your form data is transmitted through their service to deliver it to our email.</li>
             <li><strong>Analytics:</strong> Google Analytics processes anonymous usage data on our behalf.</li>
+            <li><strong>Form security:</strong> Google reCAPTCHA processes verification data under Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a>.</li>
             <li><strong>Legal requirements:</strong> We may disclose information if required by law or to protect our rights.</li>
           </ul>
 

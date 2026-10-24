@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,7 +7,9 @@ import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Send, CheckCircle, Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { trackContactClick, trackEvent } from '@/utils/analytics';
+import { validateInquiryContact } from '@/utils/inquiryValidation';
 import ProjectInquiryFields, { buildProjectSummary } from '@/components/ProjectInquiryFields';
+import RecaptchaVerification, { isRecaptchaConfigured } from '@/components/RecaptchaVerification';
 
 const projectTypes = [
   { value: 'custom_home', label: 'Custom Home Build' },
@@ -52,11 +54,36 @@ export default function ContactSection() {
   const [attachment, setAttachment] = useState({ name: '', error: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formError, setFormError] = useState('');
+  const [captchaToken, setCaptchaToken] = useState('');
+  const captchaRef = useRef(null);
+  const formStartedAt = useRef(Date.now());
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setFormError('');
     if (attachment.error) return;
     const form = e.currentTarget;
+
+    const contactError = validateInquiryContact(formData);
+    if (contactError) {
+      setFormError(contactError);
+      return;
+    }
+
+    form.elements.name.value = formData.name.trim();
+    form.elements.email.value = formData.email.trim();
+    form.elements.phone.value = formData.phone.trim();
+
+    if (form.elements.website?.value) {
+      setIsSubmitted(true);
+      return;
+    }
+    if (Date.now() - formStartedAt.current < 1500) return;
+    if (isRecaptchaConfigured && !captchaToken) {
+      alert('Please complete the human verification before sending your request.');
+      return;
+    }
     setIsSubmitting(true);
 
     try {
@@ -77,8 +104,11 @@ export default function ContactSection() {
         property_status: '', plans_status: '', budget_range: '', timeline: '', message: ''
       });
       setAttachment({ name: '', error: '' });
+      captchaRef.current?.reset();
+      formStartedAt.current = Date.now();
       form.reset();
     } catch (error) {
+      captchaRef.current?.reset();
       alert('Something went wrong. Please call us at (321) 695-4964 or try again.');
     }
 
@@ -167,6 +197,11 @@ export default function ContactSection() {
               <form id="contact-request-estimate-form" data-conversion-event="contact_form_submit" onSubmit={handleSubmit} encType="multipart/form-data" className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl border border-slate-100">
                 <h3 className="text-xl font-semibold text-slate-900 mb-6">Request a Free Quote</h3>
                 <input type="hidden" name="message" value={buildProjectSummary(formData, attachment.name)} />
+                <input type="hidden" name="source" value="website_contact_form" />
+                <div className="absolute -left-[10000px] h-px w-px overflow-hidden" aria-hidden="true">
+                  <label htmlFor="contact-website">Website</label>
+                  <input id="contact-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+                </div>
                 
                 <div className="space-y-5">
                   <div className="grid sm:grid-cols-2 gap-5">
@@ -179,6 +214,8 @@ export default function ContactSection() {
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="John Smith"
                         required
+                        minLength={2}
+                        autoComplete="name"
                         className="h-12"
                       />
                     </div>
@@ -192,6 +229,9 @@ export default function ContactSection() {
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="(321) 695-4964"
                         required
+                        minLength={10}
+                        inputMode="tel"
+                        autoComplete="tel"
                         className="h-12"
                       />
                     </div>
@@ -207,6 +247,7 @@ export default function ContactSection() {
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="john@example.com"
                       required
+                      autoComplete="email"
                       className="h-12"
                     />
                   </div>
@@ -260,10 +301,18 @@ export default function ContactSection() {
                     setAttachment={setAttachment}
                   />
 
+                  {formError && (
+                    <p role="alert" aria-live="polite" className="text-sm font-medium text-red-700">
+                      {formError}
+                    </p>
+                  )}
+
+                  <RecaptchaVerification ref={captchaRef} onChange={setCaptchaToken} />
+
                   <Button 
                     type="submit" 
                     className="w-full h-14 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-base shadow-lg shadow-orange-500/50"
-                    disabled={isSubmitting}
+                    disabled={isSubmitting || (isRecaptchaConfigured && !captchaToken)}
                   >
                     {isSubmitting ? (
                       <>

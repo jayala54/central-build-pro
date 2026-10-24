@@ -2,13 +2,13 @@
 import puppeteer from 'puppeteer';
 
 const baseUrl = process.env.QA_BASE_URL || 'http://127.0.0.1:5173';
-const routes = ['/', '/Contact/', '/FreeQuote/', '/Commercial/', '/CommercialBuildouts/', '/Demolition/', '/ServiceAreaOrlando/', '/ServiceAreaSaintCloud/'];
+const routes = ['/', '/Contact/', '/FreeQuote/', '/Commercial/', '/CommercialBuildouts/', '/MetalBuildings/', '/Demolition/', '/ServiceAreaOrlando/', '/ServiceAreaSaintCloud/'];
 const viewports = [
   { name: 'mobile', width: 390, height: 844 },
   { name: 'desktop', width: 1440, height: 1000 },
 ];
 const issues = [];
-const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
 
 try {
   for (const viewport of viewports) {

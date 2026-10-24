@@ -20,6 +20,7 @@ const projectTypes = [
   { value: 'addition', label: 'Room Addition' },
   { value: 'tenant_buildout', label: 'Commercial Tenant Buildout' },
   { value: 'commercial_renovation', label: 'Commercial Renovation' },
+  { value: 'metal_building', label: 'Metal Building' },
   { value: 'complete_demolition', label: 'Complete Demolition' },
   { value: 'selective_demolition', label: 'Selective Demolition' },
   { value: 'other', label: 'Other' }
@@ -36,12 +37,19 @@ const counties = [
   'Sumter County'
 ];
 
+function getInitialProjectType() {
+  if (typeof window === 'undefined') return '';
+  return new URLSearchParams(window.location.search).get('service') === 'metal-building'
+    ? 'metal_building'
+    : '';
+}
+
 export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    project_type: '',
+    project_type: getInitialProjectType(),
     county: '',
     project_address: '',
     parcel_id: '',
@@ -49,6 +57,8 @@ export default function ContactSection() {
     plans_status: '',
     budget_range: '',
     timeline: '',
+    building_dimensions: '',
+    slab_scope: '',
     message: ''
   });
   const [attachment, setAttachment] = useState({ name: '', error: '' });
@@ -101,7 +111,7 @@ export default function ContactSection() {
       });
       setFormData({
         name: '', email: '', phone: '', project_type: '', county: '', project_address: '', parcel_id: '',
-        property_status: '', plans_status: '', budget_range: '', timeline: '', message: ''
+        property_status: '', plans_status: '', budget_range: '', timeline: '', building_dimensions: '', slab_scope: '', message: ''
       });
       setAttachment({ name: '', error: '' });
       captchaRef.current?.reset();

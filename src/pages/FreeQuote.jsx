@@ -26,6 +26,7 @@ const projectTypes = [
   { value: 'addition', label: 'Room Addition' },
   { value: 'tenant_buildout', label: 'Commercial Buildout' },
   { value: 'commercial_renovation', label: 'Commercial Renovation' },
+  { value: 'metal_building', label: 'Metal Building' },
   { value: 'complete_demolition', label: 'Complete Demolition' },
   { value: 'selective_demolition', label: 'Selective Demolition' },
   { value: 'other', label: 'Other' },
@@ -40,6 +41,7 @@ const services = [
   { icon: SquarePlus, title: 'Room Additions', desc: 'Expand your living space seamlessly' },
   { icon: Building2, title: 'Commercial Buildouts', desc: 'Tenant improvements and new commercial spaces' },
   { icon: HardHat, title: 'Commercial Renovations', desc: 'Upgrade your business space with expert builds' },
+  { icon: Building2, title: 'Metal Buildings', desc: 'Permitted, installed metal buildings with concrete slab options' },
   { icon: Hammer, title: 'Complete Demolition', desc: 'Entire-structure removal with coordinated site preparation' },
   { icon: Hammer, title: 'Selective Demolition', desc: 'Targeted removal while protecting construction that remains' },
 ];
@@ -47,7 +49,7 @@ const services = [
 function QuoteForm({ id, utmParams }) {
   const [formData, setFormData] = useState({
     name: '', phone: '', email: '', project_type: '', county: '', project_address: '', parcel_id: '',
-    property_status: '', plans_status: '', budget_range: '', timeline: '', message: '',
+    property_status: '', plans_status: '', budget_range: '', timeline: '', building_dimensions: '', slab_scope: '', message: '',
   });
   const [attachment, setAttachment] = useState({ name: '', error: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -98,7 +100,7 @@ function QuoteForm({ id, utmParams }) {
       });
       setFormData({
         name: '', phone: '', email: '', project_type: '', county: '', project_address: '', parcel_id: '',
-        property_status: '', plans_status: '', budget_range: '', timeline: '', message: '',
+        property_status: '', plans_status: '', budget_range: '', timeline: '', building_dimensions: '', slab_scope: '', message: '',
       });
       setAttachment({ name: '', error: '' });
       captchaRef.current?.reset();

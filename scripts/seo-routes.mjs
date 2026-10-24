@@ -21,6 +21,7 @@ export const staticRoutes = [
   { path: '/CommercialBuildouts', changefreq: 'monthly', priority: '0.9' },
   { path: '/CommercialRenovations', changefreq: 'monthly', priority: '0.9' },
   { path: '/Demolition', changefreq: 'monthly', priority: '0.9' },
+  { path: '/MetalBuildings', changefreq: 'monthly', priority: '0.9' },
   { path: '/ServiceAreaOrlando', changefreq: 'monthly', priority: '0.8' },
   { path: '/ServiceAreaWinterPark', changefreq: 'monthly', priority: '0.8' },
   { path: '/ServiceAreaLakeMary', changefreq: 'monthly', priority: '0.8' },

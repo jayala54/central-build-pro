@@ -42,11 +42,20 @@ const timelineOptions = [
   ['flexible', 'Flexible'],
 ];
 
+const slabOptions = [
+  ['include_new_slab', 'Include a new concrete slab'],
+  ['existing_slab', 'I have an existing slab'],
+  ['evaluate_existing', 'Evaluate an existing slab'],
+  ['building_only', 'Building installation only'],
+  ['not_sure', 'Not sure yet'],
+];
+
 const optionGroups = {
   property_status: propertyOptions,
   plans_status: plansOptions,
   budget_range: budgetOptions,
   timeline: timelineOptions,
+  slab_scope: slabOptions,
 };
 
 function optionLabel(field, value) {
@@ -59,6 +68,13 @@ function projectTypeLabel(value) {
 }
 
 export function buildProjectSummary(formData, attachmentName = '') {
+  const metalBuildingDetails = formData.project_type === 'metal_building'
+    ? [
+        `Approximate building size: ${formData.building_dimensions || 'Not provided'}`,
+        `Concrete slab: ${optionLabel('slab_scope', formData.slab_scope)}`,
+      ]
+    : [];
+
   return [
     `Project type: ${projectTypeLabel(formData.project_type)}`,
     `Project address: ${formData.project_address || 'Not provided'}`,
@@ -68,6 +84,7 @@ export function buildProjectSummary(formData, attachmentName = '') {
     `Plans: ${optionLabel('plans_status', formData.plans_status)}`,
     `Budget: ${optionLabel('budget_range', formData.budget_range)}`,
     `Target timeline: ${optionLabel('timeline', formData.timeline)}`,
+    ...metalBuildingDetails,
     `Attachment selected: ${attachmentName || 'None'}`,
     '',
     'Project notes:',
@@ -156,6 +173,33 @@ export default function ProjectInquiryFields({ idPrefix, formData, setFormData, 
         <SelectField id={`${idPrefix}-timeline`} label="Target Timeline" field="timeline" value={formData.timeline} options={timelineOptions} setFormData={setFormData} />
       </div>
 
+      {formData.project_type === 'metal_building' && (
+        <div className="border-l-4 border-orange-500 bg-orange-50/60 p-4 space-y-4">
+          <p className="font-semibold text-slate-900">Metal building details</p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <Label htmlFor={`${idPrefix}-building-dimensions`}>Approximate Building Size</Label>
+              <Input
+                id={`${idPrefix}-building-dimensions`}
+                name="building_dimensions"
+                value={formData.building_dimensions || ''}
+                onChange={(event) => setFormData((current) => ({ ...current, building_dimensions: event.target.value }))}
+                placeholder="Example: 40 x 60 x 16 ft"
+                className="h-12 bg-white border-slate-200"
+              />
+            </div>
+            <SelectField
+              id={`${idPrefix}-slab-scope`}
+              label="Concrete Slab"
+              field="slab_scope"
+              value={formData.slab_scope || ''}
+              options={slabOptions}
+              setFormData={setFormData}
+            />
+          </div>
+        </div>
+      )}
+
       <div className="space-y-2">
         <Label htmlFor={`${idPrefix}-message`}>Project Details</Label>
         <Textarea
@@ -163,7 +207,9 @@ export default function ProjectInquiryFields({ idPrefix, formData, setFormData, 
           name="project_notes"
           value={formData.message}
           onChange={(event) => setFormData((current) => ({ ...current, message: event.target.value }))}
-          placeholder="Describe the property, desired work, current conditions, and anything else we should know."
+          placeholder={formData.project_type === 'metal_building'
+            ? 'Describe the building use, preferred color and roof style, doors, windows, insulation, utilities, and interior configuration.'
+            : 'Describe the property, desired work, current conditions, and anything else we should know.'}
           rows={4}
           className="resize-none bg-white border-slate-200"
         />

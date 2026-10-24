@@ -80,6 +80,9 @@ export default function SEOHead({
       'General Contracting',
       'Commercial Demolition',
       'Selective Demolition',
+      'Metal Building Construction',
+      'Steel Building Installation',
+      'Concrete Slabs and Foundations',
     ],
     areaServed: [
       { '@type': 'City', name: 'Orlando', containedInPlace: { '@type': 'State', name: 'Florida' } },
@@ -114,6 +117,7 @@ export default function SEOHead({
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Renovations' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Complete Demolition' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Selective Demolition' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Turnkey Metal Building Construction' } },
       ],
     },
     hasCredential: {

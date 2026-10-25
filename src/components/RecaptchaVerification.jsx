@@ -1,6 +1,8 @@
 import React, { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 
-export const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY?.trim() || '';
+const productionSiteKey = '6LcxmP8tAAAAAKl6fOMyy8arm3xxD8m4kzdsvqfd';
+
+export const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY?.trim() || productionSiteKey;
 export const isRecaptchaConfigured = Boolean(recaptchaSiteKey);
 
 let recaptchaScriptPromise;

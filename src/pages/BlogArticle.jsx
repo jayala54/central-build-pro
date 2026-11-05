@@ -74,7 +74,14 @@ export default function BlogArticle() {
         { label: 'Orlando General Contractor', href: '/ServiceAreaOrlando/', description: 'Residential and commercial construction in Orlando.' },
       ];
     }
-    if (content.includes('adu') || content.includes('addition') || content.includes('garage')) {
+    if (content.includes('adu')) {
+      return [
+        { label: 'ADU Construction', href: '/ADUConstruction/', description: 'Detached, attached, and conversion ADU projects in Central Florida.' },
+        { label: 'Home Additions', href: '/RoomAdditions/', description: 'Room additions, garage conversions, and expanded living space.' },
+        { label: 'Saint Cloud General Contractor', href: '/ServiceAreaSaintCloud/', description: 'Construction services in Saint Cloud and Osceola County.' },
+      ];
+    }
+    if (content.includes('addition') || content.includes('garage')) {
       return [
         { label: 'Home Additions', href: '/RoomAdditions/', description: 'Room additions, garage conversions, and expanded living space.' },
         { label: 'Custom Homes', href: '/CustomHomes/', description: 'Ground-up home construction in Central Florida.' },

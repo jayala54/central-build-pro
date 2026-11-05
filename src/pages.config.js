@@ -9,7 +9,6 @@ const Blog = React.lazy(() => import('./pages/Blog'));
 const TacoBellRepipeKissimmee = React.lazy(() => import('./pages/TacoBellRepipeKissimmee'));
 // Service Pages
 const CustomHomes = React.lazy(() => import('./pages/CustomHomes'));
-const KitchenBathRemodeling = React.lazy(() => import('./pages/KitchenBathRemodeling'));
 const KitchenRemodeling = React.lazy(() => import('./pages/KitchenRemodeling'));
 const BathroomRemodeling = React.lazy(() => import('./pages/BathroomRemodeling'));
 const FlooringInstallation = React.lazy(() => import('./pages/FlooringInstallation'));
@@ -20,6 +19,11 @@ const CommercialBuildouts = React.lazy(() => import('./pages/CommercialBuildouts
 const CommercialRenovations = React.lazy(() => import('./pages/CommercialRenovations'));
 const Demolition = React.lazy(() => import('./pages/Demolition'));
 const MetalBuildings = React.lazy(() => import('./pages/MetalBuildings'));
+const ADUConstruction = React.lazy(() => import('./pages/ADUConstruction'));
+const RetailRestaurantBuildouts = React.lazy(() => import('./pages/RetailRestaurantBuildouts'));
+const OfficeProfessionalBuildouts = React.lazy(() => import('./pages/OfficeProfessionalBuildouts'));
+const CompleteDemolition = React.lazy(() => import('./pages/CompleteDemolition'));
+const SelectiveDemolition = React.lazy(() => import('./pages/SelectiveDemolition'));
 // Location Pages
 const ServiceAreaOrlando = React.lazy(() => import('./pages/ServiceAreaOrlando'));
 const ServiceAreaWinterPark = React.lazy(() => import('./pages/ServiceAreaWinterPark'));
@@ -51,7 +55,6 @@ export const PAGES = {
     "commercial-remodel-kissimmee-taco-bell": TacoBellRepipeKissimmee,
     // Service Pages
     "CustomHomes": CustomHomes,
-    "KitchenBathRemodeling": KitchenBathRemodeling,
     "KitchenRemodeling": KitchenRemodeling,
     "BathroomRemodeling": BathroomRemodeling,
     "FlooringInstallation": FlooringInstallation,
@@ -62,6 +65,11 @@ export const PAGES = {
     "CommercialRenovations": CommercialRenovations,
     "Demolition": Demolition,
     "MetalBuildings": MetalBuildings,
+    "ADUConstruction": ADUConstruction,
+    "RetailRestaurantBuildouts": RetailRestaurantBuildouts,
+    "OfficeProfessionalBuildouts": OfficeProfessionalBuildouts,
+    "CompleteDemolition": CompleteDemolition,
+    "SelectiveDemolition": SelectiveDemolition,
     // Location Pages
     "ServiceAreaOrlando": ServiceAreaOrlando,
     "ServiceAreaWinterPark": ServiceAreaWinterPark,

@@ -16,12 +16,14 @@ const demolitionCategories = [
   {
     id: 'complete-demolition',
     title: 'Complete Demolition',
+    href: '/CompleteDemolition/',
     description: 'Removal of an entire approved structure when the site is being cleared for redevelopment, replacement construction, or another planned use.',
     examples: ['Detached structures and garages', 'Residential or commercial structures', 'Removal through debris cleanup and site turnover'],
   },
   {
     id: 'selective-demolition',
     title: 'Selective Demolition',
+    href: '/SelectiveDemolition/',
     description: 'Controlled removal of only the identified building components while protecting the structure, finishes, and systems designated to remain.',
     examples: ['Interior walls, ceilings, finishes, and fixtures', 'Targeted structural components within an approved scope', 'Preparation for renovations, buildouts, additions, or repairs'],
   },
@@ -113,7 +115,7 @@ export default function Demolition() {
   return (
     <div className="min-h-screen bg-white">
       <SEOHead
-        title="Complete & Selective Demolition Orlando FL"
+        title="Demolition Contractor Orlando FL"
         path="/Demolition"
         geoPlace="Orlando"
         description="Complete and selective demolition contractor serving Orlando and Central Florida with permit coordination, debris removal and site preparation."
@@ -124,7 +126,7 @@ export default function Demolition() {
           {
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Complete and Selective Demolition Services',
+            name: 'Demolition Services',
             serviceType: ['Complete demolition', 'Selective demolition', 'Commercial interior demolition', 'Debris removal', 'Site preparation'],
             provider: { '@id': `${SITE_URL}/#business` },
             areaServed: ['Orlando, FL', 'Kissimmee, FL', 'Saint Cloud, FL', 'Winter Park, FL', 'Central Florida'],
@@ -155,7 +157,7 @@ export default function Demolition() {
                   <Construction className="w-4 h-4 text-orange-400" />
                   <span className="text-orange-400 text-sm font-medium">Demolition Services</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Complete & Selective Demolition in Orlando & Central Florida</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Demolition Contractor in Orlando & Central Florida</h1>
                 <p className="text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl">
                   Complete structure removal and controlled selective demolition coordinated from site review and permitting through debris removal and preparation for the next phase.
                 </p>
@@ -210,11 +212,14 @@ export default function Demolition() {
                 <article id={category.id} key={category.id} className="scroll-mt-28 bg-white border border-slate-200 rounded-lg p-7">
                   <h3 className="text-2xl font-bold text-slate-900 mb-3">{category.title}</h3>
                   <p className="text-slate-600 leading-relaxed mb-5">{category.description}</p>
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 mb-6">
                     {category.examples.map((example) => (
                       <li key={example} className="flex gap-3 text-slate-600"><CheckCircle className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" /><span>{example}</span></li>
                     ))}
                   </ul>
+                  <Link to={category.href} className="inline-flex items-center gap-2 font-semibold text-orange-600 hover:text-orange-700">
+                    Explore {category.title.toLowerCase()} <ChevronRight className="w-4 h-4" />
+                  </Link>
                 </article>
               ))}
             </div>
@@ -269,6 +274,8 @@ export default function Demolition() {
 
             <FAQSection faqs={faqs} title="Demolition FAQs" />
             <RelatedServices services={[
+              { label: 'Complete Demolition', href: '/CompleteDemolition/', description: 'Entire-structure removal for a planned redevelopment or replacement.' },
+              { label: 'Selective Demolition', href: '/SelectiveDemolition/', description: 'Controlled removal while protecting the construction that remains.' },
               { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial project coordination from planning through closeout.' },
               { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Reconfigure and update an existing commercial property.' },
               { label: 'Tenant Buildouts', href: '/CommercialBuildouts/', description: 'Interior construction for retail, restaurant, office, and professional spaces.' },

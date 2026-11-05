@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Home, Building2, Hammer, PlusSquare, HardHat, Warehouse, Store, BriefcaseBusiness, Construction, CookingPot, Bath, Layers3 } from 'lucide-react';
+import { Home, Building2, Hammer, PlusSquare, HardHat, Warehouse, Store, BriefcaseBusiness, Construction, CookingPot, Bath, Layers3, HousePlus } from 'lucide-react';
 
 const residentialServices = [
   { icon: Home, title: 'Custom Home Building', description: 'Ground-up home construction coordinated from preconstruction and permitting through final inspections and closeout.', href: '/CustomHomes/' },
@@ -10,17 +10,18 @@ const residentialServices = [
   { icon: Bath, title: 'Bathroom Remodeling', description: 'Showers, waterproofing, tile, vanities, fixtures, ventilation, trade work, permits, and inspections.', href: '/BathroomRemodeling/' },
   { icon: Layers3, title: 'Flooring Installation', description: 'Floor removal, substrate evaluation and preparation, tile, luxury vinyl, engineered flooring, and transitions.', href: '/FlooringInstallation/' },
   { icon: PlusSquare, title: 'Home Additions & Conversions', description: 'Bedrooms, living areas, porches, lanais, and garage conversions planned to work with the existing home.', href: '/RoomAdditions/' },
+  { icon: HousePlus, title: 'ADUs & Guest Houses', description: 'Detached ADUs, attached suites, guest houses, and eligible garage conversions planned around the property and approved use.', href: '/ADUConstruction/' },
 ];
 
 const commercialServices = [
   { icon: Building2, title: 'Commercial General Contracting', description: 'One accountable contractor coordinating commercial construction from planning and permits through closeout.', href: '/Commercial/' },
   { icon: Warehouse, title: 'Metal Buildings', description: 'Turnkey metal buildings with customizable layouts, colors, permitting, installation, and concrete slab options.', href: '/MetalBuildings/' },
   { icon: HardHat, title: 'Tenant Improvements', description: 'Code-compliant partitions, building systems, accessibility work, finishes, inspections, and occupancy coordination.', href: '/CommercialBuildouts/' },
-  { icon: Store, title: 'Retail & Restaurant Buildouts', description: 'Customer-facing spaces with coordinated layouts, restrooms, specialized plumbing, finishes, and closeout.', href: '/CommercialBuildouts/' },
-  { icon: BriefcaseBusiness, title: 'Office & Professional Spaces', description: 'Office, medical, and professional interiors planned around workflow, accessibility, and building systems.', href: '/CommercialBuildouts/' },
+  { icon: Store, title: 'Retail & Restaurant Buildouts', description: 'Customer-facing spaces with coordinated layouts, restrooms, specialized plumbing, finishes, and closeout.', href: '/RetailRestaurantBuildouts/' },
+  { icon: BriefcaseBusiness, title: 'Office & Professional Spaces', description: 'Office, medical, and professional interiors planned around workflow, accessibility, and building systems.', href: '/OfficeProfessionalBuildouts/' },
   { icon: Warehouse, title: 'Commercial Renovations', description: 'Selective demolition, repairs, reconfiguration, system updates, and new finishes for existing properties.', href: '/CommercialRenovations/' },
-  { icon: Construction, title: 'Complete Demolition', description: 'Removal of an entire approved structure with coordinated permitting, utility planning, debris removal, and site turnover.', href: '/Demolition/#complete-demolition' },
-  { icon: Construction, title: 'Selective Demolition', description: 'Targeted removal of identified walls, finishes, fixtures, or structural components while protecting the work that remains.', href: '/Demolition/#selective-demolition' },
+  { icon: Construction, title: 'Complete Demolition', description: 'Removal of an entire approved structure with coordinated permitting, utility planning, debris removal, and site turnover.', href: '/CompleteDemolition/' },
+  { icon: Construction, title: 'Selective Demolition', description: 'Targeted removal of identified walls, finishes, fixtures, or structural components while protecting the work that remains.', href: '/SelectiveDemolition/' },
 ];
 
 function ServiceGrid({ services }) {

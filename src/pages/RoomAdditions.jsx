@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { PlusSquare, CheckCircle, ChevronRight, Phone } from 'lucide-react';
 import FAQSection from '@/components/FAQSection';
 import ServiceAreaLinks from '@/components/ServiceAreaLinks';
+import RelatedServices from '@/components/RelatedServices';
 
 const faqs = [
   {
@@ -173,10 +174,9 @@ export default function RoomAdditions() {
               <h3 className="text-lg font-bold text-slate-900 mb-4">Why Choose J&N StructureWorks?</h3>
               <ul className="space-y-3 text-slate-600 text-sm mb-6">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor (CBC1269175)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor CBC1269175</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Detailed written scopes and estimates</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Permit and inspection coordination for the contracted scope</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Design and engineering coordination as required</li>
               </ul>
               <Link to="/Contact/">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
@@ -188,6 +188,12 @@ export default function RoomAdditions() {
         </div>
 
         <ServiceAreaLinks />
+
+        <RelatedServices services={[
+          { label: 'ADU Construction', href: '/ADUConstruction/', description: 'Detached, attached, and conversion accessory dwelling unit projects.' },
+          { label: 'Whole-Home Renovations', href: '/WholeHomeRenovations/', description: 'Reconfigure and modernize an existing home.' },
+          { label: 'Custom Home Building', href: '/CustomHomes/', description: 'Ground-up residential construction in Central Florida.' },
+        ]} />
 
         {/* FAQ */}
         <FAQSection faqs={faqs} />

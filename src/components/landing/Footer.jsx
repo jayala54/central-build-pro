@@ -27,12 +27,15 @@ export default function Footer() {
               <li><Link to="/BathroomRemodeling/" className="hover:text-amber-400 transition-colors">Bathroom Remodeling</Link></li>
               <li><Link to="/FlooringInstallation/" className="hover:text-amber-400 transition-colors">Flooring Installation</Link></li>
               <li><Link to="/RoomAdditions/" className="hover:text-amber-400 transition-colors">Room Additions</Link></li>
+              <li><Link to="/ADUConstruction/" className="hover:text-amber-400 transition-colors">ADUs & Guest Houses</Link></li>
               <li><Link to="/Commercial/" className="hover:text-amber-400 transition-colors">Commercial Contracting</Link></li>
               <li><Link to="/CommercialBuildouts/" className="hover:text-amber-400 transition-colors">Commercial Buildouts</Link></li>
+              <li><Link to="/RetailRestaurantBuildouts/" className="hover:text-amber-400 transition-colors">Restaurant & Retail Buildouts</Link></li>
+              <li><Link to="/OfficeProfessionalBuildouts/" className="hover:text-amber-400 transition-colors">Office Buildouts</Link></li>
               <li><Link to="/CommercialRenovations/" className="hover:text-amber-400 transition-colors">Commercial Renovations</Link></li>
               <li><Link to="/MetalBuildings/" className="hover:text-amber-400 transition-colors">Metal Buildings</Link></li>
-              <li><Link to="/Demolition/#complete-demolition" className="hover:text-amber-400 transition-colors">Complete Demolition</Link></li>
-              <li><Link to="/Demolition/#selective-demolition" className="hover:text-amber-400 transition-colors">Selective Demolition</Link></li>
+              <li><Link to="/CompleteDemolition/" className="hover:text-amber-400 transition-colors">Complete Demolition</Link></li>
+              <li><Link to="/SelectiveDemolition/" className="hover:text-amber-400 transition-colors">Selective Demolition</Link></li>
             </ul>
           </div>
 

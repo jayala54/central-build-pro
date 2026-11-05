@@ -47,6 +47,8 @@ function makeRedirects() {
   const legacyRedirects = [
     '/Home  /  301',
     '/Home/  /  301',
+    '/KitchenBathRemodeling  /Services/  301',
+    '/KitchenBathRemodeling/  /Services/  301',
   ];
 
   return `# Canonical URL redirects

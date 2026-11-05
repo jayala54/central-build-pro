@@ -203,10 +203,9 @@ export default function CommercialBuildouts() {
               <h3 className="text-lg font-bold text-slate-900 mb-4">Why Choose J&N StructureWorks?</h3>
               <ul className="space-y-3 text-slate-600 text-sm mb-6">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor (CBC1269175)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Florida Certified Building Contractor CBC1269175</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Detailed written scopes and estimates</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Permit and inspection coordination for the contracted scope</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Full permitting & inspection management</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" /> Coordination with owners, tenants, designers, and property managers</li>
               </ul>
               <Button asChild className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold h-12">
                 <Link to="/Contact/">
@@ -230,6 +229,8 @@ export default function CommercialBuildouts() {
           </section>
           <RelatedServices services={[
             { label: 'Commercial General Contracting', href: '/Commercial/', description: 'Commercial project coordination from preconstruction through closeout.' },
+            { label: 'Restaurant & Retail Buildouts', href: '/RetailRestaurantBuildouts/', description: 'Dedicated construction services for restaurants, cafes, franchises, and retail spaces.' },
+            { label: 'Office & Professional Buildouts', href: '/OfficeProfessionalBuildouts/', description: 'Dedicated buildout services for offices and professional spaces.' },
             { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Modernize or reconfigure an existing business property.' },
             { label: 'Kissimmee Commercial Project', href: '/commercial-remodel-kissimmee-taco-bell/', description: 'Commercial repipe and bathroom remodel case study.' },
           ]} />

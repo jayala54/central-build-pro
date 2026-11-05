@@ -140,7 +140,9 @@ export default function ServiceAreaSaintCloud() {
 
             <RelatedServices services={[
               { label: 'Custom Homes', href: '/CustomHomes/', description: 'Ground-up residential construction across Central Florida.' },
-              { label: 'Interior Remodeling', href: '/KitchenBathRemodeling/', description: 'Kitchen, bathroom, and flooring renovation services.' },
+              { label: 'Kitchen Remodeling', href: '/KitchenRemodeling/', description: 'Kitchen layouts, cabinetry, countertops, systems, and finishes.' },
+              { label: 'Bathroom Remodeling', href: '/BathroomRemodeling/', description: 'Bathroom renovations with coordinated waterproofing, tile, fixtures, and trades.' },
+              { label: 'Flooring Installation', href: '/FlooringInstallation/', description: 'Floor preparation and installation for residential renovation projects.' },
               { label: 'Home Additions', href: '/RoomAdditions/', description: 'Add living space or convert an existing garage.' },
               { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial contracting, buildouts, renovations, and project coordination.' },
             ]} />

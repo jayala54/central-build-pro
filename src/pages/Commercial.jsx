@@ -140,10 +140,12 @@ export default function Commercial() {
 
             <RelatedServices services={[
               { label: 'Tenant Buildouts', href: '/CommercialBuildouts/', description: 'Interior construction for leased retail, restaurant, office, and professional spaces.' },
+              { label: 'Restaurant & Retail Buildouts', href: '/RetailRestaurantBuildouts/', description: 'Customer-facing restaurant, cafe, franchise, and retail construction.' },
+              { label: 'Office & Professional Buildouts', href: '/OfficeProfessionalBuildouts/', description: 'Office and professional interiors coordinated around workflow and building systems.' },
               { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Modernize or reconfigure an existing commercial property.' },
               { label: 'Metal Buildings', href: '/MetalBuildings/', description: 'Turnkey metal buildings with concrete foundation and slab options.' },
-              { label: 'Complete Demolition', href: '/Demolition/#complete-demolition', description: 'Entire-structure removal coordinated for redevelopment or replacement construction.' },
-              { label: 'Selective Demolition', href: '/Demolition/#selective-demolition', description: 'Targeted removal coordinated for commercial renovation or reuse.' },
+              { label: 'Complete Demolition', href: '/CompleteDemolition/', description: 'Entire-structure removal coordinated for redevelopment or replacement construction.' },
+              { label: 'Selective Demolition', href: '/SelectiveDemolition/', description: 'Targeted removal coordinated for commercial renovation or reuse.' },
               { label: 'Kissimmee Project', href: '/commercial-remodel-kissimmee-taco-bell/', description: 'Commercial repipe and bathroom remodel case study.' },
             ]} />
             <ServiceAreaLinks />

@@ -14,7 +14,7 @@ export default function Services() {
       <SEOHead
         title="Residential Construction Services Orlando FL"
         path="/Services"
-        description="Residential construction services in Orlando and Central Florida, including custom homes, kitchen and bathroom remodeling, flooring, renovations and additions."
+        description="Residential construction services in Orlando and Central Florida, including custom homes, ADUs, kitchen and bathroom remodeling, flooring, renovations and additions."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
       <header className="bg-slate-900 pt-24 lg:pt-40 pb-12">

@@ -18,7 +18,10 @@ const projectTypes = [
   { value: 'bathroom_remodel', label: 'Bathroom Remodel' },
   { value: 'flooring', label: 'Flooring Installation' },
   { value: 'addition', label: 'Room Addition' },
+  { value: 'adu_guest_house', label: 'ADU / Guest House' },
   { value: 'tenant_buildout', label: 'Commercial Tenant Buildout' },
+  { value: 'retail_restaurant_buildout', label: 'Restaurant / Retail Buildout' },
+  { value: 'office_professional_buildout', label: 'Office / Professional Buildout' },
   { value: 'commercial_renovation', label: 'Commercial Renovation' },
   { value: 'metal_building', label: 'Metal Building' },
   { value: 'complete_demolition', label: 'Complete Demolition' },
@@ -39,9 +42,16 @@ const counties = [
 
 function getInitialProjectType() {
   if (typeof window === 'undefined') return '';
-  return new URLSearchParams(window.location.search).get('service') === 'metal-building'
-    ? 'metal_building'
-    : '';
+  const service = new URLSearchParams(window.location.search).get('service');
+  const projectTypesByService = {
+    'metal-building': 'metal_building',
+    adu: 'adu_guest_house',
+    'retail-restaurant-buildout': 'retail_restaurant_buildout',
+    'office-professional-buildout': 'office_professional_buildout',
+    'complete-demolition': 'complete_demolition',
+    'selective-demolition': 'selective_demolition',
+  };
+  return projectTypesByService[service] || '';
 }
 
 export default function ContactSection() {

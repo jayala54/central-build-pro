@@ -48,7 +48,7 @@ export default function HeroSection({ onContactClick }) {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Custom homes <span aria-hidden="true">&bull;</span> Kitchen and bathroom remodeling <span aria-hidden="true">&bull;</span> Flooring <span aria-hidden="true">&bull;</span>{' '}
-            Commercial construction <span aria-hidden="true">&bull;</span> Tenant buildouts <span aria-hidden="true">&bull;</span> Complete and selective demolition
+            Commercial construction <span aria-hidden="true">&bull;</span> Tenant buildouts <span aria-hidden="true">&bull;</span> Water damage rehabilitation <span aria-hidden="true">&bull;</span> Complete and selective demolition
           </motion.p>
 
           <motion.div 

@@ -276,6 +276,7 @@ export default function Demolition() {
             <RelatedServices services={[
               { label: 'Complete Demolition', href: '/CompleteDemolition/', description: 'Entire-structure removal for a planned redevelopment or replacement.' },
               { label: 'Selective Demolition', href: '/SelectiveDemolition/', description: 'Controlled removal while protecting the construction that remains.' },
+              { label: 'Water Damage Rehabilitation', href: '/WaterDamageRehabilitation/', description: 'Reconstruct approved storm- and flood-affected areas after mitigation is complete.' },
               { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial project coordination from planning through closeout.' },
               { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Reconfigure and update an existing commercial property.' },
               { label: 'Tenant Buildouts', href: '/CommercialBuildouts/', description: 'Interior construction for retail, restaurant, office, and professional spaces.' },

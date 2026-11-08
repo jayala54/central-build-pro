@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Home, Building2, Hammer, PlusSquare, HardHat, Warehouse, Store, BriefcaseBusiness, Construction, CookingPot, Bath, Layers3, HousePlus } from 'lucide-react';
+import { Home, Building2, Hammer, PlusSquare, HardHat, Warehouse, Store, BriefcaseBusiness, Construction, CookingPot, Bath, Layers3, HousePlus, Waves } from 'lucide-react';
 
 const residentialServices = [
   { icon: Home, title: 'Custom Home Building', description: 'Ground-up home construction coordinated from preconstruction and permitting through final inspections and closeout.', href: '/CustomHomes/' },
@@ -11,6 +11,7 @@ const residentialServices = [
   { icon: Layers3, title: 'Flooring Installation', description: 'Floor removal, substrate evaluation and preparation, tile, luxury vinyl, engineered flooring, and transitions.', href: '/FlooringInstallation/' },
   { icon: PlusSquare, title: 'Home Additions & Conversions', description: 'Bedrooms, living areas, porches, lanais, and garage conversions planned to work with the existing home.', href: '/RoomAdditions/' },
   { icon: HousePlus, title: 'ADUs & Guest Houses', description: 'Detached ADUs, attached suites, guest houses, and eligible garage conversions planned around the property and approved use.', href: '/ADUConstruction/' },
+  { icon: Waves, title: 'Water Damage Rehabilitation', description: 'Post-mitigation reconstruction for storm- and flood-impacted homes and commercial properties across Central Florida.', href: '/WaterDamageRehabilitation/' },
 ];
 
 const commercialServices = [
@@ -55,7 +56,7 @@ export default function ServicesSection() {
         <motion.div className="text-center max-w-3xl mx-auto mb-16" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <span className="text-orange-600 font-medium text-sm tracking-wider uppercase">What We Do</span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">Residential and Commercial Construction</h2>
-          <p className="text-slate-600 text-lg">One Florida Certified Building Contractor for ground-up construction, renovations, additions, tenant improvements, commercial buildouts, and demolition.</p>
+          <p className="text-slate-600 text-lg">One Florida Certified Building Contractor for ground-up construction, renovations, additions, storm-related rehabilitation, tenant improvements, commercial buildouts, and demolition.</p>
         </motion.div>
 
         <div className="mb-16">

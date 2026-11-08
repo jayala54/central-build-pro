@@ -12,15 +12,15 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-white">
       <SEOHead
-        title="Residential Construction Services Orlando FL"
+        title="Construction & Property Rehabilitation Orlando FL"
         path="/Services"
-        description="Residential construction services in Orlando and Central Florida, including custom homes, ADUs, kitchen and bathroom remodeling, flooring, renovations and additions."
+        description="Construction and property rehabilitation services in Orlando and Central Florida, including custom homes, remodeling, additions and post-flood reconstruction."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
       <header className="bg-slate-900 pt-24 lg:pt-40 pb-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-orange-400 font-semibold mb-3">Residential Construction</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white">Residential Construction Services in Orlando & Central Florida</h1>
+          <p className="text-orange-400 font-semibold mb-3">Construction Services</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white">Construction & Property Rehabilitation in Central Florida</h1>
         </div>
       </header>
       <div>

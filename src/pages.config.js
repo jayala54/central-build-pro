@@ -24,6 +24,7 @@ const RetailRestaurantBuildouts = React.lazy(() => import('./pages/RetailRestaur
 const OfficeProfessionalBuildouts = React.lazy(() => import('./pages/OfficeProfessionalBuildouts'));
 const CompleteDemolition = React.lazy(() => import('./pages/CompleteDemolition'));
 const SelectiveDemolition = React.lazy(() => import('./pages/SelectiveDemolition'));
+const WaterDamageRehabilitation = React.lazy(() => import('./pages/WaterDamageRehabilitation'));
 // Location Pages
 const ServiceAreaOrlando = React.lazy(() => import('./pages/ServiceAreaOrlando'));
 const ServiceAreaWinterPark = React.lazy(() => import('./pages/ServiceAreaWinterPark'));
@@ -70,6 +71,7 @@ export const PAGES = {
     "OfficeProfessionalBuildouts": OfficeProfessionalBuildouts,
     "CompleteDemolition": CompleteDemolition,
     "SelectiveDemolition": SelectiveDemolition,
+    "WaterDamageRehabilitation": WaterDamageRehabilitation,
     // Location Pages
     "ServiceAreaOrlando": ServiceAreaOrlando,
     "ServiceAreaWinterPark": ServiceAreaWinterPark,

@@ -146,6 +146,7 @@ export default function Commercial() {
               { label: 'Metal Buildings', href: '/MetalBuildings/', description: 'Turnkey metal buildings with concrete foundation and slab options.' },
               { label: 'Complete Demolition', href: '/CompleteDemolition/', description: 'Entire-structure removal coordinated for redevelopment or replacement construction.' },
               { label: 'Selective Demolition', href: '/SelectiveDemolition/', description: 'Targeted removal coordinated for commercial renovation or reuse.' },
+              { label: 'Water Damage Rehabilitation', href: '/WaterDamageRehabilitation/', description: 'Post-mitigation reconstruction for storm- and flood-impacted commercial properties.' },
               { label: 'Kissimmee Project', href: '/commercial-remodel-kissimmee-taco-bell/', description: 'Commercial repipe and bathroom remodel case study.' },
             ]} />
             <ServiceAreaLinks />

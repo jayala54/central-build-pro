@@ -26,6 +26,7 @@ const projectTypes = [
   { value: 'metal_building', label: 'Metal Building' },
   { value: 'complete_demolition', label: 'Complete Demolition' },
   { value: 'selective_demolition', label: 'Selective Demolition' },
+  { value: 'water_damage_rehabilitation', label: 'Water Damage / Storm Rehabilitation' },
   { value: 'other', label: 'Other' }
 ];
 
@@ -50,6 +51,7 @@ function getInitialProjectType() {
     'office-professional-buildout': 'office_professional_buildout',
     'complete-demolition': 'complete_demolition',
     'selective-demolition': 'selective_demolition',
+    'water-damage-rehabilitation': 'water_damage_rehabilitation',
   };
   return projectTypesByService[service] || '';
 }

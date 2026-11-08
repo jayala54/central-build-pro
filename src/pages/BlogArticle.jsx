@@ -67,6 +67,13 @@ export default function BlogArticle() {
       ];
     }
     const content = `${article.title} ${article.tags?.join(' ')} ${article.content}`.toLowerCase();
+    if (content.includes('water damage') || content.includes('storm damage') || content.includes('flood damage')) {
+      return [
+        { label: 'Water Damage Rehabilitation', href: '/WaterDamageRehabilitation/', description: 'Post-mitigation reconstruction for storm- and flood-impacted properties.' },
+        { label: 'Selective Demolition', href: '/SelectiveDemolition/', description: 'Remove approved damaged materials while protecting construction that remains.' },
+        { label: 'Whole-Home Renovations', href: '/WholeHomeRenovations/', description: 'Coordinate broader residential reconstruction and modernization.' },
+      ];
+    }
     if (content.includes('commercial') || content.includes('tenant') || content.includes('investor')) {
       return [
         { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial contracting, buildouts, renovations, and project coordination.' },

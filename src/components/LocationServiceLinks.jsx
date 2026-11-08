@@ -9,6 +9,7 @@ const services = [
   { label: 'Flooring Installation', href: '/FlooringInstallation/', description: 'Removal, substrate preparation, flooring, and transitions.' },
   { label: 'Home Additions', href: '/RoomAdditions/', description: 'Expanded living space, garage conversions, porches, and lanais.' },
   { label: 'ADUs & Guest Houses', href: '/ADUConstruction/', description: 'Detached ADUs, guest houses, attached suites, and eligible conversions.' },
+  { label: 'Water Damage Rehabilitation', href: '/WaterDamageRehabilitation/', description: 'Post-mitigation reconstruction for storm- and flood-impacted properties.' },
   { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial contracting, buildouts, renovations, and project coordination.' },
   { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Reconfiguration and updates for existing commercial properties.' },
   { label: 'Restaurant & Retail Buildouts', href: '/RetailRestaurantBuildouts/', description: 'Customer-facing restaurant, cafe, storefront, and retail construction.' },

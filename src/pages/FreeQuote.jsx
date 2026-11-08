@@ -32,6 +32,7 @@ const projectTypes = [
   { value: 'metal_building', label: 'Metal Building' },
   { value: 'complete_demolition', label: 'Complete Demolition' },
   { value: 'selective_demolition', label: 'Selective Demolition' },
+  { value: 'water_damage_rehabilitation', label: 'Water Damage / Storm Rehabilitation' },
   { value: 'other', label: 'Other' },
 ];
 
@@ -48,6 +49,7 @@ const services = [
   { icon: Building2, title: 'Metal Buildings', desc: 'Permitted, installed metal buildings with concrete slab options' },
   { icon: Hammer, title: 'Complete Demolition', desc: 'Entire-structure removal with coordinated site preparation' },
   { icon: Hammer, title: 'Selective Demolition', desc: 'Targeted removal while protecting construction that remains' },
+  { icon: Hammer, title: 'Water Damage Rehabilitation', desc: 'Post-mitigation reconstruction for storm- and flood-impacted properties' },
 ];
 
 function QuoteForm({ id, utmParams }) {

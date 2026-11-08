@@ -28,6 +28,7 @@ export default function Footer() {
               <li><Link to="/FlooringInstallation/" className="hover:text-amber-400 transition-colors">Flooring Installation</Link></li>
               <li><Link to="/RoomAdditions/" className="hover:text-amber-400 transition-colors">Room Additions</Link></li>
               <li><Link to="/ADUConstruction/" className="hover:text-amber-400 transition-colors">ADUs & Guest Houses</Link></li>
+              <li><Link to="/WaterDamageRehabilitation/" className="hover:text-amber-400 transition-colors">Water Damage Rehabilitation</Link></li>
               <li><Link to="/Commercial/" className="hover:text-amber-400 transition-colors">Commercial Contracting</Link></li>
               <li><Link to="/CommercialBuildouts/" className="hover:text-amber-400 transition-colors">Commercial Buildouts</Link></li>
               <li><Link to="/RetailRestaurantBuildouts/" className="hover:text-amber-400 transition-colors">Restaurant & Retail Buildouts</Link></li>

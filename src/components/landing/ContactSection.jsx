@@ -27,6 +27,7 @@ const projectTypes = [
   { value: 'complete_demolition', label: 'Complete Demolition' },
   { value: 'selective_demolition', label: 'Selective Demolition' },
   { value: 'water_damage_rehabilitation', label: 'Water Damage / Storm Rehabilitation' },
+  { value: 'custom_steel_brackets', label: 'Custom Steel Bracket Fabrication' },
   { value: 'other', label: 'Other' }
 ];
 
@@ -52,6 +53,7 @@ function getInitialProjectType() {
     'complete-demolition': 'complete_demolition',
     'selective-demolition': 'selective_demolition',
     'water-damage-rehabilitation': 'water_damage_rehabilitation',
+    'custom-steel-brackets': 'custom_steel_brackets',
   };
   return projectTypesByService[service] || '';
 }

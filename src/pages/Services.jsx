@@ -14,7 +14,7 @@ export default function Services() {
       <SEOHead
         title="Construction & Property Rehabilitation Orlando FL"
         path="/Services"
-        description="Construction and property rehabilitation services in Orlando and Central Florida, including custom homes, remodeling, additions and post-flood reconstruction."
+        description="Construction and property rehabilitation services in Central Florida, including custom homes, remodeling, steel bracket fabrication and post-flood reconstruction."
       />
       <Navbar onContactClick={scrollToContact} alwaysSolid={true} />
       <header className="bg-slate-900 pt-24 lg:pt-40 pb-12">

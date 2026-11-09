@@ -17,6 +17,7 @@ const residentialServices = [
 const commercialServices = [
   { icon: Building2, title: 'Commercial General Contracting', description: 'One accountable contractor coordinating commercial construction from planning and permits through closeout.', href: '/Commercial/' },
   { icon: Warehouse, title: 'Metal Buildings', description: 'Turnkey metal buildings with customizable layouts, colors, permitting, installation, and concrete slab options.', href: '/MetalBuildings/' },
+  { icon: Hammer, title: 'Custom Steel Brackets', description: 'CNC-cut and welded brackets for pavilions, structural posts, beams, and specialty construction from approved plans.', href: '/CustomSteelBrackets/' },
   { icon: HardHat, title: 'Tenant Improvements', description: 'Code-compliant partitions, building systems, accessibility work, finishes, inspections, and occupancy coordination.', href: '/CommercialBuildouts/' },
   { icon: Store, title: 'Retail & Restaurant Buildouts', description: 'Customer-facing spaces with coordinated layouts, restrooms, specialized plumbing, finishes, and closeout.', href: '/RetailRestaurantBuildouts/' },
   { icon: BriefcaseBusiness, title: 'Office & Professional Spaces', description: 'Office, medical, and professional interiors planned around workflow, accessibility, and building systems.', href: '/OfficeProfessionalBuildouts/' },

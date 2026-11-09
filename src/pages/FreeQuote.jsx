@@ -33,6 +33,7 @@ const projectTypes = [
   { value: 'complete_demolition', label: 'Complete Demolition' },
   { value: 'selective_demolition', label: 'Selective Demolition' },
   { value: 'water_damage_rehabilitation', label: 'Water Damage / Storm Rehabilitation' },
+  { value: 'custom_steel_brackets', label: 'Custom Steel Bracket Fabrication' },
   { value: 'other', label: 'Other' },
 ];
 
@@ -50,6 +51,7 @@ const services = [
   { icon: Hammer, title: 'Complete Demolition', desc: 'Entire-structure removal with coordinated site preparation' },
   { icon: Hammer, title: 'Selective Demolition', desc: 'Targeted removal while protecting construction that remains' },
   { icon: Hammer, title: 'Water Damage Rehabilitation', desc: 'Post-mitigation reconstruction for storm- and flood-impacted properties' },
+  { icon: Hammer, title: 'Custom Steel Brackets', desc: 'CNC-cut and welded bracket fabrication from approved project plans' },
 ];
 
 function QuoteForm({ id, utmParams }) {

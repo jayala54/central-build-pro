@@ -203,6 +203,7 @@ export default function MetalBuildings() {
             <ServiceAreaLinks />
             <FAQSection faqs={faqs} title="Metal Building FAQs" />
             <RelatedServices services={[
+              { label: 'Custom Steel Brackets', href: '/CustomSteelBrackets/', description: 'CNC-cut and welded project components fabricated from approved plans.' },
               { label: 'Commercial General Contracting', href: '/Commercial/', description: 'Commercial project coordination from preconstruction through closeout.' },
               { label: 'Commercial Buildouts', href: '/CommercialBuildouts/', description: 'Interior construction for commercial and professional spaces.' },
               { label: 'Concrete and Site Scope', href: '/Contact/?service=metal-building', description: 'Discuss a metal building project that includes its engineered foundation and slab.' },

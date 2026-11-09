@@ -209,7 +209,9 @@ export default function ProjectInquiryFields({ idPrefix, formData, setFormData, 
           onChange={(event) => setFormData((current) => ({ ...current, message: event.target.value }))}
           placeholder={formData.project_type === 'metal_building'
             ? 'Describe the building use, preferred color and roof style, doors, windows, insulation, utilities, and interior configuration.'
-            : 'Describe the property, desired work, current conditions, and anything else we should know.'}
+            : formData.project_type === 'custom_steel_brackets'
+              ? 'Describe the bracket use, approved plan or detail, material and thickness, dimensions, quantity, hole pattern, weld and finish requirements, installation needs, and required date.'
+              : 'Describe the property, desired work, current conditions, and anything else we should know.'}
           rows={4}
           className="resize-none bg-white border-slate-200"
         />

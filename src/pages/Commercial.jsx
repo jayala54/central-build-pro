@@ -145,6 +145,7 @@ export default function Commercial() {
               { label: 'Commercial Renovations', href: '/CommercialRenovations/', description: 'Modernize or reconfigure an existing commercial property.' },
               { label: 'Metal Buildings', href: '/MetalBuildings/', description: 'Turnkey metal buildings with concrete foundation and slab options.' },
               { label: 'Custom Steel Brackets', href: '/CustomSteelBrackets/', description: 'CNC-cut and welded post, beam, pavilion, and specialty construction brackets.' },
+              { label: 'Custom Steel Gates', href: '/CustomSteelGates/', description: 'Custom welded gates for commercial access, enclosures, service areas, and property entrances.' },
               { label: 'Complete Demolition', href: '/CompleteDemolition/', description: 'Entire-structure removal coordinated for redevelopment or replacement construction.' },
               { label: 'Selective Demolition', href: '/SelectiveDemolition/', description: 'Targeted removal coordinated for commercial renovation or reuse.' },
               { label: 'Water Damage Rehabilitation', href: '/WaterDamageRehabilitation/', description: 'Post-mitigation reconstruction for storm- and flood-impacted commercial properties.' },

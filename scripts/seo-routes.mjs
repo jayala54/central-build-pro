@@ -28,6 +28,7 @@ export const staticRoutes = [
   { path: '/SelectiveDemolition', changefreq: 'monthly', priority: '0.9' },
   { path: '/WaterDamageRehabilitation', changefreq: 'monthly', priority: '0.9' },
   { path: '/CustomSteelBrackets', changefreq: 'monthly', priority: '0.9' },
+  { path: '/CustomSteelGates', changefreq: 'monthly', priority: '0.9' },
   { path: '/ServiceAreaOrlando', changefreq: 'monthly', priority: '0.8' },
   { path: '/ServiceAreaWinterPark', changefreq: 'monthly', priority: '0.8' },
   { path: '/ServiceAreaLakeMary', changefreq: 'monthly', priority: '0.8' },

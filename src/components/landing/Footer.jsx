@@ -36,6 +36,7 @@ export default function Footer() {
               <li><Link to="/CommercialRenovations/" className="hover:text-amber-400 transition-colors">Commercial Renovations</Link></li>
               <li><Link to="/MetalBuildings/" className="hover:text-amber-400 transition-colors">Metal Buildings</Link></li>
               <li><Link to="/CustomSteelBrackets/" className="hover:text-amber-400 transition-colors">Custom Steel Brackets</Link></li>
+              <li><Link to="/CustomSteelGates/" className="hover:text-amber-400 transition-colors">Custom Steel Gates</Link></li>
               <li><Link to="/CompleteDemolition/" className="hover:text-amber-400 transition-colors">Complete Demolition</Link></li>
               <li><Link to="/SelectiveDemolition/" className="hover:text-amber-400 transition-colors">Selective Demolition</Link></li>
             </ul>

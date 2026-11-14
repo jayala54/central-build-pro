@@ -211,6 +211,8 @@ export default function ProjectInquiryFields({ idPrefix, formData, setFormData, 
             ? 'Describe the building use, preferred color and roof style, doors, windows, insulation, utilities, and interior configuration.'
             : formData.project_type === 'custom_steel_brackets'
               ? 'Describe the bracket use, approved plan or detail, material and thickness, dimensions, quantity, hole pattern, weld and finish requirements, installation needs, and required date.'
+              : formData.project_type === 'custom_steel_gates'
+                ? 'Describe the opening width and height, gate type, intended use, manual or planned powered operation, post or column conditions, preferred appearance, hardware, finish, installation needs, and required date.'
               : 'Describe the property, desired work, current conditions, and anything else we should know.'}
           rows={4}
           className="resize-none bg-white border-slate-200"

@@ -90,6 +90,8 @@ export default function SEOHead({
       'Storm Damage Reconstruction',
       'Custom Steel Bracket Fabrication',
       'CNC-Cut Steel Brackets',
+      'Custom Steel Gate Fabrication',
+      'Custom Driveway Gates',
     ],
     areaServed: [
       { '@type': 'City', name: 'Orlando', containedInPlace: { '@type': 'State', name: 'Florida' } },
@@ -130,6 +132,7 @@ export default function SEOHead({
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Turnkey Metal Building Construction' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Water Damage Rehabilitation and Storm Reconstruction' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Custom Steel Bracket Fabrication' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Custom Steel Gate Fabrication and Installation' } },
       ],
     },
     hasCredential: {

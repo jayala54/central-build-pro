@@ -12,6 +12,7 @@ const residentialServices = [
   { icon: PlusSquare, title: 'Home Additions & Conversions', description: 'Bedrooms, living areas, porches, lanais, and garage conversions planned to work with the existing home.', href: '/RoomAdditions/' },
   { icon: HousePlus, title: 'ADUs & Guest Houses', description: 'Detached ADUs, attached suites, guest houses, and eligible garage conversions planned around the property and approved use.', href: '/ADUConstruction/' },
   { icon: Waves, title: 'Water Damage Rehabilitation', description: 'Post-mitigation reconstruction for storm- and flood-impacted homes and commercial properties across Central Florida.', href: '/WaterDamageRehabilitation/' },
+  { icon: Construction, title: 'Custom Steel Gates', description: 'Custom welded driveway, pedestrian, courtyard, enclosure, and commercial gates with installation when contracted.', href: '/CustomSteelGates/' },
 ];
 
 const commercialServices = [

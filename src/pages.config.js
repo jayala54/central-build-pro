@@ -26,6 +26,7 @@ const CompleteDemolition = React.lazy(() => import('./pages/CompleteDemolition')
 const SelectiveDemolition = React.lazy(() => import('./pages/SelectiveDemolition'));
 const WaterDamageRehabilitation = React.lazy(() => import('./pages/WaterDamageRehabilitation'));
 const CustomSteelBrackets = React.lazy(() => import('./pages/CustomSteelBrackets'));
+const CustomSteelGates = React.lazy(() => import('./pages/CustomSteelGates'));
 // Location Pages
 const ServiceAreaOrlando = React.lazy(() => import('./pages/ServiceAreaOrlando'));
 const ServiceAreaWinterPark = React.lazy(() => import('./pages/ServiceAreaWinterPark'));
@@ -74,6 +75,7 @@ export const PAGES = {
     "SelectiveDemolition": SelectiveDemolition,
     "WaterDamageRehabilitation": WaterDamageRehabilitation,
     "CustomSteelBrackets": CustomSteelBrackets,
+    "CustomSteelGates": CustomSteelGates,
     // Location Pages
     "ServiceAreaOrlando": ServiceAreaOrlando,
     "ServiceAreaWinterPark": ServiceAreaWinterPark,

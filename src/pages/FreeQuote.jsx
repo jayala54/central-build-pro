@@ -34,6 +34,7 @@ const projectTypes = [
   { value: 'selective_demolition', label: 'Selective Demolition' },
   { value: 'water_damage_rehabilitation', label: 'Water Damage / Storm Rehabilitation' },
   { value: 'custom_steel_brackets', label: 'Custom Steel Bracket Fabrication' },
+  { value: 'custom_steel_gates', label: 'Custom Steel Gates' },
   { value: 'other', label: 'Other' },
 ];
 
@@ -52,6 +53,7 @@ const services = [
   { icon: Hammer, title: 'Selective Demolition', desc: 'Targeted removal while protecting construction that remains' },
   { icon: Hammer, title: 'Water Damage Rehabilitation', desc: 'Post-mitigation reconstruction for storm- and flood-impacted properties' },
   { icon: Hammer, title: 'Custom Steel Brackets', desc: 'CNC-cut and welded bracket fabrication from approved project plans' },
+  { icon: Hammer, title: 'Custom Steel Gates', desc: 'Custom driveway, pedestrian, courtyard, enclosure, and commercial gates' },
 ];
 
 function QuoteForm({ id, utmParams }) {

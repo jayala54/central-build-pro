@@ -16,6 +16,7 @@ const services = [
   { label: 'Office & Professional Buildouts', href: '/OfficeProfessionalBuildouts/', description: 'Office, medical, and professional interiors.' },
   { label: 'Metal Buildings', href: '/MetalBuildings/', description: 'Turnkey metal building construction with permitting, installation, and concrete slab options.' },
   { label: 'Custom Steel Brackets', href: '/CustomSteelBrackets/', description: 'CNC-cut and welded brackets fabricated from approved plans and specifications.' },
+  { label: 'Custom Steel Gates', href: '/CustomSteelGates/', description: 'Custom welded driveway, pedestrian, courtyard, enclosure, and commercial gates.' },
   { label: 'Complete Demolition', href: '/CompleteDemolition/', description: 'Entire-structure removal with site preparation and debris removal.' },
   { label: 'Selective Demolition', href: '/SelectiveDemolition/', description: 'Controlled removal of specific building components while preserving the remaining structure.' },
 ];

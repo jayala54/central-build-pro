@@ -56,6 +56,7 @@ const service = {
   ],
   faqTitle: 'Custom Steel Bracket FAQs',
   related: [
+    { label: 'Custom Steel Gates', href: '/CustomSteelGates/', description: 'Custom welded driveway, pedestrian, courtyard, enclosure, and commercial gates.' },
     { label: 'Metal Buildings', href: '/MetalBuildings/', description: 'Permitted metal building projects with foundation and slab options.' },
     { label: 'Custom Homes', href: '/CustomHomes/', description: 'Ground-up construction with project-specific structural and finish coordination.' },
     { label: 'Commercial Construction', href: '/Commercial/', description: 'Commercial project coordination from preconstruction through closeout.' },
